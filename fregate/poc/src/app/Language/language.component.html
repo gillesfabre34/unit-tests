@@ -1,0 +1,44 @@
+<div class="container">
+
+    <app-header></app-header>
+
+    <!-- <a routerLink="/">{{ 'PAGES.DETAIL.BACK_TO_HOME' | translate }}</a> -->
+
+
+
+    <div class="content">
+
+        <div class="choose-lang">
+            <p>Choose a language</p>
+            <select class="select" name="hall" id="hall" value="1">
+                <option>Typescript</option>
+                <option>Javascript</option>
+                <option>Python</option>
+                <option>Java</option>
+              </select>
+        </div>
+
+        <div class="browse-folder">
+            <p>Browse folder to use</p>
+            <button class="browse" (click)="openDirectory()">Browse</button>
+
+            <p *ngIf="this.directoryPath">{{directoryPath}}</p>
+
+
+
+            <p>Choose TSCONFIG file to use</p>
+            <button class="browse" (click)="openConfigFile()">Browse</button>
+
+            <p *ngIf="this.configFilePath">{{configFilePath}}</p>
+        </div>
+
+
+
+        <button class="button" *ngIf="this.directoryPath && this.configFilePath"
+        routerLink='/mode'>
+            Next Step
+        </button>
+
+    </div>
+
+</div>

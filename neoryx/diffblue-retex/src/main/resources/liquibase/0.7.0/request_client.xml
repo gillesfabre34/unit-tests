@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="create_request_client" author="0.7.0">
+        <!-- Join table Request and Client-->
+        <createTable tableName="request_client">
+            <column name="request_id" type="bigint">
+                <constraints nullable="false" referencedTableName="request" referencedColumnNames="id"
+                             foreignKeyName="fk_request_fa_request_id"/>
+            </column>
+            <column name="client_id" type="bigint">
+                <constraints nullable="false" referencedTableName="client" referencedColumnNames="id"
+                             foreignKeyName="fk_request_fa_client_id"/>
+            </column>
+        </createTable>
+
+        <!-- Join table Request and Client-->
+        <createTable tableName="request_client_audit">
+            <column name="revision_id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="request_id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="client_id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

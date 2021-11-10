@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="update_request" author="0.8.0">
+        <addColumn tableName="request">
+            <column name="aircraft_family_id" type="bigint"/>
+        </addColumn>
+        <addForeignKeyConstraint baseTableName="request" baseColumnNames="aircraft_family_id" constraintName="fk_request_aircraft_family" referencedTableName="aircraft_family"
+                                 referencedColumnNames="id"/>
+
+        <addColumn tableName="request">
+            <column name="aircraft_type_id" type="bigint"/>
+        </addColumn>
+        <addForeignKeyConstraint baseTableName="request" baseColumnNames="aircraft_type_id" constraintName="fk_request_aircraft_type" referencedTableName="aircraft_type"
+                                 referencedColumnNames="id"/>
+
+        <addColumn tableName="request">
+            <column name="aircraft_version_id" type="bigint"/>
+        </addColumn>
+        <addForeignKeyConstraint baseTableName="request" baseColumnNames="aircraft_version_id" constraintName="fk_request_aircraft_version" referencedTableName="aircraft_version"
+                                 referencedColumnNames="id"/>
+
+
+        <!--AUDIT-->
+        <addColumn tableName="request_audit">
+            <column name="aircraft_family_id" type="bigint"/>
+        </addColumn>
+        <addColumn tableName="request_audit">
+            <column name="aircraft_type_id" type="bigint"/>
+        </addColumn>
+        <addColumn tableName="request_audit">
+            <column name="aircraft_version_id" type="bigint"/>
+        </addColumn>
+    </changeSet>
+</databaseChangeLog>

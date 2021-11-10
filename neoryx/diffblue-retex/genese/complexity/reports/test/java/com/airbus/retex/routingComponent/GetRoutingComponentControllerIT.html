@@ -1,0 +1,1052 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Genese complexity report</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./../../../../../../reports-styles/prism.css" />
+    <link rel="stylesheet" href="./../../../../../../reports-styles/prettify.css" />
+    <link rel="stylesheet" href="./../../../../../../reports-styles/report.css" />
+    <link rel="stylesheet" href="./../../../../../../reports-styles/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<div class="header">
+    <div class="header-left">
+        <div>
+            <h1>Genese complexity report</h1>
+        </div>
+        <div class="pad1y">
+                <span class="backLink" onclick="history.back()"><-</span>
+                    GetRoutingComponentControllerIT.java
+        </div>
+        <div class="clearfix">
+            <div class='fl pad1y space-right2'>
+                <span>Methods : </span>
+                <span class="strong">11</span>
+            </div>
+        </div>
+    </div>
+    <div class="header-right">
+        <div class="clearfix padly">
+            <div class='fl pad1y space-right2'>
+                <span>Complexity index : </span>
+                <span class="strong">237.5</span>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class='fl pad1y space-right2'>
+                <span>Cyclomatic complexity :</span>
+                <span class="strong">11</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--        -------------------------------------------------------------------------------------->
+<!--        -----------------------------------   Stats and charts   ----------------------------->
+<!--        -------------------------------------------------------------------------------------->
+
+
+<div class="mainContainer">
+    <div class="stats-and-charts">
+
+        <!--        -----------------------------------   Cognitive complexity   ---------------------------->
+
+        <div class="stats-cognitive">
+            <div class="stats-and-doughnut stats-and-doughnut-cognitive">
+                <div class="doughnut">
+                    <canvas id="doughnut-cognitive-cpx" height="220"></canvas>
+                </div>
+                <div class="stats">
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">Cognitive complexity</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">18.2 %</span>
+                            <span class="quiet"> Correct</span>
+                            <span
+                                    class='fraction'>2/11</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">54.5 %</span>
+                            <span class="quiet"> Warning</span>
+                            <span
+                                    class='fraction'>6/11</span>
+                            <span class="quiet">(threshold : 10)</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">27.3 %</span>
+                            <span class="quiet"> Error</span>
+                            <span
+                                    class='fraction'>3/11</span>
+                            <span class="quiet">(threshold : 20)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bar bar-cognitive">
+                <canvas id="bar-cognitive-cpx" class="cognitive-charts"></canvas>
+            </div>
+        </div>
+
+        <!--        -----------------------------------   Cyclomatic complexity   ---------------------------->
+
+        <div class="stats-cyclomatic">
+            <div class="stats-and-doughnut-cyclomatic">
+                <div class="doughnut">
+                    <canvas id="doughnut-cyclomatic-cpx" height="220"></canvas>
+                </div>
+                <div class="stats-cy">
+                    <div class="clearfix cyclomatic-subtitle">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">Cyclomatic complexity</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">100 %</span>
+                            <span class="quiet"> Correct</span>
+                            <span
+                                    class='fraction'>11/11</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">0 %</span>
+                            <span class="quiet"> Warning</span>
+                            <span
+                                    class='fraction'>0/11</span>
+                            <span class="quiet">(threshold : 5)</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">0 %</span>
+                            <span class="quiet"> Error</span>
+                            <span
+                                    class='fraction'>0/11</span>
+                            <span class="quiet">(threshold : 10)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bar bar-cyclomatic">
+                <canvas id="bar-cyclomatic-cpx" class="cyclomatic-charts"></canvas>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!--        -------------------------------------------------------------------------------------->
+    <!--        -----------------------------------   Methods arrays   ------------------------------->
+    <!--        -------------------------------------------------------------------------------------->
+
+
+    <div idclass="subfolders">
+        <div class="clearfix file-methods-subtitle">
+            <div class='fl pad1y space-right2'>
+                <span class="strong">Methods of <span class="italic">GetRoutingComponentControllerIT.java</span></span>
+            </div>
+        </div>
+
+            <div id="before">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">before</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgerror">68.8</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @BeforeEach
+                public void before() { // -------------------------------------------------------------------------------------------------------------------- +0.2 Complexity index (+0.2 atomic)
+                    runInTransaction(() -&gt; { // -------------------------------------------------------------------------------------------------------------- +2.2 Complexity index (+0.2 atomic, +2 structural)
+                        routingComponentVisual &#x3D; dataSetInitializer.createRoutingComponent(); // ------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                        rci_Visual &#x3D; dataSetInitializer.createRoutingComponentIndex(routingComponentVisual.getTechnicalId(), null); // ----------------------- +2.6 Complexity index (+0.6 atomic, +2 structural)
+            
+                        routingComponentTriDimensional &#x3D; dataSetInitializer.createRoutingComponent(rc -&gt; { // ------------------------------------------------ +3.6 Complexity index (+0.6 atomic, +1 nesting, +2 structural)
+                            rc.setOperationType(dataset.operationType_tridimensional); // -------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                            rc.setFunctionality(dataset.functionality_grooves); // --------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                            rc.setInspection(dataset.inspection_external); // -------------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                        });
+                        rci_TriDimensional &#x3D; dataSetInitializer.createRoutingComponentIndex(routingComponentTriDimensional.getTechnicalId(), null); // ------- +2.6 Complexity index (+0.6 atomic, +2 structural)
+            
+                        routingComponentLaboratory &#x3D; dataSetInitializer.createRoutingComponent(rc -&gt; { // ---------------------------------------------------- +3.6 Complexity index (+0.6 atomic, +1 nesting, +2 structural)
+                            rc.setOperationType(dataset.operationType_laboratory); // ------------------------------------------------------------------------ +1.4 Complexity index (+0.4 atomic, +1 structural)
+                            rc.setFunctionality(dataset.functionality_splines); // --------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                            rc.setInspection(dataset.inspection_internal); // -------------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                        });
+                        rci_Laboratory &#x3D; dataSetInitializer.createRoutingComponentIndex(routingComponentLaboratory.getTechnicalId(), null); // --------------- +2.6 Complexity index (+0.6 atomic, +2 structural)
+            
+                        routingComponentDimensional &#x3D; dataSetInitializer.createRoutingComponent(rc -&gt; { // --------------------------------------------------- +3.6 Complexity index (+0.6 atomic, +1 nesting, +2 structural)
+                            rc.setOperationType(dataset.operationType_dimensional); // ----------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                            rc.setFunctionality(dataset.functionality_splines); // --------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                            rc.setInspection(dataset.inspection_external); // -------------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                        });
+                        rci_Dimensional &#x3D; dataSetInitializer.createRoutingComponentIndex(routingComponentDimensional.getTechnicalId(), null); // ------------- +2.6 Complexity index (+0.6 atomic, +2 structural)
+            
+                        routingComponentUndefined &#x3D; dataSetInitializer.createRoutingComponent(routingComponent -&gt; { // --------------------------------------- +3.6 Complexity index (+0.6 atomic, +1 nesting, +2 structural)
+                            routingComponent.setDamageId(null); // ------------------------------------------------------------------------------------------- +1.2 Complexity index (+0.2 atomic, +1 structural)
+                            routingComponent.setOperationType(dataset.operationType_generic_undefined); // --------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                            routingComponent.setFunctionality(null); // -------------------------------------------------------------------------------------- +1.2 Complexity index (+0.2 atomic, +1 structural)
+                            routingComponent.setInspection(dataset.inspection_generic); // ------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+            
+                        });
+                        rci_Undefined &#x3D; dataSetInitializer.createRoutingComponentIndex(routingComponentUndefined.getTechnicalId(), null); // ----------------- +2.6 Complexity index (+0.6 atomic, +2 structural)
+            
+                        todoListPreliminary &#x3D; dataSetInitializer.createTodoList(todoList -&gt; { // ------------------------------------------------------------- +3.6 Complexity index (+0.6 atomic, +1 nesting, +2 structural)
+                            todoList.setOperationType(dataset.operationType_preliminary); // ----------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                            todoList.setInspection(dataset.inspection_generic); // --------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                        });
+                        rci_Preliminary &#x3D; dataSetInitializer.createRoutingComponentIndex(null, todoListPreliminary.getTechnicalId()); // --------------------- +2.6 Complexity index (+0.6 atomic, +2 structural)
+            
+                        todoListClosure &#x3D; dataSetInitializer.createTodoList(todoList -&gt; { // ----------------------------------------------------------------- +3.6 Complexity index (+0.6 atomic, +1 nesting, +2 structural)
+                            todoList.setOperationType(dataset.operationType_closure); // --------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                            todoList.setInspection(dataset.inspection_generic); // --------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                        });
+                        rci_Closure &#x3D; dataSetInitializer.createRoutingComponentIndex(null, todoListClosure.getTechnicalId()); // ----------------------------- +2.6 Complexity index (+0.6 atomic, +2 structural)
+                        dataSetInitializer.createUserFeature(FeatureCode.ROUTING_COMPONENT, dataset.user_simpleUser, EnumRightLevel.WRITE); // --------------- +1.8 Complexity index (+0.8 atomic, +1 structural)
+                    });
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="checkGetRC">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">checkGetRC</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgerror">40</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                private ResultActions checkGetRC(OperationType operationType, String operationTypeName, String inspectionValue, Long taskId, Long subTaskId, String status, String informationsEN, String informationsFR) throws Exception { // ------ +1.9 Complexity index (+1.9 atomic)
+                    return abstractCheck() // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- +1.2 Complexity index (+0.2 atomic, +1 structural)
+                            .andExpect(jsonPath(&quot;$&quot;).isMap()) // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.operationType&quot;).isMap()) // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.operationType.id&quot;).value(operationType.getId())) // ------------------------------------------------------------------------------------------------------------------------------------------------ +4.6 Complexity index (+0.6 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;$.operationType.template&quot;).value(operationType.getTemplate())) // ------------------------------------------------------------------------------------------------------------------------------------ +4.6 Complexity index (+0.6 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;$.operationType.name&quot;).value(operationTypeName)) // -------------------------------------------------------------------------------------------------------------------------------------------------- +3.5 Complexity index (+0.5 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.inspectionValue&quot;).value(inspectionValue)) // ------------------------------------------------------------------------------------------------------------------------------------------------------- +3.5 Complexity index (+0.5 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.creationDate&quot;, notNullValue())) // ----------------------------------------------------------------------------------------------------------------------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.taskId&quot;).value(taskId)) // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- +3.5 Complexity index (+0.5 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.subTaskId&quot;).value(subTaskId)) // ------------------------------------------------------------------------------------------------------------------------------------------------------------------- +3.5 Complexity index (+0.5 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.status&quot;).value(status)); // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ +3.5 Complexity index (+0.5 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getRoutingComponent_Forbidden">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getRoutingComponent_Forbidden</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">4.8</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getRoutingComponent_Forbidden() throws Exception { // ----------------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_simpleUser2; // ----------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    withRequest &#x3D; get(API_ROUTING_COMPONENT, rci_Visual.getNaturalId()); // ------- +2.6 Complexity index (+0.6 atomic, +2 structural)
+                    expectedStatus &#x3D; HttpStatus.FORBIDDEN; // ------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    abstractCheck(); // ----------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getRoutingComponent_BadRequest">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getRoutingComponent_BadRequest</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">7.2</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getRoutingComponent_BadRequest() throws Exception { // ---------------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_simpleUser; // ------------------------------------------------------------------ +0.4 Complexity index (+0.4 atomic)
+                    withRequest &#x3D; get(API_ROUTING_COMPONENT, 0); // ------------------------------------------------------- +1.5 Complexity index (+0.5 atomic, +1 structural)
+                    expectedStatus &#x3D; HttpStatus.BAD_REQUEST; // ----------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    abstractCheck().andExpect(jsonPath(&quot;$.messages&quot;).value(&quot;The Routing Component not exists&quot;)); // ------- +4.6 Complexity index (+0.6 atomic, +4 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getRoutingComponent_Visual_OK">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getRoutingComponent_Visual_OK</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">14.5</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getRoutingComponent_Visual_OK() throws Exception { // -------------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_simpleUser; // --------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    routingComponentVisual.setOperationType(dataset.operationType_visual); // -------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                    withRequest &#x3D; get(API_ROUTING_COMPONENT, rci_Visual.getNaturalId()); // ---------------------------- +2.6 Complexity index (+0.6 atomic, +2 structural)
+                    expectedStatus &#x3D; HttpStatus.OK; // ----------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    checkGetRC(dataset.operationType_visual, // -------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            OPERATION_VISUAL_NAME, // ------------------------------------------------------------------ +0.1 Complexity index (+0.1 atomic)
+                            dataset.inspection_internal.getValue(), // ------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            dataset.functionality_bearingRaces.getId(), // --------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            dataset.damage_corrosion.getTechnicalId(), // ---------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            EnumStatus.VALIDATED.toString(), // -------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            &quot;Routing Component informations number &quot; + routingComponentVisual.getNaturalId(), // ------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                            &quot;Composant gamme informations numéro &quot; + routingComponentVisual.getNaturalId()); // -------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getRoutingComponent_Dimensional_OK">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getRoutingComponent_Dimensional_OK</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">13.1</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getRoutingComponent_Dimensional_OK() throws Exception { // -------------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_simpleUser; // -------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    withRequest &#x3D; get(API_ROUTING_COMPONENT, rci_Dimensional.getNaturalId()); // ---------------------------- +2.6 Complexity index (+0.6 atomic, +2 structural)
+                    expectedStatus &#x3D; HttpStatus.OK; // ---------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    checkGetRC(dataset.operationType_dimensional, // -------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            OPERATION_DIMENSIONAL_NAME, // ------------------------------------------------------------------ +0.1 Complexity index (+0.1 atomic)
+                            dataset.inspection_external.getValue(), // ------------------------------------------------------ +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            dataset.functionality_splines.getId(), // ------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            dataset.damage_corrosion.getTechnicalId(), // --------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            EnumStatus.VALIDATED.toString(), // ------------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            &quot;Routing Component informations number &quot; + routingComponentDimensional.getNaturalId(), // ------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                            &quot;Composant gamme informations numéro &quot; + routingComponentDimensional.getNaturalId()); // -------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getRoutingComponent_TriDimensional_OK">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getRoutingComponent_TriDimensional_OK</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">13.1</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getRoutingComponent_TriDimensional_OK() throws Exception { // -------------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_simpleUser; // ----------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    withRequest &#x3D; get(API_ROUTING_COMPONENT, rci_TriDimensional.getNaturalId()); // ---------------------------- +2.6 Complexity index (+0.6 atomic, +2 structural)
+                    expectedStatus &#x3D; HttpStatus.OK; // ------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    checkGetRC(dataset.operationType_tridimensional, // -------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            OPERATION_TRIDIMENSIONAL_NAME, // ------------------------------------------------------------------ +0.1 Complexity index (+0.1 atomic)
+                            dataset.inspection_external.getValue(), // --------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            dataset.functionality_grooves.getId(), // ---------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            dataset.damage_corrosion.getTechnicalId(), // ------------------------------------------------------ +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            EnumStatus.VALIDATED.toString(), // ---------------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            &quot;Routing Component informations number &quot; + routingComponentTriDimensional.getNaturalId(), // ------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                            &quot;Composant gamme informations numéro &quot; + routingComponentTriDimensional.getNaturalId()); // -------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getRoutingComponent_Laboratory_OK">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getRoutingComponent_Laboratory_OK</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">13.1</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getRoutingComponent_Laboratory_OK() throws Exception { // -------------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_simpleUser; // ------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    withRequest &#x3D; get(API_ROUTING_COMPONENT, rci_Laboratory.getNaturalId()); // ---------------------------- +2.6 Complexity index (+0.6 atomic, +2 structural)
+                    expectedStatus &#x3D; HttpStatus.OK; // --------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    checkGetRC(dataset.operationType_laboratory, // -------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            OPERATION_LABORATORY_NAME, // ------------------------------------------------------------------ +0.1 Complexity index (+0.1 atomic)
+                            dataset.inspection_internal.getValue(), // ----------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            dataset.functionality_splines.getId(), // ------------------------------------------------------ +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            dataset.damage_corrosion.getTechnicalId(), // -------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            EnumStatus.VALIDATED.toString(), // ------------------------------------------------------------ +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            &quot;Routing Component informations number &quot; + routingComponentLaboratory.getNaturalId(), // ------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                            &quot;Composant gamme informations numéro &quot; + routingComponentLaboratory.getNaturalId()); // -------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getRoutingComponent_Generic_OK">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getRoutingComponent_Generic_OK</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgerror">39.3</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getRoutingComponent_Generic_OK() throws Exception { // ----------------------------------------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_simpleUser; // ------------------------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    withRequest &#x3D; get(API_ROUTING_COMPONENT, rci_Undefined.getNaturalId()); // ----------------------------------------------------- +2.6 Complexity index (+0.6 atomic, +2 structural)
+                    expectedStatus &#x3D; HttpStatus.OK; // --------------------------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    abstractCheck() // ------------------------------------------------------------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                            .andExpect(jsonPath(&quot;$&quot;).isMap()) // ----------------------------------------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.operationType&quot;).isMap()) // --------------------------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.operationType.id&quot;).value(dataset.operationType_generic_undefined.getId())) // ------------------- +4.7 Complexity index (+0.7 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;$.operationType.template&quot;).value(dataset.operationType_generic_undefined.getTemplate())) // ------- +4.7 Complexity index (+0.7 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;$.inspectionValue&quot;, nullValue())) // -------------------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.creationDate&quot;, notNullValue())) // -------------------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.taskId&quot;, nullValue())) // ----------------------------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.subTaskId&quot;, nullValue())) // -------------------------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.status&quot;).value(EnumStatus.VALIDATED.toString())); // -------------------------------------------- +4.7 Complexity index (+0.7 atomic, +4 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getTodoList_Closure_OK">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getTodoList_Closure_OK</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">11.8</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getTodoList_Closure_OK() throws Exception { // ------------------------------ +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_simpleUser; // ------------------------------------------------ +0.4 Complexity index (+0.4 atomic)
+                    withRequest &#x3D; get(API_ROUTING_COMPONENT, rci_Closure.getNaturalId()); // ------------ +2.6 Complexity index (+0.6 atomic, +2 structural)
+                    expectedStatus &#x3D; HttpStatus.OK; // -------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    checkGetRC(dataset.operationType_closure, // ---------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            OPERATION_CLOSURE_NAME, // -------------------------------------------------- +0.1 Complexity index (+0.1 atomic)
+                            dataset.inspection_generic.getValue(), // ----------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            dataset.todoListName_1.getId(), // ------------------------------------------ +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            null,
+                            EnumStatus.VALIDATED.toString(), // ----------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            &quot;TodoList informations number &quot; + todoListClosure.getNaturalId(), // -------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                            &quot;TodoList informations numéro &quot; + todoListClosure.getNaturalId()); // ------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getTodoList_Preliminary_OK">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getTodoList_Preliminary_OK</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">11.8</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getTodoList_Preliminary_OK() throws Exception { // ------------------------------ +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_simpleUser; // ---------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    withRequest &#x3D; get(API_ROUTING_COMPONENT, rci_Preliminary.getNaturalId()); // ------------ +2.6 Complexity index (+0.6 atomic, +2 structural)
+                    expectedStatus &#x3D; HttpStatus.OK; // ------------------------------------------------------ +0.4 Complexity index (+0.4 atomic)
+                    checkGetRC(dataset.operationType_preliminary, // ---------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            OPERATION_PRELIMINARY_NAME, // -------------------------------------------------- +0.1 Complexity index (+0.1 atomic)
+                            dataset.inspection_generic.getValue(), // --------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            dataset.todoListName_1.getId(), // ---------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            null,
+                            EnumStatus.VALIDATED.toString(), // --------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            &quot;TodoList informations number &quot; + todoListPreliminary.getNaturalId(), // -------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                            &quot;TodoList informations numéro &quot; + todoListPreliminary.getNaturalId()); // ------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+    </div>
+
+</div>
+
+
+<!--        -------------------------------------------------------------------------------------->
+<!--        -----------------------------------   Scripts   -------------------------------------->
+<!--        -------------------------------------------------------------------------------------->
+
+
+
+<script src="././../../../../../../reports-styles/Chart.js"></script>
+<script src="./../../../../../../reports-styles/prism.js"></script>
+
+<script>
+    var ctxDougnutCognitive = document.getElementById('doughnut-cognitive-cpx').getContext("2d");
+    var doughnutCognitive = new Chart(ctxDougnutCognitive, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [
+                    2,
+                    6,
+                    3,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                        '#ffa31a',
+                        '#ff3300',
+                ]
+            }],
+            labels: [
+                'correct methods ',
+                'warning methods ',
+                'error methods ',
+            ]
+        },
+        options: {
+            layout: {
+                padding: {
+                    maintainAspectRatio: false,
+                    responsive: false,
+                    left: 50,
+                    right: 0,
+                    top: 0,
+                    bottom: 0
+                }
+            },
+            legend: {
+                display: false
+            },
+            position: 'left',
+            title: {
+                display: true,
+                text: 'Cognitive complexity'
+            }
+        }
+    });
+</script>
+<script>
+    var ctxBarCognitive = document.getElementById('bar-cognitive-cpx').getContext("2d");
+    var barCognitive = new Chart(ctxBarCognitive, {
+        type: 'bar',
+        data: {
+            labels: [
+                    '0',
+                    '1',
+                    '2',
+                    '3',
+                    '4',
+                    '5',
+                    '6',
+                    '7',
+                    '8',
+                    '9',
+                    '10',
+                    '11',
+                    '12',
+                    '13',
+                    '14',
+                    '15',
+                    '16',
+                    '17',
+                    '18',
+                    '19',
+                    '20',
+                    '21',
+                    '22',
+                    '23',
+                    '24',
+                    '25',
+                    '26',
+                    '27',
+                    '28',
+                    '29',
+                    '30',
+                    '31',
+                    '32',
+                    '33',
+                    '34',
+                    '35',
+                    '36',
+                    '37',
+                    '38',
+                    '39',
+                    '40',
+                    '41',
+                    '42',
+                    '43',
+                    '44',
+                    '45',
+                    '46',
+                    '47',
+                    '48',
+                    '49',
+                    '50',
+                    '51',
+                    '52',
+                    '53',
+                    '54',
+                    '55',
+                    '56',
+                    '57',
+                    '58',
+                    '59',
+                    '60',
+                    '61',
+                    '62',
+                    '63',
+                    '64',
+                    '65',
+                    '66',
+                    '67',
+                    '68',
+                    '69',
+            ],
+            datasets: [{
+                data: [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        2,
+                        3,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                ],
+            }]
+        },
+        options: {
+            legend: {
+                display: false
+            },
+            scales: {
+                xAxes: [{
+                    gridLines: {
+                        display: false
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Cognitive complexity'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }],
+                yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Number of methods'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }]
+            }
+        }
+    });
+</script>
+<script>
+    var ctxDougnutCyclomatic = document.getElementById('doughnut-cyclomatic-cpx').getContext("2d");
+    var doughnutCyclomatic = new Chart(ctxDougnutCyclomatic, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [
+                    11,
+                    0,
+                    0,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                        '#ffa31a',
+                        '#ff3300',
+                ]
+            }],
+            labels: [
+                'correct methods ',
+                'warning methods ',
+                'error methods ',
+            ]
+        },
+        options: {
+            layout: {
+                padding: {
+                    maintainAspectRatio: false,
+                    responsive: false,
+                    left: 50,
+                    right: 0,
+                    top: 0,
+                    bottom: 0
+                }
+            },
+            legend: {
+                display: false
+            },
+            position: 'left',
+            title: {
+                display: true,
+                text: 'Cyclomatic complexity'
+            }
+        }
+    });
+</script>
+<script>
+    var ctxBarCyclomatic = document.getElementById('bar-cyclomatic-cpx').getContext("2d");
+    var barCyclomatic = new Chart(ctxBarCyclomatic, {
+        type: 'bar',
+        data: {
+            labels: [
+                    1,
+            ],
+            datasets: [{
+                data: [
+                        11,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                ],
+            }]
+        },
+        options: {
+            legend: {
+                display: false
+            },
+            title: {
+                display: false,
+                text: 'Cyclomatic complexity',
+                position: 'top'
+            },
+            scales: {
+                xAxes: [{
+                    gridLines: {
+                        display: false
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Cyclomatic complexity'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }],
+                yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Number of methods'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }]
+            }
+        }
+    });
+</script>
+
+</body>
+
+</html>

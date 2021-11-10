@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="create_media_tmp" author="0.7.0">
+        <!--**************** MEDIA_TMP TABLE **************** -->
+        <createTable tableName="media_tmp">
+            <column name="uuid" type="uuid" autoIncrement="false">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="file_name" type="varchar(255)"/>
+            <column name="created_at" type="DATETIME">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <!--**************** MEDIA_TMP TABLE **************** -->
+        <createTable tableName="media_tmp_audit">
+            <column name="uuid" type="uuid">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="file_name" type="varchar(255)"/>
+            <column name="created_at" type="DATETIME"/>
+            <column name="revision_id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

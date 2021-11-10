@@ -1,0 +1,11 @@
+<div class="method-container">
+    <p class="title">getOne(id?: string): Observable< T ></p>
+    <p>getOne() method is used to get a T object in database with a GET http request</p>
+    <p>This method needs that your app respects the Genese standards :</p>
+    <p>* You must add a genese param to your model like this :</p>
+    <pre>{{model | json}}</pre>
+    <p>* The endpoint must wait a GET method.</p>
+    <p>* The api path must respect the REST api standards for a GET method (example : http://my-path/book/id)</p>
+    <p>In this example, the getOne() method gets the book with the id 1 from the NestJS backend.</p>
+    <p>Open your navigator console. In the tab "Network", you'll find the data received from GET request. In the tab "Console", you'll can compare these original data with the formatted objects sent as Observable by Genese. As you can see, Genese formatted the returned object with "Book" type.</p>
+</div>

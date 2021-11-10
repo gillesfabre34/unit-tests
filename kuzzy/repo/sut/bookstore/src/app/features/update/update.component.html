@@ -1,0 +1,14 @@
+<div class="method-container">
+    <p class="title">update(id: string, updatedObject: T, options?: RequestOptions): Observable< T | any ></p>
+    <p>update() method is used to update a T object in database with a PUT http request and returns the updated object formatted with T type.</p>
+    <p>update() method needs that your app respects the Genese standards :</p>
+    <p>* You must add a genese param to your model like this :</p>
+    <pre>{{model | json}}</pre>
+    <p>* The endpoint must wait a PUT method.</p>
+    <p>* The api path must respect the REST api standards for a PUT method (example : http://my-path/book/id)</p>
+    <p>In this example, the update() method removes a book with the help of the NestJS backend.</p>
+    <p>Open your navigator console. In the tab "Network", you'll find the data received from PUT request.</p>
+    <div class="dataList">
+        <app-data-list [data]="data" (update)="update($event)"></app-data-list>
+    </div>
+</div>

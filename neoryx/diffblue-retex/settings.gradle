@@ -1,0 +1,5 @@
+rootProject.name = 'airbus-retex-back'
+include 'retex-controller'
+include 'retex-business'
+include 'retex-model'
+include 'retex-impl'

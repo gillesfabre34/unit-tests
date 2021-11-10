@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <include file="mission_type.xml" relativeToChangelogFile="true"/>
+
+    <include file="environment.xml" relativeToChangelogFile="true"/>
+
+    <include file="client.xml" relativeToChangelogFile="true"/>
+
+    <include file="origin.xml" relativeToChangelogFile="true"/>
+
+    <include file="request.xml" relativeToChangelogFile="true"/>
+
+    <include file="request_client.xml" relativeToChangelogFile="true"/>
+
+    <include file="request_operator.xml" relativeToChangelogFile="true"/>
+
+    <include file="request_technical_responsible.xml" relativeToChangelogFile="true"/>
+
+    <include file="media_tmp.xml" relativeToChangelogFile="true"/>
+
+    <include file="insert_roles.xml" relativeToChangelogFile="true"/>
+
+    <include file="step.xml" relativeToChangelogFile="true"/>
+
+    <include file="post.xml" relativeToChangelogFile="true"/>
+
+    <include file="step_activation.xml" relativeToChangelogFile="true"/>
+
+    <include file="routing_functional_area_post.xml" relativeToChangelogFile="true"/>
+
+    <include file="step_media.xml" relativeToChangelogFile="true"/>
+
+    <include file="create_sequence.xml" relativeToChangelogFile="true"/>
+
+    <include file="part_mpn.xml" relativeToChangelogFile="true"/>
+
+
+</databaseChangeLog>

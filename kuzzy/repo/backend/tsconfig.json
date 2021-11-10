@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": "./",
+        "declaration": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noImplicitAny": false,
+        "noLib": false,
+        "outDir": "./dist",
+        "removeComments": true,
+        "sourceMap": true,
+        "target": "es2018",
+        "lib": [
+            "es2018",
+            "dom"
+        ]
+    },
+    "include": [
+        "backend/src/**/*",
+      "../launch-capture.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
+}

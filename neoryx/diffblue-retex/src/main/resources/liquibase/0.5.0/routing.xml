@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="create_routing" author="0.5.0">
+        <createTable tableName="routing" >
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="creator_id" type="bigint">
+                <constraints nullable="false" referencedTableName="user" referencedColumnNames="id"
+                             foreignKeyName="fk_routing_user_id"/>
+            </column>
+            <column name="part_id" type="bigint">
+                <constraints nullable="false" referencedTableName="part" referencedColumnNames="id"
+                             foreignKeyName="fk_routing_part_id"/>
+            </column>
+            <column name="status" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="creation_date" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="version" type="integer">
+                <constraints nullable="false"/>
+            </column>
+            <column name="maj_date" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="natural_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="is_latest_version" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <!-- ********************* TABLE ROUTING  *************** -->
+        <createTable tableName="routing_audit" >
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint"/>
+            <column name="creator_id" type="bigint"/>
+            <column name="part_id" type="bigint"/>
+            <column name="status" type="varchar(50)"/>
+            <column name="creation_date" type="timestamp"/>
+            <column name="version" type="integer"/>
+            <column name="maj_date" type="timestamp"/>
+            <column name="natural_id" type="bigint"/>
+            <column name="is_latest_version" type="boolean"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

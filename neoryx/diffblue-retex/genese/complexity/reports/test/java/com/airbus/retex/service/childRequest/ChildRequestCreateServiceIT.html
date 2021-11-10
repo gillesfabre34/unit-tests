@@ -1,0 +1,1393 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Genese complexity report</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./../../../../../../../reports-styles/prism.css" />
+    <link rel="stylesheet" href="./../../../../../../../reports-styles/prettify.css" />
+    <link rel="stylesheet" href="./../../../../../../../reports-styles/report.css" />
+    <link rel="stylesheet" href="./../../../../../../../reports-styles/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<div class="header">
+    <div class="header-left">
+        <div>
+            <h1>Genese complexity report</h1>
+        </div>
+        <div class="pad1y">
+                <span class="backLink" onclick="history.back()"><-</span>
+                    ChildRequestCreateServiceIT.java
+        </div>
+        <div class="clearfix">
+            <div class='fl pad1y space-right2'>
+                <span>Methods : </span>
+                <span class="strong">18</span>
+            </div>
+        </div>
+    </div>
+    <div class="header-right">
+        <div class="clearfix padly">
+            <div class='fl pad1y space-right2'>
+                <span>Complexity index : </span>
+                <span class="strong">364.9</span>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class='fl pad1y space-right2'>
+                <span>Cyclomatic complexity :</span>
+                <span class="strong">19</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--        -------------------------------------------------------------------------------------->
+<!--        -----------------------------------   Stats and charts   ----------------------------->
+<!--        -------------------------------------------------------------------------------------->
+
+
+<div class="mainContainer">
+    <div class="stats-and-charts">
+
+        <!--        -----------------------------------   Cognitive complexity   ---------------------------->
+
+        <div class="stats-cognitive">
+            <div class="stats-and-doughnut stats-and-doughnut-cognitive">
+                <div class="doughnut">
+                    <canvas id="doughnut-cognitive-cpx" height="220"></canvas>
+                </div>
+                <div class="stats">
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">Cognitive complexity</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">33.3 %</span>
+                            <span class="quiet"> Correct</span>
+                            <span
+                                    class='fraction'>6/18</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">44.4 %</span>
+                            <span class="quiet"> Warning</span>
+                            <span
+                                    class='fraction'>8/18</span>
+                            <span class="quiet">(threshold : 10)</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">22.2 %</span>
+                            <span class="quiet"> Error</span>
+                            <span
+                                    class='fraction'>4/18</span>
+                            <span class="quiet">(threshold : 20)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bar bar-cognitive">
+                <canvas id="bar-cognitive-cpx" class="cognitive-charts"></canvas>
+            </div>
+        </div>
+
+        <!--        -----------------------------------   Cyclomatic complexity   ---------------------------->
+
+        <div class="stats-cyclomatic">
+            <div class="stats-and-doughnut-cyclomatic">
+                <div class="doughnut">
+                    <canvas id="doughnut-cyclomatic-cpx" height="220"></canvas>
+                </div>
+                <div class="stats-cy">
+                    <div class="clearfix cyclomatic-subtitle">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">Cyclomatic complexity</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">100 %</span>
+                            <span class="quiet"> Correct</span>
+                            <span
+                                    class='fraction'>18/18</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">0 %</span>
+                            <span class="quiet"> Warning</span>
+                            <span
+                                    class='fraction'>0/18</span>
+                            <span class="quiet">(threshold : 5)</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">0 %</span>
+                            <span class="quiet"> Error</span>
+                            <span
+                                    class='fraction'>0/18</span>
+                            <span class="quiet">(threshold : 10)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bar bar-cyclomatic">
+                <canvas id="bar-cyclomatic-cpx" class="cyclomatic-charts"></canvas>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!--        -------------------------------------------------------------------------------------->
+    <!--        -----------------------------------   Methods arrays   ------------------------------->
+    <!--        -------------------------------------------------------------------------------------->
+
+
+    <div idclass="subfolders">
+        <div class="clearfix file-methods-subtitle">
+            <div class='fl pad1y space-right2'>
+                <span class="strong">Methods of <span class="italic">ChildRequestCreateServiceIT.java</span></span>
+            </div>
+        </div>
+
+            <div id="before">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">before</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgerror">51.5</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @BeforeEach
+                public void before() { // ---------------------------------------------------------------------------------------------------------------------- +0.2 Complexity index (+0.2 atomic)
+                    runInTransaction(() -&gt; { // ---------------------------------------------------------------------------------------------------------------- +2.2 Complexity index (+0.2 atomic, +2 structural)
+                        part &#x3D; dataSetInitializer.createPart(null); // ----------------------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                        routing &#x3D; dataSetInitializer.createRouting(r -&gt; r.setStatus(EnumStatus.VALIDATED), part); // ------------------------------------------- +5.1 Complexity index (+1.1 atomic, +1 nesting, +3 structural)
+                        request &#x3D; dataSetInitializer.createRequest(&quot;request parent&quot;, request1 -&gt; request1.getAta().setCode(part.getAta().getCode())); // ------- +8.3 Complexity index (+1.3 atomic, +1 nesting, +6 structural)
+            
+            
+                        childRequestCreationDto &#x3D; new ChildRequestDetailDto(); // ------------------------------------------------------------------------------ +0.4 Complexity index (+0.4 atomic)
+                        childRequestCreationDto.setAircraftFamilyId(dataset.aircraft_family_1.getId()); // ----------------------------------------------------- +2.5 Complexity index (+0.5 atomic, +2 structural)
+                        childRequestCreationDto.setMissionTypeId(request.getMissionType().getId()); // --------------------------------------------------------- +3.5 Complexity index (+0.5 atomic, +3 structural)
+                        childRequestCreationDto.setAircraftTypeIds(List.of(dataset.aircraft_type_1.getId())); // ----------------------------------------------- +3.7 Complexity index (+0.7 atomic, +3 structural)
+                        childRequestCreationDto.setAircraftVersionIds(List.of(dataset.aircraft_version_1.getId())); // ----------------------------------------- +3.7 Complexity index (+0.7 atomic, +3 structural)
+                        childRequestCreationDto.setClientIds(List.of(dataset.client_1.getId())); // ------------------------------------------------------------ +3.7 Complexity index (+0.7 atomic, +3 structural)
+                        childRequestCreationDto.setDrtToInspect(DRT_NUMBER); // -------------------------------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                        childRequestCreationDto.setEnvironmentId(dataset.environment_1.getId()); // ------------------------------------------------------------ +2.5 Complexity index (+0.5 atomic, +2 structural)
+                        childRequestCreationDto.setMedias(List.of(dataset.mediaTmp_1.getUuid())); // ----------------------------------------------------------- +3.7 Complexity index (+0.7 atomic, +3 structural)
+                        childRequestCreationDto.setPartId(part.getNaturalId()); // ----------------------------------------------------------------------------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                        childRequestCreationDto.setSerialNumbers(List.of(SERIAL_NUMBER)); // ------------------------------------------------------------------- +2.5 Complexity index (+0.5 atomic, +2 structural)
+                        childRequestCreationDto.setStatus(EnumStatus.VALIDATED); // ---------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+            
+                        multiAircraftTestFamily &#x3D; null; // ----------------------------------------------------------------------------------------------------- +0.2 Complexity index (+0.2 atomic)
+                        multiAircraftTestTypes &#x3D; List.of(); // ------------------------------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                        multiAircraftTestVersions &#x3D; List.of(); // ---------------------------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                    });
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="createChildRequest_ok">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">createChildRequest_ok</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgerror">97.1</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void createChildRequest_ok() throws FunctionalException { // --------------------------------------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    childRequestService.createChildRequest(request.getId(), childRequestCreationDto); // ------------------------------------------ +2.5 Complexity index (+0.5 atomic, +2 structural)
+                    childRequest &#x3D; childRequestRepository.findByRoutingNaturalId(routing.getNaturalId()).get(); // -------------------------------- +3.7 Complexity index (+0.7 atomic, +3 structural)
+                    assertThat(childRequest.getId(), notNullValue()); // -------------------------------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                    assertThat(childRequest.getAircraftFamily().getId(), equalTo(dataset.aircraft_family_1.getId())); // -------------------------- +5.8 Complexity index (+0.8 atomic, +5 structural)
+                    assertThat(childRequest.getAircraftVersions().stream().map(AircraftVersion::getId).collect(Collectors.toList()), // ----------- +7.0 Complexity index (+1.0 atomic, +6 structural)
+                            containsInAnyOrder(equalTo(dataset.aircraft_version_1.getId()))); // -------------------------------------------------- +3.5 Complexity index (+0.5 atomic, +3 structural)
+                    assertThat(childRequest.getAircraftTypes().stream().map(AircraftType::getId).collect(Collectors.toList()), // ----------------- +7.0 Complexity index (+1.0 atomic, +6 structural)
+                            containsInAnyOrder(equalTo(dataset.aircraft_type_1.getId()))); // ----------------------------------------------------- +3.5 Complexity index (+0.5 atomic, +3 structural)
+                    assertThat(childRequest.getClients().stream().map(Client::getId).collect(Collectors.toList()), // ----------------------------- +7.0 Complexity index (+1.0 atomic, +6 structural)
+                            containsInAnyOrder(List.of(dataset.client_1.getId()).toArray())); // -------------------------------------------------- +4.7 Complexity index (+0.7 atomic, +4 structural)
+                    assertThat(childRequest.getDrtToInspect().intValue(), equalTo(DRT_NUMBER)); // ------------------------------------------------ +4.6 Complexity index (+0.6 atomic, +4 structural)
+                    assertThat(childRequest.getEnvironment().getId(), equalTo(dataset.environment_1.getId())); // --------------------------------- +5.8 Complexity index (+0.8 atomic, +5 structural)
+                    assertThat(childRequest.getRouting().getPart().getNaturalId(), equalTo(part.getNaturalId())); // ------------------------------ +6.8 Complexity index (+0.8 atomic, +6 structural)
+                    assertThat(childRequest.getParentRequest().getId(), equalTo(request.getId())); // --------------------------------------------- +5.7 Complexity index (+0.7 atomic, +5 structural)
+                    assertThat(childRequest.getPhysicalParts().stream().map(PhysicalPart::getSerialNumber).collect(Collectors.toList()), // ------- +7.0 Complexity index (+1.0 atomic, +6 structural)
+                            containsInAnyOrder(List.of(SERIAL_NUMBER).toArray())); // ------------------------------------------------------------- +3.5 Complexity index (+0.5 atomic, +3 structural)
+                    assertThat(childRequest.getMedias().stream().map(Media::getUuid).collect(Collectors.toList()), // ----------------------------- +7.0 Complexity index (+1.0 atomic, +6 structural)
+                            containsInAnyOrder(List.of(dataset.mediaTmp_1.getUuid()).toArray())); // ---------------------------------------------- +4.7 Complexity index (+0.7 atomic, +4 structural)
+                    assertThat(childRequest.getStatus(), equalTo(EnumStatus.VALIDATED)); // ------------------------------------------------------- +3.6 Complexity index (+0.6 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="createChildRequest_ok_StatusCreated">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">createChildRequest_ok_StatusCreated</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">11.5</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void createChildRequest_ok_StatusCreated() throws FunctionalException { // ------------------------ +0.3 Complexity index (+0.3 atomic)
+                    childRequestCreationDto.setStatus(EnumStatus.CREATED); // -------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                    childRequestService.createChildRequest(request.getId(), childRequestCreationDto); // ----------------- +2.5 Complexity index (+0.5 atomic, +2 structural)
+                    childRequest &#x3D; childRequestRepository.findByRoutingNaturalId(routing.getNaturalId()).get(); // ------- +3.7 Complexity index (+0.7 atomic, +3 structural)
+                    assertThat(childRequest.getStatus(), equalTo(EnumStatus.CREATED)); // -------------------------------- +3.6 Complexity index (+0.6 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="createChildRequest_ko_StatusNotAllowed">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">createChildRequest_ko_StatusNotAllowed</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">2.8</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void createChildRequest_ko_StatusNotAllowed() { // ----------------- +0.2 Complexity index (+0.2 atomic)
+                    childRequestCreationDto.setStatus(EnumStatus.IN_PROGRESS); // --------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                    assertError(&quot;retex.error.child.request.status.not.allowed&quot;); // ------- +1.2 Complexity index (+0.2 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="createChildRequest_ok_ParentCheck">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">createChildRequest_ok_ParentCheck</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">18.7</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void createChildRequest_ok_ParentCheck() throws FunctionalException { // -------------------------- +0.3 Complexity index (+0.3 atomic)
+                    childRequestService.createChildRequest(request.getId(), childRequestCreationDto); // ----------------- +2.5 Complexity index (+0.5 atomic, +2 structural)
+                    childRequest &#x3D; childRequestRepository.findByRoutingNaturalId(routing.getNaturalId()).get(); // ------- +3.7 Complexity index (+0.7 atomic, +3 structural)
+                    List&lt;ChildRequest&gt; childRequests &#x3D; childRequestRepository.findByParentRequest(request); // ----------- +1.7 Complexity index (+0.7 atomic, +1 structural)
+                    assertThat(childRequests.stream().map(ChildRequest::getId).collect(Collectors.toList()), // ---------- +5.9 Complexity index (+0.9 atomic, +5 structural)
+                            containsInAnyOrder(List.of(childRequest.getId()).toArray())); // ----------------------------- +4.6 Complexity index (+0.6 atomic, +4 structural)
+            
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="createChildRequest_ok_multi_aircraft">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">createChildRequest_ok_multi_aircraft</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">10.1</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void createChildRequest_ok_multi_aircraft() { // ----------------- +0.2 Complexity index (+0.2 atomic)
+                    multiAircraftTestFamily &#x3D; dataset.aircraft_set_family_1; // --------- +0.4 Complexity index (+0.4 atomic)
+                    multiAircraftTestTypes &#x3D; List.of( // -------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                            dataset.aircraft_set_family_1_type_1, // -------------------- +0.2 Complexity index (+0.2 atomic)
+                            dataset.aircraft_set_family_1_type_2 // --------------------- +0.2 Complexity index (+0.2 atomic)
+                    );
+                    multiAircraftTestVersions  &#x3D; List.of( // ---------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                            dataset.aircraft_set_family_1_type_1_version_1, // ---------- +0.2 Complexity index (+0.2 atomic)
+                            dataset.aircraft_set_family_1_type_1_version_2, // ---------- +0.2 Complexity index (+0.2 atomic)
+                            dataset.aircraft_set_family_1_type_2_version_1 // ----------- +0.2 Complexity index (+0.2 atomic)
+                    );
+                    prepareRequestForAircraftTest(null, List.of(), List.of()); // ------- +3.5 Complexity index (+0.5 atomic, +3 structural)
+                    prepareChildRequestDtoForAircraftTest(); // ------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                    assertOkMultiAircraft(); // ----------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="createChildRequest_ok_multi_aircraft_equals_parent">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">createChildRequest_ok_multi_aircraft_equals_parent</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">8</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void createChildRequest_ok_multi_aircraft_equals_parent() { // --------------------------------------------------- +0.2 Complexity index (+0.2 atomic)
+                    multiAircraftTestFamily &#x3D; dataset.aircraft_set_family_1; // --------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    multiAircraftTestTypes &#x3D; List.of( // -------------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                            dataset.aircraft_set_family_1_type_1, // -------------------------------------------------------------------- +0.2 Complexity index (+0.2 atomic)
+                            dataset.aircraft_set_family_1_type_2 // --------------------------------------------------------------------- +0.2 Complexity index (+0.2 atomic)
+                    );
+                    multiAircraftTestVersions  &#x3D; List.of( // ---------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                            dataset.aircraft_set_family_1_type_1_version_1, // ---------------------------------------------------------- +0.2 Complexity index (+0.2 atomic)
+                            dataset.aircraft_set_family_1_type_1_version_2, // ---------------------------------------------------------- +0.2 Complexity index (+0.2 atomic)
+                            dataset.aircraft_set_family_1_type_2_version_1 // ----------------------------------------------------------- +0.2 Complexity index (+0.2 atomic)
+                    );
+                    prepareRequestForAircraftTest(multiAircraftTestFamily, multiAircraftTestTypes, multiAircraftTestVersions); // ------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                    prepareChildRequestDtoForAircraftTest(); // ------------------------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                    assertOkMultiAircraft(); // ----------------------------------------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="createChildRequest_ko_multi_aircraft_child_family_empty">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">createChildRequest_ko_multi_aircraft_child_family_empty</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">6.6</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void createChildRequest_ko_multi_aircraft_child_family_empty() { // ------------------------------------- +0.2 Complexity index (+0.2 atomic)
+                    AircraftFamily parentAircraftFamily &#x3D; dataset.aircraft_set_family_1;; // ----------------------------------- +0.5 Complexity index (+0.5 atomic)
+            
+                    prepareRequestForAircraftTest(parentAircraftFamily, List.of(), List.of()); // ------------------------------ +3.6 Complexity index (+0.6 atomic, +3 structural)
+                    prepareChildRequestDtoForAircraftTest(); // ---------------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                    assertError(&quot;retex.error.childrequest.aircraft.family.incompatible.with.parent.aircraft.family&quot;); // ------- +1.2 Complexity index (+0.2 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="createChildRequest_ko_multi_aircraft_child_type_empty">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">createChildRequest_ko_multi_aircraft_child_type_empty</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">7.6</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void createChildRequest_ko_multi_aircraft_child_type_empty() { // ----------------------------------- +0.2 Complexity index (+0.2 atomic)
+                    AircraftFamily parentAircraftFamily &#x3D; dataset.aircraft_set_family_1;; // ------------------------------- +0.5 Complexity index (+0.5 atomic)
+                    List&lt;AircraftType&gt; parentAircraftTypes &#x3D; List.of(dataset.aircraft_set_family_1_type_1); // ------------- +1.8 Complexity index (+0.8 atomic, +1 structural)
+                    multiAircraftTestFamily &#x3D; parentAircraftFamily; // ----------------------------------------------------- +0.3 Complexity index (+0.3 atomic)
+            
+                    prepareRequestForAircraftTest(parentAircraftFamily, parentAircraftTypes, List.of()); // ---------------- +2.5 Complexity index (+0.5 atomic, +2 structural)
+                    prepareChildRequestDtoForAircraftTest(); // ------------------------------------------------------------ +1.1 Complexity index (+0.1 atomic, +1 structural)
+                    assertError(&quot;retex.error.childrequest.aircraft.type.incompatible.with.parent.aircraft.type&quot;); // ------- +1.2 Complexity index (+0.2 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="createChildRequest_ko_multi_aircraft_child_version_empty">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">createChildRequest_ko_multi_aircraft_child_version_empty</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">9.8</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void createChildRequest_ko_multi_aircraft_child_version_empty() { // ------------------------------------------ +0.2 Complexity index (+0.2 atomic)
+                    AircraftFamily parentAircraftFamily &#x3D; dataset.aircraft_set_family_1;; // ----------------------------------------- +0.5 Complexity index (+0.5 atomic)
+                    List&lt;AircraftType&gt; parentAircraftTypes &#x3D; List.of(dataset.aircraft_set_family_1_type_1); // ----------------------- +1.8 Complexity index (+0.8 atomic, +1 structural)
+                    List&lt;AircraftVersion&gt; parentAircraftVersions &#x3D; List.of(dataset.aircraft_set_family_1_type_1_version_1); // ------- +1.8 Complexity index (+0.8 atomic, +1 structural)
+                    multiAircraftTestFamily &#x3D; parentAircraftFamily; // --------------------------------------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    multiAircraftTestTypes &#x3D; List.copyOf(parentAircraftTypes); // ---------------------------------------------------- +1.5 Complexity index (+0.5 atomic, +1 structural)
+            
+                    prepareRequestForAircraftTest(parentAircraftFamily, parentAircraftTypes, parentAircraftVersions); // ------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                    prepareChildRequestDtoForAircraftTest(); // ---------------------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                    assertError(&quot;retex.error.childrequest.aircraft.version.incompatible.with.parent.aircraft.version&quot;); // ----------- +1.2 Complexity index (+0.2 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="createChildRequest_ko_multi_aircraft_incompatible_type">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">createChildRequest_ko_multi_aircraft_incompatible_type</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">10.5</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void createChildRequest_ko_multi_aircraft_incompatible_type() { // ---------------------------------- +0.2 Complexity index (+0.2 atomic)
+                    multiAircraftTestFamily &#x3D; dataset.aircraft_set_family_1; // -------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    multiAircraftTestTypes &#x3D; List.of( // ------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                            dataset.aircraft_set_family_1_type_1, // ------------------------------------------------------- +0.2 Complexity index (+0.2 atomic)
+                            dataset.aircraft_set_family_1_type_2 // -------------------------------------------------------- +0.2 Complexity index (+0.2 atomic)
+                    );
+            
+                    List&lt;AircraftType&gt; parentAircraftTypes &#x3D; new ArrayList&lt;&gt;(multiAircraftTestTypes); // ------------------- +0.7 Complexity index (+0.7 atomic)
+                    assertTrue(parentAircraftTypes.remove(dataset.aircraft_set_family_1_type_2)); // ----------------------- +2.5 Complexity index (+0.5 atomic, +2 structural)
+            
+                    prepareRequestForAircraftTest(dataset.aircraft_set_family_1, parentAircraftTypes, List.of()); // ------- +2.6 Complexity index (+0.6 atomic, +2 structural)
+                    prepareChildRequestDtoForAircraftTest(); // ------------------------------------------------------------ +1.1 Complexity index (+0.1 atomic, +1 structural)
+                    assertError(&quot;retex.error.childrequest.aircraft.type.incompatible.with.parent.aircraft.type&quot;); // ------- +1.2 Complexity index (+0.2 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="createChildRequest_ko_multi_aircraft_incompatible_version">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">createChildRequest_ko_multi_aircraft_incompatible_version</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">11.4</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void createChildRequest_ko_multi_aircraft_incompatible_version() { // ----------------------------------------------- +0.2 Complexity index (+0.2 atomic)
+                    multiAircraftTestFamily &#x3D; dataset.aircraft_set_family_1; // ------------------------------------------------------------ +0.4 Complexity index (+0.4 atomic)
+                    multiAircraftTestTypes &#x3D; List.of( // ----------------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                            dataset.aircraft_set_family_1_type_1, // ----------------------------------------------------------------------- +0.2 Complexity index (+0.2 atomic)
+                            dataset.aircraft_set_family_1_type_2 // ------------------------------------------------------------------------ +0.2 Complexity index (+0.2 atomic)
+                    );
+                    multiAircraftTestVersions  &#x3D; List.of( // ------------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                            dataset.aircraft_set_family_1_type_1_version_1, // ------------------------------------------------------------- +0.2 Complexity index (+0.2 atomic)
+                            dataset.aircraft_set_family_1_type_1_version_2, // ------------------------------------------------------------- +0.2 Complexity index (+0.2 atomic)
+                            dataset.aircraft_set_family_1_type_2_version_1 // -------------------------------------------------------------- +0.2 Complexity index (+0.2 atomic)
+                    );
+            
+                    List&lt;AircraftVersion&gt; parentAircraftVersions &#x3D; new ArrayList&lt;&gt;(multiAircraftTestVersions); // -------------------------- +0.7 Complexity index (+0.7 atomic)
+                    assertTrue(parentAircraftVersions.remove(dataset.aircraft_set_family_1_type_1_version_2)); // -------------------------- +2.5 Complexity index (+0.5 atomic, +2 structural)
+            
+                    prepareRequestForAircraftTest(dataset.aircraft_set_family_1, multiAircraftTestTypes, parentAircraftVersions); // ------- +1.5 Complexity index (+0.5 atomic, +1 structural)
+                    prepareChildRequestDtoForAircraftTest(); // ---------------------------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                    assertError(&quot;retex.error.childrequest.aircraft.version.incompatible.with.parent.aircraft.version&quot;); // ----------------- +1.2 Complexity index (+0.2 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="createChildRequest_ko_multi_aircraft_invalid_type">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">createChildRequest_ko_multi_aircraft_invalid_type</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">12.3</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void createChildRequest_ko_multi_aircraft_invalid_type() { // --------------------- +0.2 Complexity index (+0.2 atomic)
+                    AircraftType invalid &#x3D; dataset.aircraft_set_family_2_type_1; // ---------------------- +0.5 Complexity index (+0.5 atomic)
+                    multiAircraftTestFamily &#x3D; dataset.aircraft_set_family_1; // -------------------------- +0.4 Complexity index (+0.4 atomic)
+                    multiAircraftTestTypes &#x3D; new ArrayList&lt;&gt;(List.of( // --------------------------------- +1.6 Complexity index (+0.6 atomic, +1 structural)
+                            dataset.aircraft_set_family_1_type_1, // ------------------------------------- +0.2 Complexity index (+0.2 atomic)
+                            invalid // ------------------------------------------------------------------- +0.1 Complexity index (+0.1 atomic)
+                    ));
+            
+                    prepareRequestForAircraftTest(null, List.of(), List.of()); // ------------------------ +3.5 Complexity index (+0.5 atomic, +3 structural)
+                    prepareChildRequestDtoForAircraftTest(); // ------------------------------------------ +1.1 Complexity index (+0.1 atomic, +1 structural)
+                    assertError(&quot;retex.error.aircraft.type.incompatible.with.aircraft.family&quot;); // ------- +1.2 Complexity index (+0.2 atomic, +1 structural)
+            
+                    multiAircraftTestTypes.remove(invalid); // ------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                    prepareChildRequestDtoForAircraftTest(); // ------------------------------------------ +1.1 Complexity index (+0.1 atomic, +1 structural)
+                    assertOkMultiAircraft(); // ---------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="createChildRequest_ko_multi_aircraft_invalid_version">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">createChildRequest_ko_multi_aircraft_invalid_version</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">14.3</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void createChildRequest_ko_multi_aircraft_invalid_version() { // ------------------- +0.2 Complexity index (+0.2 atomic)
+                    AircraftVersion invalid &#x3D; dataset.aircraft_set_family_2_type_1_version_1; // ---------- +0.5 Complexity index (+0.5 atomic)
+                    multiAircraftTestFamily &#x3D; dataset.aircraft_set_family_1; // --------------------------- +0.4 Complexity index (+0.4 atomic)
+                    multiAircraftTestTypes &#x3D; List.of( // -------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                            dataset.aircraft_set_family_1_type_1, // -------------------------------------- +0.2 Complexity index (+0.2 atomic)
+                            dataset.aircraft_set_family_1_type_2 // --------------------------------------- +0.2 Complexity index (+0.2 atomic)
+                    );
+                    multiAircraftTestVersions  &#x3D; new ArrayList&lt;&gt;(List.of( // ------------------------------ +1.6 Complexity index (+0.6 atomic, +1 structural)
+                            dataset.aircraft_set_family_1_type_1_version_1, // ---------------------------- +0.2 Complexity index (+0.2 atomic)
+                            dataset.aircraft_set_family_1_type_2_version_1, // ---------------------------- +0.2 Complexity index (+0.2 atomic)
+                            invalid // -------------------------------------------------------------------- +0.1 Complexity index (+0.1 atomic)
+                    ));
+            
+                    prepareRequestForAircraftTest(null, List.of(), List.of()); // ------------------------- +3.5 Complexity index (+0.5 atomic, +3 structural)
+                    prepareChildRequestDtoForAircraftTest(); // ------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                    assertError(&quot;retex.error.aircraft.version.incompatible.with.aircraft.type&quot;); // ------- +1.2 Complexity index (+0.2 atomic, +1 structural)
+            
+                    multiAircraftTestVersions.remove(invalid); // ----------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                    prepareChildRequestDtoForAircraftTest(); // ------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                    assertOkMultiAircraft(); // ----------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="assertError">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">assertError</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">8</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                private void assertError(String expectedMessage) { // --------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    FunctionalException thrown &#x3D; assertThrows(FunctionalException.class, () -&gt; { // ---------------- +2.7 Complexity index (+0.7 atomic, +2 structural)
+                        childRequestService.createChildRequest(request.getId(), childRequestCreationDto); // ------- +2.5 Complexity index (+0.5 atomic, +2 structural)
+                    });
+                    assertEquals(expectedMessage, thrown.getMessage()); // ----------------------------------------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="assertOkMultiAircraft">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">assertOkMultiAircraft</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgerror">48.1</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">2</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                private void assertOkMultiAircraft() { // --------------------------------------------------------------------------------------------------------- +0.2 Complexity index (+0.2 atomic)
+                    assertDoesNotThrow(() -&gt; { // ------------------------------------------------------------------------------------------------------------------ +2.2 Complexity index (+0.2 atomic, +2 structural)
+                        childRequestService.createChildRequest(request.getId(), childRequestCreationDto); // ------------------------------------------------------- +2.5 Complexity index (+0.5 atomic, +2 structural)
+                    });
+                    childRequest &#x3D; childRequestRepository.findByRoutingNaturalId(routing.getNaturalId()).get(); // ------------------------------------------------- +3.7 Complexity index (+0.7 atomic, +3 structural)
+            
+                    if (multiAircraftTestFamily &#x3D;&#x3D; null) { // ------------------------------------------------------------------------------------------------------ +1.3 Complexity index (+0.3 atomic, +1 structural)
+                        assertThat(childRequest.getAircraftFamily(), nullValue()); // ------------------------------------------------------------------------------ +3.4 Complexity index (+0.4 atomic, +3 structural)
+                    } else { // ------------------------------------------------------------------------------------------------------------------------------------ +1.1 Complexity index (+0.1 atomic, +1 structural)
+                        assertThat(childRequest.getAircraftFamily().getId(), equalTo(multiAircraftTestFamily.getId())); // ----------------------------------------- +5.7 Complexity index (+0.7 atomic, +5 structural)
+                    }
+                    assertThat(childRequest.getAircraftTypes().stream().map(AbstractBaseModel::getId).collect(Collectors.toList()), // ----------------------------- +7.0 Complexity index (+1.0 atomic, +6 structural)
+                            containsInAnyOrder(multiAircraftTestTypes.stream().map(AbstractBaseModel::getId).collect(Collectors.toList()).toArray())); // ---------- +7.0 Complexity index (+1.0 atomic, +6 structural)
+                    assertThat(childRequest.getAircraftVersions().stream().map(AbstractBaseModel::getId).collect(Collectors.toList()), // -------------------------- +7.0 Complexity index (+1.0 atomic, +6 structural)
+                            containsInAnyOrder(multiAircraftTestVersions.stream().map(AbstractBaseModel::getId).collect(Collectors.toList()).toArray())); // ------- +7.0 Complexity index (+1.0 atomic, +6 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="prepareRequestForAircraftTest">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">prepareRequestForAircraftTest</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgerror">20.7</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                private void prepareRequestForAircraftTest(final AircraftFamily aircraftFamily, final List&lt;AircraftType&gt; aircraftTypes, final List&lt;AircraftVersion&gt; aircraftVersions) { // ------ +1.0 Complexity index (+1.0 atomic)
+                    int current_id &#x3D; dataSetInitializer.getNext(); // ---------------------------------------------------------------------------------------------------------------------------- +1.5 Complexity index (+0.5 atomic, +1 structural)
+                    request &#x3D; dataSetInitializer.createRequest(&quot;Request_&quot; + current_id, r-&gt;{ // -------------------------------------------------------------------------------------------------- +2.9 Complexity index (+0.9 atomic, +2 structural)
+                        r.getAta().setCode(part.getAta().getCode()); // -------------------------------------------------------------------------------------------------------------------------- +4.6 Complexity index (+0.6 atomic, +4 structural)
+                        r.setAircraftFamily(aircraftFamily); // ---------------------------------------------------------------------------------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                        r.getAircraftTypes().clear(); // ----------------------------------------------------------------------------------------------------------------------------------------- +2.3 Complexity index (+0.3 atomic, +2 structural)
+                        r.getAircraftTypes().addAll(aircraftTypes); // --------------------------------------------------------------------------------------------------------------------------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                        r.getAircraftVersions().clear(); // -------------------------------------------------------------------------------------------------------------------------------------- +2.3 Complexity index (+0.3 atomic, +2 structural)
+                        r.getAircraftVersions().addAll(aircraftVersions); // --------------------------------------------------------------------------------------------------------------------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                    });
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="prepareChildRequestDtoForAircraftTest">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">prepareChildRequestDtoForAircraftTest</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">15.9</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                private void prepareChildRequestDtoForAircraftTest() { // ------------------------------------------------------------------------------------------------- +0.2 Complexity index (+0.2 atomic)
+                    childRequestCreationDto.setAircraftFamilyId(multiAircraftTestFamily !&#x3D; null ? multiAircraftTestFamily.getId() : null); // ------------------------------ +3.7 Complexity index (+0.7 atomic, +3 structural)
+                    childRequestCreationDto.setAircraftTypeIds(multiAircraftTestTypes.stream().map(AbstractBaseModel::getId).collect(Collectors.toList())); // ------------- +6.0 Complexity index (+1.0 atomic, +5 structural)
+                    childRequestCreationDto.setAircraftVersionIds(multiAircraftTestVersions.stream().map(AbstractBaseModel::getId).collect(Collectors.toList())); // ------- +6.0 Complexity index (+1.0 atomic, +5 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+    </div>
+
+</div>
+
+
+<!--        -------------------------------------------------------------------------------------->
+<!--        -----------------------------------   Scripts   -------------------------------------->
+<!--        -------------------------------------------------------------------------------------->
+
+
+
+<script src="././../../../../../../../reports-styles/Chart.js"></script>
+<script src="./../../../../../../../reports-styles/prism.js"></script>
+
+<script>
+    var ctxDougnutCognitive = document.getElementById('doughnut-cognitive-cpx').getContext("2d");
+    var doughnutCognitive = new Chart(ctxDougnutCognitive, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [
+                    6,
+                    8,
+                    4,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                        '#ffa31a',
+                        '#ff3300',
+                ]
+            }],
+            labels: [
+                'correct methods ',
+                'warning methods ',
+                'error methods ',
+            ]
+        },
+        options: {
+            layout: {
+                padding: {
+                    maintainAspectRatio: false,
+                    responsive: false,
+                    left: 50,
+                    right: 0,
+                    top: 0,
+                    bottom: 0
+                }
+            },
+            legend: {
+                display: false
+            },
+            position: 'left',
+            title: {
+                display: true,
+                text: 'Cognitive complexity'
+            }
+        }
+    });
+</script>
+<script>
+    var ctxBarCognitive = document.getElementById('bar-cognitive-cpx').getContext("2d");
+    var barCognitive = new Chart(ctxBarCognitive, {
+        type: 'bar',
+        data: {
+            labels: [
+                    '0',
+                    '1',
+                    '2',
+                    '3',
+                    '4',
+                    '5',
+                    '6',
+                    '7',
+                    '8',
+                    '9',
+                    '10',
+                    '11',
+                    '12',
+                    '13',
+                    '14',
+                    '15',
+                    '16',
+                    '17',
+                    '18',
+                    '19',
+                    '20',
+                    '21',
+                    '22',
+                    '23',
+                    '24',
+                    '25',
+                    '26',
+                    '27',
+                    '28',
+                    '29',
+                    '30',
+                    '31',
+                    '32',
+                    '33',
+                    '34',
+                    '35',
+                    '36',
+                    '37',
+                    '38',
+                    '39',
+                    '40',
+                    '41',
+                    '42',
+                    '43',
+                    '44',
+                    '45',
+                    '46',
+                    '47',
+                    '48',
+                    '49',
+                    '50',
+                    '51',
+                    '52',
+                    '53',
+                    '54',
+                    '55',
+                    '56',
+                    '57',
+                    '58',
+                    '59',
+                    '60',
+                    '61',
+                    '62',
+                    '63',
+                    '64',
+                    '65',
+                    '66',
+                    '67',
+                    '68',
+                    '69',
+                    '70',
+                    '71',
+                    '72',
+                    '73',
+                    '74',
+                    '75',
+                    '76',
+                    '77',
+                    '78',
+                    '79',
+                    '80',
+                    '81',
+                    '82',
+                    '83',
+                    '84',
+                    '85',
+                    '86',
+                    '87',
+                    '88',
+                    '89',
+                    '90',
+                    '91',
+                    '92',
+                    '93',
+                    '94',
+                    '95',
+                    '96',
+                    '97',
+            ],
+            datasets: [{
+                data: [
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        1,
+                        3,
+                        0,
+                        2,
+                        2,
+                        2,
+                        0,
+                        1,
+                        0,
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                ],
+            }]
+        },
+        options: {
+            legend: {
+                display: false
+            },
+            scales: {
+                xAxes: [{
+                    gridLines: {
+                        display: false
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Cognitive complexity'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }],
+                yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Number of methods'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }]
+            }
+        }
+    });
+</script>
+<script>
+    var ctxDougnutCyclomatic = document.getElementById('doughnut-cyclomatic-cpx').getContext("2d");
+    var doughnutCyclomatic = new Chart(ctxDougnutCyclomatic, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [
+                    18,
+                    0,
+                    0,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                        '#ffa31a',
+                        '#ff3300',
+                ]
+            }],
+            labels: [
+                'correct methods ',
+                'warning methods ',
+                'error methods ',
+            ]
+        },
+        options: {
+            layout: {
+                padding: {
+                    maintainAspectRatio: false,
+                    responsive: false,
+                    left: 50,
+                    right: 0,
+                    top: 0,
+                    bottom: 0
+                }
+            },
+            legend: {
+                display: false
+            },
+            position: 'left',
+            title: {
+                display: true,
+                text: 'Cyclomatic complexity'
+            }
+        }
+    });
+</script>
+<script>
+    var ctxBarCyclomatic = document.getElementById('bar-cyclomatic-cpx').getContext("2d");
+    var barCyclomatic = new Chart(ctxBarCyclomatic, {
+        type: 'bar',
+        data: {
+            labels: [
+                    1,
+                    2,
+            ],
+            datasets: [{
+                data: [
+                        17,
+                        1,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                        '#99ccff',
+                ],
+            }]
+        },
+        options: {
+            legend: {
+                display: false
+            },
+            title: {
+                display: false,
+                text: 'Cyclomatic complexity',
+                position: 'top'
+            },
+            scales: {
+                xAxes: [{
+                    gridLines: {
+                        display: false
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Cyclomatic complexity'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }],
+                yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Number of methods'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }]
+            }
+        }
+    });
+</script>
+
+</body>
+
+</html>

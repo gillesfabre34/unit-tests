@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="set_column_thingworx" author="0.10.2">
+        <renameColumn columnDataType="boolean"
+                      newColumnName="is_from_thingworx"
+                      oldColumnName="is_from_thing_works"
+                      tableName="media"/>
+        <renameColumn columnDataType="boolean"
+                      newColumnName="is_from_thingworx"
+                      oldColumnName="is_from_thing_works"
+                      tableName="media_audit"/>
+        <renameColumn columnDataType="boolean"
+                      newColumnName="is_from_thingworx"
+                      oldColumnName="is_from_thing_works"
+                      tableName="media_tmp"/>
+        <renameColumn columnDataType="boolean"
+                      newColumnName="is_from_thingworx"
+                      oldColumnName="is_from_thing_works"
+                      tableName="media_tmp_audit"/>
+
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="create_filtering" author="0.9.0">
+        <!-- ********************* TABLE FILTERING *************** -->
+        <createTable tableName="filtering">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="drt_id" type="bigint">
+                <constraints nullable="true" referencedTableName="drt" referencedColumnNames="id"
+                             foreignKeyName="fk_filtering_drt"/>
+            </column>
+            <column name="physical_part_id" type="bigint">
+                <constraints nullable="true" referencedTableName="physical_part" referencedColumnNames="id"
+                             foreignKeyName="fk_filtering_physical_part"/>
+            </column>
+            <column name="aircraft_family_id" type="bigint">
+                <constraints nullable="true" referencedTableName="aircraft_family" referencedColumnNames="id"
+                             foreignKeyName="fk_filtering_aircraft_family"/>
+            </column>
+            <column name="aircraft_type_id" type="bigint">
+                <constraints nullable="true" referencedTableName="aircraft_type" referencedColumnNames="id"
+                             foreignKeyName="fk_filtering_aircraft_type"/>
+            </column>
+            <column name="aircraft_version_id" type="bigint">
+                <constraints nullable="true" referencedTableName="aircraft_version" referencedColumnNames="id"
+                             foreignKeyName="fk_filtering_aircraft_version"/>
+            </column>
+            <column name="filtering_date" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_modified" type="timestamp"/>
+            <column name="notification" type="varchar(50)"/>
+            <column name="position" type="varchar(50)"/>
+            <column name="aircraft_serial_number" type="varchar(50)"/>
+            <column name="status" type="varchar(50)"/>
+        </createTable>
+
+        <!-- ********************* TABLE FILTERING *************** -->
+        <createTable tableName="filtering_audit">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="drt_id" type="bigint"/>
+            <column name="physical_part_id" type="bigint"/>
+            <column name="aircraft_family_id" type="bigint"/>
+            <column name="aircraft_type_id" type="bigint"/>
+            <column name="aircraft_version_id" type="bigint"/>
+            <column name="filtering_date" type="timestamp"/>
+            <column name="last_modified" type="timestamp"/>
+            <column name="notification" type="varchar(50)"/>
+            <column name="position" type="varchar(50)"/>
+            <column name="aircraft_serial_number" type="varchar(50)"/>
+            <column name="status" type="varchar(50)"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

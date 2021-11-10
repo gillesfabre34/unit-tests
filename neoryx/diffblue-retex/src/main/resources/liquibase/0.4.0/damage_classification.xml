@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="create_damage_classification" author="0.4.0">
+        <createTable tableName="damage_classification">
+            <column name="damage_id" type="bigint">
+                <constraints nullable="false" referencedTableName="damage" referencedColumnNames="id"
+                             primaryKey="true"  foreignKeyName="fk_damage_classification_damage_id"/>
+            </column>
+            <column name="classification_id" type="bigint">
+                <constraints nullable="false" referencedTableName="classification" referencedColumnNames="id"
+                             primaryKey="true" foreignKeyName="fk_damage_classification_classification_id"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="damage_classification_audit">
+            <column name="revision_id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="damage_id" type="bigint">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="classification_id" type="bigint">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

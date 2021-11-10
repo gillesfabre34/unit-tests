@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="create_step" author="0.7.0">
+        <!-- ********************************* STEP *********************************** -->
+
+        <createTable tableName="step">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="number" type="integer">
+                <constraints nullable="false"/>
+            </column>
+            <column name="type" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="routing_component_id" type="bigint">
+                <constraints referencedTableName="routing_component" referencedColumnNames="id"
+                             foreignKeyName="fk_step_routing_component"/>
+            </column>
+            <column name="todo_list_id" type="bigint">
+                <constraints referencedTableName="todo_list" referencedColumnNames="id"
+                             foreignKeyName="fk_step_todo_list"/>
+            </column>
+            <column name="natural_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <!-- ********************************* STEP AUDIT AUDIT ************************* -->
+
+        <createTable tableName="step_audit">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="natural_id" type="bigint"/>
+            <column name="number" type="integer"/>
+            <column name="type" type="varchar(50)"/>
+            <column name="routing_component_id" type="bigint"/>
+            <column name="todo_list_id" type="bigint"/>
+            <column name="revision_id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

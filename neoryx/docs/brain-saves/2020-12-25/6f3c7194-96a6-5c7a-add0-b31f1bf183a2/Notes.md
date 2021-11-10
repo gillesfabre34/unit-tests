@@ -1,0 +1,1 @@
+[![TheBrain: Thought Types - YouTube](https://img.youtube.com/vi/glAQM1XtTpQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=glAQM1XtTpQ)

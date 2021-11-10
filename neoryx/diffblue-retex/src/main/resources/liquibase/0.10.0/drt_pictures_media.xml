@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="create_drt_pictures_media" author="0.10.0">
+        <!-- ********************* JOIN TABLE DRT PICTURES MEDIA *************** -->
+        <createTable tableName="drt_pictures_media">
+            <column name="drt_pictures_id" type="bigint">
+                <constraints primaryKey="true" nullable="false" referencedTableName="drt_pictures"
+                             referencedColumnNames="id"
+                             foreignKeyName="fk_drt_pictures_media_drt_pictures"/>
+            </column>
+            <column name="media_id" type="uuid">
+                <constraints primaryKey="true" nullable="false" referencedTableName="media" referencedColumnNames="uuid"
+                             foreignKeyName="fk_drt_pictures_media_id_drt_pictures_id"/>
+            </column>
+        </createTable>
+
+        <!-- ********************* JOIN TABLE DRT PICTURES MEDIA AUDIT *************** -->
+        <createTable tableName="drt_pictures_media_audit">
+            <column name="revision_id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint"/>
+            <column name="drt_pictures_id" type="bigint">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="media_id" type="uuid">
+                <constraints primaryKey="true"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

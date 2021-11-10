@@ -1,0 +1,119 @@
+* Starting client
+* Connecting to master process on port 19414
+* Analyzing classpath: 
+  - /Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/evosuite-maven/Tutorial_Maven/target/test-classes
+  - /Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/evosuite-maven/Tutorial_Maven/target/classes
+  - /Users/utilisateur/.m2/repository/junit/junit/4.12/junit-4.12.jar
+  - /Users/utilisateur/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+  - /Users/utilisateur/.m2/repository/org/mockito/mockito-core/2.16.0/mockito-core-2.16.0.jar
+  - /Users/utilisateur/.m2/repository/net/bytebuddy/byte-buddy/1.7.9/byte-buddy-1.7.9.jar
+  - /Users/utilisateur/.m2/repository/net/bytebuddy/byte-buddy-agent/1.7.9/byte-buddy-agent-1.7.9.jar
+  - /Users/utilisateur/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar
+  - /Users/utilisateur/.m2/repository/org/jboss/spec/javax/servlet/jboss-servlet-api_3.1_spec/1.0.2.Final/jboss-servlet-api_3.1_spec-1.0.2.Final.jar
+  - /Users/utilisateur/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar
+  - /Users/utilisateur/.m2/repository/javax/ejb/javax.ejb-api/3.2/javax.ejb-api-3.2.jar
+  - /Users/utilisateur/.m2/repository/javax/transaction/javax.transaction-api/1.2/javax.transaction-api-1.2.jar
+  - /Users/utilisateur/.m2/repository/javax/faces/javax.faces-api/2.2/javax.faces-api-2.2.jar
+  - /Users/utilisateur/.m2/repository/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar
+  - /Users/utilisateur/.m2/repository/javax/enterprise/cdi-api/1.2/cdi-api-1.2.jar
+  - /Users/utilisateur/.m2/repository/javax/el/javax.el-api/3.0.0/javax.el-api-3.0.0.jar
+  - /Users/utilisateur/.m2/repository/javax/interceptor/javax.interceptor-api/1.2/javax.interceptor-api-1.2.jar
+  - /Users/utilisateur/.m2/repository/org/hibernate/hibernate-core/5.2.13.Final/hibernate-core-5.2.13.Final.jar
+  - /Users/utilisateur/.m2/repository/org/jboss/logging/jboss-logging/3.3.1.Final/jboss-logging-3.3.1.Final.jar
+  - /Users/utilisateur/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar
+  - /Users/utilisateur/.m2/repository/org/javassist/javassist/3.22.0-GA/javassist-3.22.0-GA.jar
+  - /Users/utilisateur/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar
+  - /Users/utilisateur/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.1.Final/jboss-transaction-api_1.2_spec-1.0.1.Final.jar
+  - /Users/utilisateur/.m2/repository/org/jboss/jandex/2.0.3.Final/jandex-2.0.3.Final.jar
+  - /Users/utilisateur/.m2/repository/com/fasterxml/classmate/1.3.0/classmate-1.3.0.jar
+  - /Users/utilisateur/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
+  - /Users/utilisateur/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.jar
+  - /Users/utilisateur/.m2/repository/org/hsqldb/hsqldb/2.4.0/hsqldb-2.4.0.jar
+  - /Users/utilisateur/.m2/repository/org/springframework/spring-orm/4.3.14.RELEASE/spring-orm-4.3.14.RELEASE.jar
+  - /Users/utilisateur/.m2/repository/org/springframework/spring-beans/4.3.14.RELEASE/spring-beans-4.3.14.RELEASE.jar
+  - /Users/utilisateur/.m2/repository/org/springframework/spring-core/4.3.14.RELEASE/spring-core-4.3.14.RELEASE.jar
+  - /Users/utilisateur/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar
+  - /Users/utilisateur/.m2/repository/org/springframework/spring-jdbc/4.3.14.RELEASE/spring-jdbc-4.3.14.RELEASE.jar
+  - /Users/utilisateur/.m2/repository/org/springframework/spring-tx/4.3.14.RELEASE/spring-tx-4.3.14.RELEASE.jar
+  - /Users/utilisateur/.m2/repository/org/springframework/spring-context/4.3.14.RELEASE/spring-context-4.3.14.RELEASE.jar
+  - /Users/utilisateur/.m2/repository/org/springframework/spring-aop/4.3.14.RELEASE/spring-aop-4.3.14.RELEASE.jar
+  - /Users/utilisateur/.m2/repository/org/springframework/spring-expression/4.3.14.RELEASE/spring-expression-4.3.14.RELEASE.jar
+  - /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/tools.jar
+  - /Users/utilisateur/.m2/repository/org/ow2/asm/asm/6.0/asm-6.0.jar
+  - /Users/utilisateur/.m2/repository/org/ow2/asm/asm-commons/6.0/asm-commons-6.0.jar
+  - /Users/utilisateur/.m2/repository/org/ow2/asm/asm-tree/6.0/asm-tree-6.0.jar
+  - /Users/utilisateur/.m2/repository/org/ow2/asm/asm-analysis/6.0/asm-analysis-6.0.jar
+  - /Users/utilisateur/.m2/repository/org/ow2/asm/asm-util/6.0/asm-util-6.0.jar
+  - /Users/utilisateur/.m2/repository/javax/xml/bind/jaxb-api/2.3.0/jaxb-api-2.3.0.jar
+  - /Users/utilisateur/.m2/repository/com/opencsv/opencsv/4.1/opencsv-4.1.jar
+  - /Users/utilisateur/.m2/repository/org/apache/commons/commons-text/1.1/commons-text-1.1.jar
+  - /Users/utilisateur/.m2/repository/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar
+  - /Users/utilisateur/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar
+  - /Users/utilisateur/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar
+  - /Users/utilisateur/.m2/repository/ch/qos/logback/logback-classic/1.1.3/logback-classic-1.1.3.jar
+  - /Users/utilisateur/.m2/repository/ch/qos/logback/logback-core/1.1.3/logback-core-1.1.3.jar
+  - /Users/utilisateur/.m2/repository/com/googlecode/gentyref/gentyref/1.2.0/gentyref-1.2.0.jar
+  - /Users/utilisateur/.m2/repository/net/sf/jgrapht/jgrapht/0.8.3/jgrapht-0.8.3.jar
+  - /Users/utilisateur/.m2/repository/com/thoughtworks/xstream/xstream/1.4.10/xstream-1.4.10.jar
+  - /Users/utilisateur/.m2/repository/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar
+  - /Users/utilisateur/.m2/repository/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar
+  - /Users/utilisateur/.m2/repository/org/apache/commons/commons-lang3/3.7/commons-lang3-3.7.jar
+  - /Users/utilisateur/.m2/repository/commons-cli/commons-cli/1.4/commons-cli-1.4.jar
+  - /Users/utilisateur/.m2/repository/org/kohsuke/graphviz-api/1.1/graphviz-api-1.1.jar
+  - /Users/utilisateur/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar
+  - /Users/utilisateur/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar
+  - /Users/utilisateur/.m2/repository/org/slf4j/slf4j-api/1.7.22/slf4j-api-1.7.22.jar
+  - /Users/utilisateur/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar
+  - /Users/utilisateur/.m2/repository/org/apache/maven/maven-core/3.5.0/maven-core-3.5.0.jar
+  - /Users/utilisateur/.m2/repository/org/apache/maven/maven-model/3.5.0/maven-model-3.5.0.jar
+  - /Users/utilisateur/.m2/repository/org/apache/maven/maven-settings/3.5.0/maven-settings-3.5.0.jar
+  - /Users/utilisateur/.m2/repository/org/apache/maven/maven-settings-builder/3.5.0/maven-settings-builder-3.5.0.jar
+  - /Users/utilisateur/.m2/repository/org/apache/maven/maven-builder-support/3.5.0/maven-builder-support-3.5.0.jar
+  - /Users/utilisateur/.m2/repository/org/apache/maven/maven-repository-metadata/3.5.0/maven-repository-metadata-3.5.0.jar
+  - /Users/utilisateur/.m2/repository/org/apache/maven/maven-artifact/3.5.0/maven-artifact-3.5.0.jar
+  - /Users/utilisateur/.m2/repository/org/apache/maven/maven-model-builder/3.5.0/maven-model-builder-3.5.0.jar
+  - /Users/utilisateur/.m2/repository/com/google/guava/guava/20.0/guava-20.0.jar
+  - /Users/utilisateur/.m2/repository/org/apache/maven/maven-resolver-provider/3.5.0/maven-resolver-provider-3.5.0.jar
+  - /Users/utilisateur/.m2/repository/org/apache/maven/resolver/maven-resolver-impl/1.0.3/maven-resolver-impl-1.0.3.jar
+  - /Users/utilisateur/.m2/repository/org/apache/maven/resolver/maven-resolver-api/1.0.3/maven-resolver-api-1.0.3.jar
+  - /Users/utilisateur/.m2/repository/org/apache/maven/resolver/maven-resolver-spi/1.0.3/maven-resolver-spi-1.0.3.jar
+  - /Users/utilisateur/.m2/repository/org/apache/maven/resolver/maven-resolver-util/1.0.3/maven-resolver-util-1.0.3.jar
+  - /Users/utilisateur/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.1.0/maven-shared-utils-3.1.0.jar
+  - /Users/utilisateur/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.3/org.eclipse.sisu.plexus-0.3.3.jar
+  - /Users/utilisateur/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.3/org.eclipse.sisu.inject-0.3.3.jar
+  - /Users/utilisateur/.m2/repository/com/google/inject/guice/4.0/guice-4.0-no_aop.jar
+  - /Users/utilisateur/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar
+  - /Users/utilisateur/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.24/plexus-interpolation-1.24.jar
+  - /Users/utilisateur/.m2/repository/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.jar
+  - /Users/utilisateur/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.5.2/plexus-classworlds-2.5.2.jar
+  - /Users/utilisateur/.m2/repository/org/codehaus/plexus/plexus-component-annotations/1.7.1/plexus-component-annotations-1.7.1.jar
+  - /Users/utilisateur/.m2/repository/org/sonatype/plexus/plexus-sec-dispatcher/1.4/plexus-sec-dispatcher-1.4.jar
+  - /Users/utilisateur/.m2/repository/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar
+  - /Users/utilisateur/.m2/repository/org/apache/maven/maven-plugin-api/3.5.0/maven-plugin-api-3.5.0.jar
+  - /Users/utilisateur/.m2/repository/org/eclipse/aether/aether-api/1.1.0/aether-api-1.1.0.jar
+  - /Users/utilisateur/.m2/repository/org/eclipse/aether/aether-util/1.1.0/aether-util-1.1.0.jar
+* Finished analyzing classpath
+* Generating tests for class tutorial.ParameterMutatorInEachBranch
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+[MASTER] 10:59:12.613 [pool-2-thread-1] WARN  TestSuiteSerialization - Problems when reading a serialized test from /Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/evosuite-maven/Tutorial_Maven/.evosuite/evosuite-seeds/tutorial.ParameterMutatorInEachBranch.seed : Class 'tutorial/Cat.class' should be in target project, but could not be found!
+* Loaded 0 tests from /Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/evosuite-maven/Tutorial_Maven/.evosuite/evosuite-seeds/tutorial.ParameterMutatorInEachBranch.seed
+* Total number of test goals: 
+  - Line 6
+  - Branch 3
+  - Exception 0
+  - MutationFactory 10
+  - Output 0
+  - Method 2
+  - MethodNoException 2
+  - CBranchFitnessFactory 3
+* Using seed 1608631150092
+* Starting evolution

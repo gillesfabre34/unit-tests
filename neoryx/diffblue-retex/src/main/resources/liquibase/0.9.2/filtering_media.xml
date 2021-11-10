@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="create_join_table_filtering_media" author="0.9.2">
+        <!-- ********************* JOIN TABLE FILTERING - MEDIA *************** -->
+        <createTable tableName="filtering_media">
+            <column name="filtering_id" type="bigint">
+                <constraints nullable="false" referencedTableName="filtering" referencedColumnNames="id"
+                             foreignKeyName="fk_filtering_fa_filtering_id_media_id"/>
+            </column>
+            <column name="media_id" type="uuid">
+                <constraints nullable="false" referencedTableName="media" referencedColumnNames="uuid"
+                             foreignKeyName="fk_filtering_fa_media_id_filtering_id"/>
+            </column>
+        </createTable>
+
+        <!-- ********************* JOIN TABLE FILTERING - MEDIA AUDIT *************** -->
+        <createTable tableName="filtering_media_audit">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint"/>
+            <column name="filtering_id" type="bigint"/>
+            <column name="media_id" type="uuid"/>
+        </createTable>
+
+
+    </changeSet>
+
+</databaseChangeLog>

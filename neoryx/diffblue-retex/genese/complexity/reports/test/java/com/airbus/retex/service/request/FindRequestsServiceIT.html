@@ -1,0 +1,1314 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Genese complexity report</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./../../../../../../../reports-styles/prism.css" />
+    <link rel="stylesheet" href="./../../../../../../../reports-styles/prettify.css" />
+    <link rel="stylesheet" href="./../../../../../../../reports-styles/report.css" />
+    <link rel="stylesheet" href="./../../../../../../../reports-styles/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<div class="header">
+    <div class="header-left">
+        <div>
+            <h1>Genese complexity report</h1>
+        </div>
+        <div class="pad1y">
+                <span class="backLink" onclick="history.back()"><-</span>
+                    FindRequestsServiceIT.java
+        </div>
+        <div class="clearfix">
+            <div class='fl pad1y space-right2'>
+                <span>Methods : </span>
+                <span class="strong">17</span>
+            </div>
+        </div>
+    </div>
+    <div class="header-right">
+        <div class="clearfix padly">
+            <div class='fl pad1y space-right2'>
+                <span>Complexity index : </span>
+                <span class="strong">306.3</span>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class='fl pad1y space-right2'>
+                <span>Cyclomatic complexity :</span>
+                <span class="strong">23</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--        -------------------------------------------------------------------------------------->
+<!--        -----------------------------------   Stats and charts   ----------------------------->
+<!--        -------------------------------------------------------------------------------------->
+
+
+<div class="mainContainer">
+    <div class="stats-and-charts">
+
+        <!--        -----------------------------------   Cognitive complexity   ---------------------------->
+
+        <div class="stats-cognitive">
+            <div class="stats-and-doughnut stats-and-doughnut-cognitive">
+                <div class="doughnut">
+                    <canvas id="doughnut-cognitive-cpx" height="220"></canvas>
+                </div>
+                <div class="stats">
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">Cognitive complexity</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">47.1 %</span>
+                            <span class="quiet"> Correct</span>
+                            <span
+                                    class='fraction'>8/17</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">23.5 %</span>
+                            <span class="quiet"> Warning</span>
+                            <span
+                                    class='fraction'>4/17</span>
+                            <span class="quiet">(threshold : 10)</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">29.4 %</span>
+                            <span class="quiet"> Error</span>
+                            <span
+                                    class='fraction'>5/17</span>
+                            <span class="quiet">(threshold : 20)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bar bar-cognitive">
+                <canvas id="bar-cognitive-cpx" class="cognitive-charts"></canvas>
+            </div>
+        </div>
+
+        <!--        -----------------------------------   Cyclomatic complexity   ---------------------------->
+
+        <div class="stats-cyclomatic">
+            <div class="stats-and-doughnut-cyclomatic">
+                <div class="doughnut">
+                    <canvas id="doughnut-cyclomatic-cpx" height="220"></canvas>
+                </div>
+                <div class="stats-cy">
+                    <div class="clearfix cyclomatic-subtitle">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">Cyclomatic complexity</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">94.1 %</span>
+                            <span class="quiet"> Correct</span>
+                            <span
+                                    class='fraction'>16/17</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">5.9 %</span>
+                            <span class="quiet"> Warning</span>
+                            <span
+                                    class='fraction'>1/17</span>
+                            <span class="quiet">(threshold : 5)</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">0 %</span>
+                            <span class="quiet"> Error</span>
+                            <span
+                                    class='fraction'>0/17</span>
+                            <span class="quiet">(threshold : 10)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bar bar-cyclomatic">
+                <canvas id="bar-cyclomatic-cpx" class="cyclomatic-charts"></canvas>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!--        -------------------------------------------------------------------------------------->
+    <!--        -----------------------------------   Methods arrays   ------------------------------->
+    <!--        -------------------------------------------------------------------------------------->
+
+
+    <div idclass="subfolders">
+        <div class="clearfix file-methods-subtitle">
+            <div class='fl pad1y space-right2'>
+                <span class="strong">Methods of <span class="italic">FindRequestsServiceIT.java</span></span>
+            </div>
+        </div>
+
+            <div id="before">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">before</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">18.8</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @BeforeEach
+                public void before() { // --------------------------------------------------------- +0.2 Complexity index (+0.2 atomic)
+            
+                    requester &#x3D; dataSetInitializer.createUser(); // ------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+            
+                    Origin origin1 &#x3D; dataset.ORIGIN_CIVP; // -------------------------------------- +0.5 Complexity index (+0.5 atomic)
+                    Origin origin2 &#x3D; dataset.ORIGIN_RETEX; // ------------------------------------- +0.5 Complexity index (+0.5 atomic)
+                    request1 &#x3D; dataSetInitializer.createRequest(REQ_NAME_1, request -&gt; { // ------- +2.7 Complexity index (+0.7 atomic, +2 structural)
+                        request.setRequester(requester); // --------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                        request.setAirbusEntity(dataset.airbusEntity_canada); // ------------------ +1.4 Complexity index (+0.4 atomic, +1 structural)
+                        request.setStatus(EnumStatus.DONE); // ------------------------------------ +1.4 Complexity index (+0.4 atomic, +1 structural)
+                        request.setOrigin(origin1); // -------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                    });
+            
+                    request2 &#x3D; dataSetInitializer.createRequest(REQ_NAME_2, request -&gt; { // ------- +2.7 Complexity index (+0.7 atomic, +2 structural)
+                        request.setRequester(requester); // --------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                        request.setAirbusEntity(dataset.airbusEntity_canada); // ------------------ +1.4 Complexity index (+0.4 atomic, +1 structural)
+                        request.setStatus(EnumStatus.IN_PROGRESS); // ----------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                        request.setOrigin(origin2); // -------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                    });
+            
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="find_withRequesterId_ok">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">find_withRequesterId_ok</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">7.3</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void find_withRequesterId_ok () throws Exception { // -------------------------------------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    withDto.setRequesterIds(List.of(dataset.user_superAdmin.getId())); // ------------------------------------------------- +3.7 Complexity index (+0.7 atomic, +3 structural)
+            
+                    expectedRequest &#x3D; List.of(dataset.request_1, dataset.request_2,dataset.request_update,dataset.request_save); // ------- +2.2 Complexity index (+1.2 atomic, +1 structural)
+            
+                    check(); // ----------------------------------------------------------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="find_withOtherRequesterId_ok">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">find_withOtherRequesterId_ok</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">14.4</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void find_withOtherRequesterId_ok () throws Exception { // ------------------------- +0.3 Complexity index (+0.3 atomic)
+                    withDto.setRequesterIds(List.of(requester.getId())); // ------------------------------- +3.6 Complexity index (+0.6 atomic, +3 structural)
+            
+                    expectedRequest.add(dataSetInitializer.createRequest(&quot;request&quot;, request -&gt; { // ------- +3.7 Complexity index (+0.7 atomic, +3 structural)
+                        request.setRequester(requester); // ----------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                    }));
+                    expectedRequest.add(request1); // ----------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                    expectedRequest.add(request2); // ----------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                    notExpectedRequest &#x3D; List.of(dataset.request_1, dataset.request_2); // ---------------- +1.8 Complexity index (+0.8 atomic, +1 structural)
+            
+                    check(); // --------------------------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="find_withAllFiltersSet_ok">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">find_withAllFiltersSet_ok</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgerror">25.4</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void find_withAllFiltersSet_ok () throws Exception { // -------------------------------------------------------------- +0.3 Complexity index (+0.3 atomic)
+            
+                    withDto.setRequesterIds(List.of((requester.getId()))); // --------------------------------------------------------------- +3.6 Complexity index (+0.6 atomic, +3 structural)
+                    withDto.setName(REQ_NAME_1); // ----------------------------------------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                    withDto.setAirbusEntityIds(List.of(dataset.airbusEntity_canada.getId(), dataset.airbusEntity_france.getId())); // ------- +5.0 Complexity index (+1.0 atomic, +4 structural)
+                    withDto.setOriginIds(List.of(dataset.ORIGIN_CIVP.getId(), dataset.ORIGIN_ISIR.getId())); // ----------------------------- +5.0 Complexity index (+1.0 atomic, +4 structural)
+                    withDto.setStatuses(List.of(EnumStatus.DONE, EnumStatus.TO_DO)); // ----------------------------------------------------- +2.8 Complexity index (+0.8 atomic, +2 structural)
+                    withDto.setSortBy(RequestSortingValues.name); // ------------------------------------------------------------------------ +1.4 Complexity index (+0.4 atomic, +1 structural)
+                    withDto.setSortDirection(Sort.Direction.ASC); // ------------------------------------------------------------------------ +1.5 Complexity index (+0.5 atomic, +1 structural)
+            
+                    expectedRequest &#x3D; List.of(request1); // --------------------------------------------------------------------------------- +1.5 Complexity index (+0.5 atomic, +1 structural)
+            
+                    notExpectedRequest &#x3D; List.of(dataset.request_1, dataset.request_2, request2); // ---------------------------------------- +1.9 Complexity index (+0.9 atomic, +1 structural)
+            
+                    check(); // ------------------------------------------------------------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="find_withNameStatusesAndAirbusEntityFiltersSortByAirbusEntity_ok">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">find_withNameStatusesAndAirbusEntityFiltersSortByAirbusEntity_ok</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgerror">67.3</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void find_withNameStatusesAndAirbusEntityFiltersSortByAirbusEntity_ok () throws Exception { // --------------------- +0.3 Complexity index (+0.3 atomic)
+            
+                    setWithDtoSample(); // ------------------------------------------------------------------------------------------------ +1.1 Complexity index (+0.1 atomic, +1 structural)
+            
+                    expectedRequest &#x3D; List.of(request1, request2); // --------------------------------------------------------------------- +1.6 Complexity index (+0.6 atomic, +1 structural)
+            
+                    notExpectedRequest &#x3D; List.of(dataset.request_1, dataset.request_2); // ------------------------------------------------ +1.8 Complexity index (+0.8 atomic, +1 structural)
+            
+                    PageDto&lt;RequestDto&gt; page &#x3D; check(); // -------------------------------------------------------------------------------- +1.5 Complexity index (+0.5 atomic, +1 structural)
+            
+                    // Verify sort on name ASC
+                    List&lt;RequestDto&gt; result &#x3D; page.getResults(); // ----------------------------------------------------------------------- +1.6 Complexity index (+0.6 atomic, +1 structural)
+                    {
+                        RequestDto first &#x3D; result.get(0); // ------------------------------------------------------------------------------ +1.6 Complexity index (+0.6 atomic, +1 structural)
+                        RequestDto last &#x3D; result.get(1); // ------------------------------------------------------------------------------- +1.6 Complexity index (+0.6 atomic, +1 structural)
+                        String name1 &#x3D; translateService.getFieldValue(first.getName().getClassName(), // ---------------------------------- +3.8 Complexity index (+0.8 atomic, +3 structural)
+                                first.getName().getEntityId(), first.getName().getField(), Language.languageFor(Locale.FRANCE)); // ------- +6.0 Complexity index (+1.0 atomic, +5 structural)
+                        assertThat(name1, startsWith(REQ_NAME_1)); // --------------------------------------------------------------------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                        String name2 &#x3D; translateService.getFieldValue(last.getName().getClassName(), // ----------------------------------- +3.8 Complexity index (+0.8 atomic, +3 structural)
+                                last.getName().getEntityId(), last.getName().getField(), Language.languageFor(Locale.FRANCE)); // --------- +6.0 Complexity index (+1.0 atomic, +5 structural)
+                        assertThat(name2, startsWith(REQ_NAME_2)); // --------------------------------------------------------------------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                    }
+            
+                    // sort DESC
+                    withDto.setSortDirection(Sort.Direction.DESC); // --------------------------------------------------------------------- +1.5 Complexity index (+0.5 atomic, +1 structural)
+                    page &#x3D; check(); // ---------------------------------------------------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                    result &#x3D; page.getResults(); // ---------------------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                    {
+                        RequestDto first &#x3D; result.get(0); // ------------------------------------------------------------------------------ +1.6 Complexity index (+0.6 atomic, +1 structural)
+                        RequestDto last &#x3D; result.get(1); // ------------------------------------------------------------------------------- +1.6 Complexity index (+0.6 atomic, +1 structural)
+                        String name1 &#x3D; translateService.getFieldValue(first.getName().getClassName(), // ---------------------------------- +3.8 Complexity index (+0.8 atomic, +3 structural)
+                                first.getName().getEntityId(), first.getName().getField(), Language.languageFor(Locale.FRANCE)); // ------- +6.0 Complexity index (+1.0 atomic, +5 structural)
+                        assertThat(name1, startsWith(REQ_NAME_2)); // --------------------------------------------------------------------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                        String name2 &#x3D; translateService.getFieldValue(last.getName().getClassName(), // ----------------------------------- +3.8 Complexity index (+0.8 atomic, +3 structural)
+                                last.getName().getEntityId(), last.getName().getField(), Language.languageFor(Locale.FRANCE)); // --------- +6.0 Complexity index (+1.0 atomic, +5 structural)
+                        assertThat(name2, startsWith(REQ_NAME_1)); // --------------------------------------------------------------------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                    }
+            
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="find_withSort_ok">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">find_withSort_ok</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgerror">50.8</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgwarning">7</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void find_withSort_ok () throws Exception { // ------------------------------------------------------------------------------------------------------------------------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    String name &#x3D; &quot;Common&quot;; // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ +0.4 Complexity index (+0.4 atomic)
+                    generateRequestsForSort(name); // ----------------------------------------------------------------------------------------------------------------------------------------------------------------- +1.2 Complexity index (+0.2 atomic, +1 structural)
+                    withDto.setName(name); // ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+            
+                    // Verify sort on
+                    // reference
+                    Function&lt;RequestDto, String&gt; getReference &#x3D; new Function&lt;RequestDto, String&gt;() { // --------------------------------------------------------------------------------------------------------------- +0.7 Complexity index (+0.7 atomic)
+                        @Override
+                        public String apply(RequestDto requestDto) { // ----------------------------------------------------------------------------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                            return requestDto.getReference(); // ------------------------------------------------------------------------------------------------------------------------------------------------------ +1.3 Complexity index (+0.3 atomic, +1 structural)
+                        }
+                    };
+                    verifySort(RequestSortingValues.reference, &quot;reference1&quot;, &quot;reference2&quot;, getReference); // ---------------------------------------------------------------------------------------------------------- +1.6 Complexity index (+0.6 atomic, +1 structural)
+            
+                    // origin
+                    Function&lt;RequestDto, String&gt; getOrigin &#x3D; new Function&lt;RequestDto, String&gt;() { // ------------------------------------------------------------------------------------------------------------------ +0.7 Complexity index (+0.7 atomic)
+                        @Override
+                        public String apply(RequestDto requestDto) { // ----------------------------------------------------------------------------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                            return requestDto.getOrigin().getName(); // ----------------------------------------------------------------------------------------------------------------------------------------------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                        }
+                    };
+                    verifySort(RequestSortingValues.origin, dataset.ORIGIN_CIVP.getName(), dataset.ORIGIN_RETEX.getName(), getOrigin); // ----------------------------------------------------------------------------- +4.0 Complexity index (+1.0 atomic, +3 structural)
+            
+                    // airbusEntity
+                    Function&lt;RequestDto, String&gt; getAirbusEntity &#x3D; new Function&lt;RequestDto, String&gt;() { // ------------------------------------------------------------------------------------------------------------ +0.7 Complexity index (+0.7 atomic)
+                        @Override
+                        public String apply(RequestDto requestDto) { // ----------------------------------------------------------------------------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+            
+                            return requestDto.getAirbusEntity().getCountryName(); // ---------------------------------------------------------------------------------------------------------------------------------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                        }
+                    };
+                    verifySort(RequestSortingValues.airbus_entity, dataset.airbusEntity_canada.getCountryName(), dataset.airbusEntity_france.getCountryName(), getAirbusEntity); // ----------------------------------- +4.0 Complexity index (+1.0 atomic, +3 structural)
+            
+                    // status
+                    Function&lt;RequestDto, String&gt; getStatus &#x3D; new Function&lt;RequestDto, String&gt;() { // ------------------------------------------------------------------------------------------------------------------ +0.7 Complexity index (+0.7 atomic)
+                        @Override
+                        public String apply(RequestDto requestDto) { // ----------------------------------------------------------------------------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                            return requestDto.getStatus().toString(); // ---------------------------------------------------------------------------------------------------------------------------------------------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                        }
+                    };
+                    verifySort(RequestSortingValues.status, EnumStatus.IN_PROGRESS.toString(), EnumStatus.TO_DO.toString(), getStatus); // ---------------------------------------------------------------------------- +4.0 Complexity index (+1.0 atomic, +3 structural)
+                    // requester
+                    Function&lt;RequestDto, String&gt; getRequester &#x3D; new Function&lt;RequestDto, String&gt;() { // --------------------------------------------------------------------------------------------------------------- +0.7 Complexity index (+0.7 atomic)
+                        @Override
+                        public String apply(RequestDto requestDto) { // ----------------------------------------------------------------------------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                            return requestDto.getRequester().getFirstName(); // --------------------------------------------------------------------------------------------------------------------------------------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                        }
+                    };
+                    verifySort(RequestSortingValues.user, sortRequester1.getFirstName(), sortRequester2.getFirstName(), getRequester); // ----------------------------------------------------------------------------- +3.8 Complexity index (+0.8 atomic, +3 structural)
+            
+                    // creationDate
+                    DateTimeFormatter formatter &#x3D; DateTimeFormatter.ofPattern(&quot;yyyy-MM-dd HH:mm:ss&quot;); // -------------------------------------------------------------------------------------------------------------- +1.6 Complexity index (+0.6 atomic, +1 structural)
+                    Function&lt;RequestDto, String&gt; getCreationDate &#x3D; new Function&lt;RequestDto, String&gt;() { // ------------------------------------------------------------------------------------------------------------ +0.7 Complexity index (+0.7 atomic)
+                        @Override
+                        public String apply(RequestDto requestDto) { // ----------------------------------------------------------------------------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                            return requestDto.getCreationDate().format(formatter); // --------------------------------------------------------------------------------------------------------------------------------- +2.5 Complexity index (+0.5 atomic, +2 structural)
+                        }
+                    };
+                    verifySort(RequestSortingValues.creation_date, expectedRequest.get(0).getCreationDate().format(formatter), expectedRequest.get(1).getCreationDate().format(formatter), getCreationDate); // ------- +8.6 Complexity index (+1.6 atomic, +7 structural)
+            
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="apply">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">apply</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">1.7</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                        @Override
+                        public String apply(RequestDto requestDto) { // ------- +0.4 Complexity index (+0.4 atomic)
+                            return requestDto.getReference(); // -------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                        }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="apply">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">apply</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">2.8</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                        @Override
+                        public String apply(RequestDto requestDto) { // ------- +0.4 Complexity index (+0.4 atomic)
+                            return requestDto.getOrigin().getName(); // ------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                        }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="apply">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">apply</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">2.8</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                        @Override
+                        public String apply(RequestDto requestDto) { // -------------------- +0.4 Complexity index (+0.4 atomic)
+            
+                            return requestDto.getAirbusEntity().getCountryName(); // ------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                        }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="apply">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">apply</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">2.8</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                        @Override
+                        public String apply(RequestDto requestDto) { // -------- +0.4 Complexity index (+0.4 atomic)
+                            return requestDto.getStatus().toString(); // ------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                        }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="apply">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">apply</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">2.8</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                        @Override
+                        public String apply(RequestDto requestDto) { // --------------- +0.4 Complexity index (+0.4 atomic)
+                            return requestDto.getRequester().getFirstName(); // ------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                        }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="apply">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">apply</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">2.9</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                        @Override
+                        public String apply(RequestDto requestDto) { // --------------------- +0.4 Complexity index (+0.4 atomic)
+                            return requestDto.getCreationDate().format(formatter); // ------- +2.5 Complexity index (+0.5 atomic, +2 structural)
+                        }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="verifySort">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">verifySort</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">6</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                private void verifySort(RequestSortingValues sortBy, String valMin, String valMax, Function&lt;RequestDto, String&gt; fn) throws Exception { // ------ +1.3 Complexity index (+1.3 atomic)
+                    withDto.setSortBy(sortBy); // --------------------------------------------------------------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+            
+                    verifySortDirection(Sort.Direction.ASC, valMin, valMax, fn); // ----------------------------------------------------------------------------- +1.7 Complexity index (+0.7 atomic, +1 structural)
+                    verifySortDirection(Sort.Direction.DESC, valMax, valMin, fn); // ---------------------------------------------------------------------------- +1.7 Complexity index (+0.7 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="verifySortDirection">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">verifySortDirection</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">17.9</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                private void verifySortDirection(Sort.Direction direction, String first, String last, Function&lt;RequestDto, String&gt; fn) throws Exception { // ------ +1.4 Complexity index (+1.4 atomic)
+                    withDto.setSortDirection(direction); // -------------------------------------------------------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                    PageDto&lt;RequestDto&gt; page &#x3D; check(); // --------------------------------------------------------------------------------------------------------- +1.5 Complexity index (+0.5 atomic, +1 structural)
+                    List&lt;RequestDto&gt; result &#x3D; page.getResults(); // ------------------------------------------------------------------------------------------------ +1.6 Complexity index (+0.6 atomic, +1 structural)
+                    int count &#x3D; result.size(); // ------------------------------------------------------------------------------------------------------------------ +1.5 Complexity index (+0.5 atomic, +1 structural)
+                    RequestDto firstItem &#x3D; result.get(0); // ------------------------------------------------------------------------------------------------------- +1.6 Complexity index (+0.6 atomic, +1 structural)
+                    RequestDto lastItem &#x3D; result.get(count - 1); // ------------------------------------------------------------------------------------------------ +1.8 Complexity index (+0.8 atomic, +1 structural)
+                    assertThat(fn.apply(firstItem), equalTo(first)); // -------------------------------------------------------------------------------------------- +3.6 Complexity index (+0.6 atomic, +3 structural)
+                    assertThat(fn.apply(lastItem), equalTo(last)); // ---------------------------------------------------------------------------------------------- +3.6 Complexity index (+0.6 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="generateRequestsForSort">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">generateRequestsForSort</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgerror">35.6</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                private void generateRequestsForSort(String commonName) { // -------------------------------------- +0.4 Complexity index (+0.4 atomic)
+            
+                    sortRequester1 &#x3D; dataSetInitializer.createUser(dataset.airbusEntity_canada, user -&gt; { // ------- +2.8 Complexity index (+0.8 atomic, +2 structural)
+                        user.setFirstName(&quot;sortRequester1&quot;); // ---------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                    });
+            
+                    sortRequester2 &#x3D; dataSetInitializer.createUser(dataset.airbusEntity_canada, user -&gt; { // ------- +2.8 Complexity index (+0.8 atomic, +2 structural)
+                        user.setFirstName(&quot;sortRequester2&quot;); // ---------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                    });
+            
+                    Origin origin1 &#x3D; dataset.ORIGIN_CIVP; // ------------------------------------------------------- +0.5 Complexity index (+0.5 atomic)
+                    Origin origin2 &#x3D; dataset.ORIGIN_RETEX; // ------------------------------------------------------ +0.5 Complexity index (+0.5 atomic)
+                    String reference1 &#x3D; &quot;reference1&quot;; // ----------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    String reference2 &#x3D; &quot;reference2&quot;; // ----------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    EnumStatus status1 &#x3D; EnumStatus.TO_DO; // ------------------------------------------------------ +0.5 Complexity index (+0.5 atomic)
+                    EnumStatus status2 &#x3D; EnumStatus.IN_PROGRESS; // ------------------------------------------------ +0.5 Complexity index (+0.5 atomic)
+            
+            
+                    expectedRequest.add( // ------------------------------------------------------------------------ +1.2 Complexity index (+0.2 atomic, +1 structural)
+                            dataSetInitializer.createRequest(commonName, request -&gt; { // --------------------------- +2.5 Complexity index (+0.5 atomic, +2 structural)
+                                request.setRequester(sortRequester1); // ------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                                request.setReference(reference1); // ----------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                                request.setAirbusEntity(dataset.airbusEntity_france); // --------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                                request.setStatus(status1); // ----------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                                request.setOrigin(origin1); // ----------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                                request.setCreationDate(LocalDateTime.now().minusDays(1)); // ---------------------- +3.6 Complexity index (+0.6 atomic, +3 structural)
+                            })
+                    );
+                    expectedRequest.add( // ------------------------------------------------------------------------ +1.2 Complexity index (+0.2 atomic, +1 structural)
+                            dataSetInitializer.createRequest(commonName, request -&gt; { // --------------------------- +2.5 Complexity index (+0.5 atomic, +2 structural)
+                                request.setRequester(sortRequester2); // ------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                                request.setReference(reference2); // ----------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                                request.setAirbusEntity(dataset.airbusEntity_canada); // --------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                                request.setStatus(status2); // ----------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                                request.setOrigin(origin2); // ----------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            })
+                    );
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="setWithDtoSample">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">setWithDtoSample</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">15.8</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                private void setWithDtoSample(){ // ---------------------------------------------------------------------------------------- +0.2 Complexity index (+0.2 atomic)
+                    withDto.setRequesterIds(List.of((requester.getId()))); // --------------------------------------------------------------- +3.6 Complexity index (+0.6 atomic, +3 structural)
+                    withDto.setName(BASE_NAME_REQUEST); // ---------------------------------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                    withDto.setAirbusEntityIds(List.of(dataset.airbusEntity_canada.getId(), dataset.airbusEntity_france.getId())); // ------- +5.0 Complexity index (+1.0 atomic, +4 structural)
+                    withDto.setStatuses(List.of(EnumStatus.DONE, EnumStatus.IN_PROGRESS)); // ----------------------------------------------- +2.8 Complexity index (+0.8 atomic, +2 structural)
+                    withDto.setSortBy(RequestSortingValues.name); // ------------------------------------------------------------------------ +1.4 Complexity index (+0.4 atomic, +1 structural)
+                    withDto.setSortDirection(Sort.Direction.ASC); // ------------------------------------------------------------------------ +1.5 Complexity index (+0.5 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="check">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">check</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgerror">31.2</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                private PageDto&lt;RequestDto&gt;  check() throws Exception { // ------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    PageDto&lt;RequestDto&gt; pageDto &#x3D; requestService.findRequestsWithFilters(withDto, Language.FR); // ---------- +1.9 Complexity index (+0.9 atomic, +1 structural)
+            
+                    assertThat(pageDto.getTotalResults(), equalTo(Long.valueOf(expectedRequest.size()))); // ---------------- +5.8 Complexity index (+0.8 atomic, +5 structural)
+            
+                    expectedRequest.forEach(request -&gt; { // ----------------------------------------------------------------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                        assertThat(&quot;No request with id &quot;+request.getId()+&quot; in results&quot;, // ---------------------------------- +2.7 Complexity index (+0.7 atomic, +2 structural)
+                                pageDto.getResults(), hasItems(hasProperty(&quot;id&quot;, equalTo(request.getId())))); // ------------ +5.8 Complexity index (+0.8 atomic, +5 structural)
+                    });
+            
+                    notExpectedRequest.forEach(request -&gt; { // -------------------------------------------------------------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                        assertThat(&quot;Request with id &quot;+request.getId()+&quot; must not be in results&quot;, // ------------------------- +2.7 Complexity index (+0.7 atomic, +2 structural)
+                                pageDto.getResults(), not(hasItems(hasProperty(&quot;id&quot;, equalTo(request.getId()))))); // ------- +6.9 Complexity index (+0.9 atomic, +6 structural)
+                    });
+                    return pageDto; // -------------------------------------------------------------------------------------- +0.2 Complexity index (+0.2 atomic)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+    </div>
+
+</div>
+
+
+<!--        -------------------------------------------------------------------------------------->
+<!--        -----------------------------------   Scripts   -------------------------------------->
+<!--        -------------------------------------------------------------------------------------->
+
+
+
+<script src="././../../../../../../../reports-styles/Chart.js"></script>
+<script src="./../../../../../../../reports-styles/prism.js"></script>
+
+<script>
+    var ctxDougnutCognitive = document.getElementById('doughnut-cognitive-cpx').getContext("2d");
+    var doughnutCognitive = new Chart(ctxDougnutCognitive, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [
+                    8,
+                    4,
+                    5,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                        '#ffa31a',
+                        '#ff3300',
+                ]
+            }],
+            labels: [
+                'correct methods ',
+                'warning methods ',
+                'error methods ',
+            ]
+        },
+        options: {
+            layout: {
+                padding: {
+                    maintainAspectRatio: false,
+                    responsive: false,
+                    left: 50,
+                    right: 0,
+                    top: 0,
+                    bottom: 0
+                }
+            },
+            legend: {
+                display: false
+            },
+            position: 'left',
+            title: {
+                display: true,
+                text: 'Cognitive complexity'
+            }
+        }
+    });
+</script>
+<script>
+    var ctxBarCognitive = document.getElementById('bar-cognitive-cpx').getContext("2d");
+    var barCognitive = new Chart(ctxBarCognitive, {
+        type: 'bar',
+        data: {
+            labels: [
+                    '0',
+                    '1',
+                    '2',
+                    '3',
+                    '4',
+                    '5',
+                    '6',
+                    '7',
+                    '8',
+                    '9',
+                    '10',
+                    '11',
+                    '12',
+                    '13',
+                    '14',
+                    '15',
+                    '16',
+                    '17',
+                    '18',
+                    '19',
+                    '20',
+                    '21',
+                    '22',
+                    '23',
+                    '24',
+                    '25',
+                    '26',
+                    '27',
+                    '28',
+                    '29',
+                    '30',
+                    '31',
+                    '32',
+                    '33',
+                    '34',
+                    '35',
+                    '36',
+                    '37',
+                    '38',
+                    '39',
+                    '40',
+                    '41',
+                    '42',
+                    '43',
+                    '44',
+                    '45',
+                    '46',
+                    '47',
+                    '48',
+                    '49',
+                    '50',
+                    '51',
+                    '52',
+                    '53',
+                    '54',
+                    '55',
+                    '56',
+                    '57',
+                    '58',
+                    '59',
+                    '60',
+                    '61',
+                    '62',
+                    '63',
+                    '64',
+                    '65',
+                    '66',
+                    '67',
+            ],
+            datasets: [{
+                data: [
+                        0,
+                        0,
+                        1,
+                        5,
+                        0,
+                        0,
+                        1,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        1,
+                        0,
+                        1,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                ],
+            }]
+        },
+        options: {
+            legend: {
+                display: false
+            },
+            scales: {
+                xAxes: [{
+                    gridLines: {
+                        display: false
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Cognitive complexity'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }],
+                yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Number of methods'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }]
+            }
+        }
+    });
+</script>
+<script>
+    var ctxDougnutCyclomatic = document.getElementById('doughnut-cyclomatic-cpx').getContext("2d");
+    var doughnutCyclomatic = new Chart(ctxDougnutCyclomatic, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [
+                    16,
+                    1,
+                    0,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                        '#ffa31a',
+                        '#ff3300',
+                ]
+            }],
+            labels: [
+                'correct methods ',
+                'warning methods ',
+                'error methods ',
+            ]
+        },
+        options: {
+            layout: {
+                padding: {
+                    maintainAspectRatio: false,
+                    responsive: false,
+                    left: 50,
+                    right: 0,
+                    top: 0,
+                    bottom: 0
+                }
+            },
+            legend: {
+                display: false
+            },
+            position: 'left',
+            title: {
+                display: true,
+                text: 'Cyclomatic complexity'
+            }
+        }
+    });
+</script>
+<script>
+    var ctxBarCyclomatic = document.getElementById('bar-cyclomatic-cpx').getContext("2d");
+    var barCyclomatic = new Chart(ctxBarCyclomatic, {
+        type: 'bar',
+        data: {
+            labels: [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+            ],
+            datasets: [{
+                data: [
+                        16,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#ffa31a',
+                        '#ffa31a',
+                ],
+            }]
+        },
+        options: {
+            legend: {
+                display: false
+            },
+            title: {
+                display: false,
+                text: 'Cyclomatic complexity',
+                position: 'top'
+            },
+            scales: {
+                xAxes: [{
+                    gridLines: {
+                        display: false
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Cyclomatic complexity'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }],
+                yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Number of methods'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }]
+            }
+        }
+    });
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+
+<div class="container-table">
+
+    <table mat-table [dataSource]="dataSource" class="table-get-all">
+        <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef translate="HOME.ID"
+                class="table-header"></th>
+            <td mat-cell *matCellDef="let book" class="table-row">{{book.id}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="author">
+            <th mat-header-cell *matHeaderCellDef translate="HOME.AUTHOR"
+                class="table-header"></th>
+            <td mat-cell *matCellDef="let book"
+                class="table-row">{{book.author}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="title">
+            <th mat-header-cell *matHeaderCellDef translate="HOME.TITLE"
+                class="table-header"></th>
+            <td mat-cell *matCellDef="let book" class="table-row">{{book.title}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="description">
+            <th mat-header-cell *matHeaderCellDef translate="HOME.DESCRIPTION"
+                class="table-header"></th>
+            <td mat-cell *matCellDef="let book" class="table-row">{{book.description}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="actions" class="action-column">
+            <th mat-header-cell *matHeaderCellDef translate="HOME.ACTIONS"
+                class="table-header action-header align-center"></th>
+            <td mat-cell *matCellDef="let book" class="table-row action-row">
+                <div class="divIcons">
+                    <!--                                // TODO : Modals-->
+                    <!--                                <i class="fas fa-pen buttons-icons" aria-hidden="true"-->
+                    <!--                                   (click)="openEdition(book)"-->
+                    <!--                                   matTooltip="{{'HOME.EDIT_BOOK' | translate }}"></i>-->
+                    <!--                                <i class="far fa-copy buttons-icons" aria-hidden="true"-->
+                    <!--                                   matTooltip="{{'HOME.COPY_BOOK' | translate }}"-->
+                    <!--                                   (click)="openAddPart(book)"></i>-->
+                    <i class="fas fa-trash buttons-icons" aria-hidden="true"
+                       matTooltip="{{'HOME.DELETE_BOOK' | translate }}"
+                       (click)="deleteElement(book.id)"></i>
+                </div>
+            </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns; let i = index;"
+            [ngClass]="{'even-index': i % 2 === 0}"></tr>
+    </table>
+
+    <span [hidden]="emptyList">
+                        <mat-paginator [length]="paginator.length" pageSize="{{pageSize}}" showFirstLastButtons></mat-paginator>
+                </span>
+</div>

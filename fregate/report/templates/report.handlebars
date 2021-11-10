@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>NEORYX DEBUG REPORT</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./styles/prettify.css" />
+    <link rel="stylesheet" href="./styles/report.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<!--        -------------------------------------------------------------------------------------->
+<!--        ---------------------------------------   Header   ----------------------------------->
+<!--        -------------------------------------------------------------------------------------->
+
+
+<div class="header">
+    <div class="header-left">
+        <div class="main-title">
+            <h1>NEORYX DEBUG REPORT</h1>
+        </div>
+        <div class="clearfix">
+            <div class='fl pad1y space-right2 subtitle'>
+                <span class="strong">PROJECT</span>
+            </div>
+            <div class='fl pad1y subtitle-files'>
+                <span>Files : </span>
+                <span class="strong">{{project.files}}</span>
+            </div>
+            <div class='fl pad1y subtitle-others'>
+                <span>Methods : </span>
+                <span class="strong">{{project.methods}}</span>
+            </div>
+            <div class='fl pad1y subtitle-others'>
+                <span>Functions : </span>
+                <span class="strong">{{project.functions}}</span>
+            </div>
+            <div class='fl pad1y subtitle-statements'>
+                <span>Statements : </span>
+                <span class="strong">{{project.statements}}</span>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class='fl pad1y space-right2 subtitle'>
+                <span class="strong">SUT</span>
+            </div>
+            <div class='fl pad1y subtitle-files'>
+                <span>Files : </span>
+                <span class="strong">{{sut.files}}</span>
+            </div>
+            <div class='fl pad1y subtitle-others'>
+                <span>Methods : </span>
+                <span class="strong">{{sut.methods}}</span>
+            </div>
+            <div class='fl pad1y subtitle-others'>
+                <span>Functions : </span>
+                <span class="strong">{{sut.functions}}</span>
+            </div>
+            <div class='fl pad1y subtitle-statements'>
+                <span>Statements : </span>
+                <span class="strong">{{sut.statements}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="header-right">
+        <div class="clearfix padly">
+            <div class='fl pad1y space-right2'>
+                <span class="strong">Tests written : </span>
+                <span>{{mainStats.tests}}</span>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class='fl pad1y space-right2'>
+                <span class="strong">Code coverage :</span>
+                <span>{{mainStats.codeCoverage}}</span>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class='fl pad1y space-right2'>
+                <span class="strong">Bugs :</span>
+                <span>{{mainStats.bugs}}</span>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class='fl pad1y space-right2'>
+                <span class="strong">Duration :</span>
+                <span>{{mainStats.duration}}</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="mainContainer">
+    <div class="subfolders">
+        <div class="clearfix cognitive-subtitle">
+            <div class='fl pad1y space-right2'>
+                <span class="strong">Methods with error or coverage lower than 100 %</span>
+            </div>
+        </div>
+        <table class="array-report short-table">
+            <thead>
+            <tr>
+                <th style="width: 30%">File</th>
+                <th style="width: 20%;">Method</th>
+                <th style="width: 5%;">Tests</th>
+                <th style="width: 15%;">Code coverage</th>
+                <th style="width: 15%;">Bugs</th>
+                <th style="width: 15%;">Duration</th>
+            </tr>
+            </thead>
+            {{#each statsArray}}
+                {{>rowStats rowStats=.}}
+            {{/each}}
+        </table>
+    </div>
+</div>
+
+
+<!--        -------------------------------------------------------------------------------------->
+<!--        -----------------------------------   Scripts-----   --------------------------------->
+<!--        -------------------------------------------------------------------------------------->
+
+
+
+<script src="./styles/Chart.js"></script>
+
+</body>
+
+</html>

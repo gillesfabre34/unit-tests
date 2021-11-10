@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="remove_qcheck" author="0.10.0">
+        <delete tableName="translate_audit">
+            <where>class_name = 'OperationType' AND entity_id = (SELECT id FROM operation_type WHERE template = 'qcheck')</where>
+        </delete>
+
+        <delete tableName="translate">
+            <where>class_name = 'OperationType' AND entity_id = (SELECT id FROM operation_type WHERE template = 'qcheck')</where>
+        </delete>
+
+        <delete tableName="operation_type_audit">
+            <where>template = 'qcheck'</where>
+        </delete>
+
+        <delete tableName="operation_type">
+            <where>template = 'qcheck'</where>
+        </delete>
+    </changeSet>
+</databaseChangeLog>

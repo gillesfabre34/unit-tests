@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="create_join_table_request_aircraft_type" author="0.10.0">
+
+        <!-- ********************* JOIN TABLE - REQUEST - AIRCRAFT TYPE *************** -->
+        <createTable tableName="request_aircraft_type">
+            <column name="request_id" type="bigint">
+                <constraints nullable="false" referencedTableName="request" referencedColumnNames="id"
+                             foreignKeyName="fk_request_aircraft_type_request_id"/>
+            </column>
+            <column name="aircraft_type_id" type="bigint">
+                <constraints nullable="false" referencedTableName="aircraft_type" referencedColumnNames="id"
+                             foreignKeyName="fk_request_aircraft_type_aircraft_type_id"/>
+            </column>
+        </createTable>
+
+        <!-- ********************* JOIN TABLE - REQUEST - AIRCRAFT TYPE - AUDIT *************** -->
+        <createTable tableName="request_aircraft_type_audit">
+            <column name="revision_id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="request_id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="aircraft_type_id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+        </createTable>
+
+    </changeSet>
+
+    <changeSet id="create_join_table_request_aircraft_version" author="0.10.0">
+
+        <!-- ********************* JOIN TABLE - REQUEST - AIRCRAFT VERSION *************** -->
+        <createTable tableName="request_aircraft_version">
+            <column name="request_id" type="bigint">
+                <constraints nullable="false" referencedTableName="request" referencedColumnNames="id"
+                             foreignKeyName="fk_request_aircraft_version_request_id"/>
+            </column>
+            <column name="aircraft_version_id" type="bigint">
+                <constraints nullable="false" referencedTableName="aircraft_version" referencedColumnNames="id"
+                             foreignKeyName="fk_request_aircraft_version_aircraft_version_id"/>
+            </column>
+        </createTable>
+
+        <!-- ********************* JOIN TABLE - REQUEST - AIRCRAFT VERSION - AUDIT *************** -->
+        <createTable tableName="request_aircraft_version_audit">
+            <column name="revision_id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="request_id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="aircraft_version_id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+        </createTable>
+
+    </changeSet>
+
+    <changeSet id="migration_request_aircraft" author="0.10.0">
+
+        <!-- migrate aircraft_type data -->
+        <sql dbms="mariadb" endDelimiter="\nGO" splitStatements="true" stripComments="true">
+            INSERT INTO request_aircraft_type (request_id, aircraft_type_id)
+            SELECT id,aircraft_type_id FROM request WHERE aircraft_type_id IS NOT NULL;
+        </sql>
+        <!-- migrate aircraft_type audit data -->
+        <sql dbms="mariadb" endDelimiter="\nGO" splitStatements="true" stripComments="true">
+            INSERT INTO request_aircraft_type_audit (revision_id, revision_type, request_id, aircraft_type_id)
+            SELECT revision_id, revision_type, id, aircraft_type_id FROM request_audit WHERE aircraft_type_id IS NOT NULL;
+        </sql>
+        <!-- migrate aircraft_version data -->
+        <sql dbms="mariadb" endDelimiter="\nGO" splitStatements="true" stripComments="true">
+            INSERT INTO request_aircraft_version (request_id, aircraft_version_id)
+            SELECT id,aircraft_version_id FROM request WHERE aircraft_version_id IS NOT NULL;
+        </sql>
+        <!-- migrate aircraft_version audit data -->
+        <sql dbms="mariadb" endDelimiter="\nGO" splitStatements="true" stripComments="true">
+            INSERT INTO request_aircraft_version_audit (revision_id, revision_type, request_id, aircraft_version_id)
+            SELECT revision_id, revision_type, id, aircraft_version_id FROM request_audit WHERE aircraft_version_id IS NOT NULL;
+        </sql>
+
+    </changeSet>
+
+    <changeSet id="remove_old_columns_request_aircraft" author="0.10.0">
+
+        <!-- remove migrated columns -->
+        <dropForeignKeyConstraint baseTableName="request" constraintName="fk_request_aircraft_type"/>
+        <dropColumn tableName="request" columnName="aircraft_type_id"/>
+        <dropForeignKeyConstraint baseTableName="request" constraintName="fk_request_aircraft_version"/>
+        <dropColumn tableName="request" columnName="aircraft_version_id"/>
+
+        <!-- remove old legacy columns -->
+        <dropColumn tableName="request" columnName="aircraft_family"/>
+        <dropColumn tableName="request" columnName="aircraft_type"/>
+        <dropColumn tableName="request" columnName="aircraft_version"/>
+
+    </changeSet>
+
+</databaseChangeLog>

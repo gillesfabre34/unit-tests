@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="create_operation_functional_area" author="0.6.0">
+        <!-- *************************** TABLE OPERATION FUNCTIONAL AREA  ********************* -->
+
+        <createTable tableName="operation_functional_area">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="operation_id" type="bigint">
+                <constraints nullable="false" referencedTableName="operation" referencedColumnNames="id"
+                             foreignKeyName="fk_operation_fa_operation_id"/>
+            </column>
+            <column name="functional_area_id" type="bigint">
+                <constraints nullable="false" referencedTableName="functional_area" referencedColumnNames="id"
+                             foreignKeyName="fk_operation_fa_functional_area_id"/>
+            </column>
+            <column name="natural_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <addUniqueConstraint tableName="operation_functional_area" columnNames="natural_id, operation_id, functional_area_id"/>
+
+
+        <!-- ********************* TABLE OPERATION FUNCTIONAL AREA  *************** -->
+        <createTable tableName="operation_functional_area_audit">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="operation_id" type="bigint"/>
+            <column name="functional_area_id" type="bigint"/>
+            <column name="natural_id" type="bigint"/>
+
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,48 @@
+.container {
+    .content {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        //-------------------
+        //   automatic mode
+        //-------------------
+
+        .automatic-mode {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 45%;
+        }
+
+        //-------------------
+        //   separator
+        //-------------------
+
+        .separator {
+            position: relative;
+            display: block;
+
+            height: 90%;
+            width: 1px;
+            background: #666666;
+        }
+
+        //-------------------
+        //   manual mode
+        //-------------------
+
+        .manual-mode {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 45%;
+        }
+    }
+}

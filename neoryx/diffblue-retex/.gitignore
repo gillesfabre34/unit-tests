@@ -1,0 +1,41 @@
+.gradle
+/build/
+*/build/
+/bin/
+*/bin/
+!gradle/wrapper/gradle-wrapper.jar
+/out/
+*/out/
+/retex-model/src/main/generated/
+/generate
+.diffblue
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+*.orig
+.DS_Store
+
+### Dev files ###
+config/imports/
+local/

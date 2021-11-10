@@ -1,0 +1,16 @@
+<div class="method-container">
+    <p class="title">getArray(): Observable< ArrayResponse ></p>
+    <p>getArray() method is used to get a T object in database with a GET http request</p>
+    <p>This method needs that your app respects the Genese standards :</p>
+    <p>* You must add a genese param to your model to specify the endpoint's path  :</p>
+    <p>* You must add a specific genese param "gnArrayResponse" to indicate to Genese that you're waiting an array of arrays :</p>
+    <div class="img-model">
+        <img src="../../../assets/img/model-array-response.png" alt="Model array-response">
+    </div>
+    <p>* The endpoint must wait a GET method.</p>
+    <p>* The api path must respect the REST api standards for a GET method (example : http://my-path/array-of-arrays-of-books)</p>
+    <p>In this example, the getArray() method gets an array of array of books from the NestJS backend.</p>
+    <p class="bold">CAUTION :</p>
+    <p>The getArray() method doesn't return an ArrayOfArraysOfBooks object, but the content of the gnArrayResponse property, ie a Book[][] object.</p>
+    <p>Open your navigator console. In the tab "Network", you'll find the data received from GET request. In the tab "Console", you'll can compare these original data with the formatted objects sent as Observable by Genese. As you can see, Genese formatted the returned object with "Book[][]" type.</p>
+</div>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="create_role_feature" author="0.1.0">
+        <!-- **************** TABLE ROLE_FEATURE *************** -->
+        <createTable tableName="role_feature">
+            <column name="role_id" type="bigint">
+                <constraints primaryKey="true" nullable="false"
+                             referencedTableName="role" referencedColumnNames="id"
+                             foreignKeyName="fk_feature_role_role"/>
+            </column>
+            <column name="code" type="varchar(20)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="right_level" type="varchar(10)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="role_feature_audit">
+            <column name="revision_id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="role_id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="code" type="varchar(20)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="right_level" type="varchar(10)"/>
+        </createTable>
+
+    </changeSet>
+</databaseChangeLog>

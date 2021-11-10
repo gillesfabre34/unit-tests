@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="update_airbus_entity" author="0.9.15">
+
+        <update tableName="user">
+            <column name="airbus_entity_id" value="1"/>
+            <where>airbus_entity_id = 2 </where>
+        </update>
+
+        <update tableName="user_audit">
+            <column name="airbus_entity_id" value="1"/>
+            <where>airbus_entity_id = 2 </where>
+        </update>
+
+        <update tableName="request">
+            <column name="airbus_entity_id" value="1"/>
+            <where>airbus_entity_id = 2 </where>
+        </update>
+
+        <update tableName="request_audit">
+            <column name="airbus_entity_id" value="1"/>
+            <where>airbus_entity_id = 2 </where>
+        </update>
+
+        <delete tableName="airbus_entity">
+            <where>id = 2</where>
+        </delete>
+
+        <delete tableName="airbus_entity_audit">
+            <where>id = 2</where>
+        </delete>
+
+        <update tableName="airbus_entity">
+            <column name="code" value="AH"/>
+            <column name="country_name" value="Airbus Helicopters"/>
+            <column name="state" value="ACTIVE"/>
+            <where>id = 1</where>
+        </update>
+
+        <update tableName="airbus_entity_audit">
+            <column name="revision_id" valueComputed="1"/>
+            <column name="revision_type" value="0"/>
+            <column name="id" value="1"/>
+            <column name="code" value="AH"/>
+            <column name="country_name" value="Airbus Helicopters"/>
+            <column name="state" value="ACTIVE"/>
+            <where>id = 1</where>
+        </update>
+
+    </changeSet>
+</databaseChangeLog>

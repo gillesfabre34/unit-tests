@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+
+    <changeSet id="create_control" author="0.10.0">
+        <!-- ********************* CREATE TABLE CONTROL *************** -->
+        <createTable tableName="control">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="operation_discr" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="drt_id" type="bigint">
+                <constraints nullable="false" referencedTableName="drt" referencedColumnNames="id"
+                             foreignKeyName="fk_drt_control_todo_list"/>
+            </column>
+            <column name="todo_list_id" type="bigint">
+                <constraints referencedTableName="todo_list" referencedColumnNames="id"
+                             foreignKeyName="fk_control_todo_list"/>
+            </column>
+            <column name="operation_id" type="bigint">
+                <constraints referencedTableName="operation" referencedColumnNames="id"
+                             foreignKeyName="fk_control_operation"/>
+            </column>
+            <column name="routing_functional_area_post_id" type="bigint">
+                <constraints referencedTableName="routing_functional_area_post" referencedColumnNames="id"
+                             foreignKeyName="fk_control_routing_functional_area_post"/>
+            </column>
+            <column name="visual_value" type="boolean"/>
+            <column name="todo_list_value" type="varchar(50)"/>
+            <column name="routing_component_value" type="float"/>
+
+        </createTable>
+
+        <!-- ********************* CREATE TABLE CONTROL AUDIT *************** -->
+        <createTable tableName="control_audit">
+            <column name="revision_id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint"/>
+            <column name="id" type="bigint">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="operation_discr" type="varchar(50)"/>
+            <column name="drt_id" type="bigint"/>
+            <column name="todo_list_id" type="bigint"/>
+            <column name="operation_id" type="bigint"/>
+            <column name="routing_functional_area_post_id" type="bigint"/>
+            <column name="visual_value" type="boolean"/>
+            <column name="todo_list_value" type="varchar(50)"/>
+            <column name="routing_component_value" type="float"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

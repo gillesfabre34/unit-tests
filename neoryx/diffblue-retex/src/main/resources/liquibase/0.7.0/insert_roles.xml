@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="insert_roles" author="0.7.0">
+        <insert tableName="role">
+            <column name="airbus_entity_id" value="1"/>
+            <column name="state" value="ACTIVE"/>
+            <column name="is_operator" valueBoolean="true"/>
+            <column name="is_technical_responsible" valueBoolean="false"/>
+        </insert>
+        <insert tableName="role">
+            <column name="airbus_entity_id" value="1"/>
+            <column name="state" value="ACTIVE"/>
+            <column name="is_operator" valueBoolean="false"/>
+            <column name="is_technical_responsible" valueBoolean="true"/>
+        </insert>
+
+        <insert tableName="translate">
+            <column name="entity_id" value="2"/>
+            <column name="class_name" value="Role"/>
+            <column name="field" value="label"/>
+            <column name="language" value="EN"/>
+            <column name="value" value="Operator"/>
+        </insert>
+
+        <insert tableName="translate">
+            <column name="entity_id" value="2"/>
+            <column name="class_name" value="Role"/>
+            <column name="field" value="label"/>
+            <column name="language" value="FR"/>
+            <column name="value" value="Operateur"/>
+        </insert>
+
+        <insert tableName="translate">
+            <column name="entity_id" value="3"/>
+            <column name="class_name" value="Role"/>
+            <column name="field" value="label"/>
+            <column name="language" value="EN"/>
+            <column name="value" value="Technical Responsible"/>
+        </insert>
+
+        <insert tableName="translate">
+            <column name="entity_id" value="3"/>
+            <column name="class_name" value="Role"/>
+            <column name="field" value="label"/>
+            <column name="language" value="FR"/>
+            <column name="value" value="Responsable Technique"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

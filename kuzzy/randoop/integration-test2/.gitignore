@@ -1,0 +1,23 @@
+# if you are on a mac.
+.DS_Store
+
+# Pycharm
+.idea/*
+
+# Python bytecode
+*.pyc
+
+# Things we download
+libs
+tools
+corpus
+
+# Things we generate
+corpus.log
+dljc.log
+map2annotation/checkstyle/
+map2annotation/multiDeclRefactor/
+results
+
+# TODO - figure out how to put this in the right place
+class_info.json

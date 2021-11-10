@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="create_functional_area" author="0.4.0">
+        <!--**************** CREATE FUNCTIONAL AREA **************** -->
+
+        <createTable tableName="functional_area">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="functionality_id" type="bigint">
+                <constraints nullable="false" referencedTableName="functionality" referencedColumnNames="id"
+                             foreignKeyName="fk_functional_area_functionality"/>
+            </column>
+            <column name="material_code" type="varchar(25)"/>
+            <column name="treatment_id" type="bigint">
+                <constraints referencedTableName="treatment" referencedColumnNames="id"
+                             foreignKeyName="fk_functional_area_treatment"/>
+            </column>
+            <column name="functional_area_name_id" type="bigint">
+                <constraints nullable="false" referencedTableName="functional_area_name" referencedColumnNames="id"
+                             foreignKeyName="fk_functional_area_functional_area_name"/>
+            </column>
+            <column name="part_id" type="bigint">
+                <constraints nullable="false" referencedTableName="part" referencedColumnNames="id"
+                             foreignKeyName="fk_functional_area_part"/>
+            </column>
+            <column name="is_disabled" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+            <column name="area_number" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="classification" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="natural_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="functional_area_audit">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="functionality_id" type="bigint">
+
+            </column>
+            <column name="material_code" type="varchar(25)">
+
+            </column>
+            <column name="treatment_id" type="bigint">
+
+            </column>
+            <column name="functional_area_name_id" type="bigint">
+
+            </column>
+            <column name="part_id" type="bigint">
+
+            </column>
+            <column name="is_disabled" type="boolean">
+            </column>
+            <column name="area_number" type="varchar(50)">
+            </column>
+            <column name="classification" type="varchar(50)">
+            </column>
+            <column name="revision_id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="natural_id" type="bigint"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,55 @@
+Problem 1: Technical and financial 
+
+Testing is long, costly and not fun. This usually creates a situation where companies will cut on testing to lower costs and thus impacting the quality and maintainability of their applications. 
+
+The average percentage of testing versus development varies from 30% to 100%. From our experience 30% is too low to have a lasting impact on quality, as where 100% is not usually realistic from a project management perspective. The subject of testing vs quality vs planning is a difficult one and involves all parties in the organization. 
+
+ 
+
+Solution 1: 
+
+Our solution is to develop a software that will be able to automate the creation of unit/integration/regression tests. By doing this, the time needed to implement a full testing coverage could be reduced by up to 80%.   
+
+We also want to go further and automate the bootstrapping process of web application by fully generating the code base, from API to UI. 
+
+ 
+
+ 
+
+ 
+
+Problem 2: Educational 
+
+Most people in the industry do not know what the difference is between unit, integration and regression testing. 
+
+ 
+
+Solution 2: 
+
+Our solution is not only to develop a tool, but also change the way developers look at testing. Education is one of the main components in our approach, and will complement our product to help developers at different stages of development. This will be put in place through different channels (YouTube, blog, consulting...). 
+
+ 
+
+ 
+
+ 
+
+Problem 3:  Popularization 
+
+During projects, code quality is driven and owned by the technical side and analyzed by the management through the lens of diverse static analysis tools. Most of those tools use advanced technical KPI in their reporting, making them difficult to understand by non-technical people. Moreover, there is usually no link between the quality management and the project planning/management. 
+
+Lastly, technical performance management is not easy for management teams that don’t always have technical backgrounds and is usually aimed at teams and not individuals  
+
+ 
+
+Solution3:  
+
+We want to take a subject, Quality management at the code level, that can be dauting for non- 
+
+technical people and make it accessible to all in the organization. Popularization of technical  
+
+monitoring dashboards is a key component of our vision. We also want to be able to link quality  
+
+KPI’s, to projects KPI’s (ex: sprints in Agile methodology). 
+
+More than that, we want to give companies the tools to manage the technical performance of their teams by monitoring quality at the project level, team level and the individual level. 

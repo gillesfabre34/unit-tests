@@ -1,0 +1,2006 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Genese complexity report</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./../../../../../../reports-styles/prism.css" />
+    <link rel="stylesheet" href="./../../../../../../reports-styles/prettify.css" />
+    <link rel="stylesheet" href="./../../../../../../reports-styles/report.css" />
+    <link rel="stylesheet" href="./../../../../../../reports-styles/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<div class="header">
+    <div class="header-left">
+        <div>
+            <h1>Genese complexity report</h1>
+        </div>
+        <div class="pad1y">
+                <span class="backLink" onclick="history.back()"><-</span>
+                    RoutingControllerIT.java
+        </div>
+        <div class="clearfix">
+            <div class='fl pad1y space-right2'>
+                <span>Methods : </span>
+                <span class="strong">39</span>
+            </div>
+        </div>
+    </div>
+    <div class="header-right">
+        <div class="clearfix padly">
+            <div class='fl pad1y space-right2'>
+                <span>Complexity index : </span>
+                <span class="strong">450.1</span>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class='fl pad1y space-right2'>
+                <span>Cyclomatic complexity :</span>
+                <span class="strong">39</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--        -------------------------------------------------------------------------------------->
+<!--        -----------------------------------   Stats and charts   ----------------------------->
+<!--        -------------------------------------------------------------------------------------->
+
+
+<div class="mainContainer">
+    <div class="stats-and-charts">
+
+        <!--        -----------------------------------   Cognitive complexity   ---------------------------->
+
+        <div class="stats-cognitive">
+            <div class="stats-and-doughnut stats-and-doughnut-cognitive">
+                <div class="doughnut">
+                    <canvas id="doughnut-cognitive-cpx" height="220"></canvas>
+                </div>
+                <div class="stats">
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">Cognitive complexity</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">76.9 %</span>
+                            <span class="quiet"> Correct</span>
+                            <span
+                                    class='fraction'>30/39</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">12.8 %</span>
+                            <span class="quiet"> Warning</span>
+                            <span
+                                    class='fraction'>5/39</span>
+                            <span class="quiet">(threshold : 10)</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">10.3 %</span>
+                            <span class="quiet"> Error</span>
+                            <span
+                                    class='fraction'>4/39</span>
+                            <span class="quiet">(threshold : 20)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bar bar-cognitive">
+                <canvas id="bar-cognitive-cpx" class="cognitive-charts"></canvas>
+            </div>
+        </div>
+
+        <!--        -----------------------------------   Cyclomatic complexity   ---------------------------->
+
+        <div class="stats-cyclomatic">
+            <div class="stats-and-doughnut-cyclomatic">
+                <div class="doughnut">
+                    <canvas id="doughnut-cyclomatic-cpx" height="220"></canvas>
+                </div>
+                <div class="stats-cy">
+                    <div class="clearfix cyclomatic-subtitle">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">Cyclomatic complexity</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">100 %</span>
+                            <span class="quiet"> Correct</span>
+                            <span
+                                    class='fraction'>39/39</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">0 %</span>
+                            <span class="quiet"> Warning</span>
+                            <span
+                                    class='fraction'>0/39</span>
+                            <span class="quiet">(threshold : 5)</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">0 %</span>
+                            <span class="quiet"> Error</span>
+                            <span
+                                    class='fraction'>0/39</span>
+                            <span class="quiet">(threshold : 10)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bar bar-cyclomatic">
+                <canvas id="bar-cyclomatic-cpx" class="cyclomatic-charts"></canvas>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!--        -------------------------------------------------------------------------------------->
+    <!--        -----------------------------------   Methods arrays   ------------------------------->
+    <!--        -------------------------------------------------------------------------------------->
+
+
+    <div idclass="subfolders">
+        <div class="clearfix file-methods-subtitle">
+            <div class='fl pad1y space-right2'>
+                <span class="strong">Methods of <span class="italic">RoutingControllerIT.java</span></span>
+            </div>
+        </div>
+
+            <div id="before">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">before</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgerror">63.4</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @BeforeEach
+                public void before() { // ---------------------------------------------------------------------------------------------------------------------------------------------------- +0.2 Complexity index (+0.2 atomic)
+                    runInTransaction(() -&gt; { // ---------------------------------------------------------------------------------------------------------------------------------------------- +2.2 Complexity index (+0.2 atomic, +2 structural)
+                        part1 &#x3D; dataSetInitializer.createPart(null); // ---------------------------------------------------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                        part2 &#x3D; dataSetInitializer.createPart(null); // ---------------------------------------------------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                        part3 &#x3D; dataSetInitializer.createPart(null); // ---------------------------------------------------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                        part4 &#x3D; dataSetInitializer.createPart(part -&gt; part.setPartNumberRoot(PART_NUMBER_ROOT), null); // -------------------------------------------------------------------- +4.9 Complexity index (+0.9 atomic, +1 nesting, +3 structural)
+                        part5 &#x3D; dataSetInitializer.createPart(null); // ---------------------------------------------------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                        part6 &#x3D; dataSetInitializer.createPart(null); // ---------------------------------------------------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+            
+                        LocalDateTime date &#x3D; LocalDateTime.now(); // ------------------------------------------------------------------------------------------------------------------------- +1.5 Complexity index (+0.5 atomic, +1 structural)
+            
+                        part1.setMedia(dataSetInitializer.createMedia()); // ----------------------------------------------------------------------------------------------------------------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                        routingOne &#x3D; dataSetInitializer.createRouting(part1); // ------------------------------------------------------------------------------------------------------------- +1.5 Complexity index (+0.5 atomic, +1 structural)
+                        routingTwo &#x3D; dataSetInitializer.createRouting(part2); // ------------------------------------------------------------------------------------------------------------- +1.5 Complexity index (+0.5 atomic, +1 structural)
+                        routingThree &#x3D; dataSetInitializer.createRouting(part3); // ----------------------------------------------------------------------------------------------------------- +1.5 Complexity index (+0.5 atomic, +1 structural)
+                        routingCreated &#x3D; dataSetInitializer.createRouting(r -&gt; r.setStatus(EnumStatus.CREATED), part1); // ------------------------------------------------------------------- +5.1 Complexity index (+1.1 atomic, +1 nesting, +3 structural)
+            
+                        routingFilterOne &#x3D; dataSetInitializer.createRouting( // -------------------------------------------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                                routing -&gt; { // ---------------------------------------------------------------------------------------------------------------------------------------------- +2.2 Complexity index (+0.2 atomic, +1 nesting, +1 structural)
+                                    routing.setTechnicalId(101L); // ------------------------------------------------------------------------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                                    routing.setCreationDate(date); // ------------------------------------------------------------------------------------------------------------------------ +1.3 Complexity index (+0.3 atomic, +1 structural)
+                                    routing.setStatus(EnumStatus.VALIDATED); // -------------------------------------------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                                    routing.setCreator(dataset.user_superAdmin); // ---------------------------------------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+            
+                                }, part4 // -------------------------------------------------------------------------------------------------------------------------------------------------- +0.1 Complexity index (+0.1 atomic)
+                        );
+            
+                        routingFilterTwo &#x3D; dataSetInitializer.createRouting( // -------------------------------------------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                                routing -&gt; { // ---------------------------------------------------------------------------------------------------------------------------------------------- +2.2 Complexity index (+0.2 atomic, +1 nesting, +1 structural)
+                                    routing.setTechnicalId(102L); // ------------------------------------------------------------------------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                                    routing.setCreationDate(date); // ------------------------------------------------------------------------------------------------------------------------ +1.3 Complexity index (+0.3 atomic, +1 structural)
+                                    routing.setStatus(EnumStatus.CREATED); // ---------------------------------------------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                                    routing.setCreator(dataset.user_superAdmin); // ---------------------------------------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+            
+                                }, part5 // -------------------------------------------------------------------------------------------------------------------------------------------------- +0.1 Complexity index (+0.1 atomic)
+                        );
+            
+                        routingFilterThree &#x3D; dataSetInitializer.createRouting( // ------------------------------------------------------------------------------------------------------------ +1.4 Complexity index (+0.4 atomic, +1 structural)
+                                routing -&gt; { // ---------------------------------------------------------------------------------------------------------------------------------------------- +2.2 Complexity index (+0.2 atomic, +1 nesting, +1 structural)
+                                    routing.setTechnicalId(103L); // ------------------------------------------------------------------------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                                    routing.setCreationDate(date); // ------------------------------------------------------------------------------------------------------------------------ +1.3 Complexity index (+0.3 atomic, +1 structural)
+                                    routing.setStatus(EnumStatus.CREATED); // ---------------------------------------------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                                    routing.setCreator(dataset.user_superAdmin); // ---------------------------------------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                                    routing.getTranslations().clear(); // -------------------------------------------------------------------------------------------------------------------- +2.3 Complexity index (+0.3 atomic, +2 structural)
+                                    routing.addTranslation(dataSetInitializer.createTranslation(RoutingTranslation::new, RoutingFieldsEnum.name, Language.EN, &quot;TEST ENGLISH !!&quot;)); // -------- +3.0 Complexity index (+1.0 atomic, +2 structural)
+                                    routing.addTranslation(dataSetInitializer.createTranslation(RoutingTranslation::new, RoutingFieldsEnum.name, Language.FR, &quot;TEST FRANCAIS !!&quot;)); // ------- +3.0 Complexity index (+1.0 atomic, +2 structural)
+                                }, part6 // -------------------------------------------------------------------------------------------------------------------------------------------------- +0.1 Complexity index (+0.1 atomic)
+                        );
+                    });
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getAllRoutingsOK">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getAllRoutingsOK</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">6.4</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getAllRoutingsOK() throws Exception { // ------------------------------------------------------------------ +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_simpleUser; // ------------------------------------------------------------------------------ +0.4 Complexity index (+0.4 atomic)
+                    dataSetInitializer.createUserFeature(FeatureCode.ROUTING, dataset.user_simpleUser, EnumRightLevel.READ); // ------- +1.8 Complexity index (+0.8 atomic, +1 structural)
+                    expectedStatus &#x3D; HttpStatus.OK; // -------------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+            
+                    checkGetAllRoutings(hasSize((int) routingRepository.count())); // ------------------------------------------------- +3.5 Complexity index (+0.5 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getAllRoutingsForbidden">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getAllRoutingsForbidden</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">5.4</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getAllRoutingsForbidden() throws Exception { // ----------------------------------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    expectedStatus &#x3D; HttpStatus.FORBIDDEN; // ------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    asUser &#x3D; dataset.user_superAdmin; // ------------------------------------------------------------------------------ +0.4 Complexity index (+0.4 atomic)
+                    dataSetInitializer.createUserFeature(FeatureCode.ROUTING, dataset.user_superAdmin, EnumRightLevel.NONE); // ------- +1.8 Complexity index (+0.8 atomic, +1 structural)
+            
+                    withRequest &#x3D; get(API_ROUTINGS); // ------------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+            
+                    abstractCheck(); // ----------------------------------------------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getAllRoutingsPaginatedOK">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getAllRoutingsPaginatedOK</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">6.2</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getAllRoutingsPaginatedOK() throws Exception { // ------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_superAdmin; // ---------------------------- +0.4 Complexity index (+0.4 atomic)
+                    withParams.add(&quot;page&quot;, &quot;1&quot;); // --------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                    withParams.add(&quot;size&quot;, &quot;2&quot;); // --------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                    expectedStatus &#x3D; HttpStatus.OK; // ------------------------------ +0.4 Complexity index (+0.4 atomic)
+            
+                    checkGetAllRoutings(hasSize(2)); // ----------------------------- +2.3 Complexity index (+0.3 atomic, +2 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getOneRoutingOk">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getOneRoutingOk</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgerror">52.8</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getOneRoutingOk() throws Exception { // ------------------------------------------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    expectedStatus &#x3D; HttpStatus.OK; // -------------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    asUser &#x3D; dataset.user_simpleUser; // ------------------------------------------------------------------------------ +0.4 Complexity index (+0.4 atomic)
+                    dataSetInitializer.createUserFeature(FeatureCode.ROUTING, dataset.user_simpleUser, EnumRightLevel.READ); // ------- +1.8 Complexity index (+0.8 atomic, +1 structural)
+            
+                    withRequest &#x3D; get(API_ROUTINGS + &quot;/&quot; + routingOne.getNaturalId()); // --------------------------------------------- +2.9 Complexity index (+0.9 atomic, +2 structural)
+                    abstractCheck() // ------------------------------------------------------------------------------------------------ +1.1 Complexity index (+0.1 atomic, +1 structural)
+                            .andExpect(jsonPath(&quot;$.id&quot;).value(routingOne.getNaturalId())) // ------------------------------------------ +4.6 Complexity index (+0.6 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;$.translatedFields.FR.name&quot;, notNullValue())) // ------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.translatedFields.EN.name&quot;, notNullValue())) // ------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.part.media&quot;, notNullValue())) // --------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.part.partNumber&quot;).value(part1.getPartNumber())) // --------------------------------- +4.6 Complexity index (+0.6 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;$.part.partNumberRoot&quot;).value(part1.getPartNumberRoot())) // ------------------------- +4.6 Complexity index (+0.6 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;$.part.partDesignation.translatedFields.FR.designation&quot;, notNullValue())) // --------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.part.partDesignation.translatedFields.EN.designation&quot;, notNullValue())) // --------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.status&quot;).value(routingOne.getStatus().toString())) // ------------------------------ +5.7 Complexity index (+0.7 atomic, +5 structural)
+                            .andExpect(jsonPath(&quot;$.creator.firstName&quot;).value(dataset.user_superAdmin.getFirstName())) // -------------- +4.7 Complexity index (+0.7 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;$.creator.lastName&quot;).value(dataset.user_superAdmin.getLastName())); // --------------- +4.7 Complexity index (+0.7 atomic, +4 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getOneRoutingForbidden">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getOneRoutingForbidden</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">6.9</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getOneRoutingForbidden() throws Exception { // ------------------------------------------------------------ +0.3 Complexity index (+0.3 atomic)
+                    expectedStatus &#x3D; HttpStatus.FORBIDDEN; // ------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    asUser &#x3D; dataset.user_superAdmin; // ------------------------------------------------------------------------------ +0.4 Complexity index (+0.4 atomic)
+                    dataSetInitializer.createUserFeature(FeatureCode.ROUTING, dataset.user_superAdmin, EnumRightLevel.NONE); // ------- +1.8 Complexity index (+0.8 atomic, +1 structural)
+            
+                    withRequest &#x3D; get(API_ROUTINGS + &quot;/&quot; + routingOne.getNaturalId()); // --------------------------------------------- +2.9 Complexity index (+0.9 atomic, +2 structural)
+                    abstractCheck(); // ----------------------------------------------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getOneRoutingWithBadId">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getOneRoutingWithBadId</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">5.6</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getOneRoutingWithBadId() throws Exception { // ------------------------------------------------------------ +0.3 Complexity index (+0.3 atomic)
+                    expectedStatus &#x3D; HttpStatus.NOT_FOUND; // ------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    asUser &#x3D; dataset.user_simpleUser; // ------------------------------------------------------------------------------ +0.4 Complexity index (+0.4 atomic)
+                    dataSetInitializer.createUserFeature(FeatureCode.ROUTING, dataset.user_simpleUser, EnumRightLevel.READ); // ------- +1.8 Complexity index (+0.8 atomic, +1 structural)
+            
+                    withRequest &#x3D; get(API_ROUTINGS + &quot;/0&quot;); // ------------------------------------------------------------------------ +1.6 Complexity index (+0.6 atomic, +1 structural)
+            
+                    abstractCheck(); // ----------------------------------------------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="checkGetAllRoutings">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">checkGetAllRoutings</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">15.6</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                private void checkGetAllRoutings(Matcher&lt;? extends Collection&gt; resultsMatcher) throws Exception { // ------ +0.5 Complexity index (+0.5 atomic)
+                    withRequest &#x3D; get(API_ROUTINGS); // -------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+            
+                    abstractCheck() // ------------------------------------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                            .andExpect(jsonPath(&quot;$.results&quot;, notNullValue())) // ------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.results&quot;, resultsMatcher)) // ------------------------------------------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                            .andExpect(jsonPath(&quot;$.totalPages&quot;).isNumber()) // --------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.totalResults&quot;).isNumber()); // ------------------------------------------ +3.4 Complexity index (+0.4 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="checkGetAllRoutings">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">checkGetAllRoutings</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgerror">34.1</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                private void checkGetAllRoutings(List&lt;Routing&gt; contains, List&lt;Routing&gt; notContains) throws Exception { // --------------------------------------------------------------------------- +0.9 Complexity index (+0.9 atomic)
+                    asUser &#x3D; dataset.user_superAdmin; // --------------------------------------------------------------------------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    withRequest &#x3D; get(API_ROUTINGS); // ---------------------------------------------------------------------------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                    expectedStatus &#x3D; HttpStatus.OK; // ----------------------------------------------------------------------------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+            
+            
+                    Integer[] containsIds &#x3D; contains.stream().map(routing -&gt; Integer.valueOf(routing.getNaturalId().intValue())).collect(Collectors.toList()).toArray(new Integer[0]); // ------------ +10.9 Complexity index (+1.9 atomic, +9 structural)
+                    Integer[] notContainsId &#x3D; notContains.stream().map(routing -&gt; Integer.valueOf(routing.getNaturalId().intValue())).collect(Collectors.toList()).toArray(new Integer[0]); // ------- +10.9 Complexity index (+1.9 atomic, +9 structural)
+            
+                    abstractCheck() // --------------------------------------------------------------------------------------------------------------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                            .andExpect(jsonPath(&quot;$.results[*].id&quot;, hasItems(containsIds))) // -------------------------------------------------------------------------------------------------------- +3.5 Complexity index (+0.5 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.results[*].id&quot;, not(hasItems(notContainsId)))); // ------------------------------------------------------------------------------------------------ +4.6 Complexity index (+0.6 atomic, +4 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="deleteRoutingOk">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">deleteRoutingOk</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">12.6</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void deleteRoutingOk() throws Exception { // -------------------------------------------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_simpleUser; // ------------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    dataSetInitializer.createUserFeature(FeatureCode.ROUTING, dataset.user_simpleUser, EnumRightLevel.WRITE); // ------- +1.8 Complexity index (+0.8 atomic, +1 structural)
+                    Part part &#x3D; dataSetInitializer.createPart(null); // ---------------------------------------------------------------- +1.5 Complexity index (+0.5 atomic, +1 structural)
+                    Routing routingToDelete &#x3D; dataSetInitializer.createRouting(routing -&gt; { // ----------------------------------------- +2.7 Complexity index (+0.7 atomic, +2 structural)
+                        routing.setStatus(EnumStatus.CREATED); // ---------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                            }, part // ------------------------------------------------------------------------------------------------- +0.1 Complexity index (+0.1 atomic)
+                    );
+            
+                    withRequest &#x3D; delete(API_ROUTINGS + &quot;/&quot; + routingToDelete.getNaturalId()); // -------------------------------------- +2.9 Complexity index (+0.9 atomic, +2 structural)
+                    expectedStatus &#x3D; HttpStatus.NO_CONTENT; // ------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    abstractCheck(); // ------------------------------------------------------------------------------------------------ +1.1 Complexity index (+0.1 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="deleteRoutingWithOperationOk">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">deleteRoutingWithOperationOk</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgerror">20.7</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void deleteRoutingWithOperationOk() throws Exception { // ----------------------------------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_simpleUser; // ----------------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    dataSetInitializer.createUserFeature(FeatureCode.ROUTING, dataset.user_simpleUser, EnumRightLevel.WRITE); // ----------- +1.8 Complexity index (+0.8 atomic, +1 structural)
+                    Part part &#x3D; dataSetInitializer.createPart(null); // -------------------------------------------------------------------- +1.5 Complexity index (+0.5 atomic, +1 structural)
+                    Routing routingToDelete &#x3D; dataSetInitializer.createRouting(routing -&gt; { // --------------------------------------------- +2.7 Complexity index (+0.7 atomic, +2 structural)
+                        routing.setStatus(EnumStatus.CREATED); // -------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                            }, part // ----------------------------------------------------------------------------------------------------- +0.1 Complexity index (+0.1 atomic)
+                    );
+                    Operation operation &#x3D; dataSetInitializer.createOperation(1, // --------------------------------------------------------- +1.6 Complexity index (+0.6 atomic, +1 structural)
+                            operation1 -&gt; operation1.setRouting(routingToDelete)); // ------------------------------------------------------ +2.5 Complexity index (+0.5 atomic, +2 structural)
+                    OperationFunctionalArea operationFunctionalArea &#x3D; dataSetInitializer // ------------------------------------------------ +0.4 Complexity index (+0.4 atomic)
+                            .createOperationFunctionalArea(opeFunctionalArea -&gt; opeFunctionalArea.setOperation(operation)); // ------------- +3.6 Complexity index (+0.6 atomic, +3 structural)
+            
+            //        dataSetInitializer.createOperationTodoList(operationTodoList -&gt; operationTodoList.setOperation(operation));
+                    withRequest &#x3D; delete(API_ROUTINGS + &quot;/&quot; + routingToDelete.getNaturalId()); // ------------------------------------------ +2.9 Complexity index (+0.9 atomic, +2 structural)
+                    expectedStatus &#x3D; HttpStatus.NO_CONTENT; // ----------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    abstractCheck(); // ---------------------------------------------------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="deleteRoutingForbidden">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">deleteRoutingForbidden</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">6.9</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void deleteRoutingForbidden() throws Exception { // ------------------------------------------------------------ +0.3 Complexity index (+0.3 atomic)
+                    expectedStatus &#x3D; HttpStatus.FORBIDDEN; // ------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    asUser &#x3D; dataset.user_superAdmin; // ------------------------------------------------------------------------------ +0.4 Complexity index (+0.4 atomic)
+                    dataSetInitializer.createUserFeature(FeatureCode.ROUTING, dataset.user_superAdmin, EnumRightLevel.NONE); // ------- +1.8 Complexity index (+0.8 atomic, +1 structural)
+            
+                    withRequest &#x3D; delete(API_ROUTINGS + &quot;/&quot; + routingOne.getNaturalId()); // ------------------------------------------ +2.9 Complexity index (+0.9 atomic, +2 structural)
+            
+                    abstractCheck(); // ----------------------------------------------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="deleteRoutingWithoutWriteForbidden">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">deleteRoutingWithoutWriteForbidden</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">6.9</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void deleteRoutingWithoutWriteForbidden() throws Exception { // ------------------------------------------------ +0.3 Complexity index (+0.3 atomic)
+                    expectedStatus &#x3D; HttpStatus.FORBIDDEN; // ------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    asUser &#x3D; dataset.user_superAdmin; // ------------------------------------------------------------------------------ +0.4 Complexity index (+0.4 atomic)
+                    dataSetInitializer.createUserFeature(FeatureCode.ROUTING, dataset.user_superAdmin, EnumRightLevel.READ); // ------- +1.8 Complexity index (+0.8 atomic, +1 structural)
+            
+                    withRequest &#x3D; delete(API_ROUTINGS + &quot;/&quot; + routingThree.getNaturalId()); // ---------------------------------------- +2.9 Complexity index (+0.9 atomic, +2 structural)
+            
+                    abstractCheck(); // ----------------------------------------------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="deleteRoutingIdNotExist">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">deleteRoutingIdNotExist</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">5.8</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void deleteRoutingIdNotExist() throws Exception { // ------------------------------------------------------------ +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_simpleUser; // ------------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    dataSetInitializer.createUserFeature(FeatureCode.ROUTING, dataset.user_simpleUser, EnumRightLevel.WRITE); // ------- +1.8 Complexity index (+0.8 atomic, +1 structural)
+                    withRequest &#x3D; delete(API_ROUTINGS + &quot;/&quot; + 0); // ------------------------------------------------------------------- +1.8 Complexity index (+0.8 atomic, +1 structural)
+                    expectedStatus &#x3D; HttpStatus.NOT_FOUND; // -------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+            
+                    abstractCheck(); // ------------------------------------------------------------------------------------------------ +1.1 Complexity index (+0.1 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getAllRoutingsNoFilters_OK">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getAllRoutingsNoFilters_OK</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">6</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getAllRoutingsNoFilters_OK() throws Exception { // -------------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_superAdmin; // ------------------------------------ +0.4 Complexity index (+0.4 atomic)
+                    withRequest &#x3D; get(API_ROUTINGS); // ------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                    expectedStatus &#x3D; HttpStatus.OK; // -------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    checkGetAllRoutings(hasSize((int) routingRepository.count())); // ------- +3.5 Complexity index (+0.5 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getRoutingsWithPnOrPnRootPartNumberFilter">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getRoutingsWithPnOrPnRootPartNumberFilter</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">6.6</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getRoutingsWithPnOrPnRootPartNumberFilter() throws Exception { // ------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    withParams.add(&quot;pnOrPnRoot&quot;, part4.getPartNumber()); // ------------------------------------------------- +2.5 Complexity index (+0.5 atomic, +2 structural)
+            
+                    checkGetAllRoutings(List.of(routingFilterOne), List.of(routingFilterTwo, routingFilterThree)); // ------- +3.8 Complexity index (+0.8 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getRoutingsWithPnOrPnRootPartNumberRootFilter">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getRoutingsWithPnOrPnRootPartNumberRootFilter</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">6.6</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getRoutingsWithPnOrPnRootPartNumberRootFilter() throws Exception { // --------------------------- +0.3 Complexity index (+0.3 atomic)
+                    withParams.add(&quot;pnOrPnRoot&quot;, part4.getPartNumberRoot()); // --------------------------------------------- +2.5 Complexity index (+0.5 atomic, +2 structural)
+            
+                    checkGetAllRoutings(List.of(routingFilterOne), List.of(routingFilterTwo, routingFilterThree)); // ------- +3.8 Complexity index (+0.8 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getRoutingsWithStatusFilter">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getRoutingsWithStatusFilter</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">6.7</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getRoutingsWithStatusFilter() throws Exception { // --------------------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    withParams.add(&quot;status&quot;, EnumStatus.CREATED.name()); // ------------------------------------------------- +2.6 Complexity index (+0.6 atomic, +2 structural)
+            
+                    checkGetAllRoutings(List.of(routingFilterTwo), List.of(routingFilterOne, routingFilterThree)); // ------- +3.8 Complexity index (+0.8 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getRoutingsWithMultiFilters">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getRoutingsWithMultiFilters</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">9.2</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getRoutingsWithMultiFilters() throws Exception { // ----------------------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    withParams.add(&quot;partNumber&quot;, part1.getPartNumber()); // --------------------------------------------------- +2.5 Complexity index (+0.5 atomic, +2 structural)
+                    withParams.add(&quot;status&quot;, EnumStatus.CREATED.name()); // --------------------------------------------------- +2.6 Complexity index (+0.6 atomic, +2 structural)
+            
+                    checkGetAllRoutings(List.of(), List.of(routingFilterOne, routingFilterTwo, routingFilterThree)); // ------- +3.8 Complexity index (+0.8 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getRoutingsWithRoutingNameFilter_English">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getRoutingsWithRoutingNameFilter_English</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">4.8</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getRoutingsWithRoutingNameFilter_English() throws Exception { // ------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_superAdmin; // ------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    expectedStatus &#x3D; HttpStatus.OK; // --------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    withParams.add(&quot;name&quot;, &quot;ENGL&quot;); // --------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+            
+                    checkGetAllRoutings(hasSize(1)); // -------------------------------------------- +2.3 Complexity index (+0.3 atomic, +2 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getRoutingsWithRoutingNameFilter_Francais">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getRoutingsWithRoutingNameFilter_Francais</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">4.8</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getRoutingsWithRoutingNameFilter_Francais() throws Exception { // ------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_superAdmin; // -------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    expectedStatus &#x3D; HttpStatus.OK; // ---------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    withParams.add(&quot;name&quot;, &quot;ANCA&quot;); // ---------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+            
+                    checkGetAllRoutings(hasSize(1)); // --------------------------------------------- +2.3 Complexity index (+0.3 atomic, +2 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getRoutingsWithIncorrectRoutingNameFilter">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getRoutingsWithIncorrectRoutingNameFilter</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">4.8</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getRoutingsWithIncorrectRoutingNameFilter() throws Exception { // ------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_superAdmin; // -------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    expectedStatus &#x3D; HttpStatus.OK; // ---------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    withParams.add(&quot;name&quot;, &quot;ANCAZZZ&quot;); // ------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+            
+                    checkGetAllRoutings(hasSize(0)); // --------------------------------------------- +2.3 Complexity index (+0.3 atomic, +2 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getRoutingsWithRoutingIdFilter">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getRoutingsWithRoutingIdFilter</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">7</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getRoutingsWithRoutingIdFilter() throws Exception { // ------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_superAdmin; // --------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    expectedStatus &#x3D; HttpStatus.OK; // ----------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    withParams.add(&quot;id&quot;, routingOne.getNaturalId().toString()); // ------- +3.6 Complexity index (+0.6 atomic, +3 structural)
+            
+                    checkGetAllRoutings(hasSize(1)); // ---------------------------------- +2.3 Complexity index (+0.3 atomic, +2 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getRoutingsWithCreationDateFilter">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getRoutingsWithCreationDateFilter</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">8.2</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getRoutingsWithCreationDateFilter() throws Exception { // ------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_superAdmin; // ------------------------------------ +0.4 Complexity index (+0.4 atomic)
+                    expectedStatus &#x3D; HttpStatus.OK; // -------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    withParams.add(&quot;creationDate&quot;, LocalDate.now().toString()); // ---------- +3.6 Complexity index (+0.6 atomic, +3 structural)
+            
+                    checkGetAllRoutings(hasSize((int) routingRepository.count())); // ------- +3.5 Complexity index (+0.5 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getRoutingsWithOtherMultiFilters">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getRoutingsWithOtherMultiFilters</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">9.8</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getRoutingsWithOtherMultiFilters() throws Exception { // ------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_superAdmin; // ----------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    withParams.add(&quot;name&quot;, &quot;ENGL&quot;); // ------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                    withParams.add(&quot;creationDate&quot;, LocalDate.now().toString()); // --------- +3.6 Complexity index (+0.6 atomic, +3 structural)
+                    withRequest &#x3D; get(API_ROUTINGS); // ------------------------------------ +1.4 Complexity index (+0.4 atomic, +1 structural)
+                    expectedStatus &#x3D; HttpStatus.OK; // ------------------------------------- +0.4 Complexity index (+0.4 atomic)
+            
+                    checkGetAllRoutings(hasSize(1)); // ------------------------------------ +2.3 Complexity index (+0.3 atomic, +2 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="validateRoutings_ok">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">validateRoutings_ok</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">4.8</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void validateRoutings_ok() throws Exception { // ------------------------------ +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_superAdmin; // --------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    withRequest &#x3D; put(API_ROUTINGS_PUBLISH, routingCreated.getNaturalId()); // ------- +2.6 Complexity index (+0.6 atomic, +2 structural)
+                    expectedStatus &#x3D; HttpStatus.NO_CONTENT; // --------------------------------------- +0.4 Complexity index (+0.4 atomic)
+            
+                    abstractCheck(); // -------------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="validateRoutings_ko_statusNotCreated">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">validateRoutings_ko_statusNotCreated</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">11</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void validateRoutings_ko_statusNotCreated() throws Exception { // ---------------------------------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_superAdmin; // ------------------------------------------------------------------------------------------ +0.4 Complexity index (+0.4 atomic)
+                    routingOne.setStatus(EnumStatus.VALIDATED); // -------------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                    routingRepository.save(routingOne); // ---------------------------------------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                    withRequest &#x3D; put(API_ROUTINGS_PUBLISH, routingOne.getNaturalId()); // -------------------------------------------------------- +2.6 Complexity index (+0.6 atomic, +2 structural)
+                    expectedStatus &#x3D; HttpStatus.BAD_REQUEST; // ----------------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+            
+                    abstractCheck().andExpect(jsonPath(&quot;$.messages&quot;).value(&quot;Routing isn&#x27;t in the right status and can&#x27;t be published&quot;)); // ------- +4.6 Complexity index (+0.6 atomic, +4 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="validateRoutings_ko_routingNotFound">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">validateRoutings_ko_routingNotFound</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">7.2</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void validateRoutings_ko_routingNotFound() throws Exception { // -------------------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_superAdmin; // --------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    withRequest &#x3D; put(API_ROUTINGS_PUBLISH,  -1); // --------------------------------------- +1.5 Complexity index (+0.5 atomic, +1 structural)
+                    expectedStatus &#x3D; HttpStatus.NOT_FOUND; // ---------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+            
+                    abstractCheck().andExpect(jsonPath(&quot;$.messages&quot;).value(&quot;Routing not found&quot;)); // ------- +4.6 Complexity index (+0.6 atomic, +4 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="validateRoutings_ko_forbidden">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">validateRoutings_ko_forbidden</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">4.8</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void validateRoutings_ko_forbidden() throws Exception { // ----------------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_simpleUser2; // ----------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    withRequest &#x3D; put(API_ROUTINGS_PUBLISH,  routingOne.getNaturalId()); // ------- +2.6 Complexity index (+0.6 atomic, +2 structural)
+                    expectedStatus &#x3D; HttpStatus.FORBIDDEN; // ------------------------------------- +0.4 Complexity index (+0.4 atomic)
+            
+                    abstractCheck(); // ----------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getRoutingsWithPartNumberFilter">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getRoutingsWithPartNumberFilter</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">6.6</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getRoutingsWithPartNumberFilter() throws Exception { // ----------------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    withParams.add(&quot;partNumber&quot;, part4.getPartNumber()); // ------------------------------------------------- +2.5 Complexity index (+0.5 atomic, +2 structural)
+            
+                    checkGetAllRoutings(List.of(routingFilterOne), List.of(routingFilterTwo, routingFilterThree)); // ------- +3.8 Complexity index (+0.8 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getRoutingsWithPartNumberRootFilter">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getRoutingsWithPartNumberRootFilter</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">17.7</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getRoutingsWithPartNumberRootFilter() throws Exception { // ------------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    withParams.add(&quot;partNumberRoot&quot;, part4.getPartNumberRoot()); // ----------------------------------------- +2.5 Complexity index (+0.5 atomic, +2 structural)
+                    part4 &#x3D; dataSetInitializer.createPart(part -&gt; { // ------------------------------------------------------ +2.6 Complexity index (+0.6 atomic, +2 structural)
+                        part.setPartNumberRoot(part4.getPartNumberRoot()); // ----------------------------------------------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                        part.setPartNumber(&quot;&quot;); // -------------------------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                        part.setTechnicalId(part4.getTechnicalId()); // ----------------------------------------------------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                        part.setNaturalId(part4.getNaturalId()); // --------------------------------------------------------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                    }, null);
+            
+                    checkGetAllRoutings(List.of(routingFilterOne), List.of(routingFilterTwo, routingFilterThree)); // ------- +3.8 Complexity index (+0.8 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getRoutingsWithPartNumberFilter_notExist">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getRoutingsWithPartNumberFilter_notExist</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">5.5</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getRoutingsWithPartNumberFilter_notExist() throws Exception{ // -------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    withParams.add(&quot;partNumber&quot;, &quot;aaaaa&quot;); // -------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+            
+                    checkGetAllRoutings(List.of(),List.of(routingFilterOne,routingFilterTwo,routingFilterThree)); // ------- +3.8 Complexity index (+0.8 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getRoutingsWithPartNumberRootFilter_notExist">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getRoutingsWithPartNumberRootFilter_notExist</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">5.5</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getRoutingsWithPartNumberRootFilter_notExist() throws Exception{ // ---------------------------- +0.3 Complexity index (+0.3 atomic)
+                    withParams.add(&quot;partNumberRoot&quot;, &quot;aaaaa&quot;); // ---------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+            
+                    checkGetAllRoutings(List.of(),List.of(routingFilterOne,routingFilterTwo,routingFilterThree)); // ------- +3.8 Complexity index (+0.8 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getRoutingsWithSamePartNumberAndPartNumberRootFilter">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getRoutingsWithSamePartNumberAndPartNumberRootFilter</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">9.1</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getRoutingsWithSamePartNumberAndPartNumberRootFilter() throws Exception{ // --------------------- +0.3 Complexity index (+0.3 atomic)
+                    withParams.add(&quot;partNumber&quot;, part6.getPartNumber()); // ------------------------------------------------- +2.5 Complexity index (+0.5 atomic, +2 structural)
+                    withParams.add(&quot;partNumberRoot&quot;, part6.getPartNumberRoot()); // ----------------------------------------- +2.5 Complexity index (+0.5 atomic, +2 structural)
+            
+                    checkGetAllRoutings(List.of(routingFilterThree), List.of(routingFilterTwo, routingFilterOne)); // ------- +3.8 Complexity index (+0.8 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getRoutingsWithDifferentPartNumberAndPartNumberRootFilter">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getRoutingsWithDifferentPartNumberAndPartNumberRootFilter</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">9.1</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getRoutingsWithDifferentPartNumberAndPartNumberRootFilter() throws Exception{ // --------------- +0.3 Complexity index (+0.3 atomic)
+                    withParams.add(&quot;partNumber&quot;, part5.getPartNumber()); // ------------------------------------------------ +2.5 Complexity index (+0.5 atomic, +2 structural)
+                    withParams.add(&quot;partNumberRoot&quot;, part4.getPartNumberRoot()); // ---------------------------------------- +2.5 Complexity index (+0.5 atomic, +2 structural)
+            
+                    checkGetAllRoutings(List.of(),List.of(routingFilterOne,routingFilterTwo,routingFilterThree)); // ------- +3.8 Complexity index (+0.8 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getRoutingsWithSamePnOrPnRootAndPartNumberFilter">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getRoutingsWithSamePnOrPnRootAndPartNumberFilter</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">9.1</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getRoutingsWithSamePnOrPnRootAndPartNumberFilter() throws Exception{ // ------------------------- +0.3 Complexity index (+0.3 atomic)
+                    withParams.add(&quot;partNumber&quot;, part6.getPartNumber()); // ------------------------------------------------- +2.5 Complexity index (+0.5 atomic, +2 structural)
+                    withParams.add(&quot;pnOrPnRoot&quot;, part6.getPartNumberRoot()); // --------------------------------------------- +2.5 Complexity index (+0.5 atomic, +2 structural)
+            
+                    checkGetAllRoutings(List.of(routingFilterThree), List.of(routingFilterTwo, routingFilterOne)); // ------- +3.8 Complexity index (+0.8 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getRoutingsWithDifferentPnOrPnRootAndPartNumberFilter">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getRoutingsWithDifferentPnOrPnRootAndPartNumberFilter</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">9.1</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getRoutingsWithDifferentPnOrPnRootAndPartNumberFilter() throws Exception{ // ------------------- +0.3 Complexity index (+0.3 atomic)
+                    withParams.add(&quot;partNumber&quot;, part5.getPartNumber()); // ------------------------------------------------ +2.5 Complexity index (+0.5 atomic, +2 structural)
+                    withParams.add(&quot;pnOrPnRoot&quot;, part4.getPartNumberRoot()); // -------------------------------------------- +2.5 Complexity index (+0.5 atomic, +2 structural)
+            
+                    checkGetAllRoutings(List.of(),List.of(routingFilterOne,routingFilterTwo,routingFilterThree)); // ------- +3.8 Complexity index (+0.8 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getRoutingsWithSamePnOrPnRootAndPartNumberRootFilter">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getRoutingsWithSamePnOrPnRootAndPartNumberRootFilter</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">17.7</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getRoutingsWithSamePnOrPnRootAndPartNumberRootFilter() throws Exception{ // --------------------- +0.3 Complexity index (+0.3 atomic)
+                    withParams.add(&quot;partNumberRoot&quot;, part4.getPartNumberRoot()); // ----------------------------------------- +2.5 Complexity index (+0.5 atomic, +2 structural)
+                    part4 &#x3D; dataSetInitializer.createPart(part -&gt; { // ------------------------------------------------------ +2.6 Complexity index (+0.6 atomic, +2 structural)
+                        part.setPartNumberRoot(part4.getPartNumberRoot()); // ----------------------------------------------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                        part.setPartNumber(&quot;&quot;); // -------------------------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                        part.setTechnicalId(part4.getTechnicalId()); // ----------------------------------------------------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                        part.setNaturalId(part4.getNaturalId()); // --------------------------------------------------------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                    }, null);
+            
+                    checkGetAllRoutings(List.of(routingFilterOne), List.of(routingFilterTwo, routingFilterThree)); // ------- +3.8 Complexity index (+0.8 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getRoutingsWithDifferentPnOrPnRootAndPartNumberRootFilter">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getRoutingsWithDifferentPnOrPnRootAndPartNumberRootFilter</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">9.1</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getRoutingsWithDifferentPnOrPnRootAndPartNumberRootFilter() throws Exception{ // --------------- +0.3 Complexity index (+0.3 atomic)
+                    withParams.add(&quot;partNumberRoot&quot;, part5.getPartNumberRoot()); // ---------------------------------------- +2.5 Complexity index (+0.5 atomic, +2 structural)
+                    withParams.add(&quot;pnOrPnRoot&quot;, part4.getPartNumber()); // ------------------------------------------------ +2.5 Complexity index (+0.5 atomic, +2 structural)
+            
+                    checkGetAllRoutings(List.of(),List.of(routingFilterOne,routingFilterTwo,routingFilterThree)); // ------- +3.8 Complexity index (+0.8 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+    </div>
+
+</div>
+
+
+<!--        -------------------------------------------------------------------------------------->
+<!--        -----------------------------------   Scripts   -------------------------------------->
+<!--        -------------------------------------------------------------------------------------->
+
+
+
+<script src="././../../../../../../reports-styles/Chart.js"></script>
+<script src="./../../../../../../reports-styles/prism.js"></script>
+
+<script>
+    var ctxDougnutCognitive = document.getElementById('doughnut-cognitive-cpx').getContext("2d");
+    var doughnutCognitive = new Chart(ctxDougnutCognitive, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [
+                    30,
+                    5,
+                    4,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                        '#ffa31a',
+                        '#ff3300',
+                ]
+            }],
+            labels: [
+                'correct methods ',
+                'warning methods ',
+                'error methods ',
+            ]
+        },
+        options: {
+            layout: {
+                padding: {
+                    maintainAspectRatio: false,
+                    responsive: false,
+                    left: 50,
+                    right: 0,
+                    top: 0,
+                    bottom: 0
+                }
+            },
+            legend: {
+                display: false
+            },
+            position: 'left',
+            title: {
+                display: true,
+                text: 'Cognitive complexity'
+            }
+        }
+    });
+</script>
+<script>
+    var ctxBarCognitive = document.getElementById('bar-cognitive-cpx').getContext("2d");
+    var barCognitive = new Chart(ctxBarCognitive, {
+        type: 'bar',
+        data: {
+            labels: [
+                    '0',
+                    '1',
+                    '2',
+                    '3',
+                    '4',
+                    '5',
+                    '6',
+                    '7',
+                    '8',
+                    '9',
+                    '10',
+                    '11',
+                    '12',
+                    '13',
+                    '14',
+                    '15',
+                    '16',
+                    '17',
+                    '18',
+                    '19',
+                    '20',
+                    '21',
+                    '22',
+                    '23',
+                    '24',
+                    '25',
+                    '26',
+                    '27',
+                    '28',
+                    '29',
+                    '30',
+                    '31',
+                    '32',
+                    '33',
+                    '34',
+                    '35',
+                    '36',
+                    '37',
+                    '38',
+                    '39',
+                    '40',
+                    '41',
+                    '42',
+                    '43',
+                    '44',
+                    '45',
+                    '46',
+                    '47',
+                    '48',
+                    '49',
+                    '50',
+                    '51',
+                    '52',
+                    '53',
+                    '54',
+                    '55',
+                    '56',
+                    '57',
+                    '58',
+                    '59',
+                    '60',
+                    '61',
+                    '62',
+                    '63',
+            ],
+            datasets: [{
+                data: [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        6,
+                        7,
+                        9,
+                        1,
+                        6,
+                        1,
+                        1,
+                        0,
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        2,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                ],
+            }]
+        },
+        options: {
+            legend: {
+                display: false
+            },
+            scales: {
+                xAxes: [{
+                    gridLines: {
+                        display: false
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Cognitive complexity'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }],
+                yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Number of methods'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }]
+            }
+        }
+    });
+</script>
+<script>
+    var ctxDougnutCyclomatic = document.getElementById('doughnut-cyclomatic-cpx').getContext("2d");
+    var doughnutCyclomatic = new Chart(ctxDougnutCyclomatic, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [
+                    39,
+                    0,
+                    0,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                        '#ffa31a',
+                        '#ff3300',
+                ]
+            }],
+            labels: [
+                'correct methods ',
+                'warning methods ',
+                'error methods ',
+            ]
+        },
+        options: {
+            layout: {
+                padding: {
+                    maintainAspectRatio: false,
+                    responsive: false,
+                    left: 50,
+                    right: 0,
+                    top: 0,
+                    bottom: 0
+                }
+            },
+            legend: {
+                display: false
+            },
+            position: 'left',
+            title: {
+                display: true,
+                text: 'Cyclomatic complexity'
+            }
+        }
+    });
+</script>
+<script>
+    var ctxBarCyclomatic = document.getElementById('bar-cyclomatic-cpx').getContext("2d");
+    var barCyclomatic = new Chart(ctxBarCyclomatic, {
+        type: 'bar',
+        data: {
+            labels: [
+                    1,
+            ],
+            datasets: [{
+                data: [
+                        39,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                ],
+            }]
+        },
+        options: {
+            legend: {
+                display: false
+            },
+            title: {
+                display: false,
+                text: 'Cyclomatic complexity',
+                position: 'top'
+            },
+            scales: {
+                xAxes: [{
+                    gridLines: {
+                        display: false
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Cyclomatic complexity'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }],
+                yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Number of methods'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }]
+            }
+        }
+    });
+</script>
+
+</body>
+
+</html>

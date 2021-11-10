@@ -1,0 +1,1507 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Genese complexity report</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./../../../../../../reports-styles/prism.css" />
+    <link rel="stylesheet" href="./../../../../../../reports-styles/prettify.css" />
+    <link rel="stylesheet" href="./../../../../../../reports-styles/report.css" />
+    <link rel="stylesheet" href="./../../../../../../reports-styles/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<div class="header">
+    <div class="header-left">
+        <div>
+            <h1>Genese complexity report</h1>
+        </div>
+        <div class="pad1y">
+                <span class="backLink" onclick="history.back()"><-</span>
+                    RequestControllerIT.java
+        </div>
+        <div class="clearfix">
+            <div class='fl pad1y space-right2'>
+                <span>Methods : </span>
+                <span class="strong">16</span>
+            </div>
+        </div>
+    </div>
+    <div class="header-right">
+        <div class="clearfix padly">
+            <div class='fl pad1y space-right2'>
+                <span>Complexity index : </span>
+                <span class="strong">424.9</span>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class='fl pad1y space-right2'>
+                <span>Cyclomatic complexity :</span>
+                <span class="strong">16</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--        -------------------------------------------------------------------------------------->
+<!--        -----------------------------------   Stats and charts   ----------------------------->
+<!--        -------------------------------------------------------------------------------------->
+
+
+<div class="mainContainer">
+    <div class="stats-and-charts">
+
+        <!--        -----------------------------------   Cognitive complexity   ---------------------------->
+
+        <div class="stats-cognitive">
+            <div class="stats-and-doughnut stats-and-doughnut-cognitive">
+                <div class="doughnut">
+                    <canvas id="doughnut-cognitive-cpx" height="220"></canvas>
+                </div>
+                <div class="stats">
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">Cognitive complexity</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">56.3 %</span>
+                            <span class="quiet"> Correct</span>
+                            <span
+                                    class='fraction'>9/16</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">12.5 %</span>
+                            <span class="quiet"> Warning</span>
+                            <span
+                                    class='fraction'>2/16</span>
+                            <span class="quiet">(threshold : 10)</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">31.3 %</span>
+                            <span class="quiet"> Error</span>
+                            <span
+                                    class='fraction'>5/16</span>
+                            <span class="quiet">(threshold : 20)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bar bar-cognitive">
+                <canvas id="bar-cognitive-cpx" class="cognitive-charts"></canvas>
+            </div>
+        </div>
+
+        <!--        -----------------------------------   Cyclomatic complexity   ---------------------------->
+
+        <div class="stats-cyclomatic">
+            <div class="stats-and-doughnut-cyclomatic">
+                <div class="doughnut">
+                    <canvas id="doughnut-cyclomatic-cpx" height="220"></canvas>
+                </div>
+                <div class="stats-cy">
+                    <div class="clearfix cyclomatic-subtitle">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">Cyclomatic complexity</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">100 %</span>
+                            <span class="quiet"> Correct</span>
+                            <span
+                                    class='fraction'>16/16</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">0 %</span>
+                            <span class="quiet"> Warning</span>
+                            <span
+                                    class='fraction'>0/16</span>
+                            <span class="quiet">(threshold : 5)</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">0 %</span>
+                            <span class="quiet"> Error</span>
+                            <span
+                                    class='fraction'>0/16</span>
+                            <span class="quiet">(threshold : 10)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bar bar-cyclomatic">
+                <canvas id="bar-cyclomatic-cpx" class="cyclomatic-charts"></canvas>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!--        -------------------------------------------------------------------------------------->
+    <!--        -----------------------------------   Methods arrays   ------------------------------->
+    <!--        -------------------------------------------------------------------------------------->
+
+
+    <div idclass="subfolders">
+        <div class="clearfix file-methods-subtitle">
+            <div class='fl pad1y space-right2'>
+                <span class="strong">Methods of <span class="italic">RequestControllerIT.java</span></span>
+            </div>
+        </div>
+
+            <div id="before">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">before</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgerror">38.9</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @BeforeEach
+                public void before() { // -------------------------------------------------------- +0.2 Complexity index (+0.2 atomic)
+                    requestOne &#x3D; dataSetInitializer.createRequest(&quot;requestOne&quot;, // --------------- +1.5 Complexity index (+0.5 atomic, +1 structural)
+                            request -&gt; { // ------------------------------------------------------ +1.2 Complexity index (+0.2 atomic, +1 structural)
+                                request.getAta().setCode(dataset.ata_1.getId()); // -------------- +3.6 Complexity index (+0.6 atomic, +3 structural)
+                                request.setRequester(dataset.request_1.getRequester()); // ------- +2.5 Complexity index (+0.5 atomic, +2 structural)
+                                request.setAirbusEntity(dataset.airbusEntity_france); // --------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                                request.setCreationDate(LocalDateTime.now()); // ----------------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                                request.setStatus(EnumStatus.TO_DO); // -------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                                request.setRequester(dataset.user_superAdmin); // ---------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                                request.setOriginUrl(ORIGIN_URL_FOR_TEST); // -------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                                request.addOriginMedia(dataset.media_1); // ---------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                                request.addSpecMedia(dataset.media_1); // ------------------------ +1.4 Complexity index (+0.4 atomic, +1 structural)
+                            }
+                    );
+            
+                    requestTwo &#x3D; dataSetInitializer.createRequest(&quot;request_2&quot;, // ---------------- +1.5 Complexity index (+0.5 atomic, +1 structural)
+                            request -&gt; { // ------------------------------------------------------ +1.2 Complexity index (+0.2 atomic, +1 structural)
+                                request.getAta().setCode(dataset.ata_2.getId()); // -------------- +3.6 Complexity index (+0.6 atomic, +3 structural)
+                                request.setRequester(dataset.request_2.getRequester()); // ------- +2.5 Complexity index (+0.5 atomic, +2 structural)
+                                request.setAirbusEntity(dataset.airbusEntity_france); // --------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                                request.setCreationDate(LocalDateTime.now()); // ----------------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                                request.setStatus(EnumStatus.CREATED); // ------------------------ +1.4 Complexity index (+0.4 atomic, +1 structural)
+                                request.setRequester(dataset.user_superAdmin); // ---------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                            }
+                    );
+            
+                    dataSetInitializer.createATA( // --------------------------------------------- +1.2 Complexity index (+0.2 atomic, +1 structural)
+                            ata -&gt; ata.setCode(dataset.ATA_CODE_64) // --------------------------- +2.6 Complexity index (+0.6 atomic, +2 structural)
+                    );
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="searchRequestsWithFilters_OK">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">searchRequestsWithFilters_OK</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgerror">95.6</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void searchRequestsWithFilters_OK() throws Exception { // ----------------------------------------------------------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_simpleUser; // ----------------------------------------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    this.dataSetInitializer.createUserFeature(FeatureCode.REQUEST, asUser, EnumRightLevel.READ); // ------------------------------------------------ +1.8 Complexity index (+0.8 atomic, +1 structural)
+                    withParams.addAll(&quot;airbusEntityIds&quot;, List.of(this.dataset.airbusEntity_france.getId().toString())); // ----------------------------------------- +5.0 Complexity index (+1.0 atomic, +4 structural)
+                    withParams.addAll(&quot;statuses&quot;, List.of(EnumStatus.CREATED.toString(), EnumStatus.DONE.toString(), EnumStatus.IN_PROGRESS.toString())); // ------- +6.4 Complexity index (+1.4 atomic, +5 structural)
+                    withParams.add(&quot;sortBy&quot;, RequestSortingValues.name.name()); // --------------------------------------------------------------------------------- +2.6 Complexity index (+0.6 atomic, +2 structural)
+            
+                    expectedStatus &#x3D; HttpStatus.OK; // ------------------------------------------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+            
+                    ResultActions result &#x3D; check(ConstantUrl.API_REQUESTS); // ------------------------------------------------------------------------------------- +1.6 Complexity index (+0.6 atomic, +1 structural)
+                    result.andExpect(jsonPath(&quot;$.results&quot;, notNullValue())) // ------------------------------------------------------------------------------------- +3.5 Complexity index (+0.5 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.results&quot;, hasSize(5))) // --------------------------------------------------------------------------------------- +3.5 Complexity index (+0.5 atomic, +3 structural)
+            
+                            .andExpect(jsonPath(&quot;$.results[0].airbusEntity.countryName&quot;, equalTo(dataset.airbusEntity_france.getCountryName()))) // ---------------- +4.7 Complexity index (+0.7 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;$.results[0].status&quot;, equalTo(dataset.request_save.getStatus().name()))) // --------------------------------------- +5.8 Complexity index (+0.8 atomic, +5 structural)
+                            .andExpect(jsonPath(&quot;$.results[0].name&quot;, notNullValue())) // --------------------------------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.results[0].versionNumber&quot;, notNullValue())) // ------------------------------------------------------------------ +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.results[0].status&quot;, notNullValue())) // ------------------------------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.results[0].reference&quot;, notNullValue())) // ---------------------------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.results[0].creationDate&quot;, notNullValue())) // ------------------------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.results[0].status&quot;, notNullValue())) // ------------------------------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.results[0].origin.id&quot;, notNullValue())) // ---------------------------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.results[0].origin.name&quot;, notNullValue())) // -------------------------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.results[0].origin.color&quot;, notNullValue())) // ------------------------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.results[0].requester.id&quot;, notNullValue())) // ------------------------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.results[0].requester.firstName&quot;, notNullValue())) // ------------------------------------------------------------ +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.results[0].requester.lastName&quot;, notNullValue())) // ------------------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.results[0].airbusEntity.id&quot;, notNullValue())) // ---------------------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.results[0].airbusEntity.code&quot;, notNullValue())) // -------------------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.results[0].isDeletable&quot;, notNullValue())) // -------------------------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.results[0].airbusEntity.countryName&quot;, notNullValue())); // ------------------------------------------------------ +3.4 Complexity index (+0.4 atomic, +3 structural)
+            
+                    // Verify translation
+                    result.andExpect(jsonPath(&quot;$.results[0].name&quot;, equalTo(&quot;Request save&quot; + dataset.request_save.getId() + &quot; (EN)&quot;))); // -------------------------- +5.2 Complexity index (+1.2 atomic, +4 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getAllRequesters_Ok">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getAllRequesters_Ok</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">5.9</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getAllRequesters_Ok() throws Exception { // -------------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_simpleUser; // ----------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    expectedStatus &#x3D; HttpStatus.OK; // ------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    check(ConstantUrl.API_REQUEST_REQUESTERS).andExpect(jsonPath(&quot;$&quot;, hasSize(1))); // ------- +4.8 Complexity index (+0.8 atomic, +4 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="findARequest_KO_NotFound">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">findARequest_KO_NotFound</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">8.4</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void findARequest_KO_NotFound() throws Exception { // ----------------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    expectedStatus &#x3D; HttpStatus.NOT_FOUND; // -------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    asUser &#x3D; dataset.user_simpleUser; // ------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    dataSetInitializer.createUserFeature(FeatureCode.REQUEST, asUser, EnumRightLevel.READ); // ------- +1.7 Complexity index (+0.7 atomic, +1 structural)
+            
+                    ResultActions result &#x3D; check(ConstantUrl.API_REQUESTS + &quot;/&quot; + &quot;1234&quot;); // ------------------------ +2.0 Complexity index (+1.0 atomic, +1 structural)
+                    result.andExpect(jsonPath(&quot;$.messages[0]&quot;).value(&quot;Request not found&quot;)); // ----------------------- +3.6 Complexity index (+0.6 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="findARequest_KO_StatusIsForbidden">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">findARequest_KO_StatusIsForbidden</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">4.1</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void findARequest_KO_StatusIsForbidden() throws Exception { // ------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_simpleUser; // ------------------------------------ +0.4 Complexity index (+0.4 atomic)
+                    expectedStatus &#x3D; HttpStatus.FORBIDDEN; // ------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    withRequest &#x3D; get(ConstantUrl.API_REQUESTS + &quot;/&quot; + &quot;1&quot;); // ------------- +1.9 Complexity index (+0.9 atomic, +1 structural)
+            
+                    abstractCheck(); // ----------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+            
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="findARequest_KO_StatusIsForbidden_2">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">findARequest_KO_StatusIsForbidden_2</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">5.8</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void findARequest_KO_StatusIsForbidden_2() throws Exception { // ---------------------------------------------- +0.3 Complexity index (+0.3 atomic)
+            
+                    asUser &#x3D; dataset.user_simpleUser; // ----------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    dataSetInitializer.createUserFeature(FeatureCode.DRT_INTERNAL_INSPECTION, asUser, EnumRightLevel.READ); // ------- +1.7 Complexity index (+0.7 atomic, +1 structural)
+                    expectedStatus &#x3D; HttpStatus.FORBIDDEN; // ------------------------------------------------------------------------ +0.4 Complexity index (+0.4 atomic)
+                    withRequest &#x3D; get(ConstantUrl.API_REQUESTS + &quot;/&quot; + &quot;1&quot;); // ------------------------------------------------------ +1.9 Complexity index (+0.9 atomic, +1 structural)
+            
+                    abstractCheck(); // ---------------------------------------------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="findARequest_Ok">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">findARequest_Ok</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgerror">151.1</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void findARequest_Ok() throws Exception { // --------------------------------------------------------------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    expectedStatus &#x3D; HttpStatus.OK; // ---------------------------------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    asUser &#x3D; dataset.user_simpleUser; // -------------------------------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    User validator &#x3D; dataset.user_simpleUser2; // ----------------------------------------------------------------------------------------- +0.5 Complexity index (+0.5 atomic)
+                    dataSetInitializer.createUserFeature(FeatureCode.REQUEST, asUser, EnumRightLevel.READ); // -------------------------------------------- +1.7 Complexity index (+0.7 atomic, +1 structural)
+            
+                    expectedStatus &#x3D; HttpStatus.OK; // ---------------------------------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+            
+                    ResultActions result &#x3D; check(ConstantUrl.API_REQUESTS + &quot;/&quot; + requestOne.getId()); // ------------------------------------------------- +3.1 Complexity index (+1.1 atomic, +2 structural)
+            
+            
+                    result.andExpect(jsonPath(&quot;$.id&quot;).value(requestOne.getId())) // ----------------------------------------------------------------------- +4.7 Complexity index (+0.7 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;$.reference&quot;, notNullValue())) // ------------------------------------------------------------------------ +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.versionNumber&quot;, notNullValue())) // -------------------------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.creationDate&quot;, notNullValue())) // --------------------------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.dueDate&quot;, notNullValue())) // -------------------------------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.status&quot;).value(EnumStatus.TO_DO.toString())) // -------------------------------------------------------- +4.7 Complexity index (+0.7 atomic, +4 structural)
+                            //  BeforeEach (see up) does set the requester as superAdmin .....this is why we have these three lines below....
+                            .andExpect(jsonPath(&quot;$.requester.id&quot;).value(dataset.user_superAdmin.getId())) // ---------------------------------------------- +4.7 Complexity index (+0.7 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;$.requester.firstName&quot;).value(dataset.user_superAdmin.getFirstName())) // -------------------------------- +4.7 Complexity index (+0.7 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;$.requester.lastName&quot;).value(dataset.user_superAdmin.getLastName())) // ---------------------------------- +4.7 Complexity index (+0.7 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;$.origin.id&quot;).value(dataset.request_1.getOrigin().getId())) // ------------------------------------------- +5.8 Complexity index (+0.8 atomic, +5 structural)
+                            .andExpect(jsonPath(&quot;$.origin.name&quot;).value(dataset.request_1.getOrigin().getName())) // --------------------------------------- +5.8 Complexity index (+0.8 atomic, +5 structural)
+                            .andExpect(jsonPath(&quot;$.origin.color&quot;).value(dataset.request_1.getOrigin().getColor())) // ------------------------------------- +5.8 Complexity index (+0.8 atomic, +5 structural)
+                            .andExpect(jsonPath(&quot;$.airbusEntity.id&quot;).value(dataset.airbusEntity_france.getId())) // --------------------------------------- +4.7 Complexity index (+0.7 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;$.airbusEntity.code&quot;).value(dataset.airbusEntity_france.getCode())) // ----------------------------------- +4.7 Complexity index (+0.7 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;$.airbusEntity.countryName&quot;).value(dataset.airbusEntity_france.getCountryName())) // --------------------- +4.7 Complexity index (+0.7 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;$.validator.id&quot;).value(validator.getId())) // ------------------------------------------------------------ +4.6 Complexity index (+0.6 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;$.validator.firstName&quot;).value(validator.getFirstName())) // ---------------------------------------------- +4.6 Complexity index (+0.6 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;$.validator.lastName&quot;).value(validator.getLastName())) // ------------------------------------------------ +4.6 Complexity index (+0.6 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;$.versionNumber&quot;, notNullValue())) // -------------------------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.specMedias[*]&quot;, notNullValue())) // -------------------------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.specMedias[*].uuid&quot;, notNullValue())) // --------------------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.specMedias[*].filename&quot;, notNullValue())) // ----------------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.originMedias[*]&quot;, notNullValue())) // ------------------------------------------------------------------ +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.originMedias[*].uuid&quot;, notNullValue())) // ------------------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.originMedias[*].filename&quot;, notNullValue())) // --------------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.originURL&quot;).value(ORIGIN_URL_FOR_TEST)) // ------------------------------------------------------------- +3.5 Complexity index (+0.5 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.isDeletable&quot;).value(false)) // ------------------------------------------------------------------------- +3.5 Complexity index (+0.5 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.aircraftFamily.id&quot;).value(dataset.aircraft_family_1.getId())) // --------------------------------------- +4.7 Complexity index (+0.7 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;$.aircraftTypes[*]&quot;,hasSize(1))) // ---------------------------------------------------------------------- +3.5 Complexity index (+0.5 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.aircraftTypes[0].id&quot;).value(dataset.aircraft_version_1.getId())) // ------------------------------------ +4.7 Complexity index (+0.7 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;$.aircraftVersions[*]&quot;,hasSize(1))) // ------------------------------------------------------------------- +3.5 Complexity index (+0.5 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.aircraftVersions[0].id&quot;).value(dataset.aircraft_version_1.getId())) // --------------------------------- +4.7 Complexity index (+0.7 atomic, +4 structural)
+                            // Verify translation
+                            .andExpect(jsonPath(&quot;$.name&quot;).value(&quot;requestOne&quot; + requestOne.getId() + &quot; (EN)&quot;)) // ------------------------------------------ +5.0 Complexity index (+1.0 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;$.description&quot;).value(&quot;Description in english for requestOne&quot; + requestOne.getId() + &quot; (EN)&quot;)); // ------- +5.0 Complexity index (+1.0 atomic, +4 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="findARequest_Ok_deletable_true">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">findARequest_Ok_deletable_true</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">15</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void findARequest_Ok_deletable_true() throws Exception { // ----------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    expectedStatus &#x3D; HttpStatus.OK; // --------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    asUser &#x3D; dataset.user_simpleUser; // ------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    User validator &#x3D; dataset.user_simpleUser2; // ---------------------------------------------------- +0.5 Complexity index (+0.5 atomic)
+                    dataSetInitializer.createUserFeature(FeatureCode.REQUEST, asUser, EnumRightLevel.READ); // ------- +1.7 Complexity index (+0.7 atomic, +1 structural)
+            
+                    expectedStatus &#x3D; HttpStatus.OK; // --------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+            
+                    ResultActions result &#x3D; check(ConstantUrl.API_REQUESTS + &quot;/&quot; + requestTwo.getId()); // ------------ +3.1 Complexity index (+1.1 atomic, +2 structural)
+            
+            
+                    result.andExpect(jsonPath(&quot;$.id&quot;).value(requestTwo.getId())) // ---------------------------------- +4.7 Complexity index (+0.7 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;$.isDeletable&quot;).value(true)); // ------------------------------------ +3.5 Complexity index (+0.5 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getTechnicalRequesters_OK">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getTechnicalRequesters_OK</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">6.7</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getTechnicalRequesters_OK() throws Exception { // --------------------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_simpleUser; // ------------------------------------------------------------------ +0.4 Complexity index (+0.4 atomic)
+                    this.dataSetInitializer.createUserFeature(FeatureCode.REQUEST, asUser, EnumRightLevel.READ); // ------- +1.8 Complexity index (+0.8 atomic, +1 structural)
+                    expectedStatus &#x3D; HttpStatus.OK; // -------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    withRequest &#x3D; get(API_REQUEST_TECHNICAL_MANAGERS, dataset.request_1.getId()); // ---------------------- +2.7 Complexity index (+0.7 atomic, +2 structural)
+            
+                    abstractCheck(); // ----------------------------------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getRequestVersions_OK">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getRequestVersions_OK</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">8.7</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void getRequestVersions_OK() throws Exception { // --------------------------------------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_simpleUser; // -------------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    this.dataSetInitializer.createUserFeature(FeatureCode.REQUEST, asUser, EnumRightLevel.READ); // --------------------- +1.8 Complexity index (+0.8 atomic, +1 structural)
+                    expectedStatus &#x3D; HttpStatus.OK; // ---------------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+            
+                    ResultActions result &#x3D; check(ConstantUrl.API_REQUESTS + &quot;/&quot; + /*requestOne.getId()*/ 1234L + &quot;/versions&quot;); // ------- +2.2 Complexity index (+1.2 atomic, +1 structural)
+                    //result.andExpect(jsonPath(&quot;$.[0].isLatestVersion&quot;).value(true));
+                    result.andExpect(jsonPath(&quot;$&quot;, hasSize(0))); // --------------------------------------------------------------------- +3.6 Complexity index (+0.6 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="updateParentRequestDetailsSave_Ok">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">updateParentRequestDetailsSave_Ok</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgerror">25.7</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void updateParentRequestDetailsSave_Ok() throws Exception { // ------------------------------ +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_superAdmin; // ----------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    expectedStatus &#x3D; HttpStatus.NO_CONTENT; // ----------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+            
+                    RequestUpdateDto updateDto &#x3D; constructUpdateRequest(); // -------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+            
+                    ObjectMapper mapper &#x3D; new ObjectMapper(); // --------------------------------------------------- +0.5 Complexity index (+0.5 atomic)
+                    mapper.configure(SerializationFeature.WRAP_ROOT_VALUE, false); // ------------------------------ +1.5 Complexity index (+0.5 atomic, +1 structural)
+                    ObjectWriter ow &#x3D; mapper.writer().withDefaultPrettyPrinter(); // ------------------------------- +2.6 Complexity index (+0.6 atomic, +2 structural)
+                    String request &#x3D; ow.writeValueAsString(updateDto); // ------------------------------------------ +1.6 Complexity index (+0.6 atomic, +1 structural)
+            
+                    withRequest &#x3D; put(API_REQUEST_UPDATE, dataset.request_1.getId()).content(request); // ---------- +3.9 Complexity index (+0.9 atomic, +3 structural)
+                    abstractCheck(); // ---------------------------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                    // check is updated
+                    Request requestUpdated &#x3D; requestRepository.findById(dataset.request_1.getId()).get(); // ------- +3.9 Complexity index (+0.9 atomic, +3 structural)
+                    assertEquals(requestUpdated.getAta().getCode(), updateDto.getAtaCode()); // -------------------- +4.6 Complexity index (+0.6 atomic, +4 structural)
+                    assertEquals(requestUpdated.getReference(), updateDto.getReference()); // ---------------------- +3.5 Complexity index (+0.5 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="deleteRequest_ok">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">deleteRequest_ok</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">14.1</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void deleteRequest_ok() throws Exception { // ---------------------------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_superAdmin; // ---------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    expectedStatus &#x3D; HttpStatus.NO_CONTENT; // ---------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    Request requestToDelete &#x3D; dataSetInitializer.createRequest(&quot;requestToDelete&quot;, request -&gt; { // ------- +2.8 Complexity index (+0.8 atomic, +2 structural)
+                        request.setStatus(EnumStatus.CREATED); // ------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                    });
+                    withRequest &#x3D; delete(API_REQUESTS, requestToDelete.getId()); // ------------------------------------- +2.6 Complexity index (+0.6 atomic, +2 structural)
+                    abstractCheck(); // --------------------------------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                    // check is updated
+                    Optional&lt;Request&gt; requestUpdated &#x3D; requestRepository.findById(requestToDelete.getId()); // ---------- +2.8 Complexity index (+0.8 atomic, +2 structural)
+                    assertTrue(requestUpdated.isEmpty()); // ------------------------------------------------------------ +2.3 Complexity index (+0.3 atomic, +2 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="deleteRequest_delete_impossible">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">deleteRequest_delete_impossible</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">9.8</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void deleteRequest_delete_impossible() throws Exception { // ---------------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_superAdmin; // ------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    expectedStatus &#x3D; HttpStatus.BAD_REQUEST; // ------------------------------------------------------------ +0.4 Complexity index (+0.4 atomic)
+                    withRequest &#x3D; delete(API_REQUESTS, dataset.request_update.getId()); // --------------------------------- +2.7 Complexity index (+0.7 atomic, +2 structural)
+                    Exception exception &#x3D; abstractCheck().andReturn().getResolvedException(); // --------------------------- +3.6 Complexity index (+0.6 atomic, +3 structural)
+                    assertEquals(&quot;retex.error.request.invalid.status.delete.impossible&quot;, exception.getMessage()); // ------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="deleteRequest_delete_not_found_request">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">deleteRequest_delete_not_found_request</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">8.6</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void deleteRequest_delete_not_found_request() throws Exception { // ------------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_superAdmin; // ----------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    expectedStatus &#x3D; HttpStatus.NOT_FOUND; // ------------------------------------------ +0.4 Complexity index (+0.4 atomic)
+                    withRequest &#x3D; delete(API_REQUESTS, 100000L); // ------------------------------------ +1.5 Complexity index (+0.5 atomic, +1 structural)
+                    Exception exception &#x3D; abstractCheck().andReturn().getResolvedException(); // ------- +3.6 Complexity index (+0.6 atomic, +3 structural)
+                    assertEquals(&quot;retex.error.request.not.found&quot;, exception.getMessage()); // ---------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="constructUpdateRequest">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">constructUpdateRequest</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgerror">23.4</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                private RequestUpdateDto constructUpdateRequest() throws JsonProcessingException { // ------ +0.3 Complexity index (+0.3 atomic)
+                    RequestUpdateDto updateDto &#x3D; new RequestUpdateDto(); // --------------------------------- +0.5 Complexity index (+0.5 atomic)
+                    updateDto.setAtaCode(dataset.ata_2.getCode()); // --------------------------------------- +2.5 Complexity index (+0.5 atomic, +2 structural)
+                    updateDto.setClientIds(List.of(1L, 2L)); // --------------------------------------------- +2.6 Complexity index (+0.6 atomic, +2 structural)
+                    updateDto.setOriginId(1L); // ----------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                    updateDto.setAircraftFamily(new ReferenceDto&lt;&gt;(1L)); // --------------------------------- +1.5 Complexity index (+0.5 atomic, +1 structural)
+                    updateDto.setEnvironment(new ReferenceDto&lt;&gt;(1L)); // ------------------------------------ +1.5 Complexity index (+0.5 atomic, +1 structural)
+                    updateDto.setMissionType(new ReferenceDto&lt;&gt;(3L)); // ------------------------------------ +1.5 Complexity index (+0.5 atomic, +1 structural)
+                    updateDto.setAircraftTypes(List.of(1L)); // --------------------------------------------- +2.5 Complexity index (+0.5 atomic, +2 structural)
+                    updateDto.setAircraftVersions(List.of(1L)); // ------------------------------------------ +2.5 Complexity index (+0.5 atomic, +2 structural)
+                    updateDto.setReference(&quot;ref01&quot;); // ----------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                    updateDto.setOperatorIds(List.of(4L, 5L)); // ------------------------------------------- +2.6 Complexity index (+0.6 atomic, +2 structural)
+                    updateDto.setTechnicalManagerIds(List.of(6L, 7L)); // ----------------------------------- +2.6 Complexity index (+0.6 atomic, +2 structural)
+            
+                    return updateDto; // -------------------------------------------------------------------- +0.2 Complexity index (+0.2 atomic)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="check">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">check</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">3.1</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                private ResultActions check(String endpoint) throws Exception { // ------ +0.5 Complexity index (+0.5 atomic)
+                    withRequest &#x3D; get(endpoint); // -------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                    return abstractCheck(); // ------------------------------------------- +1.2 Complexity index (+0.2 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+    </div>
+
+</div>
+
+
+<!--        -------------------------------------------------------------------------------------->
+<!--        -----------------------------------   Scripts   -------------------------------------->
+<!--        -------------------------------------------------------------------------------------->
+
+
+
+<script src="././../../../../../../reports-styles/Chart.js"></script>
+<script src="./../../../../../../reports-styles/prism.js"></script>
+
+<script>
+    var ctxDougnutCognitive = document.getElementById('doughnut-cognitive-cpx').getContext("2d");
+    var doughnutCognitive = new Chart(ctxDougnutCognitive, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [
+                    9,
+                    2,
+                    5,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                        '#ffa31a',
+                        '#ff3300',
+                ]
+            }],
+            labels: [
+                'correct methods ',
+                'warning methods ',
+                'error methods ',
+            ]
+        },
+        options: {
+            layout: {
+                padding: {
+                    maintainAspectRatio: false,
+                    responsive: false,
+                    left: 50,
+                    right: 0,
+                    top: 0,
+                    bottom: 0
+                }
+            },
+            legend: {
+                display: false
+            },
+            position: 'left',
+            title: {
+                display: true,
+                text: 'Cognitive complexity'
+            }
+        }
+    });
+</script>
+<script>
+    var ctxBarCognitive = document.getElementById('bar-cognitive-cpx').getContext("2d");
+    var barCognitive = new Chart(ctxBarCognitive, {
+        type: 'bar',
+        data: {
+            labels: [
+                    '0',
+                    '1',
+                    '2',
+                    '3',
+                    '4',
+                    '5',
+                    '6',
+                    '7',
+                    '8',
+                    '9',
+                    '10',
+                    '11',
+                    '12',
+                    '13',
+                    '14',
+                    '15',
+                    '16',
+                    '17',
+                    '18',
+                    '19',
+                    '20',
+                    '21',
+                    '22',
+                    '23',
+                    '24',
+                    '25',
+                    '26',
+                    '27',
+                    '28',
+                    '29',
+                    '30',
+                    '31',
+                    '32',
+                    '33',
+                    '34',
+                    '35',
+                    '36',
+                    '37',
+                    '38',
+                    '39',
+                    '40',
+                    '41',
+                    '42',
+                    '43',
+                    '44',
+                    '45',
+                    '46',
+                    '47',
+                    '48',
+                    '49',
+                    '50',
+                    '51',
+                    '52',
+                    '53',
+                    '54',
+                    '55',
+                    '56',
+                    '57',
+                    '58',
+                    '59',
+                    '60',
+                    '61',
+                    '62',
+                    '63',
+                    '64',
+                    '65',
+                    '66',
+                    '67',
+                    '68',
+                    '69',
+                    '70',
+                    '71',
+                    '72',
+                    '73',
+                    '74',
+                    '75',
+                    '76',
+                    '77',
+                    '78',
+                    '79',
+                    '80',
+                    '81',
+                    '82',
+                    '83',
+                    '84',
+                    '85',
+                    '86',
+                    '87',
+                    '88',
+                    '89',
+                    '90',
+                    '91',
+                    '92',
+                    '93',
+                    '94',
+                    '95',
+                    '96',
+                    '97',
+                    '98',
+                    '99',
+                    '100',
+                    '101',
+                    '102',
+                    '103',
+                    '104',
+                    '105',
+                    '106',
+                    '107',
+                    '108',
+                    '109',
+                    '110',
+                    '111',
+                    '112',
+                    '113',
+                    '114',
+                    '115',
+                    '116',
+                    '117',
+                    '118',
+                    '119',
+                    '120',
+                    '121',
+                    '122',
+                    '123',
+                    '124',
+                    '125',
+                    '126',
+                    '127',
+                    '128',
+                    '129',
+                    '130',
+                    '131',
+                    '132',
+                    '133',
+                    '134',
+                    '135',
+                    '136',
+                    '137',
+                    '138',
+                    '139',
+                    '140',
+                    '141',
+                    '142',
+                    '143',
+                    '144',
+                    '145',
+                    '146',
+                    '147',
+                    '148',
+                    '149',
+                    '150',
+                    '151',
+            ],
+            datasets: [{
+                data: [
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        0,
+                        2,
+                        1,
+                        1,
+                        2,
+                        1,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                ],
+            }]
+        },
+        options: {
+            legend: {
+                display: false
+            },
+            scales: {
+                xAxes: [{
+                    gridLines: {
+                        display: false
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Cognitive complexity'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }],
+                yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Number of methods'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }]
+            }
+        }
+    });
+</script>
+<script>
+    var ctxDougnutCyclomatic = document.getElementById('doughnut-cyclomatic-cpx').getContext("2d");
+    var doughnutCyclomatic = new Chart(ctxDougnutCyclomatic, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [
+                    16,
+                    0,
+                    0,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                        '#ffa31a',
+                        '#ff3300',
+                ]
+            }],
+            labels: [
+                'correct methods ',
+                'warning methods ',
+                'error methods ',
+            ]
+        },
+        options: {
+            layout: {
+                padding: {
+                    maintainAspectRatio: false,
+                    responsive: false,
+                    left: 50,
+                    right: 0,
+                    top: 0,
+                    bottom: 0
+                }
+            },
+            legend: {
+                display: false
+            },
+            position: 'left',
+            title: {
+                display: true,
+                text: 'Cyclomatic complexity'
+            }
+        }
+    });
+</script>
+<script>
+    var ctxBarCyclomatic = document.getElementById('bar-cyclomatic-cpx').getContext("2d");
+    var barCyclomatic = new Chart(ctxBarCyclomatic, {
+        type: 'bar',
+        data: {
+            labels: [
+                    1,
+            ],
+            datasets: [{
+                data: [
+                        16,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                ],
+            }]
+        },
+        options: {
+            legend: {
+                display: false
+            },
+            title: {
+                display: false,
+                text: 'Cyclomatic complexity',
+                position: 'top'
+            },
+            scales: {
+                xAxes: [{
+                    gridLines: {
+                        display: false
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Cyclomatic complexity'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }],
+                yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Number of methods'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }]
+            }
+        }
+    });
+</script>
+
+</body>
+
+</html>

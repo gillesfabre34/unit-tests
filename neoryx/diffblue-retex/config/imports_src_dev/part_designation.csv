@@ -1,0 +1,216 @@
+designation_FR,designation_EN
+Ecrou De Mat,Mast Nut
+Levier De Pas,Pitch Horn
+Manchon Superieur,Upper Sleeve
+Embout Amortisseur,Damper Rod End M24x150
+Vis Butee Spherique,Spherical Bearing Screw
+Vis Fixation Butee Spherique,Spherical Bearing Pin
+Corps Amortisseur,Lead Lag Damper
+Vis Manchon Amortisseur,Damper Sleeve Screw
+Butee Spherique Mrp,Mrh Spherical Bearing
+Corps De Bielle,Pitch Rod Body
+Branche H Superieure,Upper H Leg
+Branche H Inferieure,Lower H Leg
+Branche Y Inferieure,Fixed Scissor Rod
+Branche Y Superieure,Scissor Rod
+Vis Servo Plateau Cyclique,Servo Swashplate Screw
+Embout Droit Bielle De Pas,Pitch Rod Right End Bearing
+Embout Gauche Bielle De Pas,Pitch Rod Left End Bearing
+Rotule Compas,Scissors Ball Bearing
+Guide Plateau Cyclique,Swashplate Guide
+Mat Rotor Principal,Main Rotor Mast
+Broche De Pale Usinee,Machined Blade Pin
+Compas,Scissor Drive
+Manchon Infereur Equipe,Lower Sleeve
+Embout Elastromere,Elastomeric Damper Rod End
+Vis M12,Screw M12
+Support Coupole,Fairing Support
+Plateau Tournant,Rotating Swashplate
+Plateau Fixe,Unrotating Swashplate
+Vis Levier De Pas,Pitch Horn Screw
+Vis Plateau Cyclique,Pitch Swashplate Screw
+Vis Entraineur Compas,Axis Scissor Drive
+Axe Compas M12,Scissor Screw M12
+Entretoise Roulement De Mat,Mast Bearing Spacer
+Carter Superieur,Upper Housing
+Trompette Moteur,Engine Torque Tube
+Trompette Btp,Mgb Torque Tube
+Anneau De Cardan,Gimbal Joint Ring
+Doigt De Cardan,Gimbal Joint Pin
+Pignon De Roue Libre Droit,Rh Free Wheel Pinion
+Pignon De Roue Libre Gauche,Lh Free Wheel Pinion
+Pignon Double Conique Droit,Rh Double Bevel Gear
+Pignon Double Conique Gauche,Lh Double Bevel Gear
+Roue Conique Soudee,Bevel Wheel Welded
+Pignon Double Sortie Arriere,Rear Exit Double Pinion
+Pignon Sar,Output Pinion
+Porte Satellites,Planet Gear Carrier
+Satellite,Planet Gear
+Vis Fixation Servo Commande Basse,Lower Servo Control Fitting Screw
+Carter Entree Droit,Rh Input Housing
+Carter Entree Gauche,Lh Input Housing
+Roue Entree 8000 Trm,8000 Rpm Input Wheel
+Cloison Boitier Entree Droit,Rh Entry Gear Box Baffle
+Cloison Boitier Entree Gauche,Lh Entry Gear Box Baffle
+Arbre Souple Interne,Internal Flexible Shaft
+Arbre Souple Externe,External Flexible Shaft
+Pignon Entree Gauche,Lh Input Pinion
+Pignon Entree Droit,Rh Input Pinion
+Pignon Entree Ragb,Ragb Input Gear
+Pignon Compresseur Hydraulique,Hydraulic Compressor Gear
+Pignon Alternateur,Alternator Pinion
+Pignon Ventilateur,Fan Pinion
+Axe Inferieur Barre Btp, Mgb Bar Lower Axis
+Axe Superieur Barre Btp,Mgb Bar Upper Axis
+Palier Elastomerique Longitudinal,Longitudinal Elastomeric Bearing
+Palier Elastomerique Lateral,Lateral Elastomeric Bearing
+Traverse Suspension Btp,Mgb Suspension Crossbeam
+Planetaire,Sungear
+Roulement A Rouleaux A Module Entree Gauche,Roller Bearing A Lh Input Module
+Roulement A Rouleaux A Repare Module Entree Gauche,Roller Bearing A Lh Input Module Repaired
+Roulement A Rouleaux B Module Entree Gauche,Roller Bearing B Lh Input Module
+Roulement A Rouleaux B Repare Module Entree Gauche,Roller Bearing B Lh Input Module Repaired
+Roulement A Billes C Module Entree Gauche,Ball Bearing C Lh Input Module
+Roulement A Billes C Repare Module Entree Gauche,Ball Bearing C Lh Input Module Repaired
+Roulement A Billes D Module Entree Gauche,Ball Bearing D Lh Input Module
+Roulement A Billes D Repare Module Entree Gauche,Ball Bearing D Lh Input Module Repaired
+Roulement A Rouleaux E Module Entree Gauche,Roller Bearing E Lh Input Module
+Roulement A Rouleaux E Repare Module Entree Gauche,Roller Bearing E Lh Input Module Repaired
+Roulement A Rouleaux A Module Entree Droit,Roller Bearing A Rh Input Module
+Roulement A Rouleaux A Repare Module Entree Droit,Roller Bearing A Rh Input Module Repaired
+Roulement A Rouleaux B Module Entree Droit,Roller Bearing B Rh Input Module
+Roulement A Rouleaux B Repare Module Entree Droit,Roller Bearing B Rh Input Module Repaired
+Roulement A Billes C Module Entree Droit,Ball Bearing C Rh Input Module
+Roulement A Billes C Repare Module Entree Droit,Ball Bearing C Rh Input Module Repaired
+Roulement A Billes D Module Entree Droit,Ball Bearing D Rh Input Module
+Roulement A Billes D Repare Module Entree Droit,Ball Bearing D Rh Input Module Repaired
+Roulement A Rouleaux E Module Entree Droit,Roller Bearing E Rh Input Module
+Roulement A Rouleaux E Repare Module Entree Droit,Roller Bearing E Rh Input Module Repaired
+Roulement A Billes F Gauche,Ball Bearing F Lh
+Roulement A Billes F Gauche Repare,Ball Bearing F Lh Repaired
+Roulement A Billes F Droit,Ball Bearing F Rh
+Roulement A Billes F Droit Repare,Ball Bearing F Rh Repaired
+Roulement A Rouleaux G Gauche,Roller Bearing G Lh
+Roulement A Rouleaux G Gauche Repare,Roller Bearing G Lh Repaired
+Roulement A Rouleaux G Droit,Roller Bearing G Rh
+Roulement A Rouleaux G Droit Repare,Roller Bearing G Rh Repaired
+Roulement A Rouleaux H Gauche,Roller Bearing H Lh
+Roulement A Rouleaux H Gauche Repare,Roller Bearing H Lh Repaired
+Roulement A Rouleaux H Droit,Roller Bearing H Rh
+Roulement A Rouleaux H Droit Repare,Roller Bearing H Rh Repaired
+Roulement A Billes Rlb,Ball Bearing Rlb
+Roulement A Rouleaux Rlr,Ball Bearing Rlr
+Roulement A Rouleaux Ig,Roller Bearing Ig
+Roulement A Rouleaux Ig Repare,Roller Bearing Ig Repaired
+Roulement A Rouleaux Id,Roller Bearing Id
+Roulement A Rouleaux Id Repare,Roller Bearing Id Repaired
+Roulement A Billes Jd,Ball Bearing Jd
+Roulement A Billes Jd Repare,Ball Bearing Jd Repaired
+Roulement A Billes Jg,Ball Bearing Jg
+Roulement A Billes Jg Repare,Ball Bearing Jg Repaired
+Roulement A Rouleaux K,Roller Bearing K
+Roulement A Rouleaux K Repare,Roller Bearing K Repaired
+Roulement A Billes Lm,Ball Bearing Lm
+Roulement A Billes Lm Repare,Ball Bearing Lm Repaired
+Roulement A Rouleaux N,Roller Bearing N
+Roulement A Rouleaux N Repare,Roller Bearing N Repaired
+Roulement A Rouleaux Q,Roller Bearing Q
+Roulement A Rouleaux Q Repare,Roller Bearing Q Repaired
+Roulement A Billes Rs,Ball Bearing Rs
+Roulement A Billes Rs Repare,Ball Bearing Rs Repaired
+Roulement A Billes T,Ball Bearing T
+Roulement A Billes T Repare,Ball Bearing T Repaired
+Roulement A Rouleaux U,Roller Bearing U
+Roulement A Rouleaux U Repare,Roller Bearing U Repaired
+Roulement Double A Billes V,Double Ball Bearing V
+Roulement Double A Rouleaux W,Double Roller Bearing W
+Roulement A Rouleaux O,Roller Ebaring O
+Roulement A Rouleaux P,Roller Bearing P
+Roulement A Rouleaux P Repare,Roller Bearing P Repaired
+ Roulement A Billes Rla1 Bag,Ball Bearing Rla1 Lagb
+ Roulement A Billes Rla2 Bag,Ball Bearing Rla2 Lagb
+ Roulement A Rouleaux A1 Bag,Roller Bearing A1 Lagb
+ Roulement A Rouleaux A1 Repare Bag,Roller Bearing A1 Lagb Repaired
+ Roulement A Rouleaux A2 Bag,Roller Bearing A2 Lagb
+ Roulement A Rouleaux A2 Repare Bag,Roller Bearing A2 Lagb Repaired
+ Roulement A Rouleaux C1 Bag,Roller Bearing C1 Lagb
+ Roulement A Rouleaux C1 Repare Bag,Roller Bearing C1 Lagb Repaired
+ Roulement A Rouleaux C2 Bag,Roller Bearing C2 Lagb
+ Roulement A Rouleaux C2 Repare Bag,Roller Bearing C2 Lagb Repaired
+ Roulement A Rouleaux E1 Bag,Roller Bearing E1 Lagb
+ Roulement A Rouleaux E1 Repare Bag,Roller Bearing E1 Lagb Repaired
+Roulment A Bille E2 Bag,Ball Bearing E2 Lagb
+Roulement A Billes Repare Bag,Ball Bearing E2 Lagb Repaired
+Roulement Double A Billes G Bag,Double Ball Bearing G Lagb
+Roulement Double A Billes G Repare Bag,Double Ball Bearing G Lagb Repaired
+Roulement A Rouleaux B1 Bag,Roller Bearing B1 Lagb
+Roulement A Rouleaux B1 Repare Bag,Roller Bearing B1 Lagb Repaired
+Roulement A Rouleaux B2 Bag,Roller Bearing B2 Lagb
+Roulement A Rouleaux B2 Repare Bag,Roller Bearing B2 Lagb Repaired
+Roulement A Rouleaux D1 Bag,Roller Bearing D1 Lagb
+Roulement A Rouleaux D1 Repare Bag,Roller Bearing D1 Lagb Repaired
+Roulement A Rouleaux D2 Bag,Roller Bearing D2 Lagb
+Roulement A Rouleaux D2 Repare Bag,Roller Bearing D2 Lagb Repaired
+Roulement A Rouleaux F1 Bag,Roller Bearing F1 Lagb
+Roulement A Rouleaux F1 Repare Bag,Roller Bearing F1 Lagb Repaired
+Roulement A Rouleaux F2 Bag,Roller Bearing F2 Lagb
+Roulement A Rouleaux F2 Repare Bag,Roller Bearing F2 Lagb Repaired
+Rouleaux Roues Libre Rla Bag,Free Wheel Roller Rla Lagb
+Roulement A Rouleaux L1 Bad,Roller Bearing L1 Ragb
+Roulement A Rouleaux L1 Repare Bad,Roller Bearing L1 Ragb Repaired
+Roulement A Rouleaux L2 Bad,Roller Bearing L2 Ragb
+Roulement A Rouleaux L2 Repare Bad,Roller Bearing L2 Ragb Repaired
+Roulement A Rouleaux M1 Bad,Roller Bearing M1 Ragb
+Roulement A Rouleaux M1 Repare Bad,Roller Bearing M1 Ragb Repaired
+Roulement A Rouleaux M2 Bad,Roller Bearing M2 Ragb
+Roulement A Rouleaux M2 Repare Bad,Roller Bearing M2 Ragb Repaired
+Roulement A Rouleaux N1 Bad,Roller Bearing N1 Ragb
+Roulement A Rouleaux N1 Repare Bad,Roller Bearing N1 Ragb Repaired
+Roulement A Rouleaux N2 Bad,Roller Bearing N2 Ragb
+Roulement A Rouleaux N2 Repare Bad,Roller Bearing N2 Ragb Repaired
+Roulement A Rouleaux O1 Bad,Roller Bearing O1 Ragb
+Roulement A Rouleaux O1 Repare Bad,Roller Bearing O1 Ragb Repaired
+Roulement A Rouleaux O2 Bad,Roller Bearing O2 Ragb
+Roulement A Rouleaux O2 Repare Bad,Roller Bearing O2 Ragb Repaired
+Arbre Liaison Btp Gtm,Engine Mgb Linkage Shaft
+Arbre Roue Libre Gauche,Lh Free Wheel Shaft
+Arbre Roue Libre Droit,Rh Free Wheel Shaft
+Carter Principal,Main Housing
+Couronne Fixe,Fixed Ring Gear
+Carter Conique,Conical Housing
+Support Servo Commande,Servocontrol Fitting
+Platine Btp,Mgb Plate
+Pignon De Roue Libre Droit Repare,Repared Rh Free Wheel Pinion
+Pignon De Roue Libre Gauche Repare,Repared Lh Free Wheel Pinion
+Arbre De Roue Libre,Freewheel Shaft
+Porte Satellites 2eme Etage,2nd Stage Planet Gear Carrier
+Satelitte 1er Etage,1st Stage Planet Gear
+Satelitte 2e Etage,2nd Stage Planet Gear
+Roue Conique Soudee Reparee,Repaired Bevel Gear Welded
+Pignon Entree 23000 Trm,23000 Rpm Input Pinion
+Pignon Conique Sortie Repare,Repared Output Bevel Pinion
+Pignon Conique Sortie,Output Bevel Pinion
+Cage De Roue Libre,Freewheel Cage
+Arbre De Liaison Gtm Btp,Engine Mgb Coupling Shaft
+Arbre De Liaison Bendix,Bendix Coupling Shaft
+Roulement A Billes Avant Arbre De Roue Libre,Free Wheel Shaft Front  Ball Bearing
+Roulement A Billes Arriere Arbre De Roue Libre,Free Wheel Shaft Rear Ball Bearing
+Porte Satellites 1er Etage,1st Stage Planet Carrier
+Roulement A Rouleaux Porte Satellite,Planet Carrier Roller Bearing
+Roulement A Billes Roue Conique Soudee,Bevel Gear Welded Ball Bearing
+Roulement A Rouleaux Roue Conique Soudee Sup.,Bevel Gear Welded Upper Roller Bearing 
+Roulement A Rouleaux Roue Conique Soudee Inf.,Bevel Gear Welded Lower Roller Bearing 
+Roulement A Rouleaux Nez De Pignon Conique Sortie ,Nose Output Bevel Pinion Roller Bearing
+Roulement A Rouleaux Arriere Pignon Conique Sortie,Output Bevel Pinion Rear Roller Bearing
+Roulement A Billes Pignon Conique Sortie,Output Bevel Pinion Ball Bearing
+Roulement A Billes Pignon De Roue Libre,Free Wheel Pinion Ball Bearing
+Roulement A Rouleaux Pignon De Roue Libre Arriere,Rear Free Wheel Pinion Roller Bearing
+Roulement A Rouleaux Pignon De Roue Libre Avant,Front Free Wheel Pinion Roller Bearing
+Roulement A Billes Roue Entree 8000 Trm,8000 Rpm Input Wheel Ball Bearing
+Roulement A Rouleaux Roue Entree 8000 Trm,8000 Rpm Input Wheel Roller Bearing
+Roulement A Billes Pignon Entree 23000 Trm,23000 Rpm Input Pinion Ball Bearing
+Roulement A Rouleaux Pignon Entree 23000 Trm Arriere, Rear 23000 Rpm Input Pinion Roller Bearing
+Roulement A Rouleaux Pignon Entree 23000 Trm Avant,Front 23000 Rpm Input Pinion Roller Bearing
+Axe Battement,Flapping Pin
+Bague Interieure,Inner Ring
+Roulement A Aiguilles, Needle Bearing

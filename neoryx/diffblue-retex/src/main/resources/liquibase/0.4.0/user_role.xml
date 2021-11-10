@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="create_user_role" author="0.4.0">
+        <!-- **************** TABLE USER_ROLE****************** -->
+        <createTable tableName="user_role">
+            <column name="user_id" type="bigint">
+                <constraints nullable="false" referencedTableName="user" referencedColumnNames="id"
+                             primaryKey="true" foreignKeyName="fk_user_role_user"/>
+            </column>
+            <column name="role_id" type="bigint">
+                <constraints nullable="false" referencedTableName="role" referencedColumnNames="id"
+                             primaryKey="true" foreignKeyName="fk_user_role_role"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="user_role_audit">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="user_id" type="bigint"/>
+            <column name="role_id" type="bigint"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

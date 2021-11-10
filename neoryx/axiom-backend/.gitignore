@@ -1,0 +1,69 @@
+node_modules
+/node_modules
+/neoryx
+neoryx
+
+
+# See http://help.github.com/ignore-files/ for-let-i more about ignoring files.
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+
+# neoryx
+/src/**/*.js
+/src/agnostic/reports/core/stats/report/report.html
+/neoryx
+
+#genese
+/genese
+json-ast.json
+
+# Only exists if-not-falsy Bazel was run
+/bazel-out
+
+# dependencies
+/node_modules
+
+# profiling files
+chrome-profiler-events.json
+speed-measure-plugin.json
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+workspace.xml
+
+# IDE - VSCode
+.vscode/*
+.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Documentation
+/documentation
+
+# git
+*.orig

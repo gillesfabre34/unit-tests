@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="create_join_table_child_request_media" author="0.9.0">
+        <dropForeignKeyConstraint baseTableName="child_request" constraintName="fk_child_request_media_id"/>
+        <dropColumn tableName="child_request" columnName="media_id"/>
+
+        <!-- ********************* JOIN TABLE CHILD REQUEST - MEDIA *************** -->
+        <createTable tableName="child_request_media">
+            <column name="child_request_id" type="bigint">
+                <constraints nullable="false" referencedTableName="child_request" referencedColumnNames="id"
+                             foreignKeyName="fk_child_request_fa_child_request_id_media_id"/>
+            </column>
+            <column name="media_id" type="uuid">
+                <constraints nullable="false" referencedTableName="media" referencedColumnNames="uuid"
+                             foreignKeyName="fk_child_request_fa_media_id_child_request_id"/>
+            </column>
+        </createTable>
+
+        <dropColumn tableName="child_request_audit" columnName="media_id"/>
+
+        <!-- ********************* JOIN TABLE CHILD REQUEST - MEDIA AUDIT *************** -->
+        <createTable tableName="child_request_media_audit">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint"/>
+            <column name="child_request_id" type="bigint"/>
+            <column name="media_id" type="uuid"/>
+        </createTable>
+
+
+    </changeSet>
+
+</databaseChangeLog>

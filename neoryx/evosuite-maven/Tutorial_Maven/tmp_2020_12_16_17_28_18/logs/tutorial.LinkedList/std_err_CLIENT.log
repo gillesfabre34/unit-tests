@@ -1,0 +1,9 @@
+[MASTER] 17:28:23.792 [TEST_EXECUTION_THREAD_0] ERROR FunctionalMockStatement - Cannot use Mockito on interface java.util.function.Consumer due to IAE: 
+ClassCastException occurred while creating the mockito mock :
+  class to mock : 'java.util.function.Consumer', loaded by classloader : 'null'
+  created class : 'codegen.java.util.function.Consumer$MockitoMock$1229471095', loaded by classloader : 'net.bytebuddy.dynamic.loading.MultipleParentClassLoader@11d02da5'
+  proxy instance class : 'codegen.java.util.function.Consumer$MockitoMock$1229471095', loaded by classloader : 'net.bytebuddy.dynamic.loading.MultipleParentClassLoader@11d02da5'
+  instance creation by : ObjenesisInstantiator
+
+You might experience classloading issues, please ask the mockito mailing-list.
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="insert_role" author="changelog" context="!gradle-migration-test">
+        <loadUpdateData relativeToChangelogFile="true" file="role.csv" tableName="role" primaryKey="id">
+            <column name="id" type="NUMERIC"/>
+            <column name="airbus_entity_id" type="NUMERIC"/>
+            <column name="role_code" type="STRING"/>
+            <column name="state" type="STRING"/>
+        </loadUpdateData>
+    </changeSet>
+</databaseChangeLog>

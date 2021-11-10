@@ -1,0 +1,84 @@
+{
+	"date": 1605458063292,
+	"isoDate": "2020-11-15T16:34:23.292Z",
+	"reportStats": {
+		"projectGlobalStats": {
+			"files": 189,
+			"functions": 31,
+			"methods": 461,
+			"statements": 1641
+		},
+		"report": {
+			"bugs": [
+			],
+			"files": 0,
+			"filesStats": [
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/default/hello.service.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "HelloService",
+							"coveredStatements": [
+							],
+							"isFunction": false,
+							"name": "sayHello",
+							"numberOfTests": 0,
+							"totalStatements": 25,
+							"tries": 0
+						},
+						{
+							"bugs": [
+							],
+							"className": "HelloService",
+							"coveredStatements": [
+							],
+							"isFunction": false,
+							"name": "getFinalMessage",
+							"numberOfTests": 0,
+							"totalStatements": 1,
+							"tries": 0
+						}
+					],
+					"totalStatements": 26
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/default/message.service.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "MessageService",
+							"coveredStatements": [
+							],
+							"isFunction": false,
+							"name": "composeMessage",
+							"numberOfTests": 0,
+							"totalStatements": 1,
+							"tries": 0
+						}
+					],
+					"totalStatements": 1
+				}
+			],
+			"functions": 0,
+			"methods": 0,
+			"statements": 0
+		},
+		"sutGlobalStats": {
+			"files": 2,
+			"functions": 0,
+			"methods": 3,
+			"statements": 27
+		}
+	}
+}

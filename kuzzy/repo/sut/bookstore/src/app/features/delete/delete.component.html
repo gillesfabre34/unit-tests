@@ -1,0 +1,15 @@
+<div class="method-container">
+    <p class="title">delete(id: string): Observable< ResponseStatus ></p>
+    <p>delete() method is used to removed a T object in database with a DELETE http request and returns a response with ResponseStatus type.</p>
+    <p>delete() method needs that your app respects the Genese standards :</p>
+    <p>* You must add a genese param to your model like this :</p>
+    <pre>{{model | json}}</pre>
+    <p>* The endpoint must wait a DELETE method.</p>
+    <p>* The api path must respect the REST api standards for a create() method, just like this :</p>
+    <p>http://my-path/book/id</p>
+    <p>In this example, the delete() method removes a book with the help of the NestJS backend.</p>
+    <p>Open your navigator console. In the tab "Network", you'll find the data received from DELETE request.</p>
+    <div class="dataList">
+        <app-data-list [data]="data" (delete)="delete($event)"></app-data-list>
+    </div>
+</div>

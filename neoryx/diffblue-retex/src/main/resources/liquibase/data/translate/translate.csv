@@ -1,0 +1,37 @@
+entity_id,class_name,field,language,value
+
+# Administrator (id = 1)
+1,Role,label,EN,Administrator
+1,Role,label,FR,Administrator
+
+# Internal Operator (id = 2)
+2,Role,label,EN,Internal Operator
+2,Role,label,FR,Internal Operator
+
+# Technical Responsible (id = 3)
+3,Role,label,EN,Technical Responsible
+3,Role,label,FR,Technical Responsible
+
+# Manager (id = 4)
+4,Role,label,EN,Manager
+4,Role,label,FR,Manager
+
+# Preparator (id = 5)
+5,Role,label,EN,Preparator
+5,Role,label,FR,Preparator
+
+# Filtering Officer (id = 6)
+6,Role,label,EN,Filtering Officer
+6,Role,label,FR,Filtering Officer
+
+# Design Office (id = 7)
+7,Role,label,EN,Design office
+7,Role,label,FR,Design Office
+
+# Dynamic Expert (id = 8)
+8,Role,label,EN,Dynamic expert
+8,Role,label,FR,Dynamic expert
+
+# Quality Controller (id = 9)
+9,Role,label,EN,Quality Controller
+9,Role,label,FR,Quality Controller

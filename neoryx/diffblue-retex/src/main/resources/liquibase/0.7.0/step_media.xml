@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="create_step_media" author="0.7.0">
+        <!-- ********************* TABLE STEP MEDIA ****************************** -->
+
+        <createTable tableName="step_media">
+            <column name="step_id" type="bigint">
+                <constraints nullable="false" referencedTableName="step" referencedColumnNames="id"
+                             primaryKey="true" foreignKeyName="fk_step_media_step_id"/>
+            </column>
+            <column name="media_id" type="uuid">
+                <constraints nullable="false" referencedTableName="media" referencedColumnNames="uuid"
+                             primaryKey="true" foreignKeyName="fk_step_media_media_id"/>
+            </column>
+        </createTable>
+
+        <!-- ********************* TABLE STEP MEDIA AUDIT ********************************* -->
+
+        <createTable tableName="step_media_audit">
+            <column name="step_id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="media_id" type="uuid">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="create_user" author="0.1.0">
+
+        <!--
+        ***********  TABLE USER ***************************
+        -->
+        <createTable tableName="user">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="email" type="varchar(255)">
+                <constraints unique="true" nullable="false"/>
+            </column>
+            <column name="first_name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="staff_number" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="state" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="airbus_entity_id" type="bigint">
+                <constraints nullable="false" referencedTableName="airbus_entity" referencedColumnNames="id"
+                             foreignKeyName="fk_user_airbus_entity" deleteCascade="true"/>
+            </column>
+            <column name="language" type="varchar(25)"/>
+        </createTable>
+
+        <createTable tableName="revision">
+            <column name="id" type="integer" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="timestamp" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="user_id" type="bigint">
+                <constraints referencedTableName="user" referencedColumnNames="id"
+                             foreignKeyName="fk_revision_user_id"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="user_audit">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email" type="varchar(255)"/>
+            <column name="first_name" type="varchar(255)"/>
+            <column name="last_name" type="varchar(255)"/>
+            <column name="staff_number" type="varchar(255)"/>
+            <column name="state" type="varchar(50)"/>
+            <column name="airbus_entity_id" type="bigint"/>
+            <column name="language" type="varchar(25)"/>
+        </createTable>
+
+
+    </changeSet>
+</databaseChangeLog>

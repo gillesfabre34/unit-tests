@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <!--si new changeset à faire appeller ce fichier dans changelog.xml -->
+
+    <changeSet id="fix_damage_audit" author="0.9.3">
+        <renameColumn tableName="damage_audit" columnDataType="timestamp" oldColumnName="date_maj" newColumnName="maj_date"/>
+    </changeSet>
+
+    <changeSet id="fix_part_audit" author="0.9.3">
+        <renameColumn tableName="part_audit" columnDataType="timestamp" oldColumnName="date_maj" newColumnName="maj_date"/>
+    </changeSet>
+
+    <changeSet id="fix_routing_component_index_audit" author="0.9.3">
+        <renameColumn tableName="routing_component_index_audit" columnDataType="timestamp" oldColumnName="date_maj" newColumnName="maj_date"/>
+    </changeSet>
+
+</databaseChangeLog>

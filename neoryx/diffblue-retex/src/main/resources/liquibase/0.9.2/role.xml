@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="add_column_role_code" author="0.9.2">
+        <addColumn tableName="role">
+            <column name="role_code" type="varchar(50)"></column>
+        </addColumn>
+        <addColumn tableName="role_audit">
+            <column name="role_code" type="varchar(50)"></column>
+        </addColumn>
+    </changeSet>
+
+    <!-- delete column is_operator and is_technical_responsible  -->
+    <changeSet id="delete_column_is_operator_is_technical_responsible" author="0.9.2">
+        <dropColumn columnName="is_operator" tableName="role"/>
+        <dropColumn columnName="is_technical_responsible" tableName="role"/>
+
+        <dropColumn columnName="is_operator" tableName="role_audit"/>
+        <dropColumn columnName="is_technical_responsible" tableName="role_audit"/>
+    </changeSet>
+
+    <!-- add some value for role_code column which should have value -->
+    <changeSet id="set_role_code_value" author="0.9.2">
+        <update tableName="role">
+            <column name="role_code" type="varchar(50)" value="ADMIN"/>
+        </update>
+    </changeSet>
+
+    <!-- add non null constraint to role_code attribute -->
+    <changeSet id="add_non_null_role_code" author="0.9.2">
+        <addNotNullConstraint columnDataType="varchar(50)" columnName="role_code" tableName="role"/>
+        <addNotNullConstraint columnDataType="varchar(50)" columnName="role_code" tableName="role_audit"/>
+    </changeSet>
+
+    <changeSet id="drop_non_null_role_code_audit" author="0.9.2">
+        <dropNotNullConstraint tableName="role_audit" columnName="role_code" columnDataType="varchar(50)"/>
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,22 @@
+{
+    "spec_dir": "src",
+    "spec_files": [
+        "**/*.spec.ts",
+        "!mocks/examples/**/*.unit.spec.ts",
+        "!mocks/examples/my-service/my.service.spec.ts",
+        "!mocks/examples/my-service/output.my.service.spec.ts"
+    ],
+    "helpers": [
+        "helpers/**/*.js"
+    ],
+    "reporters": [
+        {
+            "name": "jasmine-spec-reporter#SpecReporter",
+            "options": {
+                "displayStacktrace": "all"
+            }
+        }
+    ],
+    "stopSpecOnExpectationFailure": false,
+    "random": false
+}

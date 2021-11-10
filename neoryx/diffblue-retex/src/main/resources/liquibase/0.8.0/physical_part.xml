@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="create_physical_part" author="0.8.0">
+        <createTable tableName="physical_part">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="child_request_id" type="bigint">
+                <constraints referencedTableName="child_request" referencedColumnNames="id"
+                             foreignKeyName="fk_physical_part_child_request_id"/>
+            </column>
+            <column name="serial_number" type="varchar(50)"/>
+            <column name="part_id" type="bigint">
+                <constraints nullable="false" referencedTableName="part" referencedColumnNames="id"
+                             foreignKeyName="fk_part_physical_part"/>
+            </column>
+            <column name="equipment_number" type="varchar(50)"/>
+        </createTable>
+
+        <createTable tableName="physical_part_audit">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+
+            <column name="revision_id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="child_request_id" type="bigint"/>
+            <column name="serial_number" type="varchar(50)"/>
+            <column name="part_id" type="bigint"/>
+            <column name="equipment_number" type="varchar(50)"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

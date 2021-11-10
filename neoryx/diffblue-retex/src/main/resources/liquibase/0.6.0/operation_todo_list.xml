@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="create_operation_todo_list" author="0.6.0">
+
+        <!-- ****************************** TABLE OPERATION TODO_LIST  ********************* -->
+
+        <createTable tableName="operation_todo_list">
+            <column name="operation_id" type="bigint">
+                <constraints nullable="false" referencedTableName="operation" referencedColumnNames="id"
+                             primaryKey="true" foreignKeyName="fk_operation_todo_list_operation_id"/>
+
+            </column>
+            <column name="todo_list_id" type="bigint">
+                <constraints nullable="false" referencedTableName="todo_list" referencedColumnNames="id"
+                             primaryKey="true" foreignKeyName="fk_operation_todo_list_todo_list_id"/>
+            </column>
+        </createTable>
+        <addUniqueConstraint tableName="operation_todo_list" columnNames="operation_id, todo_list_id"/>
+
+        <!-- ********************* TABLE OPERATION TODO_LIST  *************** -->
+        <createTable tableName="operation_todo_list_audit">
+            <column name="revision_id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="operation_id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="todo_list_id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

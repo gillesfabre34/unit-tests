@@ -1,0 +1,922 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Genese complexity report</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./../../../../../../reports-styles/prism.css" />
+    <link rel="stylesheet" href="./../../../../../../reports-styles/prettify.css" />
+    <link rel="stylesheet" href="./../../../../../../reports-styles/report.css" />
+    <link rel="stylesheet" href="./../../../../../../reports-styles/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<div class="header">
+    <div class="header-left">
+        <div>
+            <h1>Genese complexity report</h1>
+        </div>
+        <div class="pad1y">
+                <span class="backLink" onclick="history.back()"><-</span>
+                    VersioningRoutingControllerIT.java
+        </div>
+        <div class="clearfix">
+            <div class='fl pad1y space-right2'>
+                <span>Methods : </span>
+                <span class="strong">4</span>
+            </div>
+        </div>
+    </div>
+    <div class="header-right">
+        <div class="clearfix padly">
+            <div class='fl pad1y space-right2'>
+                <span>Complexity index : </span>
+                <span class="strong">167.7</span>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class='fl pad1y space-right2'>
+                <span>Cyclomatic complexity :</span>
+                <span class="strong">6</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--        -------------------------------------------------------------------------------------->
+<!--        -----------------------------------   Stats and charts   ----------------------------->
+<!--        -------------------------------------------------------------------------------------->
+
+
+<div class="mainContainer">
+    <div class="stats-and-charts">
+
+        <!--        -----------------------------------   Cognitive complexity   ---------------------------->
+
+        <div class="stats-cognitive">
+            <div class="stats-and-doughnut stats-and-doughnut-cognitive">
+                <div class="doughnut">
+                    <canvas id="doughnut-cognitive-cpx" height="220"></canvas>
+                </div>
+                <div class="stats">
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">Cognitive complexity</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">0 %</span>
+                            <span class="quiet"> Correct</span>
+                            <span
+                                    class='fraction'>0/4</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">50 %</span>
+                            <span class="quiet"> Warning</span>
+                            <span
+                                    class='fraction'>2/4</span>
+                            <span class="quiet">(threshold : 10)</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">50 %</span>
+                            <span class="quiet"> Error</span>
+                            <span
+                                    class='fraction'>2/4</span>
+                            <span class="quiet">(threshold : 20)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bar bar-cognitive">
+                <canvas id="bar-cognitive-cpx" class="cognitive-charts"></canvas>
+            </div>
+        </div>
+
+        <!--        -----------------------------------   Cyclomatic complexity   ---------------------------->
+
+        <div class="stats-cyclomatic">
+            <div class="stats-and-doughnut-cyclomatic">
+                <div class="doughnut">
+                    <canvas id="doughnut-cyclomatic-cpx" height="220"></canvas>
+                </div>
+                <div class="stats-cy">
+                    <div class="clearfix cyclomatic-subtitle">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">Cyclomatic complexity</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">100 %</span>
+                            <span class="quiet"> Correct</span>
+                            <span
+                                    class='fraction'>4/4</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">0 %</span>
+                            <span class="quiet"> Warning</span>
+                            <span
+                                    class='fraction'>0/4</span>
+                            <span class="quiet">(threshold : 5)</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">0 %</span>
+                            <span class="quiet"> Error</span>
+                            <span
+                                    class='fraction'>0/4</span>
+                            <span class="quiet">(threshold : 10)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bar bar-cyclomatic">
+                <canvas id="bar-cyclomatic-cpx" class="cyclomatic-charts"></canvas>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!--        -------------------------------------------------------------------------------------->
+    <!--        -----------------------------------   Methods arrays   ------------------------------->
+    <!--        -------------------------------------------------------------------------------------->
+
+
+    <div idclass="subfolders">
+        <div class="clearfix file-methods-subtitle">
+            <div class='fl pad1y space-right2'>
+                <span class="strong">Methods of <span class="italic">VersioningRoutingControllerIT.java</span></span>
+            </div>
+        </div>
+
+            <div id="before">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">before</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">17.1</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @BeforeEach
+                public void before() { // -------------------------------------------------------------- +0.2 Complexity index (+0.2 atomic)
+                    part &#x3D; dataSetInitializer.createPart(null); // ------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+            
+                    dataSetInitializer.createFunctionalArea((fa) -&gt; { // ------------------------------- +2.3 Complexity index (+0.3 atomic, +2 structural)
+                        fa.setPart(null); // ----------------------------------------------------------- +1.2 Complexity index (+0.2 atomic, +1 structural)
+                        fa.setAreaNumber(&quot;1&quot;); // ------------------------------------------------------ +1.3 Complexity index (+0.3 atomic, +1 structural)
+                        fa.setClassification(EnumClassification.ZC); // -------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                        fa.setFunctionality(dataset.functionality_teeth); // --------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                        fa.setFunctionalAreaName(dataset.functionalAreaName_OuterRingBottom); // ------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                        fa.setMaterial(dataset.material_15CN6.getId()); // ----------------------------- +2.5 Complexity index (+0.5 atomic, +2 structural)
+                        fa.setTreatment(dataset.treatment_cadmiumPlating); // -------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                        fa.setDisabled(false); // ------------------------------------------------------ +1.3 Complexity index (+0.3 atomic, +1 structural)
+                        part.addFunctionalAreas(fa); // ------------------------------------------------ +1.3 Complexity index (+0.3 atomic, +1 structural)
+                    });
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="createRouting_ThenValidateIt">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">createRouting_ThenValidateIt</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgerror">111.5</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                public void createRouting_ThenValidateIt() throws Exception { // --------------------------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_superAdmin; // --------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    expectedStatus &#x3D; HttpStatus.CREATED; // ------------------------------------------------------------------------ +0.4 Complexity index (+0.4 atomic)
+                    RoutingCreationDto createDto &#x3D; createRoutingDto(); // ---------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+            
+                    // create
+                    withRequest &#x3D; post(ConstantUrl.API_ROUTINGS).content(objectMapper.writeValueAsString(createDto)); // ----------- +3.9 Complexity index (+0.9 atomic, +3 structural)
+            
+                    AtomicReference&lt;Long&gt; routingIdRef &#x3D; new AtomicReference&lt;&gt;(); // ----------------------------------------------- +0.6 Complexity index (+0.6 atomic)
+                    checkCreation( // ---------------------------------------------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                        createDto, // ---------------------------------------------------------------------------------------------- +0.1 Complexity index (+0.1 atomic)
+                        (routing -&gt; { // ------------------------------------------------------------------------------------------- +1.2 Complexity index (+0.2 atomic, +1 structural)
+                            assertThat(routing.getStatus(), equalTo(EnumStatus.CREATED)); // --------------------------------------- +3.6 Complexity index (+0.6 atomic, +3 structural)
+                            assertThat(routing.getVersionNumber(), equalTo(1L)); // ------------------------------------------------ +3.5 Complexity index (+0.5 atomic, +3 structural)
+                            assertThat(routing.getIsLatestVersion(), equalTo(true)); // -------------------------------------------- +3.5 Complexity index (+0.5 atomic, +3 structural)
+                            assertThat(routing.getPart().getTechnicalId(), equalTo(part.getTechnicalId())); // --------------------- +5.7 Complexity index (+0.7 atomic, +5 structural)
+                            assertThat(routing.getOperations().size(), equalTo(4)); // --------------------------------------------- +4.6 Complexity index (+0.6 atomic, +4 structural)
+                            routingIdRef.set(routing.getNaturalId()); // ----------------------------------------------------------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                        }))
+                        .andExpect(jsonPath(&quot;routingIds&quot;, hasSize(1))) // ---------------------------------------------------------- +3.5 Complexity index (+0.5 atomic, +3 structural)
+                        .andExpect(jsonPath(&quot;errorMappingNotFound&quot;).isEmpty()) // -------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                        .andExpect(jsonPath(&quot;errorRoutingExists&quot;).isEmpty()); // --------------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+            
+                    // validate
+                    expectedStatus &#x3D; HttpStatus.NO_CONTENT; // --------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    withRequest &#x3D; put(ConstantUrl.API_PUBLISH_ROUTING.replace(&quot;{id}&quot;, routingIdRef.get().toString())) // ----------- +5.0 Complexity index (+1.0 atomic, +4 structural)
+                            .content(objectMapper.writeValueAsString(createDto)); // ----------------------------------------------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+            
+                    abstractCheck(); // -------------------------------------------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+            
+                    // check routing is validated
+                    expectedStatus &#x3D; HttpStatus.OK; // ----------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    withRequest &#x3D; get(ConstantUrl.API_ROUTING.replace(&quot;{id}&quot;, routingIdRef.get().toString())); // ------------------ +5.0 Complexity index (+1.0 atomic, +4 structural)
+            
+                    abstractCheck() // --------------------------------------------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                            .andExpect(jsonPath(&quot;id&quot;, equalTo(Integer.valueOf(routingIdRef.get().toString())))) // ----------------- +6.9 Complexity index (+0.9 atomic, +6 structural)
+                            .andExpect(jsonPath(&quot;status&quot;, equalTo(EnumStatus.VALIDATED.name()))) // -------------------------------- +4.7 Complexity index (+0.7 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;versionNumber&quot;, equalTo(1))) // --------------------------------------------------- +3.5 Complexity index (+0.5 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;isLatestVersion&quot;, equalTo(true))) // ---------------------------------------------- +3.5 Complexity index (+0.5 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;translatedFields.EN.name&quot;, equalTo(&quot;Routing A&quot;))) // ------------------------------ +3.5 Complexity index (+0.5 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;translatedFields.FR.name&quot;, equalTo(&quot;Gamme A&quot;))) // -------------------------------- +3.5 Complexity index (+0.5 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;creator.firstName&quot;).value(asUser.getFirstName())) // ------------------------------ +4.6 Complexity index (+0.6 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;creator.lastName&quot;).value(asUser.getLastName())) // -------------------------------- +4.6 Complexity index (+0.6 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;part.id&quot;, equalTo(Integer.valueOf(part.getNaturalId().toString())))) // ----------- +6.9 Complexity index (+0.9 atomic, +6 structural)
+                            .andExpect(jsonPath(&quot;part.partNumberRoot&quot;).value(part.getPartNumberRoot())) // ------------------------- +4.6 Complexity index (+0.6 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;part.partDesignation.translatedFields.FR.designation&quot;, notNullValue())) // -------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;part.partDesignation.translatedFields.EN.designation&quot;, notNullValue())); // ------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="createRoutingDto">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">createRoutingDto</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">12.7</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                private RoutingCreationDto createRoutingDto() { // -------------------------------------------- +0.2 Complexity index (+0.2 atomic)
+                    RoutingCreationDto createdDto &#x3D; new RoutingCreationDto(); // ------------------------------- +0.5 Complexity index (+0.5 atomic)
+                    createdDto.setPartId(part.getNaturalId()); // ---------------------------------------------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+            
+                    Map&lt;RoutingFieldsEnum, String&gt; mapFR &#x3D; new HashMap&lt;&gt;(); // --------------------------------- +0.7 Complexity index (+0.7 atomic)
+                    mapFR.put(RoutingFieldsEnum.name, &quot;Gamme A&quot;); // ------------------------------------------- +1.5 Complexity index (+0.5 atomic, +1 structural)
+                    Map&lt;RoutingFieldsEnum, String&gt; mapEN &#x3D; new HashMap&lt;&gt;(); // --------------------------------- +0.7 Complexity index (+0.7 atomic)
+                    mapEN.put(RoutingFieldsEnum.name, &quot;Routing A&quot;); // ----------------------------------------- +1.5 Complexity index (+0.5 atomic, +1 structural)
+                    Map&lt;Language, Map&lt;RoutingFieldsEnum, String&gt;&gt; translatedFields &#x3D; new HashMap&lt;&gt;(); // ------- +0.7 Complexity index (+0.7 atomic)
+                    translatedFields.put(Language.FR, mapFR); // ----------------------------------------------- +1.5 Complexity index (+0.5 atomic, +1 structural)
+                    translatedFields.put(Language.EN, mapEN); // ----------------------------------------------- +1.5 Complexity index (+0.5 atomic, +1 structural)
+                    createdDto.setTranslatedFields(translatedFields); // --------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+            
+                    return createdDto; // ---------------------------------------------------------------------- +0.2 Complexity index (+0.2 atomic)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="checkCreation">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">checkCreation</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgerror">26.4</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">3</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                private ResultActions checkCreation(RoutingCreationDto creationDto, Consumer&lt;Routing&gt; routingAssertion) throws Exception { // ------ +0.8 Complexity index (+0.8 atomic)
+                    withRequest &#x3D; post(ConstantUrl.API_ROUTINGS).content(objectMapper.writeValueAsString(creationDto)); // -------------------------- +3.9 Complexity index (+0.9 atomic, +3 structural)
+            
+                    ResultActions result &#x3D; abstractCheck(); // -------------------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                    JsonNode jsonNode &#x3D; objectMapper.readTree(result.andReturn().getResponse().getContentAsString()); // ---------------------------- +4.9 Complexity index (+0.9 atomic, +4 structural)
+            
+                    List&lt;Long&gt; createdRoutingIds &#x3D; new ArrayList&lt;&gt;(); // ---------------------------------------------------------------------------- +0.6 Complexity index (+0.6 atomic)
+                    for (JsonNode node : jsonNode.get(&quot;routingIds&quot;)) { // --------------------------------------------------------------------------- +2.6 Complexity index (+0.6 atomic, +2 structural)
+                        createdRoutingIds.add(node.asLong()); // ------------------------------------------------------------------------------------ +2.4 Complexity index (+0.4 atomic, +2 structural)
+                    }
+            
+                    Long routingId &#x3D; createdRoutingIds.get(0); // ----------------------------------------------------------------------------------- +1.6 Complexity index (+0.6 atomic, +1 structural)
+            
+                    if (routingAssertion !&#x3D; null) { // ---------------------------------------------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                        runInTransaction(() -&gt; { // ------------------------------------------------------------------------------------------------- +2.7 Complexity index (+0.2 atomic, +0.5 nesting, +2 structural)
+                            Routing routing &#x3D; repository.findLastVersionByNaturalId(routingId).orElse(null); // ------------------------------------- +2.7 Complexity index (+0.7 atomic, +2 structural)
+                            routingAssertion.accept(routing); // ------------------------------------------------------------------------------------ +1.3 Complexity index (+0.3 atomic, +1 structural)
+                        });
+                    }
+            
+                    return result; // --------------------------------------------------------------------------------------------------------------- +0.2 Complexity index (+0.2 atomic)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+    </div>
+
+</div>
+
+
+<!--        -------------------------------------------------------------------------------------->
+<!--        -----------------------------------   Scripts   -------------------------------------->
+<!--        -------------------------------------------------------------------------------------->
+
+
+
+<script src="././../../../../../../reports-styles/Chart.js"></script>
+<script src="./../../../../../../reports-styles/prism.js"></script>
+
+<script>
+    var ctxDougnutCognitive = document.getElementById('doughnut-cognitive-cpx').getContext("2d");
+    var doughnutCognitive = new Chart(ctxDougnutCognitive, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [
+                    0,
+                    2,
+                    2,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                        '#ffa31a',
+                        '#ff3300',
+                ]
+            }],
+            labels: [
+                'correct methods ',
+                'warning methods ',
+                'error methods ',
+            ]
+        },
+        options: {
+            layout: {
+                padding: {
+                    maintainAspectRatio: false,
+                    responsive: false,
+                    left: 50,
+                    right: 0,
+                    top: 0,
+                    bottom: 0
+                }
+            },
+            legend: {
+                display: false
+            },
+            position: 'left',
+            title: {
+                display: true,
+                text: 'Cognitive complexity'
+            }
+        }
+    });
+</script>
+<script>
+    var ctxBarCognitive = document.getElementById('bar-cognitive-cpx').getContext("2d");
+    var barCognitive = new Chart(ctxBarCognitive, {
+        type: 'bar',
+        data: {
+            labels: [
+                    '0',
+                    '1',
+                    '2',
+                    '3',
+                    '4',
+                    '5',
+                    '6',
+                    '7',
+                    '8',
+                    '9',
+                    '10',
+                    '11',
+                    '12',
+                    '13',
+                    '14',
+                    '15',
+                    '16',
+                    '17',
+                    '18',
+                    '19',
+                    '20',
+                    '21',
+                    '22',
+                    '23',
+                    '24',
+                    '25',
+                    '26',
+                    '27',
+                    '28',
+                    '29',
+                    '30',
+                    '31',
+                    '32',
+                    '33',
+                    '34',
+                    '35',
+                    '36',
+                    '37',
+                    '38',
+                    '39',
+                    '40',
+                    '41',
+                    '42',
+                    '43',
+                    '44',
+                    '45',
+                    '46',
+                    '47',
+                    '48',
+                    '49',
+                    '50',
+                    '51',
+                    '52',
+                    '53',
+                    '54',
+                    '55',
+                    '56',
+                    '57',
+                    '58',
+                    '59',
+                    '60',
+                    '61',
+                    '62',
+                    '63',
+                    '64',
+                    '65',
+                    '66',
+                    '67',
+                    '68',
+                    '69',
+                    '70',
+                    '71',
+                    '72',
+                    '73',
+                    '74',
+                    '75',
+                    '76',
+                    '77',
+                    '78',
+                    '79',
+                    '80',
+                    '81',
+                    '82',
+                    '83',
+                    '84',
+                    '85',
+                    '86',
+                    '87',
+                    '88',
+                    '89',
+                    '90',
+                    '91',
+                    '92',
+                    '93',
+                    '94',
+                    '95',
+                    '96',
+                    '97',
+                    '98',
+                    '99',
+                    '100',
+                    '101',
+                    '102',
+                    '103',
+                    '104',
+                    '105',
+                    '106',
+                    '107',
+                    '108',
+                    '109',
+                    '110',
+                    '111',
+                    '112',
+            ],
+            datasets: [{
+                data: [
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                ],
+            }]
+        },
+        options: {
+            legend: {
+                display: false
+            },
+            scales: {
+                xAxes: [{
+                    gridLines: {
+                        display: false
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Cognitive complexity'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }],
+                yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Number of methods'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }]
+            }
+        }
+    });
+</script>
+<script>
+    var ctxDougnutCyclomatic = document.getElementById('doughnut-cyclomatic-cpx').getContext("2d");
+    var doughnutCyclomatic = new Chart(ctxDougnutCyclomatic, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [
+                    4,
+                    0,
+                    0,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                        '#ffa31a',
+                        '#ff3300',
+                ]
+            }],
+            labels: [
+                'correct methods ',
+                'warning methods ',
+                'error methods ',
+            ]
+        },
+        options: {
+            layout: {
+                padding: {
+                    maintainAspectRatio: false,
+                    responsive: false,
+                    left: 50,
+                    right: 0,
+                    top: 0,
+                    bottom: 0
+                }
+            },
+            legend: {
+                display: false
+            },
+            position: 'left',
+            title: {
+                display: true,
+                text: 'Cyclomatic complexity'
+            }
+        }
+    });
+</script>
+<script>
+    var ctxBarCyclomatic = document.getElementById('bar-cyclomatic-cpx').getContext("2d");
+    var barCyclomatic = new Chart(ctxBarCyclomatic, {
+        type: 'bar',
+        data: {
+            labels: [
+                    1,
+                    2,
+                    3,
+            ],
+            datasets: [{
+                data: [
+                        3,
+                        0,
+                        1,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                ],
+            }]
+        },
+        options: {
+            legend: {
+                display: false
+            },
+            title: {
+                display: false,
+                text: 'Cyclomatic complexity',
+                position: 'top'
+            },
+            scales: {
+                xAxes: [{
+                    gridLines: {
+                        display: false
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Cyclomatic complexity'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }],
+                yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Number of methods'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }]
+            }
+        }
+    });
+</script>
+
+</body>
+
+</html>

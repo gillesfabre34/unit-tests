@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="create_functionality_damage" author="0.1.0">
+        <!-- **************** TABLE FUNCTIONALITY_DAMAGE ********* -->
+        <createTable tableName="functionality_damage">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="state" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="id_functionality" type="bigint">
+                <constraints nullable="false" referencedTableName="functionality" referencedColumnNames="id"
+                             foreignKeyName="fk_functionality_damage_functionality"/>
+            </column>
+            <column name="id_damage" type="bigint">
+                <constraints nullable="false" referencedTableName="damage" referencedColumnNames="id"
+                             foreignKeyName="fk_functionality_damage_damage"/>
+            </column>
+            <column name="natural_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <!-- **************** TABLE FUNCTIONALITY_DAMAGE ********* -->
+        <createTable tableName="functionality_damage_audit">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="state" type="varchar(50)"/>
+            <column name="id_functionality" type="bigint"/>
+            <column name="id_damage" type="bigint"/>
+            <column name="revision_id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="natural_id" type="bigint"/>
+        </createTable>
+
+    </changeSet>
+</databaseChangeLog>

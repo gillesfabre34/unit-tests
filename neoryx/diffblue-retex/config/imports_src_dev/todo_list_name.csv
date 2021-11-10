@@ -1,0 +1,11 @@
+name_FR,name_EN,operation_type_name_EN
+Dégraissage,Degreasing,Preliminary
+Démontage,Disassembling,Preliminary
+Marquage,Marking,Preliminary
+Décapage,Stripping,Preliminary
+Débagage,Debushing,Preliminary
+Remontage,Reassembling,Closure
+Protection,Protection,Closure
+Stockage,Storage,Closure
+Expédition externe,External shippment,Closure
+Reception externe,External reception,Closure

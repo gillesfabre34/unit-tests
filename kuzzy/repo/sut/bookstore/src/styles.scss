@@ -1,0 +1,138 @@
+/* You can add global styles to this file, and also import other style files */
+
+// --------------------------------------------
+//           ANGULAR MATERIAL THEME
+// --------------------------------------------
+
+
+@import '~@angular/material/theming';
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$primary: mat-palette($mat-teal, A400);
+$accent: mat-palette($mat-cyan, A400);
+$warn: mat-palette($mat-red, 700);
+
+$background: mat-palette($mat-deep-purple, 300);
+$variant: mat-palette($mat-yellow, 300);
+$grey: #e0e0e0;
+$blue-grey: #647592;
+$airbus-blue: #021132;
+$lightBlue: #d0dbe2;
+$blueButtons: #0085ad;
+
+// Create the theme object (a Sass map containing all of the palettes).
+$theme: mat-light-theme($primary, $accent, $warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($theme);
+
+// Body.
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+input[text], button {
+    color: #333;
+    font-family: Cambria, Georgia, sans-serif;
+}
+
+
+// --------------------------------------------
+//                DEMO THEME
+// --------------------------------------------
+
+.title {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.code {
+    color: #647592;
+}
+
+input {
+    height: 30px;
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+}
+
+textarea {
+    height: 60px;
+    padding: 5px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.div-button {
+    padding-left: 24px;
+    padding-right: 24px;
+    position: relative;
+    height: 40px;
+    margin-bottom: 16px;
+    border: 1px solid #647592;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #647592;
+    width: 180px;
+    cursor: pointer;
+    font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+
+    span {
+        text-align: center;
+    }
+
+    &:hover {
+        background-color: #d0dee0;
+    }
+}
+
+button {
+    font-family: Arial;
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+}
+button:hover {
+    background-color: #cfd8dc;
+}
+button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+}
+
+.ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid #42A948; /* green */
+}
+
+.ng-invalid:not(form)  {
+    border-left: 5px solid #a94442; /* red */
+}

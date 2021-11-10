@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="insert_first_data" author="0.4.0">
+
+        <insert tableName="airbus_entity">
+            <column name="code" value="FRA"/>
+            <column name="country_name" value="France"/>
+            <column name="state" value="ACTIVE"/>
+        </insert>
+
+        <insert tableName="user">
+            <column name="email" value="admin@airbus.com"/>
+            <column name="first_name" value="admin"/>
+            <column name="last_name" value="admin"/>
+            <column name="staff_number" value="A123456"/>
+            <column name="state" value="ACTIVE"/>
+            <column name="airbus_entity_id" value="1"/>
+            <column name="language" value="FR"/>
+        </insert>
+
+        <insert tableName="role">
+            <column name="airbus_entity_id" value="1"/>
+            <column name="state" value="ACTIVE"/>
+        </insert>
+
+        <insert tableName="translate">
+            <column name="entity_id" value="1"/>
+            <column name="class_name" value="Role"/>
+            <column name="field" value="label"/>
+            <column name="language" value="EN"/>
+            <column name="value" value="Administrateur"/>
+        </insert>
+
+        <insert tableName="translate">
+            <column name="entity_id" value="1"/>
+            <column name="class_name" value="Role"/>
+            <column name="field" value="label"/>
+            <column name="language" value="FR"/>
+            <column name="value" value="Administrateur"/>
+        </insert>
+
+        <insert tableName="user_role">
+            <column name="user_id" value="1"/>
+            <column name="role_id" value="1"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

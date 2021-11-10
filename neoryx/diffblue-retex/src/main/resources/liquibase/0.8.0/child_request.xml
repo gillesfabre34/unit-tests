@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="create_child_request" author="0.8.0">
+        <!-- ********************* TABLE CHILD REQUEST *************** -->
+        <createTable tableName="child_request">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+
+            <column name="mission_type_id" type="bigint">
+                <constraints nullable="true" referencedTableName="mission_type" referencedColumnNames="id"
+                             foreignKeyName="fk_child_request_mission_type"/>
+            </column>
+            <column name="environment_id" type="bigint">
+                <constraints nullable="true" referencedTableName="environment" referencedColumnNames="id"
+                             foreignKeyName="fk_child_request_environment"/>
+            </column>
+            <column name="part_id" type="bigint">
+                <constraints nullable="true" referencedTableName="part" referencedColumnNames="id"
+                             foreignKeyName="fk_child_request_part"/>
+            </column>
+            <column name="parent_request_id" type="bigint">
+                <constraints nullable="true" referencedTableName="request" referencedColumnNames="id"
+                             foreignKeyName="fk_child_request_request"/>
+            </column>
+            <column name="aircraft_family_id" type="bigint">
+                <constraints nullable="true" referencedTableName="aircraft_family" referencedColumnNames="id"
+                             foreignKeyName="fk_child_request_aircraft_family"/>
+            </column>
+            <column name="aircraft_type_id" type="bigint">
+                <constraints nullable="true" referencedTableName="aircraft_type" referencedColumnNames="id"
+                             foreignKeyName="fk_child_request_aircraft_type"/>
+            </column>
+            <column name="aircraft_version_id" type="bigint">
+                <constraints nullable="true" referencedTableName="aircraft_version" referencedColumnNames="id"
+                             foreignKeyName="fk_child_request_aircraft_version"/>
+            </column>
+            <column name="status" type="varchar(50)"/>
+            <column name="drt_to_inspect" type="bigint">
+                <constraints nullable="true"/>
+            </column>
+            <!-- Not required 8.3.1 is removed , to delete -->
+            <column name="modulation" type="bigint">
+                <constraints nullable="true"/>
+            </column>
+            <column name="media_id" type="uuid">
+                <constraints nullable="true" referencedTableName="media" referencedColumnNames="uuid"
+                             foreignKeyName="fk_child_request_media_id"/>
+            </column>
+            <!-- Routing is computed using the part of child request , to delete-->
+            <column name="routing_id" type="bigint"/>
+            <column name="version" type="bigint" defaultValueNumeric="0"  />
+
+        </createTable>
+
+        <!-- ********************* TABLE CHILD REQUEST *************** -->
+        <createTable tableName="child_request_audit">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="parent_request_id" type="bigint"/>
+            <!-- Do we need these two fields ? Routing comes from PART and modulation
+                deleted from screen 8.3.1 -->
+            <column name="routing_id" type="bigint"/>
+            <column name="environment_id" type="bigint"/>
+
+            <column name="aircraft_family_id" type="bigint" />
+            <column name="aircraft_type_id" type="bigint" />
+            <column name="aircraft_version_id" type="bigint" />
+            <column name="mission_type_id" type="bigint"/>
+
+            <column name="part_id" type="bigint"/>
+            <column name="status" type="varchar(50)"/>
+            <column name="drt_to_inspect" type="bigint"/>
+            <!-- Do we need these two fields ? Routing comes from PART and modulation
+             deleted from screen 8.3.1 -->
+            <column name="modulation" type="bigint"/>
+            <column name="media_id" type="uuid"/>
+            <column name="version" type="bigint"/>
+
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

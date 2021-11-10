@@ -1,0 +1,10 @@
+{
+  "name": "ponicode",
+  "version": "1.0.0",
+  "dependencies": {
+    "jasmine": "^3.6.3"
+  },
+  "devDependencies": {
+    "rewire": "^5.0.0"
+  }
+}

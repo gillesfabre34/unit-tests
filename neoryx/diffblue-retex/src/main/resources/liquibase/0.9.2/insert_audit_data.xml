@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="insert_first_data" author="0.4.0">
+
+        <delete tableName="request_operator">
+            <where>user_id = 1</where>
+        </delete>
+
+        <delete tableName="request_technical_responsible">
+            <where>user_id = 1</where>
+        </delete>
+
+        <!-- Delete admin user -->
+        <delete tableName="user_role">
+            <where>user_id=1</where>
+        </delete>
+        <delete tableName="user">
+            <where>email='admin@airbus.com'</where>
+        </delete>
+
+        <!-- Init revision -->
+        <insert tableName="revision">
+            <column name="timestamp" value="1572888612669"/>
+        </insert>
+
+        <!-- From 0.4.0 insert_data -->
+        <insert tableName="airbus_entity_audit">
+            <column name="revision_id" valueComputed="(SELECT MAX(id) FROM revision)"/>
+            <column name="revision_type" value="0"/>
+            <column name="id" value="1"/>
+            <column name="code" value="FRA"/>
+            <column name="country_name" value="France"/>
+            <column name="state" value="ACTIVE"/>
+        </insert>
+
+    </changeSet>
+</databaseChangeLog>

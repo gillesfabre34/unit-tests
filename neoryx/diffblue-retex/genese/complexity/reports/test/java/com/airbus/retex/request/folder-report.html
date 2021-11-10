@@ -1,0 +1,1490 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Genese complexity report for all files</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./../../../../../../reports-styles/prettify.css" />
+    <link rel="stylesheet" href="./../../../../../../reports-styles/report.css" />
+    <link rel="stylesheet" href="./../../../../../../reports-styles/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<!--        -------------------------------------------------------------------------------------->
+<!--        ---------------------------------------   Header   ----------------------------------->
+<!--        -------------------------------------------------------------------------------------->
+
+
+<div class="header">
+    <div class="header-left">
+        <div>
+            <h1>Genese complexity report</h1>
+        </div>
+        <div class="pad1y">
+            <a class="backLink" href="../folder-report.html"> <- </a>
+            test/java/com/airbus/retex/request
+        </div>
+        <div class="clearfix">
+            <div class='fl pad1y space-right2'>
+                <span>Files : </span>
+                <span class="strong">5</span>
+            </div>
+            <div class='fl pad1y space-right2'>
+                <span>Methods : </span>
+                <span class="strong">48</span>
+            </div>
+        </div>
+    </div>
+    <div class="header-right">
+        <div class="clearfix padly">
+            <div class='fl pad1y space-right2'>
+                <span>Complexity Index : </span>
+                <span class="strong">1228.2</span>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class='fl pad1y space-right2'>
+                <span>Cyclomatic complexity :</span>
+                <span class="strong">49</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--        -------------------------------------------------------------------------------------->
+<!--        -----------------------------------   Stats and charts   ----------------------------->
+<!--        -------------------------------------------------------------------------------------->
+
+<div class="mainContainer">
+    <div class="stats-and-charts">
+
+        <!--        -----------------------------------   Cognitive complexity   ---------------------------->
+
+        <div class="stats-cognitive">
+            <div class="stats-and-doughnut stats-and-doughnut-cognitive">
+                <div class="doughnut">
+                    <canvas id="doughnut-cognitive-cpx" height="220"></canvas>
+                </div>
+                <div class="stats">
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">Cognitive complexity</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">50 %</span>
+                            <span class="quiet"> Correct</span>
+                            <span class='fraction'>24/48</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">16.7 %</span>
+                            <span class="quiet"> Warning</span>
+                            <span
+                                    class='fraction'>8/48</span>
+                            <span class="quiet">(threshold : 10)</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">33.3 %</span>
+                            <span class="quiet"> Error</span>
+                            <span
+                                    class='fraction'>16/48</span>
+                            <span class="quiet">(threshold : 20)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bar bar-cognitive">
+                <canvas id="bar-cognitive-cpx" class="cognitive-charts"></canvas>
+            </div>
+        </div>
+
+        <!--        -----------------------------------   Cyclomatic complexity   ---------------------------->
+
+        <div class="stats-cyclomatic">
+            <div class="stats-and-doughnut-cyclomatic">
+                <div class="doughnut">
+                    <canvas id="doughnut-cyclomatic-cpx" height="220"></canvas>
+                </div>
+                <div class="stats-cy">
+                    <div class="clearfix cyclomatic-subtitle">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">Cyclomatic complexity</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">100 %</span>
+                            <span class="quiet"> Correct</span>
+                            <span
+                                    class='fraction'>48/48</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">0 %</span>
+                            <span class="quiet"> Warning</span>
+                            <span
+                                    class='fraction'>0/48</span>
+                            <span class="quiet">(threshold : 5)</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">0 %</span>
+                            <span class="quiet"> Error</span>
+                            <span
+                                    class='fraction'>0/48</span>
+                            <span class="quiet">(threshold : 10)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bar bar-cyclomatic">
+                <canvas id="bar-cyclomatic-cpx" class="cyclomatic-charts"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!--        -------------------------------------------------------------------------------------->
+    <!--        -----------------------------------   Report arrays   -------------------------------->
+    <!--        -------------------------------------------------------------------------------------->
+
+
+    <!--        ----------------------------------   Folders array   --------------------------------->
+
+    <div class="subfolders">
+        <div class="clearfix cognitive-subtitle">
+            <div class='fl pad1y space-right2'>
+                <span class="strong">Subfolders of <span class="italic">test/java/com/airbus/retex/request</span></span>
+            </div>
+        </div>
+        <table class="array-report">
+            <thead>
+            <tr>
+                <th rowspan="2">Folders</th>
+                <th rowspan="2">Number of files</th>
+                <th rowspan="2">Number of methods</th>
+                <th colspan="3">Cognitive complexity of methods</th>
+                <th colspan="3">Cyclomatic complexity of methods</th>
+            </tr>
+            <tr>
+                <th>Correct</th>
+                <th>Warning</th>
+                <th>Error</th>
+                <th>Correct</th>
+                <th>Warning</th>
+                <th>Error</th>
+            </tr>
+            </thead>
+                    <tr>
+                        <td>
+                                <a href="../folder-report.html">../</a>
+                        </td>
+                        <td class="center"></td>
+                        <td class="center"></td>
+                        <td class="center correct"></td>
+                        <td class="center warning"></td>
+                        <td class="center error"></td>
+                        <td class="center correct"></td>
+                        <td class="center warning"></td>
+                        <td class="center error"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                                test/java/com/airbus/retex/request
+                        </td>
+                        <td class="center">5</td>
+                        <td class="center">48</td>
+                        <td class="center correct">24</td>
+                        <td class="center warning">8</td>
+                        <td class="center error">16</td>
+                        <td class="center correct">48</td>
+                        <td class="center warning">0</td>
+                        <td class="center error">0</td>
+                    </tr>
+        </table>
+    </div>
+
+    <!--        ----------------------------------   Files array   --------------------------------->
+
+    <div class="subfolders">
+        <div class="clearfix cognitive-subtitle">
+            <div class='fl pad1y space-right2'>
+                <span class="strong">Files of <span class="italic">test/java/com/airbus/retex/request</span></span>
+            </div>
+        </div>
+        <table class="array-report short-table">
+            <thead>
+            <tr>
+                <th style="width: 40%;">File</th>
+                <th style="width: 40%;">Method</th>
+                <th style="width: 10%;">Cognitive complexity</th>
+                <th style="width: 10%;">Cyclomatic complexity</th>
+            </tr>
+            </thead>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#findARequest_Ok">findARequest_Ok</a></td>
+                        <td class="center error">151.1</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#updateRequest_ok">updateRequest_ok</a></td>
+                        <td class="center error">103.5</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerGetVersionsIT.html">RequestControllerGetVersionsIT.java</a></td>
+                        <td><a href="./RequestControllerGetVersionsIT.html#getRequestSpecificVersion">getRequestSpecificVersion</a></td>
+                        <td class="center error">99.4</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#searchRequestsWithFilters_OK">searchRequestsWithFilters_OK</a></td>
+                        <td class="center error">95.6</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerGetVersionsIT.html">RequestControllerGetVersionsIT.java</a></td>
+                        <td><a href="./RequestControllerGetVersionsIT.html#before">before</a></td>
+                        <td class="center error">80</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerCreateRequestIT.html">RequestControllerCreateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerCreateRequestIT.html#createRequest_Ok">createRequest_Ok</a></td>
+                        <td class="center error">73.5</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#before">before</a></td>
+                        <td class="center error">71.2</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#updateRequestHeader_Ok">updateRequestHeader_Ok</a></td>
+                        <td class="center error">48.1</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerGetVersionsIT.html">RequestControllerGetVersionsIT.java</a></td>
+                        <td><a href="./RequestControllerGetVersionsIT.html#getRequestVersions_OK">getRequestVersions_OK</a></td>
+                        <td class="center error">44.8</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#updateRequest_aircraftType_ok">updateRequest_aircraftType_ok</a></td>
+                        <td class="center error">44.1</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#updateRequest_aircraftVersion_ok">updateRequest_aircraftVersion_ok</a></td>
+                        <td class="center error">42.8</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#before">before</a></td>
+                        <td class="center error">38.9</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerCreateRequestIT.html">RequestControllerCreateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerCreateRequestIT.html#createRequestWithoutDescription">createRequestWithoutDescription</a></td>
+                        <td class="center error">26.2</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#updateParentRequestDetailsSave_Ok">updateParentRequestDetailsSave_Ok</a></td>
+                        <td class="center error">25.7</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#constructUpdateRequest">constructUpdateRequest</a></td>
+                        <td class="center error">23.4</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#updateRequest_aircraftFamily_ok">updateRequest_aircraftFamily_ok</a></td>
+                        <td class="center error">22.8</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#updateRequest_origin_ok">updateRequest_origin_ok</a></td>
+                        <td class="center warning">19.2</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerCreateRequestIT.html">RequestControllerCreateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerCreateRequestIT.html#createRequestWithPastDueDate_Error">createRequestWithPastDueDate_Error</a></td>
+                        <td class="center warning">17.9</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestCreationDtoValidationUT.html">RequestCreationDtoValidationUT.java</a></td>
+                        <td><a href="./RequestCreationDtoValidationUT.html#dueDteMustNotBeAPastDate">dueDteMustNotBeAPastDate</a></td>
+                        <td class="center warning">17.3</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#updateRequest_originMedia_ok">updateRequest_originMedia_ok</a></td>
+                        <td class="center warning">15.7</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#findARequest_Ok_deletable_true">findARequest_Ok_deletable_true</a></td>
+                        <td class="center warning">15</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#deleteRequest_ok">deleteRequest_ok</a></td>
+                        <td class="center warning">14.1</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#check">check</a></td>
+                        <td class="center warning">13.4</td>
+                        <td class="center correct">2</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerCreateRequestIT.html">RequestControllerCreateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerCreateRequestIT.html#createRequestWithNonExistingAirbusEntityId_Error">createRequestWithNonExistingAirbusEntityId_Error</a></td>
+                        <td class="center warning">12.7</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#deleteRequest_delete_impossible">deleteRequest_delete_impossible</a></td>
+                        <td class="center correct">9.8</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#getRequestVersions_OK">getRequestVersions_OK</a></td>
+                        <td class="center correct">8.7</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerGetVersionsIT.html">RequestControllerGetVersionsIT.java</a></td>
+                        <td><a href="./RequestControllerGetVersionsIT.html#getRequestVersions_ID_Not_Exisiting_empty_list_returned">getRequestVersions_ID_Not_Exisiting_empty_list_returned</a></td>
+                        <td class="center correct">8.6</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#deleteRequest_delete_not_found_request">deleteRequest_delete_not_found_request</a></td>
+                        <td class="center correct">8.6</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#findARequest_KO_NotFound">findARequest_KO_NotFound</a></td>
+                        <td class="center correct">8.4</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#getTechnicalRequesters_OK">getTechnicalRequesters_OK</a></td>
+                        <td class="center correct">6.7</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#getAllRequesters_Ok">getAllRequesters_Ok</a></td>
+                        <td class="center correct">5.9</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#findARequest_KO_StatusIsForbidden_2">findARequest_KO_StatusIsForbidden_2</a></td>
+                        <td class="center correct">5.8</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#updateRequest_withoutClientIds">updateRequest_withoutClientIds</a></td>
+                        <td class="center correct">4.9</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#findARequest_KO_StatusIsForbidden">findARequest_KO_StatusIsForbidden</a></td>
+                        <td class="center correct">4.1</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerCreateRequestIT.html">RequestControllerCreateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerCreateRequestIT.html#dueDateExpectedFormat">dueDateExpectedFormat</a></td>
+                        <td class="center correct">3.9</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#updateRequest_withoutOriginId">updateRequest_withoutOriginId</a></td>
+                        <td class="center correct">3.7</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#updateRequest_withoutReference">updateRequest_withoutReference</a></td>
+                        <td class="center correct">3.7</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#updateRequest_withoutOetp">updateRequest_withoutOetp</a></td>
+                        <td class="center correct">3.7</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#updateRequest_withoutAtaCode">updateRequest_withoutAtaCode</a></td>
+                        <td class="center correct">3.7</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#check">check</a></td>
+                        <td class="center correct">3.3</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerGetVersionsIT.html">RequestControllerGetVersionsIT.java</a></td>
+                        <td><a href="./RequestControllerGetVersionsIT.html#check">check</a></td>
+                        <td class="center correct">3.1</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#check">check</a></td>
+                        <td class="center correct">3.1</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestCreationDtoValidationUT.html">RequestCreationDtoValidationUT.java</a></td>
+                        <td><a href="./RequestCreationDtoValidationUT.html#setup">setup</a></td>
+                        <td class="center correct">2.9</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#updateRequest_forbidden">updateRequest_forbidden</a></td>
+                        <td class="center correct">2.4</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#check">check</a></td>
+                        <td class="center correct">1.8</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#check">check</a></td>
+                        <td class="center correct">1.8</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerCreateRequestIT.html">RequestControllerCreateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerCreateRequestIT.html#setup">setup</a></td>
+                        <td class="center correct">1.6</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#setup">setup</a></td>
+                        <td class="center correct">1.6</td>
+                        <td class="center correct">1</td>
+                    </tr>
+        </table>
+    </div>
+
+    <!--        ----------------------------------   Methods array   --------------------------------->
+
+    <div class="subfolders">
+        <div class="clearfix cognitive-subtitle">
+            <div class='fl pad1y space-right2'>
+                <span class="strong">Methods of <span class="italic">test/java/com/airbus/retex/request</span> folder and its subfolders</span>
+                <span class="quiet">(ordered by decreasing cognitive complexity)</span>
+            </div>
+        </div>
+        <table class="array-report short-table">
+            <thead>
+            <tr>
+                <th style="width: 40%;">File</th>
+                <th style="width: 40%;">Method</th>
+                <th style="width: 10%;">Cognitive complexity</th>
+                <th style="width: 10%;">Cyclomatic complexity</th>
+            </tr>
+            </thead>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#findARequest_Ok">findARequest_Ok</a></td>
+                        <td class="center error">151.1</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#updateRequest_ok">updateRequest_ok</a></td>
+                        <td class="center error">103.5</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerGetVersionsIT.html">RequestControllerGetVersionsIT.java</a></td>
+                        <td><a href="./RequestControllerGetVersionsIT.html#getRequestSpecificVersion">getRequestSpecificVersion</a></td>
+                        <td class="center error">99.4</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#searchRequestsWithFilters_OK">searchRequestsWithFilters_OK</a></td>
+                        <td class="center error">95.6</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerGetVersionsIT.html">RequestControllerGetVersionsIT.java</a></td>
+                        <td><a href="./RequestControllerGetVersionsIT.html#before">before</a></td>
+                        <td class="center error">80</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerCreateRequestIT.html">RequestControllerCreateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerCreateRequestIT.html#createRequest_Ok">createRequest_Ok</a></td>
+                        <td class="center error">73.5</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#before">before</a></td>
+                        <td class="center error">71.2</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#updateRequestHeader_Ok">updateRequestHeader_Ok</a></td>
+                        <td class="center error">48.1</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerGetVersionsIT.html">RequestControllerGetVersionsIT.java</a></td>
+                        <td><a href="./RequestControllerGetVersionsIT.html#getRequestVersions_OK">getRequestVersions_OK</a></td>
+                        <td class="center error">44.8</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#updateRequest_aircraftType_ok">updateRequest_aircraftType_ok</a></td>
+                        <td class="center error">44.1</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#updateRequest_aircraftVersion_ok">updateRequest_aircraftVersion_ok</a></td>
+                        <td class="center error">42.8</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#before">before</a></td>
+                        <td class="center error">38.9</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerCreateRequestIT.html">RequestControllerCreateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerCreateRequestIT.html#createRequestWithoutDescription">createRequestWithoutDescription</a></td>
+                        <td class="center error">26.2</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#updateParentRequestDetailsSave_Ok">updateParentRequestDetailsSave_Ok</a></td>
+                        <td class="center error">25.7</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#constructUpdateRequest">constructUpdateRequest</a></td>
+                        <td class="center error">23.4</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#updateRequest_aircraftFamily_ok">updateRequest_aircraftFamily_ok</a></td>
+                        <td class="center error">22.8</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#updateRequest_origin_ok">updateRequest_origin_ok</a></td>
+                        <td class="center warning">19.2</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerCreateRequestIT.html">RequestControllerCreateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerCreateRequestIT.html#createRequestWithPastDueDate_Error">createRequestWithPastDueDate_Error</a></td>
+                        <td class="center warning">17.9</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestCreationDtoValidationUT.html">RequestCreationDtoValidationUT.java</a></td>
+                        <td><a href="./RequestCreationDtoValidationUT.html#dueDteMustNotBeAPastDate">dueDteMustNotBeAPastDate</a></td>
+                        <td class="center warning">17.3</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#updateRequest_originMedia_ok">updateRequest_originMedia_ok</a></td>
+                        <td class="center warning">15.7</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#findARequest_Ok_deletable_true">findARequest_Ok_deletable_true</a></td>
+                        <td class="center warning">15</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#deleteRequest_ok">deleteRequest_ok</a></td>
+                        <td class="center warning">14.1</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#check">check</a></td>
+                        <td class="center warning">13.4</td>
+                        <td class="center correct">2</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerCreateRequestIT.html">RequestControllerCreateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerCreateRequestIT.html#createRequestWithNonExistingAirbusEntityId_Error">createRequestWithNonExistingAirbusEntityId_Error</a></td>
+                        <td class="center warning">12.7</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#deleteRequest_delete_impossible">deleteRequest_delete_impossible</a></td>
+                        <td class="center correct">9.8</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#getRequestVersions_OK">getRequestVersions_OK</a></td>
+                        <td class="center correct">8.7</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerGetVersionsIT.html">RequestControllerGetVersionsIT.java</a></td>
+                        <td><a href="./RequestControllerGetVersionsIT.html#getRequestVersions_ID_Not_Exisiting_empty_list_returned">getRequestVersions_ID_Not_Exisiting_empty_list_returned</a></td>
+                        <td class="center correct">8.6</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#deleteRequest_delete_not_found_request">deleteRequest_delete_not_found_request</a></td>
+                        <td class="center correct">8.6</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#findARequest_KO_NotFound">findARequest_KO_NotFound</a></td>
+                        <td class="center correct">8.4</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#getTechnicalRequesters_OK">getTechnicalRequesters_OK</a></td>
+                        <td class="center correct">6.7</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#getAllRequesters_Ok">getAllRequesters_Ok</a></td>
+                        <td class="center correct">5.9</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#findARequest_KO_StatusIsForbidden_2">findARequest_KO_StatusIsForbidden_2</a></td>
+                        <td class="center correct">5.8</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#updateRequest_withoutClientIds">updateRequest_withoutClientIds</a></td>
+                        <td class="center correct">4.9</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#findARequest_KO_StatusIsForbidden">findARequest_KO_StatusIsForbidden</a></td>
+                        <td class="center correct">4.1</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerCreateRequestIT.html">RequestControllerCreateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerCreateRequestIT.html#dueDateExpectedFormat">dueDateExpectedFormat</a></td>
+                        <td class="center correct">3.9</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#updateRequest_withoutOriginId">updateRequest_withoutOriginId</a></td>
+                        <td class="center correct">3.7</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#updateRequest_withoutReference">updateRequest_withoutReference</a></td>
+                        <td class="center correct">3.7</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#updateRequest_withoutOetp">updateRequest_withoutOetp</a></td>
+                        <td class="center correct">3.7</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#updateRequest_withoutAtaCode">updateRequest_withoutAtaCode</a></td>
+                        <td class="center correct">3.7</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#check">check</a></td>
+                        <td class="center correct">3.3</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerGetVersionsIT.html">RequestControllerGetVersionsIT.java</a></td>
+                        <td><a href="./RequestControllerGetVersionsIT.html#check">check</a></td>
+                        <td class="center correct">3.1</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerIT.html">RequestControllerIT.java</a></td>
+                        <td><a href="./RequestControllerIT.html#check">check</a></td>
+                        <td class="center correct">3.1</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestCreationDtoValidationUT.html">RequestCreationDtoValidationUT.java</a></td>
+                        <td><a href="./RequestCreationDtoValidationUT.html#setup">setup</a></td>
+                        <td class="center correct">2.9</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#updateRequest_forbidden">updateRequest_forbidden</a></td>
+                        <td class="center correct">2.4</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#check">check</a></td>
+                        <td class="center correct">1.8</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#check">check</a></td>
+                        <td class="center correct">1.8</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerCreateRequestIT.html">RequestControllerCreateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerCreateRequestIT.html#setup">setup</a></td>
+                        <td class="center correct">1.6</td>
+                        <td class="center correct">1</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./RequestControllerUpdateRequestIT.html">RequestControllerUpdateRequestIT.java</a></td>
+                        <td><a href="./RequestControllerUpdateRequestIT.html#setup">setup</a></td>
+                        <td class="center correct">1.6</td>
+                        <td class="center correct">1</td>
+                    </tr>
+        </table>
+    </div>
+</div>
+
+
+<!--        -------------------------------------------------------------------------------------->
+<!--        -----------------------------------   Scripts-----   --------------------------------->
+<!--        -------------------------------------------------------------------------------------->
+
+
+
+<script src="./../../../../../../reports-styles/Chart.js"></script>
+
+<script>
+    var ctxDougnutCognitive = document.getElementById('doughnut-cognitive-cpx').getContext("2d");
+    var doughnutCognitive = new Chart(ctxDougnutCognitive, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [
+                    24,
+                    8,
+                    16,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                        '#ffa31a',
+                        '#ff3300',
+                ]
+            }],
+            labels: [
+                'correct methods ',
+                'warning methods ',
+                'error methods ',
+            ]
+        },
+        options: {
+            layout: {
+                padding: {
+                    maintainAspectRatio: false,
+                    responsive: false,
+                    left: 50,
+                    right: 0,
+                    top: 0,
+                    bottom: 0
+                }
+            },
+            legend: {
+                display: false
+            },
+            position: 'left',
+            title: {
+                display: true,
+                text: 'Cognitive complexity'
+            }
+        }
+    });
+</script>
+<script>
+    var ctxBarCognitive = document.getElementById('bar-cognitive-cpx').getContext("2d");
+    var barCognitive = new Chart(ctxBarCognitive, {
+        type: 'bar',
+        data: {
+            labels: [
+                    '0',
+                    '1',
+                    '2',
+                    '3',
+                    '4',
+                    '5',
+                    '6',
+                    '7',
+                    '8',
+                    '9',
+                    '10',
+                    '11',
+                    '12',
+                    '13',
+                    '14',
+                    '15',
+                    '16',
+                    '17',
+                    '18',
+                    '19',
+                    '20',
+                    '21',
+                    '22',
+                    '23',
+                    '24',
+                    '25',
+                    '26',
+                    '27',
+                    '28',
+                    '29',
+                    '30',
+                    '31',
+                    '32',
+                    '33',
+                    '34',
+                    '35',
+                    '36',
+                    '37',
+                    '38',
+                    '39',
+                    '40',
+                    '41',
+                    '42',
+                    '43',
+                    '44',
+                    '45',
+                    '46',
+                    '47',
+                    '48',
+                    '49',
+                    '50',
+                    '51',
+                    '52',
+                    '53',
+                    '54',
+                    '55',
+                    '56',
+                    '57',
+                    '58',
+                    '59',
+                    '60',
+                    '61',
+                    '62',
+                    '63',
+                    '64',
+                    '65',
+                    '66',
+                    '67',
+                    '68',
+                    '69',
+                    '70',
+                    '71',
+                    '72',
+                    '73',
+                    '74',
+                    '75',
+                    '76',
+                    '77',
+                    '78',
+                    '79',
+                    '80',
+                    '81',
+                    '82',
+                    '83',
+                    '84',
+                    '85',
+                    '86',
+                    '87',
+                    '88',
+                    '89',
+                    '90',
+                    '91',
+                    '92',
+                    '93',
+                    '94',
+                    '95',
+                    '96',
+                    '97',
+                    '98',
+                    '99',
+                    '100',
+                    '101',
+                    '102',
+                    '103',
+                    '104',
+                    '105',
+                    '106',
+                    '107',
+                    '108',
+                    '109',
+                    '110',
+                    '111',
+                    '112',
+                    '113',
+                    '114',
+                    '115',
+                    '116',
+                    '117',
+                    '118',
+                    '119',
+                    '120',
+                    '121',
+                    '122',
+                    '123',
+                    '124',
+                    '125',
+                    '126',
+                    '127',
+                    '128',
+                    '129',
+                    '130',
+                    '131',
+                    '132',
+                    '133',
+                    '134',
+                    '135',
+                    '136',
+                    '137',
+                    '138',
+                    '139',
+                    '140',
+                    '141',
+                    '142',
+                    '143',
+                    '144',
+                    '145',
+                    '146',
+                    '147',
+                    '148',
+                    '149',
+                    '150',
+                    '151',
+            ],
+            datasets: [{
+                data: [
+                        0,
+                        0,
+                        5,
+                        4,
+                        6,
+                        1,
+                        2,
+                        1,
+                        1,
+                        3,
+                        1,
+                        0,
+                        0,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        0,
+                        0,
+                        0,
+                        2,
+                        0,
+                        0,
+                        2,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        1,
+                        1,
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                ],
+            }]
+        },
+        options: {
+            legend: {
+                display: false
+            },
+            scales: {
+                xAxes: [{
+                    gridLines: {
+                        display: false
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Cognitive complexity'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }],
+                yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Number of methods'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }]
+            }
+        }
+    });
+</script>
+<script>
+    var ctxDougnutCyclomatic = document.getElementById('doughnut-cyclomatic-cpx').getContext("2d");
+    var doughnutCyclomatic = new Chart(ctxDougnutCyclomatic, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [
+                    48,
+                    0,
+                    0,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                        '#ffa31a',
+                        '#ff3300',
+                ]
+            }],
+            labels: [
+                'correct methods ',
+                'warning methods ',
+                'error methods ',
+            ]
+        },
+        options: {
+            layout: {
+                padding: {
+                    maintainAspectRatio: false,
+                    responsive: false,
+                    left: 50,
+                    right: 0,
+                    top: 0,
+                    bottom: 0
+                }
+            },
+            legend: {
+                display: false
+            },
+            position: 'left',
+            title: {
+                display: true,
+                text: 'Cyclomatic complexity'
+            }
+        }
+    });
+</script>
+<script>
+    var ctxBarCyclomatic = document.getElementById('bar-cyclomatic-cpx').getContext("2d");
+    var barCyclomatic = new Chart(ctxBarCyclomatic, {
+        type: 'bar',
+        data: {
+            labels: [
+                    1,
+                    2,
+            ],
+            datasets: [{
+                data: [
+                        47,
+                        1,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                        '#99ccff',
+                ],
+            }]
+        },
+        options: {
+            legend: {
+                display: false
+            },
+            title: {
+                display: false,
+                text: 'Cyclomatic complexity',
+                position: 'top'
+            },
+            scales: {
+                xAxes: [{
+                    gridLines: {
+                        display: false
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Cyclomatic complexity'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }],
+                yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Number of methods'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }]
+            }
+        }
+    });
+</script>
+</body>
+
+</html>

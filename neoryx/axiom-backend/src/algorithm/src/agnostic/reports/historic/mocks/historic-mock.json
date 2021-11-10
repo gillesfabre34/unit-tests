@@ -1,0 +1,316 @@
+{
+	"archiveStats": [
+		{
+			"comments": "",
+			"date": 1604759660236,
+			"isoDate": "2020-11-07T14:34:20.236Z",
+			"methodsArchives": [
+				{
+					"isRegression": false,
+					"methodCoverage": {
+						"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/fgt/poc/src/languages/ts/mocks/default/hello.service.ts",
+						"name": "sayHello",
+						"numberOfBugs": 1,
+						"numberOfCoveredStatementsWithoutBugs": 2,
+						"numberOfTestsWithoutBugs": 1,
+						"totalStatements": 25
+					}
+				},
+				{
+					"isRegression": false,
+					"methodCoverage": {
+						"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/fgt/poc/src/languages/ts/mocks/default/hello.service.ts",
+						"name": "getFinalMessage",
+						"numberOfBugs": 0,
+						"numberOfCoveredStatementsWithoutBugs": 0,
+						"numberOfTestsWithoutBugs": 0,
+						"totalStatements": 1
+					}
+				},
+				{
+					"isRegression": false,
+					"methodCoverage": {
+						"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/fgt/poc/src/languages/ts/mocks/default/message.service.ts",
+						"name": "composeMessage",
+						"numberOfBugs": 0,
+						"numberOfCoveredStatementsWithoutBugs": 0,
+						"numberOfTestsWithoutBugs": 0,
+						"totalStatements": 1
+					}
+				}
+			],
+			"projectGlobalStats": {
+				"files": 151,
+				"functions": 21,
+				"methods": 404,
+				"statements": 1406
+			},
+			"sutGlobalStats": {
+				"files": 2,
+				"functions": 0,
+				"methods": 3,
+				"statements": 28
+			}
+		},
+		{
+			"comments": "",
+			"date": 1604759612259,
+			"isoDate": "2020-11-07T14:33:32.259Z",
+			"methodsArchives": [
+				{
+					"isRegression": false,
+					"methodCoverage": {
+						"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/fgt/poc/src/languages/ts/mocks/default/hello.service.ts",
+						"name": "sayHello",
+						"numberOfBugs": 1,
+						"numberOfCoveredStatementsWithoutBugs": 2,
+						"numberOfTestsWithoutBugs": 1,
+						"totalStatements": 25
+					}
+				},
+				{
+					"isRegression": false,
+					"methodCoverage": {
+						"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/fgt/poc/src/languages/ts/mocks/default/hello.service.ts",
+						"name": "getFinalMessage",
+						"numberOfBugs": 0,
+						"numberOfCoveredStatementsWithoutBugs": 0,
+						"numberOfTestsWithoutBugs": 0,
+						"totalStatements": 1
+					}
+				},
+				{
+					"isRegression": false,
+					"methodCoverage": {
+						"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/fgt/poc/src/languages/ts/mocks/default/message.service.ts",
+						"name": "composeMessage",
+						"numberOfBugs": 0,
+						"numberOfCoveredStatementsWithoutBugs": 0,
+						"numberOfTestsWithoutBugs": 0,
+						"totalStatements": 1
+					}
+				}
+			],
+			"projectGlobalStats": {
+				"files": 151,
+				"functions": 21,
+				"methods": 404,
+				"statements": 1406
+			},
+			"sutGlobalStats": {
+				"files": 2,
+				"functions": 0,
+				"methods": 3,
+				"statements": 28
+			}
+		},
+		{
+			"comments": "",
+			"date": 1604758900912,
+			"isoDate": "2020-11-07T14:21:40.912Z",
+			"methodsArchives": [
+				{
+					"isRegression": false,
+					"methodCoverage": {
+						"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/fgt/poc/src/languages/ts/mocks/default/hello.service.ts",
+						"name": "sayHello",
+						"numberOfBugs": 1,
+						"numberOfCoveredStatementsWithoutBugs": 2,
+						"numberOfTestsWithoutBugs": 1,
+						"totalStatements": 25
+					}
+				},
+				{
+					"isRegression": false,
+					"methodCoverage": {
+						"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/fgt/poc/src/languages/ts/mocks/default/hello.service.ts",
+						"name": "getFinalMessage",
+						"numberOfBugs": 0,
+						"numberOfCoveredStatementsWithoutBugs": 0,
+						"numberOfTestsWithoutBugs": 0,
+						"totalStatements": 1
+					}
+				},
+				{
+					"isRegression": false,
+					"methodCoverage": {
+						"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/fgt/poc/src/languages/ts/mocks/default/message.service.ts",
+						"name": "composeMessage",
+						"numberOfBugs": 0,
+						"numberOfCoveredStatementsWithoutBugs": 0,
+						"numberOfTestsWithoutBugs": 0,
+						"totalStatements": 1
+					}
+				}
+			],
+			"projectGlobalStats": {
+				"files": 151,
+				"functions": 21,
+				"methods": 404,
+				"statements": 1406
+			},
+			"sutGlobalStats": {
+				"files": 2,
+				"functions": 0,
+				"methods": 3,
+				"statements": 28
+			}
+		},
+		{
+			"comments": "",
+			"date": 1604758861330,
+			"isoDate": "2020-11-07T14:21:01.330Z",
+			"methodsArchives": [
+				{
+					"isRegression": false,
+					"methodCoverage": {
+						"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/fgt/poc/src/languages/ts/mocks/default/hello.service.ts",
+						"name": "sayHello",
+						"numberOfBugs": 1,
+						"numberOfCoveredStatementsWithoutBugs": 2,
+						"numberOfTestsWithoutBugs": 1,
+						"totalStatements": 25
+					}
+				},
+				{
+					"isRegression": false,
+					"methodCoverage": {
+						"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/fgt/poc/src/languages/ts/mocks/default/hello.service.ts",
+						"name": "getFinalMessage",
+						"numberOfBugs": 0,
+						"numberOfCoveredStatementsWithoutBugs": 0,
+						"numberOfTestsWithoutBugs": 0,
+						"totalStatements": 1
+					}
+				},
+				{
+					"isRegression": true,
+					"methodCoverage": {
+						"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/fgt/poc/src/languages/ts/mocks/default/message.service.ts",
+						"name": "composeMessage",
+						"numberOfBugs": 0,
+						"numberOfCoveredStatementsWithoutBugs": 0,
+						"numberOfTestsWithoutBugs": 0,
+						"totalStatements": 1
+					}
+				}
+			],
+			"projectGlobalStats": {
+				"files": 151,
+				"functions": 21,
+				"methods": 404,
+				"statements": 1406
+			},
+			"sutGlobalStats": {
+				"files": 2,
+				"functions": 0,
+				"methods": 3,
+				"statements": 28
+			}
+		},
+		{
+			"comments": "",
+			"date": 1604754561640,
+			"isoDate": "2020-11-07T13:09:21.640Z",
+			"methodsArchives": [
+				{
+					"isRegression": false,
+					"methodCoverage": {
+						"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/fgt/poc/src/languages/ts/mocks/default/hello.service.ts",
+						"name": "sayHello",
+						"numberOfBugs": 1,
+						"numberOfCoveredStatementsWithoutBugs": 1,
+						"numberOfTestsWithoutBugs": 1,
+						"totalStatements": 25
+					}
+				},
+				{
+					"isRegression": false,
+					"methodCoverage": {
+						"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/fgt/poc/src/languages/ts/mocks/default/hello.service.ts",
+						"name": "getFinalMessage",
+						"numberOfBugs": 0,
+						"numberOfCoveredStatementsWithoutBugs": 0,
+						"numberOfTestsWithoutBugs": 0,
+						"totalStatements": 1
+					}
+				},
+				{
+					"isRegression": false,
+					"methodCoverage": {
+						"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/fgt/poc/src/languages/ts/mocks/default/message.service.ts",
+						"name": "composeMessage",
+						"numberOfBugs": 1,
+						"numberOfCoveredStatementsWithoutBugs": 1,
+						"numberOfTestsWithoutBugs": 0,
+						"totalStatements": 1
+					}
+				}
+			],
+			"projectGlobalStats": {
+				"files": 151,
+				"functions": 21,
+				"methods": 402,
+				"statements": 1393
+			},
+			"sutGlobalStats": {
+				"files": 2,
+				"functions": 0,
+				"methods": 3,
+				"statements": 28
+			}
+		},
+		{
+			"comments": "",
+			"date": 1604754505523,
+			"isoDate": "2020-11-07T13:08:25.523Z",
+			"methodsArchives": [
+				{
+					"isRegression": false,
+					"methodCoverage": {
+						"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/fgt/poc/src/languages/ts/mocks/default/hello.service.ts",
+						"name": "sayHello",
+						"numberOfBugs": 1,
+						"numberOfCoveredStatementsWithoutBugs": 2,
+						"numberOfTestsWithoutBugs": 1,
+						"totalStatements": 25
+					}
+				},
+				{
+					"isRegression": false,
+					"methodCoverage": {
+						"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/fgt/poc/src/languages/ts/mocks/default/hello.service.ts",
+						"name": "getFinalMessage",
+						"numberOfBugs": 0,
+						"numberOfCoveredStatementsWithoutBugs": 0,
+						"numberOfTestsWithoutBugs": 0,
+						"totalStatements": 1
+					}
+				},
+				{
+					"isRegression": false,
+					"methodCoverage": {
+						"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/fgt/poc/src/languages/ts/mocks/default/message.service.ts",
+						"name": "composeMessage",
+						"numberOfBugs": 0,
+						"numberOfCoveredStatementsWithoutBugs": 1,
+						"numberOfTestsWithoutBugs": 1,
+						"totalStatements": 1
+					}
+				}
+			],
+			"projectGlobalStats": {
+				"files": 151,
+				"functions": 21,
+				"methods": 402,
+				"statements": 1393
+			},
+			"sutGlobalStats": {
+				"files": 2,
+				"functions": 0,
+				"methods": 3,
+				"statements": 28
+			}
+		}
+	]
+}

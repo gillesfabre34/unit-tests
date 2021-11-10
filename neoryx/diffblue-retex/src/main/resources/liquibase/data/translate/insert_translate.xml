@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="insert_translate" author="changelog" runOnChange="true" context="!gradle-migration-test">
+        <loadUpdateData relativeToChangelogFile="true" primaryKey="entity_id,class_name,field,language"
+                file="translate.csv"
+                tableName="translate">
+            <column name="entity_id" type="NUMERIC"/>
+            <column name="class_name" type="STRING"/>
+            <column name="field" type="STRING"/>
+            <column name="language" type="STRING"/>
+
+        </loadUpdateData>
+    </changeSet>
+</databaseChangeLog>

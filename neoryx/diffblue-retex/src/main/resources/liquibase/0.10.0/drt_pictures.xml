@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+
+    <changeSet id="create_drt_pictures" author="0.10.0">
+        <!-- ********************* CREATE TABLE DRT PICTURES *************** -->
+        <createTable tableName="drt_pictures">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="drt_id" type="bigint">
+                <constraints nullable="false" referencedTableName="drt" referencedColumnNames="id"
+                             foreignKeyName="fk_drt_pictures_drt"/>
+            </column>
+            <column name="step_activation_id" type="bigint">
+                <constraints nullable="false" referencedTableName="step_activation" referencedColumnNames="id"
+                             foreignKeyName="fk_drt_pictures_step_activation"/>
+            </column>
+            <column name="activated" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <!-- ********************* JOIN TABLE DRT PICTURES AUDIT *************** -->
+        <createTable tableName="drt_pictures_audit">
+            <column name="revision_id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint"/>
+            <column name="id" type="bigint">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="drt_id" type="bigint"/>
+            <column name="step_activation_id" type="bigint"/>
+            <column name="activated" type="boolean"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

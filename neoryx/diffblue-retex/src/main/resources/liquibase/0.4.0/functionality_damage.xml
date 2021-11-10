@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="add_column_media_functionality_damage" author="0.1.0">
+        <!-- **************** TABLE FUNCTIONALITY_DAMAGE ********* -->
+        <addColumn tableName="functionality_damage">
+            <column name="media_id" type="uuid">
+                <constraints referencedTableName="media" referencedColumnNames="uuid"
+                             foreignKeyName="fk_functionality_damage_media_media_id"/>
+            </column>
+        </addColumn>
+
+        <!-- **************** TABLE FUNCTIONALITY_DAMAGE ********* -->
+        <addColumn tableName="functionality_damage_audit">
+            <column name="media_id" type="uuid"/>
+        </addColumn>
+
+    </changeSet>
+</databaseChangeLog>

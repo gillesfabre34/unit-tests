@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="create_routing_component" author="0.5.0">
+        <!--**************** CREATE ROUTING COMPONENT **************** -->
+
+        <createTable tableName="routing_component">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="functionality_id" type="bigint">
+                <constraints nullable="true" referencedTableName="functionality" referencedColumnNames="id"
+                             foreignKeyName="fk_routing_component_functionality"/>
+            </column>
+            <column name="damage_id" type="bigint"/>
+            <column name="operation_type_id" type="bigint">
+                <constraints nullable="true" referencedTableName="operation_type" referencedColumnNames="id"
+                             foreignKeyName="fk_routing_component_operation_type"/>
+            </column>
+            <column name="inspection_id" type="bigint">
+                <constraints nullable="true" referencedTableName="inspection" referencedColumnNames="id"
+                             foreignKeyName="fk_routing_component_inspection"/>
+            </column>
+            <column name="natural_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="routing_component_audit">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="natural_id" type="bigint"/>
+            <column name="functionality_id" type="bigint">
+            </column>
+            <column name="damage_id" type="bigint">
+            </column>
+            <column name="operation_type_id" type="bigint">
+            </column>
+            <column name="inspection_id" type="bigint">
+            </column>
+            <column name="status" type="varchar(50)">
+            </column>
+            <column name="revision_id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint">
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,1132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Genese complexity report</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./../../../../../../reports-styles/prism.css" />
+    <link rel="stylesheet" href="./../../../../../../reports-styles/prettify.css" />
+    <link rel="stylesheet" href="./../../../../../../reports-styles/report.css" />
+    <link rel="stylesheet" href="./../../../../../../reports-styles/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<div class="header">
+    <div class="header-left">
+        <div>
+            <h1>Genese complexity report</h1>
+        </div>
+        <div class="pad1y">
+                <span class="backLink" onclick="history.back()"><-</span>
+                    RoleControllerIT.java
+        </div>
+        <div class="clearfix">
+            <div class='fl pad1y space-right2'>
+                <span>Methods : </span>
+                <span class="strong">16</span>
+            </div>
+        </div>
+    </div>
+    <div class="header-right">
+        <div class="clearfix padly">
+            <div class='fl pad1y space-right2'>
+                <span>Complexity index : </span>
+                <span class="strong">203.5</span>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class='fl pad1y space-right2'>
+                <span>Cyclomatic complexity :</span>
+                <span class="strong">15</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--        -------------------------------------------------------------------------------------->
+<!--        -----------------------------------   Stats and charts   ----------------------------->
+<!--        -------------------------------------------------------------------------------------->
+
+
+<div class="mainContainer">
+    <div class="stats-and-charts">
+
+        <!--        -----------------------------------   Cognitive complexity   ---------------------------->
+
+        <div class="stats-cognitive">
+            <div class="stats-and-doughnut stats-and-doughnut-cognitive">
+                <div class="doughnut">
+                    <canvas id="doughnut-cognitive-cpx" height="220"></canvas>
+                </div>
+                <div class="stats">
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">Cognitive complexity</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">50 %</span>
+                            <span class="quiet"> Correct</span>
+                            <span
+                                    class='fraction'>8/16</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">31.3 %</span>
+                            <span class="quiet"> Warning</span>
+                            <span
+                                    class='fraction'>5/16</span>
+                            <span class="quiet">(threshold : 10)</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">18.8 %</span>
+                            <span class="quiet"> Error</span>
+                            <span
+                                    class='fraction'>3/16</span>
+                            <span class="quiet">(threshold : 20)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bar bar-cognitive">
+                <canvas id="bar-cognitive-cpx" class="cognitive-charts"></canvas>
+            </div>
+        </div>
+
+        <!--        -----------------------------------   Cyclomatic complexity   ---------------------------->
+
+        <div class="stats-cyclomatic">
+            <div class="stats-and-doughnut-cyclomatic">
+                <div class="doughnut">
+                    <canvas id="doughnut-cyclomatic-cpx" height="220"></canvas>
+                </div>
+                <div class="stats-cy">
+                    <div class="clearfix cyclomatic-subtitle">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">Cyclomatic complexity</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">100 %</span>
+                            <span class="quiet"> Correct</span>
+                            <span
+                                    class='fraction'>16/16</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">0 %</span>
+                            <span class="quiet"> Warning</span>
+                            <span
+                                    class='fraction'>0/16</span>
+                            <span class="quiet">(threshold : 5)</span>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class='fl pad1y space-right2'>
+                            <span class="strong">0 %</span>
+                            <span class="quiet"> Error</span>
+                            <span
+                                    class='fraction'>0/16</span>
+                            <span class="quiet">(threshold : 10)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bar bar-cyclomatic">
+                <canvas id="bar-cyclomatic-cpx" class="cyclomatic-charts"></canvas>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!--        -------------------------------------------------------------------------------------->
+    <!--        -----------------------------------   Methods arrays   ------------------------------->
+    <!--        -------------------------------------------------------------------------------------->
+
+
+    <div idclass="subfolders">
+        <div class="clearfix file-methods-subtitle">
+            <div class='fl pad1y space-right2'>
+                <span class="strong">Methods of <span class="italic">RoleControllerIT.java</span></span>
+            </div>
+        </div>
+
+            <div id="RoleControllerIT">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">RoleControllerIT</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">0</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">0</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                public RoleControllerIT() {
+                
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getAllRolesLabels_OK">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getAllRolesLabels_OK</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">4</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                void getAllRolesLabels_OK() throws Exception { // ------------------- +0.3 Complexity index (+0.3 atomic)
+                    withRequest &#x3D; get(API_ROLES + &quot;?airbusEntityId&#x3D;&quot; + 1); // ------- +1.8 Complexity index (+0.8 atomic, +1 structural)
+                    asUser &#x3D; dataset.user_superAdmin; // ---------------------------- +0.4 Complexity index (+0.4 atomic)
+                    expectedStatus &#x3D; HttpStatus.OK; // ------------------------------ +0.4 Complexity index (+0.4 atomic)
+                    abstractCheck(); // --------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getRole_OK">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getRole_OK</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">17.4</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                void getRole_OK() throws Exception { // ------------------------------------------ +0.3 Complexity index (+0.3 atomic)
+                    withRequest &#x3D; get(API_ROLE, 1); // ------------------------------------------- +1.5 Complexity index (+0.5 atomic, +1 structural)
+                    asUser &#x3D; dataset.user_superAdmin; // ----------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    expectedStatus &#x3D; HttpStatus.OK; // ------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    abstractCheck().andExpect(jsonPath(&quot;$.id&quot;).value(1)) // ---------------------- +4.6 Complexity index (+0.6 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;$.airbusEntity.id&quot;, notNullValue())) // --------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.features[0]&quot;, notNullValue())) // ------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.translatedLabels&quot;, notNullValue())); // ------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getRole_NotFound">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getRole_NotFound</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">0.3</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                void getRole_NotFound() throws Exception { // ------- +0.3 Complexity index (+0.3 atomic)
+            
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="updateRole_OK">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">updateRole_OK</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgerror">43.2</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                void updateRole_OK() throws Exception { // --------------------------------------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_superAdmin; // ------------------------------------------------------------------ +0.4 Complexity index (+0.4 atomic)
+                    expectedStatus &#x3D; HttpStatus.OK; // -------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    ObjectNode nodes &#x3D; objectMapper.createObjectNode(); // ------------------------------------------------ +1.5 Complexity index (+0.5 atomic, +1 structural)
+            
+                    nodes.put(&quot;airbusEntity&quot;, dataset.airbusEntity_france.getId()); // ------------------------------------ +2.6 Complexity index (+0.6 atomic, +2 structural)
+                    // construct our object RoleUpdateDto json
+                    nodes.putArray(&quot;features&quot;) // ------------------------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            .add(objectMapper.readTree(&quot;{ \&quot;code\&quot; : \&quot;&quot; + FeatureCode.ADMIN.name() + &quot;\&quot;&quot; // ------------- +4.1 Complexity index (+1.1 atomic, +3 structural)
+                                    + &quot; , \&quot;rightLevel\&quot;: \&quot;&quot; + EnumRightLevelDto.READ.toString() + &quot;\&quot;}&quot;)) // ------------ +1.7 Complexity index (+0.7 atomic, +1 structural)
+                            .add(objectMapper.readTree(&quot;{ \&quot;code\&quot; : \&quot;&quot; + FeatureCode.ADMIN.name() + &quot;\&quot;&quot; // ------------- +4.1 Complexity index (+1.1 atomic, +3 structural)
+                                    + &quot; , \&quot;rightLevel\&quot;: \&quot;&quot; + EnumRightLevelDto.WRITE.toString() + &quot;\&quot;}&quot;)); // ---------- +1.7 Complexity index (+0.7 atomic, +1 structural)
+                    nodes.putObject(&quot;translatedLabels&quot;) // ---------------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            .put(&quot;FR&quot;, &quot;Nouveau label francais&quot;) // ------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            .put(&quot;EN&quot;, &quot;New english label&quot;); // ----------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                    // run request
+                    withRequest &#x3D; put(API_ROLE_UPDATE, 1).content(objectMapper.writeValueAsBytes(nodes)); // -------------- +3.9 Complexity index (+0.9 atomic, +3 structural)
+                    abstractCheck() // ------------------------------------------------------------------------------------ +1.1 Complexity index (+0.1 atomic, +1 structural)
+                            .andExpect(jsonPath(&quot;$.id&quot;).value(dataset.user_superAdmin.getId())) // ------------------------ +4.7 Complexity index (+0.7 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;$.airbusEntity.id&quot;).value(dataset.airbusEntity_france.getId())) // ------- +4.7 Complexity index (+0.7 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;$.features[0]&quot;, notNullValue())) // -------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                            .andExpect(jsonPath(&quot;$.translatedLabels&quot;, notNullValue())); // -------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="updateRoleForAnOtherEntity_FORBIDDEN">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">updateRoleForAnOtherEntity_FORBIDDEN</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgerror">24.3</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                void updateRoleForAnOtherEntity_FORBIDDEN() throws Exception { // ------------------------------------ +0.3 Complexity index (+0.3 atomic)
+                    ObjectNode body &#x3D; objectMapper.createObjectNode().put(&quot;id&quot;, dataset.role_admin.getId()); // ------- +4.0 Complexity index (+1.0 atomic, +3 structural)
+                    JsonNode airbusEntity &#x3D; objectMapper.createObjectNode().put(&quot;id&quot;, 14L); // ------------------------ +2.8 Complexity index (+0.8 atomic, +2 structural)
+                    body.set(&quot;airbusEntity&quot;, airbusEntity); // -------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                    body.putArray(&quot;features&quot;) // ---------------------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                            .add(objectMapper.readTree(&quot;{ \&quot;featureId\&quot;: &quot; + 1 // ------------------------------------- +2.7 Complexity index (+0.7 atomic, +2 structural)
+                                    + &quot;, \&quot;rightLevel\&quot;: \&quot;&quot; + EnumRightLevel.READ.toString() + &quot;\&quot;}&quot;)) // ------------ +1.7 Complexity index (+0.7 atomic, +1 structural)
+                            .add(objectMapper.readTree(&quot;{ \&quot;featureId\&quot;: &quot; + 2 // ------------------------------------- +2.7 Complexity index (+0.7 atomic, +2 structural)
+                                    + &quot;, \&quot;rightLevel\&quot;: \&quot;&quot; + EnumRightLevel.WRITE.toString() + &quot;\&quot;}&quot;)); // ---------- +1.7 Complexity index (+0.7 atomic, +1 structural)
+            
+                    asUser &#x3D; dataset.user_simpleUser; // -------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    withRequest &#x3D; put(API_ROLE_UPDATE, 1).content(body.toString()); // -------------------------------- +3.8 Complexity index (+0.8 atomic, +3 structural)
+                    expectedStatus &#x3D; HttpStatus.FORBIDDEN; // --------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+            
+                    abstractCheck(); // ------------------------------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getAllRolesWithUserIsoCode_statusok">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getAllRolesWithUserIsoCode_statusok</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">6.2</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                void getAllRolesWithUserIsoCode_statusok() throws Exception { // -------------------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_superAdmin; // -------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    expectedStatus &#x3D; HttpStatus.OK; // ---------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    withParams.add(&quot;allLabels&quot;, &quot;false&quot;); // ---------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                    withRequest &#x3D; get(API_ROLES_SEGREGATION).params(withParams); // ----------------- +2.6 Complexity index (+0.6 atomic, +2 structural)
+            
+                    abstractCheck(); // ------------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                    //FIXME .andExpect(jsonPath(&quot;$&quot;, hasSize(2)))
+                    //FIXME .andExpect(jsonPath(&quot;$[1].label&quot;).isString());
+                    // FIXME .andExpect(jsonPath(&quot;$[1].label&quot;, equalTo(&quot;Role number 2&quot;)));
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getAllRolesWithAllLabels_OK">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getAllRolesWithAllLabels_OK</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">13.1</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                void getAllRolesWithAllLabels_OK() throws Exception { // ----------------------------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_superAdmin; // ---------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    expectedStatus &#x3D; HttpStatus.OK; // ------------------------------------------------ +0.4 Complexity index (+0.4 atomic)
+                    withParams.add(&quot;allLabels&quot;, &quot;true&quot;); // ------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                    withRequest &#x3D; get(API_ROLES_SEGREGATION); // -------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+            
+                    abstractCheck() // ---------------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                            .andExpect(jsonPath(&quot;$&quot;, hasSize((int) roleRepository.count()))) // ------- +4.7 Complexity index (+0.7 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;$[1].label&quot;).isString()); // ------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getAllRolesWithAllLabels_With_AirbusEntityID_OK">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getAllRolesWithAllLabels_With_AirbusEntityID_OK</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">10.2</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                void getAllRolesWithAllLabels_With_AirbusEntityID_OK() throws Exception { // ---------------------------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_superAdmin; // ----------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    expectedStatus &#x3D; HttpStatus.OK; // ------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    withParams.add(&quot;allLabels&quot;, &quot;true&quot;); // -------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                    withRequest &#x3D; get(API_ROLES_SEGREGATION + &quot;?airbusEntityId&#x3D;&quot; + 1).locale(new Locale(&quot;EN&quot;)); // ------- +3.2 Complexity index (+1.2 atomic, +2 structural)
+                    abstractCheck() // ----------------------------------------------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                            // FIXME : remettre plus tard
+                            //.andExpect(jsonPath(&quot;$&quot;, hasSize((int) roleRepository.count()) )  )
+                            .andExpect(jsonPath(&quot;$[1].label&quot;).isString()); // -------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getAllRolesWithSpecifiqueAirbusEntity_statusok">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getAllRolesWithSpecifiqueAirbusEntity_statusok</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">10.3</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                void getAllRolesWithSpecifiqueAirbusEntity_statusok() throws Exception { // ------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_superAdmin; // ------------------------------------------ +0.4 Complexity index (+0.4 atomic)
+                    expectedStatus &#x3D; HttpStatus.OK; // -------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    withParams.add(&quot;allLabels&quot;, &quot;true&quot;); // --------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                    withParams.add(&quot;airbusEntityId&quot;, &quot;0&quot;); // ------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                    withRequest &#x3D; get(API_ROLES_SEGREGATION + &quot;?airbusEntityId&#x3D;&quot; + 0); // --------- +1.8 Complexity index (+0.8 atomic, +1 structural)
+            
+                    abstractCheck().andExpect(jsonPath(&quot;$&quot;, hasSize(0))); // ---------------------- +4.6 Complexity index (+0.6 atomic, +4 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="getAllRoles_statusIsOk">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">getAllRoles_statusIsOk</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">4</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                void getAllRoles_statusIsOk() throws Exception { // ----------------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_superAdmin; // ---------------------------- +0.4 Complexity index (+0.4 atomic)
+                    expectedStatus &#x3D; HttpStatus.OK; // ------------------------------ +0.4 Complexity index (+0.4 atomic)
+                    withRequest &#x3D; get(API_ROLES + &quot;?airbusEntityId&#x3D;&quot; + 1); // ------- +1.8 Complexity index (+0.8 atomic, +1 structural)
+            
+                    abstractCheck(); // --------------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="revokeRoleWith_statusIsOk">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">revokeRoleWith_statusIsOk</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">6.5</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                void revokeRoleWith_statusIsOk() throws Exception { // ------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_superAdmin; // --------------------- +0.4 Complexity index (+0.4 atomic)
+                    withParams.add(&quot;roleId&quot;, String.valueOf(1L)); // --------- +2.6 Complexity index (+0.6 atomic, +2 structural)
+                    expectedStatus &#x3D; HttpStatus.OK; // ----------------------- +0.4 Complexity index (+0.4 atomic)
+                    withRequest &#x3D; put(API_ROLES_REVOKE); // ------------------ +1.4 Complexity index (+0.4 atomic, +1 structural)
+                    checkResponseContentType &#x3D; false; // --------------------- +0.3 Complexity index (+0.3 atomic)
+            
+                    abstractCheck(); // -------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="revokeRole_statusForbidden">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">revokeRole_statusForbidden</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">6.2</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                void revokeRole_statusForbidden() throws Exception { // ------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_simpleUser; // ---------------------- +0.4 Complexity index (+0.4 atomic)
+                    withParams.add(&quot;roleId&quot;, String.valueOf(1L)); // ---------- +2.6 Complexity index (+0.6 atomic, +2 structural)
+                    withRequest &#x3D; put(API_ROLES_REVOKE); // ------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                    expectedStatus &#x3D; HttpStatus.FORBIDDEN; // ----------------- +0.4 Complexity index (+0.4 atomic)
+                    abstractCheck(); // --------------------------------------- +1.1 Complexity index (+0.1 atomic, +1 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="createRole_OK">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">createRole_OK</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgerror">44.6</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                void createRole_OK() throws Exception { // --------------------------------------------------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    asUser &#x3D; dataset.user_superAdmin; // ----------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    expectedStatus &#x3D; HttpStatus.OK; // ------------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+            
+                    RoleCreationUpdateDto roleCreationDto&#x3D;new RoleCreationUpdateDto(); // -------------------------------------------- +0.5 Complexity index (+0.5 atomic)
+                    roleCreationDto.setRoleCode(RoleCode.ADMIN); // ------------------------------------------------------------------ +1.4 Complexity index (+0.4 atomic, +1 structural)
+                    roleCreationDto.setAirbusEntity(new LightDto( dataset.airbusEntity_france.getId())); // -------------------------- +2.7 Complexity index (+0.7 atomic, +2 structural)
+            
+                    List&lt;FeatureRightDto&gt; features &#x3D; new ArrayList&lt;&gt;(); // ----------------------------------------------------------- +0.6 Complexity index (+0.6 atomic)
+                    FeatureRightDto featureAdminNone &#x3D; new FeatureRightDto(); // ----------------------------------------------------- +0.5 Complexity index (+0.5 atomic)
+                    featureAdminNone.setCode(FeatureCode.ADMIN); // ------------------------------------------------------------------ +1.4 Complexity index (+0.4 atomic, +1 structural)
+                    featureAdminNone.setRightLevel(EnumRightLevel.WRITE); // --------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                    features.add(featureAdminNone); // ------------------------------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+                    roleCreationDto.setFeatures(features); // ------------------------------------------------------------------------ +1.3 Complexity index (+0.3 atomic, +1 structural)
+            
+                    Map&lt;Language, Map&lt;RoleFieldEnum, String&gt;&gt; translates &#x3D; new HashMap&lt;&gt;(); // --------------------------------------- +0.7 Complexity index (+0.7 atomic)
+                    translates.put(Language.FR, Map.of(RoleFieldEnum.label, &quot;Nom du role&quot;)); // -------------------------------------- +2.9 Complexity index (+0.9 atomic, +2 structural)
+                    translates.put(Language.EN, Map.of(RoleFieldEnum.label, &quot;Name of the role&quot;)); // --------------------------------- +2.9 Complexity index (+0.9 atomic, +2 structural)
+                    roleCreationDto.setTranslatedFields(translates); // -------------------------------------------------------------- +1.3 Complexity index (+0.3 atomic, +1 structural)
+            
+                    withRequest &#x3D; post(API_ROLES).content(objectMapper.writeValueAsBytes(roleCreationDto)); // ----------------------- +3.8 Complexity index (+0.8 atomic, +3 structural)
+                    abstractCheck().andExpect(jsonPath(&quot;$.id&quot;, notNullValue())) // --------------------------------------------------- +4.5 Complexity index (+0.5 atomic, +4 structural)
+                            .andExpect(jsonPath(&quot;$.airbusEntity.id&quot;).value(dataset.airbusEntity_france.getId().intValue())) // ------- +5.8 Complexity index (+0.8 atomic, +5 structural)
+                            .andExpect(jsonAt(&quot;$.features[0]&quot;, // -------------------------------------------------------------------- +2.3 Complexity index (+0.3 atomic, +2 structural)
+                                    andAt(&quot;.code&quot;, equalTo(&quot;ADMIN&quot;)), // ------------------------------------------------------------- +2.4 Complexity index (+0.4 atomic, +2 structural)
+                                    andAt(&quot;.rightLevel&quot;, equalTo(&quot;WRITE&quot;)))) // ------------------------------------------------------ +2.4 Complexity index (+0.4 atomic, +2 structural)
+                            .andExpect(jsonPath(&quot;$.translatedLabels&quot;, notNullValue())); // ------------------------------------------- +3.4 Complexity index (+0.4 atomic, +3 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="createRoleWithExistedLabel_INTERNAN_ERROR">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">createRoleWithExistedLabel_INTERNAN_ERROR</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgwarning">12.9</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                void createRoleWithExistedLabel_INTERNAN_ERROR() throws Exception { // --------------------------------------------------------------- +0.3 Complexity index (+0.3 atomic)
+                    RoleCreationUpdateDto roleCreationDto &#x3D; new RoleCreationUpdateDto(); // ----------------------------------------------------------- +0.5 Complexity index (+0.5 atomic)
+                    // this id already exists
+                    roleCreationDto.setAirbusEntity(new LightDto(1L)); // ----------------------------------------------------------------------------- +1.5 Complexity index (+0.5 atomic, +1 structural)
+                    //RoleFeatureCreationDto featureRoleCreationDto &#x3D; new RoleFeatureCreationDto(EnumRightLevelDto.WRITE, new LightDto(1L));
+                    //roleCreationDto.setFeatures(Arrays.asList(featureRoleCreationDto));
+                    // FIXME
+                    // List&lt;FieldTranslateDto&gt; translatedLabels &#x3D; new ArrayList&lt;&gt;();
+                    // translatedLabels.addOperation(new FieldTranslateDto(Language.EN, &quot;Role number &quot; + 1));
+                    //roleCreationDto.setTranslatedLabels(translatedLabels);
+                    asUser &#x3D; dataset.user_superAdmin; // ---------------------------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    expectedStatus &#x3D; HttpStatus.BAD_REQUEST; // --------------------------------------------------------------------------------------- +0.4 Complexity index (+0.4 atomic)
+                    withRequest &#x3D; post(API_ROLES).content(objectMapper.writeValueAsBytes(roleCreationDto));//FIXME create the JSON by hands // -------- +3.8 Complexity index (+0.8 atomic, +3 structural)
+                    ResultActions result &#x3D; abstractCheck(); // ---------------------------------------------------------------------------------------- +1.4 Complexity index (+0.4 atomic, +1 structural)
+                    abstractCheck().andExpect(jsonPath(&quot;$.messages[0]&quot;, equalTo(&quot;the labels chosen for this role already exists&quot;))); // --------------- +4.6 Complexity index (+0.6 atomic, +4 structural)
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="createRoleWithEmptyList_statusBadRequest">
+                <table class="array-report method-table">
+                    <thead class="method-thead">
+                    <tr>
+                        <th class="method-name-column">
+                            <span class="strong">createRoleWithEmptyList_statusBadRequest</span>
+                        </th>
+                        <th class="right bgwhite">Complexity Index</th>
+                        <th class="bgcorrect">0.3</th>
+                        <th class="right bgwhite">Cyclomatic complexity</th>
+                        <th class="bgcorrect">1</th>
+                    </tr>
+                    </thead>
+                    <tbody class="method-body">
+                    <tr class="code-row">
+                        <td colspan="5">
+                                <pre>
+                            <code class="language-js">
+                                
+                @Test
+                void createRoleWithEmptyList_statusBadRequest() throws Exception { // ----------------------------------------------------------------- +0.3 Complexity index (+0.3 atomic)
+            //        RoleCreationDto roleCreationDto &#x3D; new RoleCreationDto();
+            //
+            //        roleCreationDto.setAirbusEntity(new LightDto(1L));
+            //        FeatureRoleCreationDto featureRoleCreationDto &#x3D; new FeatureRoleCreationDto(EnumRightLevelDto.WRITE, new LightDto(1L));
+            //
+            //        // roleCreationDto.setRoleLabels(Arrays.asList());
+            //
+            //        roleCreationDto.setFeatureRoles(Arrays.asList(featureRoleCreationDto));
+            //
+            //        asUser &#x3D; dataset.user_superAdmin;
+            //        expectedStatus &#x3D; HttpStatus.BAD_REQUEST;
+            //        withRequest &#x3D; post(API_ROLES).content(objectMapper.writeValueAsBytes(roleCreationDto));
+            //
+            //        abstractCheck();
+                }
+            
+                            </code>
+                        </pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+    </div>
+
+</div>
+
+
+<!--        -------------------------------------------------------------------------------------->
+<!--        -----------------------------------   Scripts   -------------------------------------->
+<!--        -------------------------------------------------------------------------------------->
+
+
+
+<script src="././../../../../../../reports-styles/Chart.js"></script>
+<script src="./../../../../../../reports-styles/prism.js"></script>
+
+<script>
+    var ctxDougnutCognitive = document.getElementById('doughnut-cognitive-cpx').getContext("2d");
+    var doughnutCognitive = new Chart(ctxDougnutCognitive, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [
+                    8,
+                    5,
+                    3,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                        '#ffa31a',
+                        '#ff3300',
+                ]
+            }],
+            labels: [
+                'correct methods ',
+                'warning methods ',
+                'error methods ',
+            ]
+        },
+        options: {
+            layout: {
+                padding: {
+                    maintainAspectRatio: false,
+                    responsive: false,
+                    left: 50,
+                    right: 0,
+                    top: 0,
+                    bottom: 0
+                }
+            },
+            legend: {
+                display: false
+            },
+            position: 'left',
+            title: {
+                display: true,
+                text: 'Cognitive complexity'
+            }
+        }
+    });
+</script>
+<script>
+    var ctxBarCognitive = document.getElementById('bar-cognitive-cpx').getContext("2d");
+    var barCognitive = new Chart(ctxBarCognitive, {
+        type: 'bar',
+        data: {
+            labels: [
+                    '0',
+                    '1',
+                    '2',
+                    '3',
+                    '4',
+                    '5',
+                    '6',
+                    '7',
+                    '8',
+                    '9',
+                    '10',
+                    '11',
+                    '12',
+                    '13',
+                    '14',
+                    '15',
+                    '16',
+                    '17',
+                    '18',
+                    '19',
+                    '20',
+                    '21',
+                    '22',
+                    '23',
+                    '24',
+                    '25',
+                    '26',
+                    '27',
+                    '28',
+                    '29',
+                    '30',
+                    '31',
+                    '32',
+                    '33',
+                    '34',
+                    '35',
+                    '36',
+                    '37',
+                    '38',
+                    '39',
+                    '40',
+                    '41',
+                    '42',
+                    '43',
+                    '44',
+                    '45',
+            ],
+            datasets: [{
+                data: [
+                        3,
+                        0,
+                        0,
+                        0,
+                        2,
+                        0,
+                        2,
+                        1,
+                        0,
+                        0,
+                        2,
+                        0,
+                        0,
+                        2,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        1,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#99ccff',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ffa31a',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                        '#ff3300',
+                ],
+            }]
+        },
+        options: {
+            legend: {
+                display: false
+            },
+            scales: {
+                xAxes: [{
+                    gridLines: {
+                        display: false
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Cognitive complexity'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }],
+                yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Number of methods'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }]
+            }
+        }
+    });
+</script>
+<script>
+    var ctxDougnutCyclomatic = document.getElementById('doughnut-cyclomatic-cpx').getContext("2d");
+    var doughnutCyclomatic = new Chart(ctxDougnutCyclomatic, {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [
+                    16,
+                    0,
+                    0,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                        '#ffa31a',
+                        '#ff3300',
+                ]
+            }],
+            labels: [
+                'correct methods ',
+                'warning methods ',
+                'error methods ',
+            ]
+        },
+        options: {
+            layout: {
+                padding: {
+                    maintainAspectRatio: false,
+                    responsive: false,
+                    left: 50,
+                    right: 0,
+                    top: 0,
+                    bottom: 0
+                }
+            },
+            legend: {
+                display: false
+            },
+            position: 'left',
+            title: {
+                display: true,
+                text: 'Cyclomatic complexity'
+            }
+        }
+    });
+</script>
+<script>
+    var ctxBarCyclomatic = document.getElementById('bar-cyclomatic-cpx').getContext("2d");
+    var barCyclomatic = new Chart(ctxBarCyclomatic, {
+        type: 'bar',
+        data: {
+            labels: [
+                    0,
+                    1,
+            ],
+            datasets: [{
+                data: [
+                        1,
+                        15,
+                ],
+                backgroundColor: [
+                        '#99ccff',
+                        '#99ccff',
+                ],
+            }]
+        },
+        options: {
+            legend: {
+                display: false
+            },
+            title: {
+                display: false,
+                text: 'Cyclomatic complexity',
+                position: 'top'
+            },
+            scales: {
+                xAxes: [{
+                    gridLines: {
+                        display: false
+                    },
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Cyclomatic complexity'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }],
+                yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Number of methods'
+                    },
+                    ticks: {
+                        suggestedMin: 0
+                    }
+                }]
+            }
+        }
+    });
+</script>
+
+</body>
+
+</html>

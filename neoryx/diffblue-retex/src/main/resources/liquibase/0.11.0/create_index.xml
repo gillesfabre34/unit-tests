@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+
+    <changeSet id="create_index" author="0.11.0">
+
+
+        <!-- **************** CREATE INDEX PART *************** -->
+        <createIndex tableName="part" indexName="part_number_index">
+            <column name="part_number"/>
+        </createIndex>
+        <createIndex tableName="part" indexName="part_number_root_index">
+            <column name="part_number_root"/>
+        </createIndex>
+
+
+        <!-- **************** CREATE INDEX ROUTING *************** -->
+        <createIndex tableName="routing" indexName="routing_status_index">
+            <column name="status"/>
+        </createIndex>
+
+
+        <!-- **************** CREATE INDEX REQUEST *************** -->
+        <createIndex tableName="request" indexName="request_status_index">
+            <column name="status"/>
+        </createIndex>
+
+    </changeSet>
+</databaseChangeLog>

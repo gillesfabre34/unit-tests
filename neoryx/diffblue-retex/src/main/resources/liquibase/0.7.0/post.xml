@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="create_post" author="0.7.0">
+
+        <!-- ******************************** POST ************************** -->
+
+        <createTable tableName="post">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="step_id" type="bigint">
+                <constraints nullable="false" referencedTableName="step" referencedColumnNames="id"
+                             foreignKeyName="fk_post_step_id"/>
+            </column>
+            <column name="measure_unit_id" type="bigint">
+                <constraints nullable="false" referencedTableName="measure_unit" referencedColumnNames="id"
+                             foreignKeyName="fk_post_measure_unit_id"/>
+            </column>
+            <column name="natural_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <!-- ************************************* POST *************************************** -->
+
+        <createTable tableName="post_audit">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="natural_id" type="bigint"/>
+
+            <column name="step_id" type="bigint"/>
+            <column name="measure_unit_id" type="bigint"/>
+            <column name="revision_id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint"/>
+        </createTable>
+
+    </changeSet>
+</databaseChangeLog>

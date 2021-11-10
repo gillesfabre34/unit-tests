@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <include file="insert_data.xml" relativeToChangelogFile="true"/>
+
+    <include file="insert_data.xml" relativeToChangelogFile="true"/>
+
+    <include file="part_designation.xml" relativeToChangelogFile="true"/>
+
+    <include file="ata.xml" relativeToChangelogFile="true"/>
+
+    <include file="media.xml" relativeToChangelogFile="true"/>
+
+    <include file="part.xml" relativeToChangelogFile="true"/>
+
+    <include file="mpn.xml" relativeToChangelogFile="true"/>
+
+    <include file="damage_media.xml" relativeToChangelogFile="true"/>
+
+    <include file="damage_classification.xml" relativeToChangelogFile="true"/>
+
+    <include file="treatment.xml" relativeToChangelogFile="true"/>
+
+    <include file="functional_area_name.xml" relativeToChangelogFile="true"/>
+
+    <include file="material.xml" relativeToChangelogFile="true"/>
+
+    <include file="functional_area.xml" relativeToChangelogFile="true"/>
+
+    <include file="functionality_damage.xml" relativeToChangelogFile="true"/>
+
+</databaseChangeLog>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="create_step_activation" author="0.7.0">
+        <!-- ******************************* STEP ACTIVATION ****************************** -->
+
+        <createTable tableName="step_activation">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="step_id" type="bigint">
+                <constraints nullable="false" referencedTableName="step" referencedColumnNames="id"
+                             foreignKeyName="fk_step_activation_step"/>
+            </column>
+            <column name="operation_fa_id" type="bigint">
+                <constraints nullable="false" referencedTableName="operation_functional_area" referencedColumnNames="id"
+                             foreignKeyName="fk_step_activation_operation_functional_area"/>
+            </column>
+            <column name="activated" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+            <column name="creation_date" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="natural_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <!-- ******************************* STEP ACTIVATION AUDIT ****************************** -->
+
+        <createTable tableName="step_activation_audit">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="step_id" type="bigint"/>
+            <column name="operation_fa_id" type="bigint"/>
+            <column name="activated" type="boolean"/>
+            <column name="creation_date" type="timestamp"/>
+            <column name="revision_id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="natural_id" type="bigint"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

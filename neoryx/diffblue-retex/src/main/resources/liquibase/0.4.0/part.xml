@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="create_part" author="0.4.0">
+        <!-- ********************* TABLE PART *************** -->
+        <createTable tableName="part">
+
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false" unique="true"/>
+            </column>
+            <column name="ata_code" type="varchar(50)">
+                <constraints referencedTableName="ata" referencedColumnNames="code"
+                             foreignKeyName="fk_part_ata"/>
+            </column>
+            <column name="part_designation_id" type="bigint">
+                <constraints nullable="false" referencedTableName="part_designation" referencedColumnNames="id"
+                             foreignKeyName="fk_part_part_designation"/>
+            </column>
+            <column name="part_number" type="varchar(50)"/>
+            <column name="part_number_root" type="varchar(50)"/>
+            <column name="status" type="varchar(255)"/>
+            <column name="creation_date" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="version" type="integer">
+                <constraints nullable="false"/>
+            </column>
+            <column name="maj_date" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="natural_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="is_latest_version" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+            <column name="media_id" type="uuid">
+                <constraints nullable="true" referencedTableName="media" referencedColumnNames="uuid"
+                             foreignKeyName="fk_part_media"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="part_audit">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="ata_code" type="varchar(50)"/>
+            <column name="part_designation_id" type="bigint"/>
+            <column name="part_number" type="varchar(50)">
+            </column>
+            <column name="part_number_root" type="varchar(50)">
+            </column>
+            <column name="media_id" type="uuid"/>
+            <column name="revision_id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="status" type="varchar(255)"/>
+            <column name="natural_id" type="bigint"/>
+            <column name="creation_date" type="timestamp"/>
+            <column name="date_maj" type="timestamp"/>
+            <column name="is_latest_version" type="boolean"/>
+            <column name="version" type="integer"/>
+
+        </createTable>
+
+    </changeSet>
+</databaseChangeLog>

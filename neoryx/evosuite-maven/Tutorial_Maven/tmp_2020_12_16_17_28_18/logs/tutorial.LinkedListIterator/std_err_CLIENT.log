@@ -1,0 +1,19 @@
+[MASTER] 17:31:40.395 [TEST_EXECUTION_THREAD_0] ERROR FunctionalMockStatement - Cannot use Mockito on interface java.util.function.Consumer due to IAE: 
+ClassCastException occurred while creating the mockito mock :
+  class to mock : 'java.util.function.Consumer', loaded by classloader : 'null'
+  created class : 'codegen.java.util.function.Consumer$MockitoMock$364204260', loaded by classloader : 'net.bytebuddy.dynamic.loading.MultipleParentClassLoader@303fa4b7'
+  proxy instance class : 'codegen.java.util.function.Consumer$MockitoMock$364204260', loaded by classloader : 'net.bytebuddy.dynamic.loading.MultipleParentClassLoader@303fa4b7'
+  instance creation by : ObjenesisInstantiator
+
+You might experience classloading issues, please ask the mockito mailing-list.
+
+[MASTER] 17:31:40.440 [TEST_EXECUTION_THREAD_0] ERROR FunctionalMockStatement - Cannot use Mockito on class tutorial.Node due to IAE: 
+ClassCastException occurred while creating the mockito mock :
+  class to mock : 'tutorial.Node', loaded by classloader : 'org.evosuite.instrumentation.InstrumentingClassLoader@134d287'
+  created class : 'tutorial.Node$MockitoMock$2116872460', loaded by classloader : 'net.bytebuddy.dynamic.loading.MultipleParentClassLoader@7a7b9bb9'
+  proxy instance class : 'tutorial.Node$MockitoMock$2116872460', loaded by classloader : 'net.bytebuddy.dynamic.loading.MultipleParentClassLoader@7a7b9bb9'
+  instance creation by : ObjenesisInstantiator
+
+You might experience classloading issues, please ask the mockito mailing-list.
+
+[MASTER] 17:31:48.175 [pool-2-thread-1] ERROR TestCluster - Failed to check cache for tutorial.Node<T> : Type points to itself

@@ -1,0 +1,41 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.MAIN_SPEC_FILE_MOCK = void 0;
+exports.MAIN_SPEC_FILE_MOCK = `import { MyService } from './my.service';
+
+describe('MyService', () => {
+    let service;
+
+    beforeEach(() => {
+        service = new MyService(undefined);
+        service.externalService = {
+            helloMethod: () => {},
+            doSomething: () => {}
+        }
+    });
+
+    it('should exist', () => {
+        expect(service).toBeTruthy();
+    });
+
+    describe('myMethod', () => {
+        it('should return 666 when name = "a"', () => {
+            spyOn(service.externalService, 'helloMethod').and.returnValues('resultHelloMethod');
+            spyOn(service.externalService, 'doSomething');
+            const result = service.myMethod('a');
+            expect(service.externalService.helloMethod).toHaveBeenCalledWith('a');
+            expect(service.externalService.doSomething).toHaveBeenCalledWith('resultHelloMethod');
+            expect(service.message).toEqual('resultHelloMethod');
+            expect(result).toEqual(666);
+        });
+        it('should return 666 when name = undefined', () => {
+            spyOn(service.externalService, 'helloMethod').and.returnValues('resultHelloMethod');
+            spyOn(service.externalService, 'doSomething');
+            const result = service.myMethod(undefined);
+            expect(service.externalService.helloMethod).toHaveBeenCalledWith(' World !');
+            expect(service.externalService.doSomething).toHaveBeenCalledWith('resultHelloMethod');
+            expect(service.message).toEqual('resultHelloMethod');
+            expect(result).toEqual(666);
+        });
+    });
+});`;

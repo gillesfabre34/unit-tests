@@ -1,0 +1,1307 @@
+{
+	"date": 1605863979798,
+	"isoDate": "2020-11-20T09:19:39.798Z",
+	"reportStats": {
+		"projectGlobalStats": {
+			"files": 195,
+			"functions": 32,
+			"methods": 504,
+			"statements": 1755
+		},
+		"report": {
+			"bugs": [
+			],
+			"files": 0,
+			"filesStats": [
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/default/hello.service.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "HelloService",
+							"duration": 200,
+							"coveredStatements": [
+								{
+								},
+								{
+								},
+								{
+								},
+								{
+								},
+								{
+								},
+								{
+								},
+								{
+								},
+								{
+								},
+								{
+								},
+								{
+								},
+								{
+								},
+								{
+								},
+								{
+								},
+								{
+								},
+								{
+								},
+								{
+								},
+								{
+								},
+								{
+								},
+								{
+								},
+								{
+								},
+								{
+								},
+								{
+								},
+								{
+								},
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "sayHello",
+							"numberOfTests": 8,
+							"totalStatements": 25,
+							"tries": 627
+						},
+						{
+							"bugs": [
+							],
+							"className": "HelloService",
+							"duration": 0,
+							"coveredStatements": [
+							],
+							"isFunction": false,
+							"name": "getFinalMessage",
+							"numberOfTests": 1,
+							"totalStatements": 1,
+							"tries": 1
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/default/message.service.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "MessageService",
+							"duration": 1,
+							"coveredStatements": [
+							],
+							"isFunction": false,
+							"name": "composeMessage",
+							"numberOfTests": 1,
+							"totalStatements": 1,
+							"tries": 1
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/calls/call-external-method/call-external-method.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "CallExternalMethod",
+							"duration": 166,
+							"coveredStatements": [
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 1,
+							"totalStatements": 1,
+							"tries": 1
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/calls/call-external-method/external-service.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "ExternalService",
+							"duration": 1,
+							"coveredStatements": [
+								{
+								},
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "isGreaterThanOne",
+							"numberOfTests": 2,
+							"totalStatements": 3,
+							"tries": 5
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/calls/call-external-method-inside-if/call-external-method-inside-if.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "CallExternalMethodInsideIf",
+							"duration": 108,
+							"coveredStatements": [
+								{
+								},
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 2,
+							"totalStatements": 3,
+							"tries": 37
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/calls/call-external-method-inside-if/external-service.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "ExternalService",
+							"duration": 1,
+							"coveredStatements": [
+								{
+								},
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "isGreaterThanOne",
+							"numberOfTests": 2,
+							"totalStatements": 3,
+							"tries": 5
+						}
+					]
+				},
+				{
+					"fileBugs": [
+						{
+							"bugType": "Compilation error"
+						}
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/calls/call-external-method-with-new-keyword/call-external-method-with-new-keyword.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "CallExternalMethodWithNewKeyword",
+							"duration": 97,
+							"coveredStatements": [
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 1,
+							"totalStatements": 2,
+							"tries": 1
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/calls/call-external-method-with-new-keyword/external-service.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "ExternalService",
+							"duration": 1,
+							"coveredStatements": [
+								{
+								},
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "isGreaterThanOne",
+							"numberOfTests": 2,
+							"totalStatements": 3,
+							"tries": 5
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/calls/call-external-static-method/call-external-static-method.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "CallExternalStaticMethod",
+							"duration": 93,
+							"coveredStatements": [
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 1,
+							"totalStatements": 1,
+							"tries": 1
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/calls/call-external-static-method/external-service.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "ExternalService",
+							"duration": 0,
+							"coveredStatements": [
+								{
+								},
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "isGreaterThanOne",
+							"numberOfTests": 2,
+							"totalStatements": 3,
+							"tries": 5
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/calls/call-local-method/call-local-method.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "CallLocalMethod",
+							"duration": 89,
+							"coveredStatements": [
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 1,
+							"totalStatements": 2,
+							"tries": 1
+						},
+						{
+							"bugs": [
+							],
+							"className": "CallLocalMethod",
+							"duration": 0,
+							"coveredStatements": [
+							],
+							"isFunction": false,
+							"name": "methodToCall",
+							"numberOfTests": 1,
+							"totalStatements": 1,
+							"tries": 1
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/calls/call-local-method-with-param/call-local-method-with-param.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "CallLocalMethodWithParam",
+							"duration": 88,
+							"coveredStatements": [
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 1,
+							"totalStatements": 2,
+							"tries": 1
+						},
+						{
+							"bugs": [
+							],
+							"className": "CallLocalMethodWithParam",
+							"duration": 0,
+							"coveredStatements": [
+							],
+							"isFunction": false,
+							"name": "methodToCall",
+							"numberOfTests": 1,
+							"totalStatements": 1,
+							"tries": 1
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/calls/call-local-static-method/call-local-static-method.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "CallLocalStaticMethod",
+							"duration": 91,
+							"coveredStatements": [
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 1,
+							"totalStatements": 1,
+							"tries": 1
+						},
+						{
+							"bugs": [
+							],
+							"className": "CallLocalStaticMethod",
+							"duration": 0,
+							"coveredStatements": [
+								{
+								},
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "isGreaterThanOne",
+							"numberOfTests": 2,
+							"totalStatements": 3,
+							"tries": 5
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/ifs/if-and-dependent/if-and-dependent.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "IfAndDependent",
+							"duration": 98,
+							"coveredStatements": [
+								{
+								},
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 2,
+							"totalStatements": 3,
+							"tries": 26
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/ifs/if-and-dependent-nested-calls/external.service.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "ExternalService",
+							"duration": 91,
+							"coveredStatements": [
+								{
+								},
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "isLowerThanFive",
+							"numberOfTests": 2,
+							"totalStatements": 3,
+							"tries": 2
+						},
+						{
+							"bugs": [
+							],
+							"className": "ExternalService",
+							"duration": 1,
+							"coveredStatements": [
+								{
+								},
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "isHigherThanFour",
+							"numberOfTests": 2,
+							"totalStatements": 3,
+							"tries": 5
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/ifs/if-and-dependent-nested-calls/if-and-dependent-nested-calls.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+								{
+									"bugType": "No indexes chosen"
+								}
+							],
+							"className": "IfAndDependentNestedCalls",
+							"duration": 94,
+							"coveredStatements": [
+								{
+								},
+								{
+								},
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 2,
+							"totalStatements": 5,
+							"tries": 100
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/ifs/if-and-dependent-nested-inclusion/if-and-dependent-nested-inclusion.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "IfAndDependentNestedInclusion",
+							"duration": 81,
+							"coveredStatements": [
+								{
+								},
+								{
+								},
+								{
+								},
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 3,
+							"totalStatements": 5,
+							"tries": 5
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/ifs/if-and-dependent-nested-intersection/if-and-dependent-nested-intersection.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "IfAndDependentNestedIntersection",
+							"duration": 93,
+							"coveredStatements": [
+								{
+								},
+								{
+								},
+								{
+								},
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 3,
+							"totalStatements": 5,
+							"tries": 26
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/ifs/if-and-independent/if-and-independent.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "IfAndIndependent",
+							"duration": 81,
+							"coveredStatements": [
+								{
+								},
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 2,
+							"totalStatements": 3,
+							"tries": 12
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/ifs/if-continue-route/if-continue-route.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "IfContinueRoute",
+							"duration": 78,
+							"coveredStatements": [
+								{
+								},
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 2,
+							"totalStatements": 3,
+							"tries": 5
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/ifs/if-fifth-degree-equation/if-fifth-degree-equation.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+								{
+									"bugType": "No indexes chosen"
+								}
+							],
+							"className": "IfFifthDegreeEquation",
+							"duration": 86,
+							"coveredStatements": [
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 1,
+							"totalStatements": 3,
+							"tries": 100
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/ifs/if-first-degree-equation/if-first-degree-equation.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+								{
+									"bugType": "No indexes chosen"
+								}
+							],
+							"className": "IfFirstDegreeEquation",
+							"duration": 87,
+							"coveredStatements": [
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 1,
+							"totalStatements": 3,
+							"tries": 100
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/ifs/if-first-degree-equation-crash/if-first-degree-equation-crash.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+								{
+									"bugType": "No indexes chosen"
+								}
+							],
+							"className": "IfFirstDegreeEquationCrash",
+							"duration": 85,
+							"coveredStatements": [
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 1,
+							"totalStatements": 3,
+							"tries": 100
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/ifs/if-no-solution/if-no-solution.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+								{
+									"bugType": "No indexes chosen"
+								}
+							],
+							"className": "IfNoSolution",
+							"duration": 86,
+							"coveredStatements": [
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 1,
+							"totalStatements": 3,
+							"tries": 100
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/ifs/if-not-falsy/if-not-falsy.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "IfNotFalsy",
+							"duration": 82,
+							"coveredStatements": [
+								{
+								},
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 2,
+							"totalStatements": 3,
+							"tries": 5
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/ifs/if-not-falsy-static/if-not-falsy.static.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "IfNotFalsyStatic",
+							"duration": 81,
+							"coveredStatements": [
+								{
+								},
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 2,
+							"totalStatements": 3,
+							"tries": 5
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/ifs/if-not-falsy-without-types/if-not-falsy-without.types.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+								{
+									"bugType": "No indexes chosen"
+								}
+							],
+							"className": "IfNotFalsyWithoutTypes",
+							"duration": 82,
+							"coveredStatements": [
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 1,
+							"totalStatements": 3,
+							"tries": 100
+						}
+					]
+				},
+				{
+					"fileBugs": [
+						{
+							"bugType": "Compilation error"
+						}
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/ifs/if-object-equality/if-object-equality.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+								{
+									"bugType": "No indexes chosen"
+								}
+							],
+							"className": "IfObjectEquality",
+							"duration": 93,
+							"coveredStatements": [
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 1,
+							"totalStatements": 3,
+							"tries": 100
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/ifs/if-object-in-param/if-object-in-param.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+								{
+									"bugType": "No indexes chosen"
+								}
+							],
+							"className": "IfObjectInParam",
+							"duration": 87,
+							"coveredStatements": [
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 1,
+							"totalStatements": 3,
+							"tries": 100
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/ifs/if-or/if-or.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "IfOr",
+							"duration": 79,
+							"coveredStatements": [
+								{
+								},
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 2,
+							"totalStatements": 3,
+							"tries": 5
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/ifs/if-second-degree-equation/if-second-degree-equation.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "IfSecondDegreeEquation",
+							"duration": 83,
+							"coveredStatements": [
+								{
+								},
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 2,
+							"totalStatements": 3,
+							"tries": 50
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/ifs/if-string-equality/if-string-equality.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "IfStringEquality",
+							"duration": 80,
+							"coveredStatements": [
+								{
+								},
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 2,
+							"totalStatements": 3,
+							"tries": 2
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/ifs/if-ternary/if-ternary.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "IfTernary",
+							"duration": 83,
+							"coveredStatements": [
+								{
+								},
+								{
+								},
+								{
+								},
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "ifTernary",
+							"numberOfTests": 2,
+							"totalStatements": 5,
+							"tries": 5
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/ifs/if-this-property/if-this-property.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+								{
+									"bugType": "No indexes chosen"
+								}
+							],
+							"className": "IfThisProperty",
+							"duration": 82,
+							"coveredStatements": [
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 1,
+							"totalStatements": 3,
+							"tries": 10
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/ifs/if-two-params/if-two-params.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+								{
+									"bugType": "Execution error"
+								}
+							],
+							"className": "IfTwoParams",
+							"duration": 103,
+							"coveredStatements": [
+								{
+								},
+								{
+								},
+								{
+								},
+								{
+								},
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 3,
+							"totalStatements": 7,
+							"tries": 66
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/ifs/if-typed-object-in-param/if-typed-object-in-param.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+								{
+									"bugType": "No indexes chosen"
+								}
+							],
+							"className": "IfTypedObjectInParam",
+							"duration": 87,
+							"coveredStatements": [
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 1,
+							"totalStatements": 3,
+							"tries": 100
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/ifs/if-without-else/if-without.else.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "IfWithoutElse",
+							"duration": 78,
+							"coveredStatements": [
+								{
+								},
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 2,
+							"totalStatements": 3,
+							"tries": 5
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/loops/for-let-const/for-let-const.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "ForLetConst",
+							"duration": 75,
+							"coveredStatements": [
+								{
+								},
+								{
+								},
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 2,
+							"totalStatements": 4,
+							"tries": 2
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/loops/for-let-const-if/for-let-const-if.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "ForLetConstIf",
+							"duration": 76,
+							"coveredStatements": [
+								{
+								},
+								{
+								},
+								{
+								},
+								{
+								},
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 3,
+							"totalStatements": 6,
+							"tries": 5
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/loops/for-let-i/for-let-i.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "ForLetI",
+							"duration": 74,
+							"coveredStatements": [
+								{
+								},
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 1,
+							"totalStatements": 3,
+							"tries": 1
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/loops/for-return-array/for-return-array.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "ForReturnArray",
+							"duration": 74,
+							"coveredStatements": [
+								{
+								},
+								{
+								},
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 2,
+							"totalStatements": 4,
+							"tries": 2
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/trivial/one-line-and-return/one-line-and-return.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "OneLineAndReturn",
+							"duration": 75,
+							"coveredStatements": [
+								{
+								}
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 1,
+							"totalStatements": 2,
+							"tries": 1
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/trivial/return/return.service.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "ReturnService",
+							"duration": 73,
+							"coveredStatements": [
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 1,
+							"totalStatements": 1,
+							"tries": 1
+						}
+					]
+				},
+				{
+					"fileBugs": [
+					],
+					"filePath": "/Users/utilisateur/Documents/perso_gilles_fabre/projets/nrx/axiom-backend/src/algorithm/src/languages/ts/mocks/trivial/return-with-param/return-with-param.ts",
+					"functionsStats": [
+					],
+					"methodsStats": [
+						{
+							"bugs": [
+							],
+							"className": "ReturnWithParam",
+							"duration": 75,
+							"coveredStatements": [
+							],
+							"isFunction": false,
+							"name": "myMethod",
+							"numberOfTests": 1,
+							"totalStatements": 1,
+							"tries": 1
+						}
+					]
+				}
+			],
+			"functions": 0,
+			"methods": 0
+		},
+		"sutGlobalStats": {
+			"files": 44,
+			"functions": 0,
+			"methods": 49,
+			"statements": 157
+		}
+	}
+}

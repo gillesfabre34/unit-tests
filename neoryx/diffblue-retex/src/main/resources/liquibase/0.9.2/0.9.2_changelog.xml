@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <include file="filtering_media.xml" relativeToChangelogFile="true"/>
+
+    <include file="role_feature.xml" relativeToChangelogFile="true"/>
+    <include file="user_feature.xml" relativeToChangelogFile="true"/>
+    <include file="role.xml" relativeToChangelogFile="true"/>
+    <include file="drt.xml" relativeToChangelogFile="true"/>
+    <include file="insert_audit_data.xml" relativeToChangelogFile="true"/>
+    <include file="post.xml" relativeToChangelogFile="true"/>
+    <include file="step.xml" relativeToChangelogFile="true"/>
+    <include file="migrateStepAndPostTranslation.xml" relativeToChangelogFile="true"/>
+
+</databaseChangeLog>

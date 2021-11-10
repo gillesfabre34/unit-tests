@@ -1,0 +1,346 @@
+buildscript {
+    ext {
+        h2Version = '1.4.197'
+        hibernateEnversVersion = '5.4.2.Final'
+        javaxAnnotationApiVersion = '1.3.2'
+        javaxInjectVersion = '1'
+        javaxValidationVersion = '2.0.0.Final'
+        liquibaseVersion = '3.6.3'
+        liquibaseGradleVersion = '2.0.1'
+        lombokVersion = '1.18.8'
+        mapstructVersion = '1.3.0.Final'
+        owaspDependencyCheckVersion = '5.2.4'
+        persistenceApiVersion = '1.0.2'
+        springBootContextSupportVersion = '5.1.9.RELEASE'
+        springMessagingVersion = '5.1.9.RELEASE'
+        springSecurityMessagingVersion = '5.1.6.RELEASE'
+        springBootVersion = '2.1.0.RELEASE'
+        ehcacheVersion = '3.8.1'
+    }
+    repositories {
+        mavenCentral()
+        //Use Spring milestone while 2.1 has not been released in central repo.
+        maven { url 'https://repo.spring.io/milestone' }
+    }
+    dependencies {
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
+        classpath "org.liquibase:liquibase-gradle-plugin:$liquibaseGradleVersion"
+        classpath "org.owasp:dependency-check-gradle:$owaspDependencyCheckVersion"
+    }
+}
+
+/*
+ * Project global configuration
+ */
+plugins {
+    id 'net.ltgt.apt' version '0.21'
+    id "org.sonarqube" version "2.7"
+}
+apply plugin: 'org.springframework.boot'
+apply plugin: 'jacoco'
+apply plugin: 'idea'
+apply plugin: 'net.ltgt.apt-idea'
+apply plugin: 'net.ltgt.apt-eclipse'
+apply plugin: 'org.liquibase.gradle'
+apply plugin: 'org.owasp.dependencycheck'
+
+allprojects {
+    repositories {
+        mavenCentral()
+        //Use Spring milestone while 2.1 has not been released in central repo.
+        maven { url 'https://repo.spring.io/milestone' }
+    }
+
+    apply plugin: 'java'
+    apply plugin: 'java-library'
+    apply plugin: 'jacoco'
+
+    group = 'com.airbus.retex'
+    version = '0.11.0-SNAPSHOT'
+
+    sourceCompatibility = 1.11
+    targetCompatibility = 1.11
+
+    jacoco {
+        toolVersion = '0.8.3'
+    }
+    jacocoTestReport {
+        reports {
+            xml.enabled true
+            csv.enabled false
+            html.enabled true
+        }
+    }
+
+    idea {
+        module {
+            sourceDirs += file("$projectDir/out/production/classes/generated")
+        }
+    }
+
+    dependencies {
+        implementation("org.projectlombok:lombok:$lombokVersion")
+        annotationProcessor "org.projectlombok:lombok:$lombokVersion"
+        implementation ("javax.annotation:javax.annotation-api:$javaxAnnotationApiVersion")
+
+        implementation("org.mariadb.jdbc:mariadb-java-client:2.4.0")
+
+        implementation("org.springframework:spring-messaging:$springMessagingVersion")
+        implementation("org.springframework.boot:spring-boot-starter-parent:$springBootVersion")
+        implementation("org.springframework.boot:spring-boot-starter-websocket:$springBootVersion")
+        implementation "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
+        implementation "org.springframework.boot:spring-boot-starter-security:${springBootVersion}"
+        implementation "org.springframework.boot:spring-boot-starter-oauth2-client:${springBootVersion}"
+        implementation "org.springframework.boot:spring-boot-starter-data-jpa:${springBootVersion}"
+        implementation("org.springframework.security.oauth:spring-security-oauth2:${springBootVersion}")
+        implementation("org.springframework.security:spring-security-messaging:$springSecurityMessagingVersion")
+        implementation("org.springframework:spring-context-support:${springBootContextSupportVersion}")
+        implementation("org.springframework.boot:spring-boot-starter-cache:$springBootVersion")
+        implementation("org.ehcache:ehcache:$ehcacheVersion")
+        implementation("javax.cache:cache-api:1.0.0")
+
+        implementation "org.hibernate:hibernate-envers:$hibernateEnversVersion"
+        implementation "org.liquibase:liquibase-core:$liquibaseVersion"
+        implementation('org.apache.commons:commons-collections4:4.3')
+        implementation ('org.modelmapper:modelmapper:2.3.4')
+
+        //test dependencies
+        testCompile "org.junit.jupiter:junit-jupiter-api:5.2.0"
+        testCompile "org.junit.jupiter:junit-jupiter-params:5.2.0"
+        testRuntime "org.junit.jupiter:junit-jupiter-engine:5.2.0"
+        testImplementation "com.h2database:h2:$h2Version"
+        testImplementation 'org.hamcrest:hamcrest:2.1'
+
+        testCompile("org.springframework.boot:spring-boot-starter-test:2.1.4.RELEASE"){
+            exclude group: 'junit', module: 'junit'
+        }
+        testCompile("org.springframework.security:spring-security-test:5.1.5.RELEASE")
+        
+        api("io.springfox:springfox-swagger2:2.9.2")
+        api("io.springfox:springfox-swagger-ui:2.9.2")
+
+        testCompile("org.mockito:mockito-core:2.8.9")
+        testCompile('org.mockito:mockito-junit-jupiter:2.18.3')
+        testImplementation('org.mockito:mockito-core:2.27.0')
+        testAnnotationProcessor "org.projectlombok:lombok:$lombokVersion"
+
+        implementation('net.coobird:thumbnailator:0.4.8')
+
+        implementation('org.assertj:assertj-core:3.13.2')
+
+        implementation "org.mapstruct:mapstruct:$mapstructVersion"
+        annotationProcessor "org.mapstruct:mapstruct-processor:$mapstructVersion"
+        testAnnotationProcessor "org.mapstruct:mapstruct-processor:$mapstructVersion"
+    }
+    test {
+        useJUnitPlatform()
+    }
+}
+
+subprojects {
+    configurations {
+        testJar.extendsFrom (testCompile)
+    }
+
+    task buildTestJar (type: Jar, dependsOn: testClasses) {
+        from sourceSets.test.output
+        classifier = 'test'
+    }
+
+    artifacts {
+        testJar buildTestJar
+    }
+}
+
+apply plugin: 'org.springframework.boot'
+apply plugin: "org.sonarqube"
+apply plugin: "jacoco"
+
+/*
+##################################
+########## Custom tasks ##########
+*/
+//Create a Jacoco HTML report with the coverage of all modules.
+task jacocoRootReport(type: org.gradle.testing.jacoco.tasks.JacocoReport) {
+    dependsOn = subprojects.test
+    additionalSourceDirs = files(allprojects.sourceSets.main.allSource.srcDirs)
+    sourceDirectories = files(allprojects.sourceSets.main.allSource.srcDirs)
+    classDirectories =  files(allprojects.sourceSets.main.output)
+    executionData = project.fileTree(dir: '.', include:'**/build/jacoco/test.exec')
+    reports {
+        html.enabled = true
+        xml.enabled = true
+        csv.enabled = false
+    }
+}
+
+//Aggregate the test coverage of all modules into one file
+//https://cristian.io/post/sonar-coverage/
+def mergedTestReport = "$buildDir/jacoco/mergedTestReport.exec"
+task jacocoMergeTestReport(type: JacocoMerge) {
+    destinationFile = file(mergedTestReport)
+    executionData = project.fileTree(dir: '.', include:'**/build/jacoco/test.exec')
+}
+subprojects {
+    sonarqube {
+        properties {
+            property "sonar.jacoco.reportPaths", mergedTestReport
+        }
+    }
+}
+
+//Jenkins task to generate global reports
+task jenkinsReports(type: Task) {
+    dependsOn jacocoMergeTestReport, jacocoRootReport
+}
+
+dependencies {
+    implementation project(':retex-controller')
+    implementation project(':retex-business')
+    implementation project(':retex-model')
+    implementation project(':retex-impl')
+
+    //TODO Make it work, we should be able to reuse configuration and test resources from sub modules
+    testImplementation project(path: ':retex-controller', configuration: 'testJar')
+    testImplementation project(path: ':retex-business', configuration: 'testJar')
+    testImplementation project(path: ':retex-model', configuration: 'testJar')
+    testImplementation project(path: ':retex-impl', configuration: 'testJar')
+}
+
+//## Liquibase configuration ##
+dependencies {
+    liquibaseRuntime "org.liquibase:liquibase-core:$liquibaseVersion"
+    liquibaseRuntime "org.liquibase:liquibase-groovy-dsl:$liquibaseGradleVersion"
+    liquibaseRuntime "com.h2database:h2:$h2Version"
+    liquibaseRuntime project('retex-model')
+}
+liquibase {
+  activities {
+    test {
+      changeLogFile 'src/main/resources/liquibase/changelog.xml'
+      url 'jdbc:h2:file:./build/liquibase/test-changelog.db'
+      username 'sa'
+      password ''
+      contexts 'gradle-migration-test'
+    }
+  }
+  runList = 'test'
+}
+
+//## Custom tasks ##
+configurations {
+    h2Runtime
+}
+dependencies {
+    h2Runtime "com.h2database:h2:$h2Version"
+}
+
+// Tast that run the app with in memory database (h2)
+task bootRunAmnesic(type: org.springframework.boot.gradle.tasks.run.BootRun, dependsOn: 'compileJava') {
+	group = 'Application'
+	main "com.airbus.retex.Application"
+	jvmArgs "-Dspring.profiles.active=default,amnesic"
+	classpath{
+		[
+		 sourceSets.main.runtimeClasspath,
+		 configurations.h2Runtime
+		]
+	}
+}
+
+// Tast that run the app with database into a file (h2)
+task bootRunFiledb(type: org.springframework.boot.gradle.tasks.run.BootRun, dependsOn: 'compileJava') {
+	group = 'Application'
+	main "com.airbus.retex.Application"
+	jvmArgs "-Dspring.profiles.active=default,filedb"
+	classpath{
+		[
+		 sourceSets.main.runtimeClasspath,
+		 configurations.h2Runtime
+		]
+	}
+}
+
+// Tast that run the app with the retex sso sanbox configuration added
+task bootRunRetexSsoSandbox(type: org.springframework.boot.gradle.tasks.run.BootRun, dependsOn: 'compileJava') {
+    group = 'Application'
+    main "com.airbus.retex.Application"
+    jvmArgs "-Dspring.profiles.active=default,retexSsoSandbox"
+    classpath {
+        [
+         sourceSets.main.runtimeClasspath
+        ]
+    }
+}
+
+// Tast that run the app front-end developers
+task bootRunFrontDev(type: org.springframework.boot.gradle.tasks.run.BootRun, dependsOn: 'compileJava') {
+    group = 'Application'
+    main "com.airbus.retex.Application"
+    jvmArgs "-Dspring.profiles.active=default,frontdev"
+    classpath {
+        [
+         sourceSets.main.runtimeClasspath
+        ]
+    }
+}
+
+def replaceVersion(newVersion) {
+    def updated = buildFile.getText()
+    updated = updated.replaceFirst("version = '$version'", "version = '$newVersion'")
+    buildFile.setText(updated)
+}
+def incrementVersion(incrFirst, incrSecond, incrThird, withSnapshot){
+    def (first, second, third) = version.tokenize('.')
+    def snapshot = third.contains('-SNAPSHOT')
+    if(snapshot) {
+        third = third.replace('-SNAPSHOT', '')
+    }
+
+    first = first.toInteger()
+    second = second.toInteger()
+    third = third.toInteger()
+
+    if(incrThird) {
+        third+=1
+    }
+    if(incrSecond) {
+        third=0
+        second+=1
+    }
+    if(incrFirst) {
+        third=0
+        second=0
+        first+=1
+    }
+    if(withSnapshot != null) {
+        snapshot = withSnapshot
+    }
+    replaceVersion("$first.$second.$third"+(snapshot ? '-SNAPSHOT' : ''))
+}
+task incrementFirst(type: Task) {
+    doLast {
+        incrementVersion(true, null, null, null);
+    }
+}
+task incrementSecond(type: Task) {
+    doLast {
+        incrementVersion(null, true, null, null);
+    }
+}
+task incrementThird(type: Task) {
+    doLast {
+        incrementVersion(null, null, true, null);
+    }
+}
+task unsetSnapshot(type: Task) {
+    doLast {
+        incrementVersion(null, null, null, false);
+    }
+}
+task setSnapshot(type: Task) {
+    doLast {
+        incrementVersion(null, null, null, true);
+    }
+}
+

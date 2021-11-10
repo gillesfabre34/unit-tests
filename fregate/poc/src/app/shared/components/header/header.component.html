@@ -1,0 +1,29 @@
+<div class="header" style="-webkit-app-region: drag">
+
+  <div class="left"></div>
+
+  <div class="logo">
+    <img src="assets/icons/logo.png" alt="" class="image" (click)="navToHome()">
+  </div>
+
+  <div class="right">
+
+    <ul class="right-menu">
+      <li>
+        <button>Refer a friend</button>
+      </li>
+
+      <li>
+        <a>{{ 'PAGES.HEADER.PREFERENCES' | translate }}</a>
+      </li>
+
+
+      <li>
+        <a routerLink="/account">{{ 'PAGES.HEADER.ACCOUNT' | translate }}</a>
+      </li>
+    </ul>
+
+
+  </div>
+
+</div>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="fix_natural_id_part" author="0.9.17">
+        <addUniqueConstraint tableName="part" columnNames="natural_id,version" />
+    </changeSet>
+
+    <changeSet id="fix_natural_id_routing" author="0.9.17">
+        <addUniqueConstraint tableName="routing" columnNames="natural_id,version" />
+    </changeSet>
+
+    <changeSet id="fix_natural_id_routing_component_index" author="0.9.17">
+        <addUniqueConstraint tableName="routing_component_index" columnNames="natural_id,version" />
+    </changeSet>
+
+    <changeSet id="fix_natural_id_damage" author="0.9.17">
+        <addUniqueConstraint tableName="damage" columnNames="natural_id,version" />
+    </changeSet>
+
+</databaseChangeLog>
+

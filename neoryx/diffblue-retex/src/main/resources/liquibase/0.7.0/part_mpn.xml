@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+
+    <!-- Join table Part and Mpn-->
+    <changeSet id="create_part_mpn" author="0.7.0">
+        <createTable tableName="part_mpn">
+            <column name="part_id" type="bigint">
+                <constraints nullable="false" referencedTableName="part" referencedColumnNames="id"
+                             foreignKeyName="fk_part_mpn_part_id"/>
+            </column>
+            <column name="code" type="varchar(50)">
+                <constraints nullable="false" referencedTableName="mpn" referencedColumnNames="code"
+                             foreignKeyName="fk_part_mpn_mpn_id"/>
+            </column>
+        </createTable>
+
+        <!-- Join table Part and Mpn-->
+        <createTable tableName="part_mpn_audit">
+            <column name="revision_id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="part_id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="code" type="varchar(50)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+        </createTable>
+
+    </changeSet>
+</databaseChangeLog>

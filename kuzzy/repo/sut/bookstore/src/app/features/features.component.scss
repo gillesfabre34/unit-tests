@@ -1,0 +1,43 @@
+
+.all-page {
+    position: relative;
+    //background-color: #eff1f4;
+    width: calc(100% - 48px);
+    height: calc(100% - 56px);
+    padding: 24px 24px 32px 24px;
+
+    .top-bar {
+        height: 60px;
+
+        .title-page {
+            color: #010a1f;
+            font-size: 32px;
+            margin-bottom: 23px;
+            margin-top: 0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+    .main-container {
+        display: flex;
+        height: 100%;
+        flex-direction: row;
+
+        .menu-left {
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            align-items: center;
+            padding: 24px;
+
+        }
+
+        .right-part {
+            display: flex;
+            flex-direction: column;
+            height: calc(100% - 60px);
+            width: calc(100% - 40px);
+            overflow-y: scroll;
+        }
+    }
+}

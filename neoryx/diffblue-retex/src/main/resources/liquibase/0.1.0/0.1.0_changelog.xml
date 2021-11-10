@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <include file="oauth_access_token.xml" relativeToChangelogFile="true"/>
+
+    <include file="oauth_refresh_token.xml" relativeToChangelogFile="true"/>
+
+    <include file="airbus_entity.xml" relativeToChangelogFile="true"/>
+
+    <!--    /!\  Create user and revision table  /!\    -->
+    <include file="user.xml" relativeToChangelogFile="true"/>
+
+    <include file="role.xml" relativeToChangelogFile="true"/>
+
+    <include file="role_feature.xml" relativeToChangelogFile="true"/>
+
+    <include file="user_feature.xml" relativeToChangelogFile="true"/>
+
+    <include file="user_role.xml" relativeToChangelogFile="true"/>
+
+    <include file="damage.xml" relativeToChangelogFile="true"/>
+
+    <include file="functionality.xml" relativeToChangelogFile="true"/>
+
+    <include file="functionality_damage.xml" relativeToChangelogFile="true"/>
+
+    <include file="translate.xml" relativeToChangelogFile="true"/>
+
+    <include file="classification.xml" relativeToChangelogFile="true"/>
+
+</databaseChangeLog>

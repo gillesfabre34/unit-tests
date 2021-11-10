@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="create_routing_component_index" author="0.5.0">
+        <!-- ************************** TABLE ROUTING COMPONENT INDEX ********************** -->
+
+        <createTable tableName="routing_component_index">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="status" type="varchar(50)">
+            </column>
+            <column name="creation_date" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="routing_component_id" type="bigint">
+                <constraints nullable="true" referencedTableName="routing_component" referencedColumnNames="id"
+                             foreignKeyName="fk_routing_component_index_routing_component"/>
+            </column>
+            <column name="todo_list_id" type="bigint">
+                <constraints nullable="true" referencedTableName="todo_list" referencedColumnNames="id"
+                             foreignKeyName="fk_routing_component_index_todo_list"/>
+            </column>
+
+            <column name="version" type="integer">
+                <constraints nullable="false"/>
+            </column>
+            <column name="maj_date" type="timestamp">
+                <constraints nullable="false"/>
+            </column>
+            <column name="natural_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="is_latest_version" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <!-- ****************************** ROUTING COMPONENT INDEX AUDIT ************************ -->
+
+        <createTable tableName="routing_component_index_audit">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="routing_component_id" type="bigint"/>
+            <column name="todo_list_id" type="bigint"/>
+            <column name="revision_id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint"/>
+
+            <column name="status" type="varchar(255)"/>
+            <column name="natural_id" type="bigint"/>
+            <column name="creation_date" type="timestamp"/>
+            <column name="date_maj" type="timestamp"/>
+            <column name="is_latest_version" type="boolean"/>
+            <column name="version" type="integer"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

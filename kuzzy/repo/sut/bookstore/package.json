@@ -1,0 +1,90 @@
+{
+    "name": "genese-angular-demo",
+    "version": "1.1.0",
+    "author": {
+        "name": "Gilles Fabre",
+        "url": "http://gillesfabre.com/"
+    },
+    "scripts": {
+        "ng": "ng",
+        "start": "ng serve",
+        "build": "ng build",
+        "preinstall": "npx npm-force-resolutions"
+    },
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "private": false,
+    "dependencies": {
+        "@angular-devkit/build-angular": "~0.901.0",
+        "@angular/animations": "^9.1.0",
+        "@angular/cdk": "^9.2.0-next.0",
+        "@angular/common": "^9.1.0",
+        "@angular/compiler": "^9.1.0",
+        "@angular/core": "^9.1.0",
+        "@angular/forms": "^9.1.0",
+        "@angular/material": "^9.2.0",
+        "@angular/platform-browser": "^9.1.0",
+        "@angular/platform-browser-dynamic": "^9.1.0",
+        "@angular/router": "^9.1.0",
+        "@nestjs/swagger": "^4.5.1",
+        "@ngx-translate/core": "^11.0.1",
+        "@ngx-translate/http-loader": "^4.0.0",
+        "classlist.js": "^1.1.20150312",
+        "core-js": "^3.6.4",
+        "genese-angular": "^1.2.8",
+        "hammerjs": "^2.0.8",
+        "ionicons": "^4.6.3",
+        "moment": "^2.24.0",
+        "ngx-mask": "^8.2.0",
+        "nth-check": "^1.0.2",
+        "parse-node-version": "^1.0.1",
+        "roboto-fontface": "^0.10.0",
+        "rxjs": "^6.5.5",
+        "swagger-ui-express": "^4.1.4",
+        "tslib": "^1.10.0",
+        "web-animations-js": "^2.3.2",
+        "zone.js": "~0.10.2"
+    },
+    "devDependencies": {
+        "@angular/cli": "^9.1.0",
+        "@angular/compiler-cli": "^9.1.0",
+        "@angular/language-service": "^9.1.0",
+        "@fortawesome/fontawesome-free": "^5.13.0",
+        "@types/jasmine": "^3.5.10",
+        "@types/jasminewd2": "^2.0.8",
+        "@types/node": "^12.12.34",
+        "codelyzer": "^5.2.2",
+        "i": "^0.3.6",
+        "jasmine-core": "~3.4.0",
+        "jasmine-spec-reporter": "~4.2.1",
+        "karma": "^4.4.1",
+        "karma-chrome-launcher": "~3.0.0",
+        "karma-coverage-istanbul-reporter": "^2.1.1",
+        "karma-jasmine": "~2.0.1",
+        "karma-jasmine-html-reporter": "^1.5.3",
+        "karma-mocha-reporter": "^2.2.5",
+        "karma-notify-reporter": "^1.2.0",
+        "karma-phantomjs-launcher": "^1.0.4",
+        "minimist": "^1.2.5",
+        "protractor": "^5.4.3",
+        "stylelint-config-standard": "^19.0.0",
+        "ts-node": "~8.3.0",
+        "tslint": "~5.18.0",
+        "typescript": "~3.8.3"
+    },
+    "keywords": [
+        "genese-angular",
+        "genese-mapper",
+        "angular",
+        "generic angular data services",
+        "example genese-angular"
+    ],
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/gillesfabre34/genese-angular-demo"
+    },
+    "resolutions": {
+        "minimist": "^1.2.5"
+    }
+}

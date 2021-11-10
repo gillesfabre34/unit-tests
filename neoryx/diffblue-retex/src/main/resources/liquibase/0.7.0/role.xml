@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="create_operation" author="0.7.0">
+        <!-- ******************************** TABLE OPERATION  ************************* -->
+
+        <createTable tableName="operation">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="operation_type_id" type="bigint">
+                <constraints nullable="false" referencedTableName="operation_type" referencedColumnNames="id"
+                             foreignKeyName="fk_operation_type_id"/>
+            </column>
+            <column name="routing_id" type="bigint">
+                <constraints nullable="false" referencedTableName="routing" referencedColumnNames="id"
+                             foreignKeyName="fk_routing_id"/>
+            </column>
+            <column name="order_number" type="int">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <!-- ********************* TABLE OPERATION  *************** -->
+        <createTable tableName="operation_audit" >
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="operation_type_id" type="bigint"/>
+            <column name="routing_id" type="bigint"/>
+            <column name="order_number" type="bigint"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

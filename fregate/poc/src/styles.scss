@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fbfbfb;
+
+    .container {
+        width: 100%;
+        height: calc(95% - 120px);
+    }
+
+    .button {
+        width: 50%;
+        height: 35px;
+        border-radius: 20px;
+        background-color: aquamarine;
+        border: none;
+        cursor: pointer;
+    }
+}

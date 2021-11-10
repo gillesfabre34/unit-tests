@@ -1,0 +1,8 @@
+template,name_FR,name_EN,behavior
+dimensional,Dimensionnel,Dimensional,ROUTING_COMPONENT
+tridimensional,Trois dimensions,Tridimensional,ROUTING_COMPONENT
+laboratory,Laboratoire,Laboratory,ROUTING_COMPONENT
+visual,Visuelle,Visual,VISUAL_COMPONENT
+preliminary,Préliminaire,Preliminary,TODO_LIST
+closure,Clôture,Closure,TODO_LIST
+generic,Générique,Generic,GENERIC

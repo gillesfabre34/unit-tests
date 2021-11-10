@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+    <changeSet id="create_role" author="0.1.0">
+        <!-- ********************* TABLE FEATURE *************** -->
+        <createTable tableName="role">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="airbus_entity_id" type="bigint">
+                <constraints nullable="false" referencedTableName="airbus_entity" referencedColumnNames="id"
+                             foreignKeyName="fk_role_airbus_entity"/>
+            </column>
+            <column name="state" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="is_operator" type="boolean" defaultValueBoolean="false">
+                <constraints nullable="true"/>
+            </column>
+            <column name="is_technical_responsible" type="boolean" defaultValueBoolean="false">
+                <constraints nullable="true"/>
+            </column>
+        </createTable>
+
+        <createTable tableName="role_audit">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint">
+                <constraints nullable="false"/>
+            </column>
+            <column name="airbus_entity_id" type="bigint"/>
+            <column name="state" type="varchar(50)"/>
+            <column name="is_operator" type="boolean"/>
+            <column name="is_technical_responsible" type="boolean"/>
+        </createTable>
+
+    </changeSet>
+</databaseChangeLog>

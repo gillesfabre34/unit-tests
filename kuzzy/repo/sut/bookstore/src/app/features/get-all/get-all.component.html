@@ -1,0 +1,15 @@
+<div class="method-container">
+    <p class="title">getAll(params?: GetAllParams): Observable< T[] ></p>
+    <p>getAll() is used to get a list of objects from http GET request and to format them with T type.</p>
+    <p>getAll() method needs that your app respects the Genese standards :</p>
+    <p>* You must add a genese param to your model like this :</p>
+    <pre>{{model | json}}</pre>
+    <p>* The http request must be a GET method</p>
+    <p>* The api path must respect the REST api standards for a getAll() method, just like this :</p>
+    <p>http://my-path/book</p>
+    <p>In this example, the getAll() method receives the list of books sent by the NestJS backend. </p>
+    <p>Open your navigator console. In the tab "Network", you'll find the data received from GET request. In the tab "Console", you'll can compare these original data with the formatted objects sent as Observable by Genese. As you can see, Genese formatted all these objects with "Book" type.</p>
+    <div class="dataList">
+        <app-data-list [data]="data"></app-data-list>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+<div class="method-container">
+    <p class="title">create(newObject: T, options?: RequestOptions): Observable< T | any ></p>
+    <p>create() method is used to add a T object in database with a POST http request</p>
+    <p>If the endpoint respects the Genese standards, it should return the new object. In this case, the create() method will return this object formatted with the T type. In the other case, the create() method will simply return the request response.</p>
+    <p>create() method needs that your app respects the Genese standards :</p>
+    <p>* You must add a genese param to your model like this :</p>
+    <pre>{{model | json}}</pre>
+    <p>* The endpoint must wait a POST method.</p>
+    <p>* The api path must respect the REST api standards for a POST method (example : http://my-path/book/id)</p>
+    <p>In this example, the create() method adds a new book with the NestJS backend.</p>
+    <p>Open your navigator console. In the tab "Network", you'll find the data received from POST request. In the tab "Console", you'll can compare these original data with the formatted objects sent as Observable by Genese. As you can see, Genese formatted the returned object with "Book" type.</p>
+
+    <div class="form-create">
+        <form (ngSubmit)="create()" #formCreate="ngForm">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" id="title" placeholder="title" [(ngModel)]="book.title" name="title" required #title="ngModel">
+                <div [hidden]="title.valid || title.pristine"
+                     class="alert alert-danger">
+                    Title is required
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input type="text" class="form-control" id="author" placeholder="Name" [(ngModel)]="book.author" name="author">
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea class="form-control" id="description" placeholder="Description of the book" [(ngModel)]="book.description" name="description"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-success" [disabled]="!formCreate.form.valid">Create new book</button>
+<!--            <button type="submit" class="button" [disabled]="!formCreate.form.valid">Create new book</button>-->
+        </form>
+    </div>
+</div>

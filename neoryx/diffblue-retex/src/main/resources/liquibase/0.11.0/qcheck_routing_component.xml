@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+
+    <changeSet id="create_qcheck_routing_component" author="0.13.0">
+        <!-- **************** CREATE TABLE QCHECK ROUTING COMPONENT *************** -->
+        <createTable tableName="qcheck_routing_component">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="drt_id" type="bigint">
+                <constraints nullable="false" referencedTableName="drt" referencedColumnNames="id"
+                             foreignKeyName="fk_qcheck_routing_component_drt"/>
+            </column>
+            <column name="operation_functional_area_id" type="bigint">
+                <constraints referencedTableName="operation_functional_area" referencedColumnNames="id"
+                             foreignKeyName="fk_qcheck_routing_component_operation_functional_area"/>
+            </column>
+            <column name="routing_component_index_id" type="bigint">
+                <constraints referencedTableName="routing_component_index" referencedColumnNames="id"
+                             foreignKeyName="fk_qcheck_routing_component_routing_component_index"/>
+            </column>
+            <column name="qcheck_value" type="boolean">
+                <constraints nullable="true"/>
+            </column>
+        </createTable>
+
+        <!-- ********************* CREATE TABLE CONTROL AUDIT *************** -->
+        <createTable tableName="qcheck_routing_component_audit">
+            <column name="revision_id" type="integer">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="revision_type" type="smallint"/>
+            <column name="id" type="bigint">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="drt_id" type="bigint"/>
+            <column name="operation_functional_area_id" type="bigint"/>
+            <column name="routing_component_index_id" type="bigint"/>
+            <column name="qcheck_value" type="boolean"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
